@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Собирает logo-*.svg с встроенным WebP (один HTTP-запрос, без потери цвета).
-   Исходники — originals/; Huawei уже векторный — не трогаем."""
+"""Устарело: актуальная сборка партнёрских логотипов — scripts/build-logos-from-transparent-png.py
+   (PNG из logo new/transparent → SVG с встроенным растром).
+   Раньше: WebP из originals/; Huawei был отдельным вектором."""
 import base64
 import re
 import subprocess
