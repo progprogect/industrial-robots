@@ -104,10 +104,10 @@
         @media (prefers-reduced-motion: reduce) {
             .marquee-partners-track { animation: none; }
         }
-        /* Партнёры внизу hero: лёгкий градиент + размытие, без отдельного «серого» блока */
+        /* Партнёры под шапкой в hero: градиент сверху вниз + размытие */
         .hero-partners-dock {
-            background: linear-gradient(to top, rgb(15 23 42 / 0.78) 0%, rgb(15 23 42 / 0.35) 45%, transparent 100%);
-            border-top: 1px solid rgb(255 255 255 / 0.08);
+            background: linear-gradient(to bottom, rgb(15 23 42 / 0.78) 0%, rgb(15 23 42 / 0.35) 45%, transparent 100%);
+            border-bottom: 1px solid rgb(255 255 255 / 0.08);
         }
     </style>
 </head>
@@ -130,7 +130,7 @@
 </div>
 </nav>
 <main>
-<!-- Блок 1 — Hero (логотипы партнёров — нижний оверлей на том же фоне) -->
+<!-- Блок 1 — Hero (логотипы партнёров — полоса под фиксированной шапкой, тот же фон) -->
 <section class="relative min-h-screen flex flex-col overflow-hidden pt-20 sm:pt-24">
 <div class="absolute inset-0 z-0">
 <img alt="Лаборатория и испытательный полигон" class="w-full h-full object-cover object-center" src="assets/images/lab-photo.jpg" width="5712" height="4284" fetchpriority="high" decoding="async"/>
@@ -138,6 +138,38 @@
 <div class="absolute inset-0 blueprint-grid opacity-20"></div>
 </div>
 <div class="relative z-10 flex min-h-0 flex-1 flex-col">
+<div class="scroll-mt-28 relative z-20 hero-partners-dock backdrop-blur-[3px]" id="partners" aria-labelledby="partners-heading">
+<div class="mx-auto max-w-7xl px-6 pb-2 pt-2 md:pt-3">
+<p class="text-center text-[10px] font-black uppercase tracking-[0.4em] text-primary-fixed md:text-left" id="partners-heading">Партнёры и клиенты</p>
+<p class="mt-2 text-center text-xs text-white/60 md:text-left">Компании, с которыми мы сотрудничаем и для которых реализуем решения</p>
+</div>
+<div class="overflow-hidden pb-3 md:pb-4">
+<div class="marquee-partners-track">
+<div class="flex items-center gap-10 md:gap-14 lg:gap-16 px-6 shrink-0">
+<img alt="HikRobot" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-hikrobot.jpg" width="200" height="40" loading="lazy" decoding="async"/>
+<img alt="Echo" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-echo.png" width="200" height="40" loading="lazy" decoding="async"/>
+<img alt="Echo" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-echo-2.png" width="200" height="40" loading="lazy" decoding="async"/>
+<img alt="McDonald's" class="h-9 md:h-10 w-auto max-w-[120px] object-contain" src="assets/logos/logo-mcdonalds.jpg" width="160" height="40" loading="lazy" decoding="async"/>
+<div class="h-12 flex items-center justify-center bg-white/95 border border-white/20 rounded px-3 shrink-0"><img alt="Элепарт" class="h-8 w-auto max-w-[120px] object-contain" src="assets/logos/logo-elepart.png" width="160" height="40" loading="lazy" decoding="async"/></div>
+<img alt="Экологическая Альтернатива" class="h-10 md:h-11 w-auto max-w-[160px] object-contain" src="assets/logos/logo-eco.webp" width="200" height="44" loading="lazy" decoding="async"/>
+<img alt="Шведофф" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-shvedoff.webp" width="200" height="40" loading="lazy" decoding="async"/>
+<div class="h-12 flex items-center justify-center bg-slate-900/90 rounded px-5 shrink-0 min-w-[128px]" aria-label="Yango Tech"><span class="text-white font-black text-[10px] md:text-[11px] uppercase tracking-[0.18em]">Yango Tech</span></div>
+<img alt="Huawei" class="h-8 md:h-9 w-auto max-w-[130px] object-contain" src="assets/logos/logo-huawei.svg" width="160" height="36" loading="lazy" decoding="async"/>
+</div>
+<div class="flex items-center gap-10 md:gap-14 lg:gap-16 px-6 shrink-0" aria-hidden="true">
+<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-hikrobot.jpg" width="200" height="40" loading="lazy" decoding="async"/>
+<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-echo.png" width="200" height="40" loading="lazy" decoding="async"/>
+<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-echo-2.png" width="200" height="40" loading="lazy" decoding="async"/>
+<img alt="" class="h-9 md:h-10 w-auto max-w-[120px] object-contain" src="assets/logos/logo-mcdonalds.jpg" width="160" height="40" loading="lazy" decoding="async"/>
+<div class="h-12 flex items-center justify-center bg-white/95 border border-white/20 rounded px-3 shrink-0"><img alt="" class="h-8 w-auto max-w-[120px] object-contain" src="assets/logos/logo-elepart.png" width="160" height="40" loading="lazy" decoding="async"/></div>
+<img alt="" class="h-10 md:h-11 w-auto max-w-[160px] object-contain" src="assets/logos/logo-eco.webp" width="200" height="44" loading="lazy" decoding="async"/>
+<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-shvedoff.webp" width="200" height="40" loading="lazy" decoding="async"/>
+<div class="h-12 flex items-center justify-center bg-slate-900/90 rounded px-5 shrink-0 min-w-[128px]" aria-hidden="true"><span class="text-white font-black text-[10px] md:text-[11px] uppercase tracking-[0.18em]">Yango Tech</span></div>
+<img alt="" class="h-8 md:h-9 w-auto max-w-[130px] object-contain" src="assets/logos/logo-huawei.svg" width="160" height="36" loading="lazy" decoding="async"/>
+</div>
+</div>
+</div>
+</div>
 <div class="flex min-h-0 flex-1 items-center py-8 md:py-10">
 <div class="container mx-auto w-full px-6">
 <div class="max-w-4xl">
@@ -170,38 +202,6 @@
 <div class="relative z-10 flex flex-col items-center gap-3 pb-2 pt-1 text-white/35">
 <span class="text-[10px] uppercase tracking-[0.5em] font-bold">Листайте вниз</span>
 <div class="h-10 w-px bg-gradient-to-b from-white/35 to-transparent"></div>
-</div>
-<div class="scroll-mt-28 relative z-20 hero-partners-dock backdrop-blur-[3px]" id="partners" aria-labelledby="partners-heading">
-<div class="mx-auto max-w-7xl px-6 pb-2 pt-4">
-<p class="text-center text-[10px] font-black uppercase tracking-[0.4em] text-primary-fixed md:text-left" id="partners-heading">Партнёры и клиенты</p>
-<p class="mt-2 text-center text-xs text-white/60 md:text-left">Компании, с которыми мы сотрудничаем и для которых реализуем решения</p>
-</div>
-<div class="overflow-hidden pb-4 md:pb-5">
-<div class="marquee-partners-track">
-<div class="flex items-center gap-10 md:gap-14 lg:gap-16 px-6 shrink-0">
-<img alt="HikRobot" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-hikrobot.jpg" width="200" height="40" loading="lazy" decoding="async"/>
-<img alt="Echo" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-echo.png" width="200" height="40" loading="lazy" decoding="async"/>
-<img alt="Echo" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-echo-2.png" width="200" height="40" loading="lazy" decoding="async"/>
-<img alt="McDonald's" class="h-9 md:h-10 w-auto max-w-[120px] object-contain" src="assets/logos/logo-mcdonalds.jpg" width="160" height="40" loading="lazy" decoding="async"/>
-<div class="h-12 flex items-center justify-center bg-white/95 border border-white/20 rounded px-3 shrink-0"><img alt="Элепарт" class="h-8 w-auto max-w-[120px] object-contain" src="assets/logos/logo-elepart.png" width="160" height="40" loading="lazy" decoding="async"/></div>
-<img alt="Экологическая Альтернатива" class="h-10 md:h-11 w-auto max-w-[160px] object-contain" src="assets/logos/logo-eco.webp" width="200" height="44" loading="lazy" decoding="async"/>
-<img alt="Шведофф" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-shvedoff.webp" width="200" height="40" loading="lazy" decoding="async"/>
-<div class="h-12 flex items-center justify-center bg-slate-900/90 rounded px-5 shrink-0 min-w-[128px]" aria-label="Yango Tech"><span class="text-white font-black text-[10px] md:text-[11px] uppercase tracking-[0.18em]">Yango Tech</span></div>
-<img alt="Huawei" class="h-8 md:h-9 w-auto max-w-[130px] object-contain" src="assets/logos/logo-huawei.svg" width="160" height="36" loading="lazy" decoding="async"/>
-</div>
-<div class="flex items-center gap-10 md:gap-14 lg:gap-16 px-6 shrink-0" aria-hidden="true">
-<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-hikrobot.jpg" width="200" height="40" loading="lazy" decoding="async"/>
-<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-echo.png" width="200" height="40" loading="lazy" decoding="async"/>
-<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-echo-2.png" width="200" height="40" loading="lazy" decoding="async"/>
-<img alt="" class="h-9 md:h-10 w-auto max-w-[120px] object-contain" src="assets/logos/logo-mcdonalds.jpg" width="160" height="40" loading="lazy" decoding="async"/>
-<div class="h-12 flex items-center justify-center bg-white/95 border border-white/20 rounded px-3 shrink-0"><img alt="" class="h-8 w-auto max-w-[120px] object-contain" src="assets/logos/logo-elepart.png" width="160" height="40" loading="lazy" decoding="async"/></div>
-<img alt="" class="h-10 md:h-11 w-auto max-w-[160px] object-contain" src="assets/logos/logo-eco.webp" width="200" height="44" loading="lazy" decoding="async"/>
-<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-shvedoff.webp" width="200" height="40" loading="lazy" decoding="async"/>
-<div class="h-12 flex items-center justify-center bg-slate-900/90 rounded px-5 shrink-0 min-w-[128px]" aria-hidden="true"><span class="text-white font-black text-[10px] md:text-[11px] uppercase tracking-[0.18em]">Yango Tech</span></div>
-<img alt="" class="h-8 md:h-9 w-auto max-w-[130px] object-contain" src="assets/logos/logo-huawei.svg" width="160" height="36" loading="lazy" decoding="async"/>
-</div>
-</div>
-</div>
 </div>
 </div>
 </section>
