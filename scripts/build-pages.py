@@ -18,19 +18,29 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "INDEX_PREFIX": "",
         "HOME_HREF": "index.html",
         "PHOTO_PRODUCT_HREF": "photoseparator.html",
+        "AGV_PRODUCT_HREF": "agv.html",
         "CTA_CONTACTS_HREF": "#contacts",
     },
     "photoseparator.src.html": {
         "INDEX_PREFIX": "index.html",
         "HOME_HREF": "index.html",
         "PHOTO_PRODUCT_HREF": "photoseparator.html",
+        "AGV_PRODUCT_HREF": "agv.html",
         "CTA_CONTACTS_HREF": "#contacts",
     },
     "privacy.src.html": {
         "INDEX_PREFIX": "index.html",
         "HOME_HREF": "index.html",
         "PHOTO_PRODUCT_HREF": "photoseparator.html",
+        "AGV_PRODUCT_HREF": "agv.html",
         "CTA_CONTACTS_HREF": "index.html#contacts",
+    },
+    "agv.src.html": {
+        "INDEX_PREFIX": "index.html",
+        "HOME_HREF": "index.html",
+        "PHOTO_PRODUCT_HREF": "photoseparator.html",
+        "AGV_PRODUCT_HREF": "agv.html",
+        "CTA_CONTACTS_HREF": "#contacts",
     },
 }
 
@@ -38,6 +48,7 @@ OUT_NAMES = {
     "index.src.html": "index.html",
     "photoseparator.src.html": "photoseparator.html",
     "privacy.src.html": "privacy.html",
+    "agv.src.html": "agv.html",
 }
 
 

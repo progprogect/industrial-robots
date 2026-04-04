@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html class="light" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Автономная рохля (AGV) | ООО «Промышленные роботы»</title>
+<meta name="description" content="Автономная рохля для внутрискладской логистики: паллетные перевозки без постоянного оператора. Внедрение под объект, сервис в РБ. Ориентир стоимости и условия — на странице."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary-fixed": "#351000",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#2b364c",
+                        "on-surface": "#191c1d",
+                        "on-background": "#191c1d",
+                        "on-primary-fixed": "#001946",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#bbc6e2",
+                        "inverse-primary": "#b1c5ff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "primary-container": "#0047ab",
+                        "surface-tint": "#2559bd",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-primary-container": "#a5bdff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3c475d",
+                        "tertiary-fixed": "#d7e2ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fe6b00",
+                        "secondary-fixed-dim": "#ffb693",
+                        "surface": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed": "#dae2ff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#424d64",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#101b30",
+                        "surface-dim": "#d9dadb",
+                        "background": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface-variant": "#434653",
+                        "on-secondary-container": "#572000",
+                        "outline-variant": "#c3c6d5",
+                        "secondary": "#a04100",
+                        "on-tertiary-container": "#b3bed9",
+                        "on-primary-fixed-variant": "#00419e",
+                        "primary": "#00327d",
+                        "surface-container": "#edeeef",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "on-primary": "#ffffff",
+                        "outline": "#737784",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-fixed": "#ffdbcc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html { scroll-padding-top: 6rem; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .blueprint-grid { background-image: radial-gradient(rgba(195, 198, 213, 0.4) 0.5px, transparent 0.5px); background-size: 32px 32px; }
+        .blueprint-lines { background-image: linear-gradient(rgba(195, 198, 213, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(195, 198, 213, 0.1) 1px, transparent 1px); background-size: 100px 100px; }
+        .machined-gradient { background: linear-gradient(135deg, #00327d 0%, #0047ab 100%); }
+        .glass-panel { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .hero-overlay {
+            background:
+                linear-gradient(to top, rgb(15 23 42 / 0.9) 0%, rgb(15 23 42 / 0.45) 42%, transparent 72%),
+                linear-gradient(90deg, rgb(15 23 42 / 0.88) 0%, rgb(15 23 42 / 0.42) 48%, rgb(15 23 42 / 0.12) 100%);
+        }
+        .cyber-border { position: relative; }
+        .cyber-border::after { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px; border: 1px solid rgba(0, 50, 125, 0.2); pointer-events: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary blueprint-lines">
+<a class="fixed bottom-6 right-6 z-[60] machined-gradient text-white px-5 py-3.5 sm:px-6 sm:py-4 text-[10px] uppercase tracking-[0.25em] font-black shadow-2xl hover:scale-105 transition-transform border border-white/20 max-w-[calc(100vw-3rem)] text-center" href="#contacts">Оставить заявку</a>
+<nav class="fixed top-0 left-0 right-0 w-full z-50 px-4 sm:px-6 py-3 sm:py-4 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-slate-200/60">
+<div class="max-w-7xl mx-auto glass-panel px-4 sm:px-6 md:px-8 py-3 flex flex-wrap justify-between items-center gap-3 md:gap-4">
+<a class="text-xl font-bold tracking-tighter text-slate-900 headline uppercase hover:text-[#00327d] transition-colors" href="index.html">ООО «Промышленные роботы»</a>
+<div class="hidden lg:flex flex-wrap items-center gap-6 xl:gap-8">
+<a class="text-[10px] uppercase tracking-widest font-bold text-slate-600 hover:text-[#00327d] transition-colors" href="index.html#services">Услуги</a>
+<div class="relative group">
+<a class="inline-flex items-center gap-0.5 text-[10px] uppercase tracking-widest font-bold text-slate-600 hover:text-[#00327d] transition-colors py-1" href="index.html#solutions" aria-haspopup="true" id="nav-products-trigger" aria-controls="nav-products-submenu">Продукты<span class="material-symbols-outlined text-[16px] font-normal opacity-60" aria-hidden="true">expand_more</span></a>
+<div class="absolute left-0 top-full z-[60] hidden w-max min-w-[13rem] pt-1.5 group-hover:block group-focus-within:block" id="nav-products-submenu" role="navigation" aria-label="Подстраницы продуктов">
+<div class="border border-slate-200/80 bg-white/95 py-1.5 shadow-lg backdrop-blur-md">
+<a class="block px-4 py-2.5 text-[10px] font-bold uppercase tracking-widest text-slate-700 transition-colors hover:bg-slate-50 hover:text-[#00327d]" href="photoseparator.html">Фотосепаратор</a>
+<a class="block px-4 py-2.5 text-[10px] font-bold uppercase tracking-widest text-slate-700 transition-colors hover:bg-slate-50 hover:text-[#00327d]" href="agv.html">Автоматическая рохля</a>
+</div>
+</div>
+</div>
+<a class="text-[10px] uppercase tracking-widest font-bold text-slate-600 hover:text-[#00327d] transition-colors" href="index.html#advantages">Преимущества</a>
+<a class="text-[10px] uppercase tracking-widest font-bold text-slate-600 hover:text-[#00327d] transition-colors" href="index.html#about">О нас</a>
+<a class="text-[10px] uppercase tracking-widest font-bold text-slate-600 hover:text-[#00327d] transition-colors" href="index.html#partners">Партнёры</a>
+<a class="text-[10px] uppercase tracking-widest font-bold text-slate-600 hover:text-[#00327d] transition-colors" href="index.html#contacts">Контакты</a>
+</div>
+<a class="bg-[#00327d] text-white px-6 md:px-8 py-2.5 text-[10px] uppercase tracking-[0.2em] font-black machined-gradient hover:shadow-lg hover:shadow-[#00327d]/20 transition-all text-center" href="#contacts">Оставить заявку</a>
+</div>
+</nav>
+
+<main>
+<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-20 sm:pt-24">
+<div class="absolute inset-0 z-0">
+<img alt="Автономная рохля на производственной площадке" class="w-full h-full object-cover object-center" src="assets/images/agv-rohly.png" width="2400" height="1792" fetchpriority="high" decoding="async"/>
+<div class="absolute inset-0 hero-overlay"></div>
+<div class="absolute inset-0 blueprint-grid opacity-30"></div>
+</div>
+<div class="relative z-10 container mx-auto px-6 max-w-4xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">Внутрискладская логистика</p>
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-6">Автономная рохля для паллетных перевозок</h1>
+<p class="text-lg md:text-xl text-white/85 max-w-2xl mb-4 border-l-2 border-primary-fixed pl-6 font-light leading-relaxed">
+Самоходное решение для повторяющихся маршрутов внутри склада, производства или логистического узла: подача сырья, вывоз готовой продукции, перемещения между зонами — без постоянного участия оператора.
+</p>
+<p class="text-sm text-white/70 max-w-2xl mb-10 pl-6">
+Материал ориентирован на инженеров и руководителей производства: как устроено внедрение, какая экономика и какие ограничения у такого класса решений.
+</p>
+<div class="flex flex-wrap gap-4 items-center">
+<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center" href="#contacts">Оставить заявку</a>
+<a class="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors" href="index.html#solutions">Все продукты на главной</a>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-6 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+<div>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Что это за продукт</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Автономная рохля в контексте вашего объекта</h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed text-base">
+<p>Автономная рохля — самоходное транспортное средство для перемещения паллет и грузов внутри предприятия без необходимости постоянно управлять техникой вручную. Назначение — типовые внутренние рейсы: из точки A в точку B по заранее согласованной логике.</p>
+<p>Решение востребовано там, где ежедневно повторяются однотипные перевозки: подача на линию, вывоз с линии, движение между складом и комплектованием, между цехами, на ПЗУ и т.п. Идея — снять с людей рутинную транспортировку и сделать процесс предсказуемым по времени и нагрузке.</p>
+<p>Ключевая установка: автоматизация имеет смысл там, где поток стабилен и измерим — иначе экономику внедрения корректно считать только после обследования объекта.</p>
+</div>
+</div>
+<div class="border border-outline-variant/40 bg-surface-container-low p-8 md:p-10">
+<h3 class="text-lg font-bold mb-4 uppercase tracking-tight">Для каких задач</h3>
+<ul class="space-y-3 text-sm text-on-surface-variant leading-relaxed">
+<li class="flex gap-2"><span class="text-primary font-bold shrink-0">—</span> доставка паллет с сырьём в производственную зону;</li>
+<li class="flex gap-2"><span class="text-primary font-bold shrink-0">—</span> вывоз готовой продукции с линии;</li>
+<li class="flex gap-2"><span class="text-primary font-bold shrink-0">—</span> перемещения между складом и зоной комплектования;</li>
+<li class="flex gap-2"><span class="text-primary font-bold shrink-0">—</span> транспортировка между цехами и участками;</li>
+<li class="flex gap-2"><span class="text-primary font-bold shrink-0">—</span> подача в упаковку и вывоз в хранение;</li>
+<li class="flex gap-2"><span class="text-primary font-bold shrink-0">—</span> типовые повторяющиеся рейсы в РЦ и на логистических узлах.</li>
+</ul>
+<p class="mt-6 text-xs text-on-surface-variant/90 border-l-2 border-primary pl-4">Если сотрудник большую часть смены только возит груз по одним и тем же маршрутам — такой процесс разумно рассматривать как кандидата на автоматизацию.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-surface-container-low">
+<div class="container mx-auto px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Внедрение</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-12">Как обычно выглядит запуск</h2>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-4">
+<div class="border border-outline-variant/50 bg-white p-6">
+<div class="w-10 h-10 bg-primary text-on-primary flex items-center justify-center font-headline font-bold text-sm mb-4">1</div>
+<h3 class="font-bold text-sm uppercase tracking-wide mb-2">Анализ объекта</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Точки подачи и приёма, интенсивность, покрытие, пересечения с людьми и техникой — где автоматизация даст максимальный эффект.</p>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6">
+<div class="w-10 h-10 bg-primary text-on-primary flex items-center justify-center font-headline font-bold text-sm mb-4">2</div>
+<h3 class="font-bold text-sm uppercase tracking-wide mb-2">Маршрут и сценарий</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Настройка логики движения, остановок, забора и доставки паллет под реальную схему перемещений.</p>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6">
+<div class="w-10 h-10 bg-primary text-on-primary flex items-center justify-center font-headline font-bold text-sm mb-4">3</div>
+<h3 class="font-bold text-sm uppercase tracking-wide mb-2">Запуск</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Вывод на рабочие сценарии после настройки: стабильное выполнение операций по заданным правилам.</p>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6">
+<div class="w-10 h-10 bg-primary text-on-primary flex items-center justify-center font-headline font-bold text-sm mb-4">4</div>
+<h3 class="font-bold text-sm uppercase tracking-wide mb-2">Испытание и донастройка</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Проверка на объекте, корректировка остановок, взаимодействия со средой при необходимости.</p>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6">
+<div class="w-10 h-10 bg-primary text-on-primary flex items-center justify-center font-headline font-bold text-sm mb-4">5</div>
+<h3 class="font-bold text-sm uppercase tracking-wide mb-2">Обучение</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Персонал заказчика — базовые правила эксплуатации и контроля сценариев.</p>
+</div>
+</div>
+<p class="mt-10 text-sm text-on-surface-variant max-w-3xl">Итог — не только поставка техники, а ввод в эксплуатацию в реальном процессе. Технические параметры конкретной конфигурации (навигация, интеграции с учётными системами) согласуются на этапе проекта.</p>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-6 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Что получает предприятие</h2>
+<ul class="space-y-4 text-on-surface-variant leading-relaxed">
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0">check_circle</span><span><strong class="text-on-surface">Снижение зависимости от персонала</strong> на повторяющихся операциях и смягчение кадрового дефицита.</span></li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0">check_circle</span><span><strong class="text-on-surface">Меньше ручных повторов</strong> — возможность перераспределить людей на более сложные участки.</span></li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0">check_circle</span><span><strong class="text-on-surface">Стабильнее ритм</strong> внутренней логистики за счёт предсказуемого выполнения сценариев.</span></li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0">check_circle</span><span><strong class="text-on-surface">Прозрачная экономика</strong>, когда число рейсов и трудозатраты можно оценить до внедрения.</span></li>
+</ul>
+</div>
+<div>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Где эффект обычно выше</h2>
+<ul class="space-y-3 text-sm text-on-surface-variant leading-relaxed">
+<li class="border-l-2 border-primary pl-4">Производства с регулярной подачей сырья/вывозом готовой продукции.</li>
+<li class="border-l-2 border-primary pl-4">Склады и РЦ с постоянными внутренними рейсами между приёмкой, хранением, комплектованием, отгрузкой.</li>
+<li class="border-l-2 border-primary pl-4">Площадки с дефицитом кадров на транспортных операциях.</li>
+<li class="border-l-2 border-primary pl-4">Компании, которые уже считают экономику внутренних процессов и ищут измеримую оптимизацию.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-slate-900 text-white relative overflow-hidden">
+<div class="absolute inset-0 blueprint-grid opacity-10"></div>
+<div class="container mx-auto px-6 max-w-6xl relative z-10">
+<h2 class="text-3xl md:text-4xl font-bold mb-8">Экономический эффект и окупаемость</h2>
+<p class="text-white/75 max-w-3xl mb-8 leading-relaxed">По материалам презентации продукта возможны следующие <strong class="text-white">ориентиры</strong> (не индивидуальный расчёт и не публичная оферта):</p>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 text-sm text-white/80">
+<li class="border border-white/15 p-4"><span class="text-primary-fixed font-bold block mb-1">Экономия на ФОТ</span> порядка 4&nbsp;000–5&nbsp;000 BYN в месяц на одного сотрудника в зоне замещаемых операций (оценочно).</li>
+<li class="border border-white/15 p-4"><span class="text-primary-fixed font-bold block mb-1">Нагрузка 1,5–2 FTE</span> часть рутинной логистики может быть передана решению; точная доля зависит от интенсивности процесса.</li>
+</ul>
+<p class="text-sm text-white/70 max-w-3xl mb-6">Окупаемость оценивается через фактические затраты на ручной труд и реальную интенсивность перевозок; решение в первую очередь для компаний с устойчивым потоком повторяющихся рейсов.</p>
+<p class="text-xs text-white/50 italic">Цифры носят иллюстративный характер; коммерческие условия фиксируются в переписке и договоре.</p>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-surface-container-high border-y border-outline-variant/40">
+<div class="container mx-auto px-6 max-w-6xl">
+<h2 class="text-3xl md:text-4xl font-bold mb-10">Стоимость и состав предложения</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+<div class="bg-white border border-outline-variant/50 p-8 cyber-border">
+<p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Ориентир цены (презентация)</p>
+<p class="text-4xl font-bold text-primary">115&nbsp;000 <span class="text-xl font-headline">BYN</span></p>
+<p class="text-xs text-on-surface-variant mt-2">Готовое B2B-решение под конкретный объект и задачу; итоговая стоимость уточняется после обследования.</p>
+</div>
+<div class="bg-white border border-outline-variant/50 p-8 cyber-border">
+<p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Гарантия</p>
+<p class="text-4xl font-bold text-on-surface">24 <span class="text-xl font-headline">месяца</span></p>
+<p class="text-xs text-on-surface-variant mt-2">Снижает риск входа для промышленного клиента при сопоставимых условиях поддержки.</p>
+</div>
+</div>
+<h3 class="font-bold text-lg mb-4 uppercase tracking-wide text-primary">Что входит в логику предложения</h3>
+<ul class="space-y-3 text-on-surface-variant max-w-3xl">
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0 text-xl">check_circle</span> настройка и запуск на объекте;</li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0 text-xl">check_circle</span> испытание в реальных условиях до выхода на постоянный режим;</li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0 text-xl">check_circle</span> обучение персонала;</li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0 text-xl">check_circle</span> сервисное сопровождение (локальная поддержка для клиентов в регионе присутствия компании).</li>
+</ul>
+<p class="mt-8 text-sm text-on-surface-variant border-l-2 border-secondary pl-4 max-w-3xl">Интеграция с WMS/ERP и детали техники обсуждаются индивидуально и не подменяют собой обследование площадки.</p>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-white">
+<div class="container mx-auto px-6 max-w-4xl">
+<h2 class="text-2xl md:text-3xl font-bold mb-6">Для кого подходит</h2>
+<p class="text-on-surface-variant leading-relaxed mb-6">В первую очередь — производственным компаниям, операторам логистики, складам и РЦ с паллетными перемещениями, а также бизнесу, который целенаправленно сокращает ручной труд на внутренней логистике и хочет измеримый эффект, а не «автоматизацию ради автоматизации».</p>
+<div class="bg-surface-container-low border border-outline-variant/40 p-6 md:p-8">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-3">Кратко</p>
+<p class="text-on-surface-variant leading-relaxed text-sm md:text-base">Автономная рохля берёт на себя повторяющиеся перевозки паллет внутри предприятия, снижает зависимость от ручного труда и делает логистику устойчивее там, где поток стабилен. Ориентир стоимости по презентации — 115&nbsp;000 BYN, гарантия 24 месяца; в предложение входят запуск, настройка, испытание, обучение и сервисная поддержка.</p>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-28 bg-slate-900 text-white relative overflow-hidden" id="contacts">
+<div class="absolute inset-0 blueprint-grid opacity-5"></div>
+<div class="container mx-auto px-6 relative z-10 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold mb-6 uppercase tracking-tighter">Запросить расчёт или консультацию</h2>
+<p class="text-white/75 mb-8 max-w-lg">Опишите задачу и интенсивность перевозок — подготовим обратную связь по применимости решения на вашем объекте. Ответ в рабочие сроки.</p>
+<div class="space-y-6 text-sm">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-fixed">call</span>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-fixed">mail</span>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a></div>
+</div>
+</div>
+</div>
+<div class="bg-white text-on-surface p-8 md:p-10 shadow-2xl">
+<form class="space-y-6" action="https://formspree.io/f/xlgpkvjo" method="POST" accept-charset="UTF-8">
+<input type="hidden" name="product" value="Автономная рохля (AGV)"/>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="agv-name">Имя</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-3 outline-none text-lg" id="agv-name" name="name" type="text" required autocomplete="name" placeholder="Иван Иванов"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="agv-phone">Телефон</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-3 outline-none text-lg" id="agv-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="agv-company">Компания</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-3 outline-none text-lg" id="agv-company" name="company" type="text" autocomplete="organization"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="agv-msg">Задача / комментарий</label>
+<textarea class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-3 outline-none resize-none text-lg" id="agv-msg" name="message" rows="4" placeholder="Тип перевозок, примерный объём рейсов, ограничения площадки…"></textarea>
+</div>
+<button class="w-full machined-gradient text-on-primary py-5 font-black uppercase tracking-[0.3em] text-xs hover:shadow-xl transition-all" type="submit">Отправить</button>
+<p class="text-[10px] text-center text-outline uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary underline underline-offset-2 hover:text-primary-container" href="privacy.html">политикой конфиденциальности</a></p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full border-t border-slate-200 bg-slate-50">
+<div class="mx-auto max-w-7xl px-6 py-12 md:px-10 md:py-16">
+<div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 xl:gap-10">
+<div class="sm:col-span-2 lg:col-span-1">
+<div class="headline text-lg font-bold uppercase tracking-tighter text-slate-900">ООО «Промышленные роботы»</div>
+<p class="mt-4 text-sm leading-relaxed text-slate-600">УНП 591043841</p>
+<p class="mt-2 text-sm leading-relaxed text-slate-600">Республика Беларусь, г.&nbsp;Гродно, ул.&nbsp;Академическая, 17</p>
+<p class="mt-4 text-xs uppercase tracking-widest text-slate-400">Полные банковские реквизиты — по запросу</p>
+</div>
+<div>
+<h3 class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-[#00327d]">Навигация</h3>
+<nav class="flex flex-col gap-2.5 text-sm font-semibold text-slate-600">
+<a class="hover:text-[#00327d] transition-colors" href="index.html#services">Услуги</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#solutions">Продукты</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#advantages">Преимущества</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#about">О нас</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#partners">Партнёры</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#contacts">Контакты</a>
+</nav>
+</div>
+<div>
+<h3 class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-[#00327d]">Наши продукты</h3>
+<nav class="flex flex-col gap-2.5 text-sm font-semibold text-slate-600">
+<a class="hover:text-[#00327d] transition-colors" href="photoseparator.html">Фотосепаратор</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#product-manipulator">Робот-манипулятор</a>
+<a class="hover:text-[#00327d] transition-colors" href="agv.html">Автоматическая рохля</a>
+</nav>
+</div>
+<div>
+<h3 class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-[#00327d]">Контакты</h3>
+<div class="space-y-3 text-sm text-slate-600">
+<a class="block font-semibold text-slate-800 hover:text-[#00327d] transition-colors" href="tel:+375255092206">+375&nbsp;25&nbsp;509&nbsp;22&nbsp;06</a>
+<a class="block font-semibold text-slate-800 hover:text-[#00327d] transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a>
+<p class="leading-snug">г.&nbsp;Гродно, ул.&nbsp;Академическая, 17</p>
+<p class="pt-2"><a class="text-sm font-semibold text-slate-600 hover:text-[#00327d] transition-colors" href="privacy.html">Политика конфиденциальности</a></p>
+</div>
+</div>
+</div>
+<div class="mt-12 border-t border-slate-200 pt-8 text-center text-[11px] text-slate-500 md:text-left">
+<span class="text-slate-400">© 2026 ООО «Промышленные роботы»</span>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
