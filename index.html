@@ -88,7 +88,12 @@
         .machined-gradient { background: linear-gradient(135deg, #00327d 0%, #0047ab 100%); }
         .glass-panel { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.3); }
         .glass-dark { background: rgba(0, 50, 125, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .hero-overlay { background: linear-gradient(90deg, rgba(0,25,70,0.92) 0%, rgba(0,25,70,0.75) 42%, rgba(0,25,70,0.38) 100%); }
+        /* Как на карточках «Наши продукты»: slate-900, снизу и слева плотнее */
+        .hero-overlay {
+            background:
+                linear-gradient(to top, rgb(15 23 42 / 0.9) 0%, rgb(15 23 42 / 0.45) 42%, transparent 72%),
+                linear-gradient(90deg, rgb(15 23 42 / 0.88) 0%, rgb(15 23 42 / 0.42) 48%, rgb(15 23 42 / 0.12) 100%);
+        }
         /* Лёгкое затемнение поверх фото (~3%); отдельный слой — не конфликтует с .cyber-border::after */
         .media-subtle-dim-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.03); pointer-events: none; z-index: 1; }
         .cyber-border { position: relative; }
@@ -278,43 +283,38 @@
 <p class="text-on-surface-variant text-base md:text-lg leading-relaxed">Помимо услуг по изготовлению и интеграции станков под конкретное производство мы развиваем <span class="text-on-surface font-medium">собственную линейку продуктов</span> для типовых и универсальных задач: модульные узлы, роботизированная механика и программно-аппаратные комплексы, которые можно масштабировать и адаптировать без «разработки с нуля» на каждый запуск.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto">
-<div class="group relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border bg-slate-50">
-<img alt="Схема фотосепаратора" class="absolute inset-0 z-0 w-full h-full object-contain object-center p-4 transition-transform duration-700 group-hover:scale-[1.02]" src="assets/images/photoseparator-diagram.jpeg" width="1200" height="800" loading="lazy"/>
-<div class="media-subtle-dim-overlay" aria-hidden="true"></div>
-<div class="absolute bottom-0 left-0 right-0 z-[2] bg-white/95 backdrop-blur-sm border-t border-slate-200 p-6 md:p-8">
-<h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-2">Фотосепараторы</h3>
-<p class="text-slate-600 text-sm leading-relaxed">Очистка продукции от брака · автоматическая сортировка</p>
-</div>
-</div>
 <div class="group relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border bg-slate-100">
-<img alt="Автоматическая рохля на складе" class="absolute inset-0 z-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" src="assets/images/agv-rohly.png" width="2400" height="1792" loading="lazy"/>
-<div class="media-subtle-dim-overlay" aria-hidden="true"></div>
-<div class="absolute bottom-0 left-0 right-0 z-[2] bg-white/95 backdrop-blur-sm border-t border-slate-200 p-6 md:p-8">
-<h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-2">Роботизированные рохли (AGV)</h3>
-<p class="text-slate-600 text-sm leading-relaxed">Перемещение паллет · работа без оператора</p>
+<img alt="Схема фотосепаратора" class="absolute inset-0 w-full h-full object-contain object-center p-4 transition-transform duration-1000 group-hover:scale-[1.02]" src="assets/images/photoseparator-diagram.jpeg" width="1200" height="800" loading="lazy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent p-8 md:p-10 flex flex-col justify-end pointer-events-none">
+<h3 class="text-2xl font-bold text-white mb-2 drop-shadow-sm">Фотосепараторы</h3>
+<p class="text-white/75 text-sm drop-shadow-sm">Очистка продукции от брака · автоматическая сортировка</p>
 </div>
 </div>
-<div class="group relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border bg-slate-100">
-<img alt="Промышленный робот-манипулятор" class="absolute inset-0 z-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" src="assets/images/manipulator.webp" width="1920" height="1080" loading="lazy"/>
-<div class="media-subtle-dim-overlay" aria-hidden="true"></div>
-<div class="absolute bottom-0 left-0 right-0 z-[2] bg-white/95 backdrop-blur-sm border-t border-slate-200 p-6 md:p-8">
-<h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-2">Роботы-манипуляторы</h3>
-<p class="text-slate-600 text-sm leading-relaxed">Интеграция в производственные линии</p>
+<div class="group relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border">
+<img alt="Автоматическая рохля на складе" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/agv-rohly.png" width="2400" height="1792" loading="lazy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent p-8 md:p-10 flex flex-col justify-end">
+<h3 class="text-2xl font-bold text-white mb-2">Роботизированные рохли (AGV)</h3>
+<p class="text-white/75 text-sm">Перемещение паллет · работа без оператора</p>
 </div>
 </div>
-<div class="relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border bg-white flex flex-col">
-<div class="relative flex-1 min-h-[200px]">
-<img alt="Модуль камеры машинного зрения (OpenMV)" class="absolute inset-0 z-0 w-full h-full object-cover object-center" src="assets/images/openmv-camera.jpg" width="1200" height="1200" loading="lazy"/>
-<div class="media-subtle-dim-overlay" aria-hidden="true"></div>
+<div class="group relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border">
+<img alt="Промышленный робот-манипулятор" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/manipulator.webp" width="1920" height="1080" loading="lazy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent p-8 md:p-10 flex flex-col justify-end">
+<h3 class="text-2xl font-bold text-white mb-2">Роботы-манипуляторы</h3>
+<p class="text-white/75 text-sm">Интеграция в производственные линии</p>
 </div>
-<div class="border-t border-slate-200 bg-white p-6 md:p-8 flex flex-col gap-4">
-<div class="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-3 py-1.5 text-[9px] font-black uppercase tracking-widest w-fit border border-secondary/20">
-<span class="w-1.5 h-1.5 bg-secondary rounded-full animate-ping"></span>В разработке
 </div>
-<h3 class="text-xl md:text-2xl font-bold text-slate-900">Камера с компьютерным зрением</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Производство в РБ · программно-аппаратный комплекс для контроля и сортировки</p>
-<span class="material-symbols-outlined text-4xl text-primary/20">memory</span>
+<div class="relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border bg-tertiary p-8 md:p-10 flex flex-col justify-between">
+<img alt="Модуль камеры машинного зрения (OpenMV)" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/images/openmv-camera.jpg" width="1200" height="1200" loading="lazy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/50 to-slate-900/30 z-[1] pointer-events-none"></div>
+<div class="relative z-10">
+<div class="inline-flex items-center gap-2 bg-secondary text-white px-3 py-1 text-[9px] font-black uppercase tracking-widest mb-6">
+<span class="w-1.5 h-1.5 bg-white rounded-full animate-ping"></span>В разработке
 </div>
+<h3 class="text-2xl font-bold text-white mb-2">Камера с компьютерным зрением</h3>
+<p class="text-sm text-white/80">Производство в РБ · программно-аппаратный комплекс для контроля и сортировки</p>
+</div>
+<span class="material-symbols-outlined relative z-10 text-5xl text-white/25">memory</span>
 </div>
 </div>
 </div>
