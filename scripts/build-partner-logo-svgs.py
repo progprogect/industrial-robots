@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Устарело: актуальная сборка партнёрских логотипов — scripts/build-logos-from-transparent-png.py
-   (PNG из logo new/transparent → SVG с встроенным растром).
-   Раньше: WebP из originals/; Huawei был отдельным вектором."""
+"""Устарело: актуальная сборка — scripts/build-logos-from-transparent-png.py
+   (исходники в assets/logos/sources/). Старые копии — assets/archive/logos-originals/."""
 import base64
 import re
 import subprocess
@@ -10,7 +9,7 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1] / "assets" / "logos"
-ORIG = ROOT / "originals"
+ORIG = Path(__file__).resolve().parents[1] / "assets" / "archive" / "logos-originals"
 
 
 def sips_size(path: Path) -> tuple[int, int]:
@@ -43,7 +42,7 @@ def write_svg_from_webp(webp: Path, out_svg: Path, label: str) -> None:
 
 def main() -> None:
     if not ORIG.is_dir():
-        print("Нет папки originals/", file=sys.stderr)
+        print("Нет папки archive/logos-originals/", file=sys.stderr)
         sys.exit(1)
 
     mapping = [

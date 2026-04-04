@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Собирает assets/logos/logo-*.svg с встроенным растром (один файл на логотип).
-   PNG: logo new/transparent/*.png
-   «Экологическая альтернатива»: logo-eco.webp; «Шведофф»: logo-shvedoff.webp (корень репозитория).
+   PNG: assets/logos/sources/transparent/*.png
+   «Экологическая альтернатива» / «Шведофф»: assets/logos/sources/logo-eco.webp, logo-shvedoff.webp
    Yango не собирается — на сайте текст «Yango Tech»."""
 import base64
 import re
@@ -11,10 +11,11 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
-SRC = ROOT / "logo new" / "transparent"
+SOURCES = ROOT / "assets" / "logos" / "sources"
+SRC = SOURCES / "transparent"
 OUT = ROOT / "assets" / "logos"
-ECO_WEBP = ROOT / "logo-eco.webp"
-SHVEDOFF_WEBP = ROOT / "logo-shvedoff.webp"
+ECO_WEBP = SOURCES / "logo-eco.webp"
+SHVEDOFF_WEBP = SOURCES / "logo-shvedoff.webp"
 
 
 def sips_size(path: Path) -> tuple[int, int]:
