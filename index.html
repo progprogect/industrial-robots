@@ -94,6 +94,9 @@
         @keyframes marquee-partners { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         .marquee-partners-track { display: flex; width: max-content; animation: marquee-partners 50s linear infinite; }
         .marquee-partners-track:hover { animation-play-state: paused; }
+        @media (prefers-reduced-motion: reduce) {
+            .marquee-partners-track { animation: none; }
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary blueprint-lines">
@@ -121,7 +124,7 @@
 <div class="flex items-center gap-10 md:gap-14 lg:gap-16 px-6 shrink-0">
 <img alt="HikRobot" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-hikrobot.jpg" width="200" height="40" loading="lazy" decoding="async"/>
 <img alt="Echo" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-echo.png" width="200" height="40" loading="lazy" decoding="async"/>
-<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-echo-2.png" width="200" height="40" loading="lazy" decoding="async"/>
+<img alt="Echo" class="h-9 md:h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-echo-2.png" width="200" height="40" loading="lazy" decoding="async"/>
 <img alt="McDonald's" class="h-9 md:h-10 w-auto max-w-[120px] object-contain" src="assets/logos/logo-mcdonalds.jpg" width="160" height="40" loading="lazy" decoding="async"/>
 <div class="h-12 flex items-center justify-center bg-white border border-outline-variant/40 rounded px-3 shrink-0"><img alt="Элепарт" class="h-8 w-auto max-w-[120px] object-contain" src="assets/logos/logo-elepart.png" width="160" height="40" loading="lazy" decoding="async"/></div>
 <img alt="Экологическая Альтернатива" class="h-10 md:h-11 w-auto max-w-[160px] object-contain" src="assets/logos/logo-eco.webp" width="200" height="44" loading="lazy" decoding="async"/>
