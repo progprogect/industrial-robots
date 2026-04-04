@@ -88,7 +88,9 @@
         .machined-gradient { background: linear-gradient(135deg, #00327d 0%, #0047ab 100%); }
         .glass-panel { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.3); }
         .glass-dark { background: rgba(0, 50, 125, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .hero-overlay { background: linear-gradient(90deg, rgba(255,255,255,0.55) 0%, rgba(248,250,252,0.35) 45%, rgba(248,250,252,0.15) 100%); }
+        .hero-overlay { background: linear-gradient(90deg, rgba(0,25,70,0.92) 0%, rgba(0,25,70,0.75) 42%, rgba(0,25,70,0.38) 100%); }
+        /* Лёгкое затемнение поверх фото (~3%); отдельный слой — не конфликтует с .cyber-border::after */
+        .media-subtle-dim-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.03); pointer-events: none; z-index: 1; }
         .cyber-border { position: relative; }
         .cyber-border::after { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px; border: 1px solid rgba(0, 50, 125, 0.2); pointer-events: none; }
         @keyframes marquee-partners { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
@@ -151,38 +153,38 @@
 <div class="absolute inset-0 z-0">
 <img alt="Лаборатория и испытательный полигон" class="w-full h-full object-cover object-center" src="assets/images/lab-photo.jpg" width="5712" height="4284" fetchpriority="high" decoding="async"/>
 <div class="absolute inset-0 hero-overlay"></div>
-<div class="absolute inset-0 blueprint-grid opacity-[0.12]"></div>
+<div class="absolute inset-0 blueprint-grid opacity-20"></div>
 </div>
 <div class="container mx-auto px-6 relative z-10 pb-28">
 <div class="max-w-4xl">
-<h1 class="text-4xl sm:text-5xl md:text-7xl font-bold leading-[1.05] mb-8 tracking-tighter text-slate-900 drop-shadow-sm">
+<h1 class="text-4xl sm:text-5xl md:text-7xl font-bold leading-[1.05] mb-8 tracking-tighter text-white">
                     Промышленные роботы и станки под задачи вашего производства
                 </h1>
-<p class="text-lg md:text-xl text-slate-700 max-w-2xl mb-8 border-l-2 border-primary pl-6 md:pl-8 font-light leading-relaxed">
+<p class="text-lg md:text-xl text-white/85 max-w-2xl mb-8 border-l-2 border-primary-fixed pl-6 md:pl-8 font-light leading-relaxed">
                     Проектирование, производство и внедрение роботизированных систем в Республике Беларусь
                 </p>
-<ul class="space-y-3 mb-10 text-slate-800 text-sm md:text-base font-medium max-w-xl">
-<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-xl shrink-0">check_circle</span>Собственное производство</li>
-<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-xl shrink-0">check_circle</span>Индивидуальные решения</li>
-<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-xl shrink-0">check_circle</span>Интеграция в действующие линии</li>
+<ul class="space-y-3 mb-10 text-white/90 text-sm md:text-base font-medium max-w-xl">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary-fixed text-xl shrink-0">check_circle</span>Собственное производство</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary-fixed text-xl shrink-0">check_circle</span>Индивидуальные решения</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary-fixed text-xl shrink-0">check_circle</span>Интеграция в действующие линии</li>
 </ul>
 <div class="flex flex-wrap gap-4 items-center">
 <a class="machined-gradient text-on-primary px-10 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center" href="#contacts">Оставить заявку</a>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-16 pt-12 border-t border-slate-300/60">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-16 pt-12 border-t border-white/15">
 <div class="flex items-baseline gap-4">
-<span class="text-4xl md:text-5xl font-bold text-slate-900 headline">10+</span>
-<span class="text-[10px] text-slate-600 uppercase tracking-widest font-bold leading-snug">лет опыта · работаем с<br/>промышленными предприятиями</span>
+<span class="text-4xl md:text-5xl font-bold text-white headline">10+</span>
+<span class="text-[10px] text-white/65 uppercase tracking-widest font-bold leading-snug">лет опыта · работаем с<br/>промышленными предприятиями</span>
 </div>
-<div class="text-sm text-slate-700 leading-relaxed max-w-md">
+<div class="text-sm text-white/80 leading-relaxed max-w-md">
                         Производим роботов и станки в Беларуси, без зависимости от импорта при типовых узлах; цена ниже европейской при сопоставимом качестве — с сервисом и поддержкой на месте.
                     </div>
 </div>
 </div>
 </div>
-<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 text-slate-500">
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 text-white/35">
 <span class="text-[10px] uppercase tracking-[0.5em] font-bold">Листайте вниз</span>
-<div class="w-[1px] h-12 bg-gradient-to-b from-slate-400/50 to-transparent"></div>
+<div class="w-[1px] h-12 bg-gradient-to-b from-white/35 to-transparent"></div>
 </div>
 </section>
 <!-- Блок 2 — О компании -->
@@ -205,8 +207,9 @@
 </div>
 <div class="relative order-1 lg:order-2">
 <div class="relative pb-4 md:pb-0">
-<div class="aspect-[4/5] overflow-hidden cyber-border shadow-[24px_24px_0px_0px_#e7e8e9] sm:shadow-[40px_40px_0px_0px_#f3f4f5]">
-<img alt="Печатная плата, электроника собственной разработки" class="w-full h-full object-cover" src="assets/images/pcb-board.jpg" width="960" height="1280" loading="lazy"/>
+<div class="relative aspect-[4/5] overflow-hidden cyber-border shadow-[24px_24px_0px_0px_#e7e8e9] sm:shadow-[40px_40px_0px_0px_#f3f4f5]">
+<img alt="Печатная плата, электроника собственной разработки" class="relative z-0 w-full h-full object-cover" src="assets/images/pcb-board.jpg" width="960" height="1280" loading="lazy"/>
+<div class="media-subtle-dim-overlay" aria-hidden="true"></div>
 </div>
 <div class="mt-6 md:mt-0 md:absolute md:bottom-0 md:left-0 md:-translate-x-4 lg:-translate-x-8 md:max-w-sm glass-panel p-6 md:p-8 border-primary/20 shadow-lg">
 <span class="material-symbols-outlined text-primary text-3xl mb-3">precision_manufacturing</span>
@@ -276,29 +279,33 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto">
 <div class="group relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border bg-slate-50">
-<img alt="Схема фотосепаратора" class="absolute inset-0 w-full h-full object-contain object-center p-4 transition-transform duration-700 group-hover:scale-[1.02]" src="assets/images/photoseparator-diagram.jpeg" width="1200" height="800" loading="lazy"/>
-<div class="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-slate-200 p-6 md:p-8">
+<img alt="Схема фотосепаратора" class="absolute inset-0 z-0 w-full h-full object-contain object-center p-4 transition-transform duration-700 group-hover:scale-[1.02]" src="assets/images/photoseparator-diagram.jpeg" width="1200" height="800" loading="lazy"/>
+<div class="media-subtle-dim-overlay" aria-hidden="true"></div>
+<div class="absolute bottom-0 left-0 right-0 z-[2] bg-white/95 backdrop-blur-sm border-t border-slate-200 p-6 md:p-8">
 <h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-2">Фотосепараторы</h3>
 <p class="text-slate-600 text-sm leading-relaxed">Очистка продукции от брака · автоматическая сортировка</p>
 </div>
 </div>
 <div class="group relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border bg-slate-100">
-<img alt="Автоматическая рохля на складе" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" src="assets/images/agv-rohly.png" width="2400" height="1792" loading="lazy"/>
-<div class="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-slate-200 p-6 md:p-8">
+<img alt="Автоматическая рохля на складе" class="absolute inset-0 z-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" src="assets/images/agv-rohly.png" width="2400" height="1792" loading="lazy"/>
+<div class="media-subtle-dim-overlay" aria-hidden="true"></div>
+<div class="absolute bottom-0 left-0 right-0 z-[2] bg-white/95 backdrop-blur-sm border-t border-slate-200 p-6 md:p-8">
 <h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-2">Роботизированные рохли (AGV)</h3>
 <p class="text-slate-600 text-sm leading-relaxed">Перемещение паллет · работа без оператора</p>
 </div>
 </div>
 <div class="group relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border bg-slate-100">
-<img alt="Промышленный робот-манипулятор" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" src="assets/images/manipulator.webp" width="1920" height="1080" loading="lazy"/>
-<div class="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-slate-200 p-6 md:p-8">
+<img alt="Промышленный робот-манипулятор" class="absolute inset-0 z-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" src="assets/images/manipulator.webp" width="1920" height="1080" loading="lazy"/>
+<div class="media-subtle-dim-overlay" aria-hidden="true"></div>
+<div class="absolute bottom-0 left-0 right-0 z-[2] bg-white/95 backdrop-blur-sm border-t border-slate-200 p-6 md:p-8">
 <h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-2">Роботы-манипуляторы</h3>
 <p class="text-slate-600 text-sm leading-relaxed">Интеграция в производственные линии</p>
 </div>
 </div>
 <div class="relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border bg-white flex flex-col">
 <div class="relative flex-1 min-h-[200px]">
-<img alt="Модуль камеры машинного зрения (OpenMV)" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/images/openmv-camera.jpg" width="1200" height="1200" loading="lazy"/>
+<img alt="Модуль камеры машинного зрения (OpenMV)" class="absolute inset-0 z-0 w-full h-full object-cover object-center" src="assets/images/openmv-camera.jpg" width="1200" height="1200" loading="lazy"/>
+<div class="media-subtle-dim-overlay" aria-hidden="true"></div>
 </div>
 <div class="border-t border-slate-200 bg-white p-6 md:p-8 flex flex-col gap-4">
 <div class="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-3 py-1.5 text-[9px] font-black uppercase tracking-widest w-fit border border-secondary/20">
@@ -464,8 +471,9 @@
 <div class="container mx-auto px-6">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
 <div class="lg:col-span-5 relative group">
-<div class="aspect-[4/5] overflow-hidden cyber-border shadow-2xl max-w-md mx-auto lg:mx-0">
-<img alt="Волкунович Никита Сергеевич" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]" src="assets/images/director-volkunovich.jpg" width="691" height="864" loading="lazy"/>
+<div class="relative aspect-[4/5] overflow-hidden cyber-border shadow-2xl max-w-md mx-auto lg:mx-0">
+<img alt="Волкунович Никита Сергеевич" class="relative z-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]" src="assets/images/director-volkunovich.jpg" width="691" height="864" loading="lazy"/>
+<div class="media-subtle-dim-overlay" aria-hidden="true"></div>
 </div>
 </div>
 <div class="lg:col-span-7">
