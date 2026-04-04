@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Собирает assets/logos/logo-*.svg с встроенным растром (один файл на логотип).
    PNG: logo new/transparent/*.png
-   «Экологическая альтернатива»: оригинал из logo-eco.webp (корень репозитория).
+   «Экологическая альтернатива»: logo-eco.webp; «Шведофф»: logo-shvedoff.webp (корень репозитория).
    Yango не собирается — на сайте текст «Yango Tech»."""
 import base64
 import re
@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "logo new" / "transparent"
 OUT = ROOT / "assets" / "logos"
 ECO_WEBP = ROOT / "logo-eco.webp"
+SHVEDOFF_WEBP = ROOT / "logo-shvedoff.webp"
 
 
 def sips_size(path: Path) -> tuple[int, int]:
@@ -51,7 +52,6 @@ def main() -> None:
         ("echo.png", "logo-echo.svg", "Echo"),
         ("mcdonalds.png", "logo-mcdonalds.svg", "McDonald's"),
         ("elepart.png", "logo-elepart.svg", "Элепарт"),
-        ("shvedoff.png", "logo-shvedoff.svg", "Шведофф"),
         ("huawei.png", "logo-huawei.svg", "Huawei"),
     ]
 
@@ -70,6 +70,12 @@ def main() -> None:
         print(f"OK logo-eco.svg <- {ECO_WEBP.name}")
     else:
         print(f"Пропуск logo-eco: нет {ECO_WEBP}", file=sys.stderr)
+
+    if SHVEDOFF_WEBP.is_file():
+        write_svg_from_raster(SHVEDOFF_WEBP, OUT / "logo-shvedoff.svg", "Шведофф", "image/webp")
+        print(f"OK logo-shvedoff.svg <- {SHVEDOFF_WEBP.name}")
+    else:
+        print(f"Пропуск logo-shvedoff: нет {SHVEDOFF_WEBP}", file=sys.stderr)
 
 
 if __name__ == "__main__":
