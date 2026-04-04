@@ -53,7 +53,6 @@ def main() -> None:
         ("logo-elepart.png", "logo-elepart.svg", "Элепарт"),
         ("logo-eco.webp", "logo-eco.svg", "Экологическая Альтернатива"),
         ("logo-shvedoff.webp", "logo-shvedoff.svg", "Шведофф"),
-        ("logo-yango.png", "logo-yango.svg", "Yango Group"),
     ]
 
     tmp = ROOT / "._tmp_build.webp"
