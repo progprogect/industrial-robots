@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html class="dark" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ООО «Промышленные роботы» | Фотосепаратор и оптическая сортировка</title>
+<meta name="description" content="Проектирование и производство оптических фотосепараторов, сортировка по компьютерному зрению. ООО «Промышленные роботы», Республика Беларусь."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;700&amp;family=Space+Grotesk:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        html { scroll-padding-top: 6rem; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-panel { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .tech-grid {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 200, 255, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .corner-accent { position: relative; }
+        .corner-accent::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 10px; height: 10px;
+            border-top: 2px solid #00C8FF; border-left: 2px solid #00C8FF;
+        }
+        .machined-gradient { background: linear-gradient(135deg, #00327d 0%, #0047ab 100%); }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-surface-variant": "#bcc8d0",
+                "on-secondary-fixed-variant": "#723600",
+                "on-error": "#690005",
+                "error": "#ffb4ab",
+                "on-secondary-fixed": "#311300",
+                "surface-container-highest": "#2a3548",
+                "on-background": "#d7e3fc",
+                "surface-container-low": "#101c2e",
+                "background": "#0A1628",
+                "surface-tint": "#00C8FF",
+                "primary": "#00C8FF",
+                "surface-container-lowest": "#030e20",
+                "secondary-fixed-dim": "#ffb787",
+                "on-surface": "#d7e3fc",
+                "surface-container": "#142032",
+                "secondary": "#ffb787",
+                "on-tertiary-container": "#0043a5",
+                "on-primary": "#003546",
+                "outline-variant": "#3c484f",
+                "surface-container-high": "#1f2a3d",
+                "on-secondary-container": "#461f00",
+                "primary-fixed": "#bee9ff",
+                "on-primary-container": "#001f2a",
+                "error-container": "#93000a",
+                "surface-bright": "#2e394d",
+                "secondary-fixed": "#ffdcc7",
+                "tertiary-fixed": "#dae2ff",
+                "inverse-surface": "#d7e3fc",
+                "tertiary-container": "#9eb8ff",
+                "on-error-container": "#ffdad6",
+                "secondary-container": "#e1720e",
+                "outline": "#86939a",
+                "tertiary": "#c7d4ff",
+                "on-secondary": "#502400",
+                "on-tertiary": "#002c71",
+                "primary-fixed-dim": "#68d3ff",
+                "on-primary-fixed": "#001f2a",
+                "surface-variant": "#2a3548",
+                "inverse-primary": "#006684",
+                "inverse-on-surface": "#253144",
+                "on-tertiary-fixed": "#001947",
+                "primary-container": "#00C8FF",
+                "on-tertiary-fixed-variant": "#00419f",
+                "surface-dim": "#0A1628",
+                "surface": "#0A1628",
+                "on-primary-fixed-variant": "#004d64",
+                "tertiary-fixed-dim": "#b1c5ff"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["JetBrains Mono"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body tech-grid selection:bg-primary-container selection:text-on-primary-container pt-20 sm:pt-24">
+<a class="fixed bottom-6 right-6 z-[60] machined-gradient text-white px-5 py-3.5 sm:px-6 sm:py-4 text-[10px] uppercase tracking-[0.25em] font-black shadow-2xl hover:scale-105 transition-transform border border-white/20 max-w-[calc(100vw-3rem)] text-center" href="#contacts">Оставить заявку</a>
+<nav class="fixed top-0 left-0 right-0 w-full z-50 px-4 sm:px-6 py-3 sm:py-4 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-slate-200/60">
+<div class="max-w-7xl mx-auto glass-panel px-4 sm:px-6 md:px-8 py-3 flex flex-wrap justify-between items-center gap-3 md:gap-4">
+<a class="text-xl font-bold tracking-tighter text-slate-900 headline uppercase hover:text-[#00327d] transition-colors" href="index.html">ООО «Промышленные роботы»</a>
+<div class="hidden lg:flex flex-wrap gap-6 xl:gap-8">
+<a class="text-[10px] uppercase tracking-widest font-bold text-slate-600 hover:text-[#00327d] transition-colors" href="index.html#services">Услуги</a>
+<a class="text-[10px] uppercase tracking-widest font-bold text-slate-600 hover:text-[#00327d] transition-colors" href="index.html#solutions">Продукты</a>
+<a class="text-[10px] uppercase tracking-widest font-bold text-slate-600 hover:text-[#00327d] transition-colors" href="index.html#advantages">Преимущества</a>
+<a class="text-[10px] uppercase tracking-widest font-bold text-slate-600 hover:text-[#00327d] transition-colors" href="index.html#about">О нас</a>
+<a class="text-[10px] uppercase tracking-widest font-bold text-slate-600 hover:text-[#00327d] transition-colors" href="index.html#partners">Партнёры</a>
+<a class="text-[10px] uppercase tracking-widest font-bold text-slate-600 hover:text-[#00327d] transition-colors" href="index.html#contacts">Контакты</a>
+</div>
+<a class="bg-[#00327d] text-white px-6 md:px-8 py-2.5 text-[10px] uppercase tracking-[0.2em] font-black machined-gradient hover:shadow-lg hover:shadow-[#00327d]/20 transition-all text-center" href="#contacts">Оставить заявку</a>
+</div>
+</nav>
+
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 md:pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Система распознавания на производственной линии" class="w-full h-full object-cover opacity-40" src="assets/images/products/photoseparator/apple-detection-2.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high border border-primary/20">
+<span class="material-symbols-outlined text-primary-container text-sm">precision_manufacturing</span>
+<span class="font-label text-xs tracking-widest text-primary-container uppercase">[ ИНДИВИДУАЛЬНАЯ КАСТОМИЗАЦИЯ ]</span>
+</div>
+<h1 class="text-4xl sm:text-5xl md:text-7xl font-headline font-extrabold tracking-tighter text-white leading-tight">
+                Оптический <span class="text-primary-container">фотосепаратор</span> под вашу задачу
+            </h1>
+<p class="text-lg sm:text-xl text-on-surface-variant max-w-xl">
+                Проектирование и производство систем автоматической сортировки. Сортировка по CV, производительность 1–20+ т/ч. Стоимость решения от $10 000.
+            </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary-container text-on-primary-container px-8 py-4 font-headline font-bold tracking-tight uppercase text-base hover:bg-primary-container/90 transition-all flex items-center gap-3" href="#contacts">
+                    Получить расчет
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="border border-outline-variant text-white px-8 py-4 font-headline font-bold tracking-tight uppercase text-base hover:bg-white/5 transition-all" href="#contacts">
+                    Контакты
+                </a>
+</div>
+</div>
+<div class="mt-10 space-y-4 w-full max-w-lg mx-auto lg:max-w-none lg:mt-0 lg:ml-auto">
+<div class="grid grid-cols-2 gap-3 sm:gap-4">
+<div class="p-4 sm:p-6 bg-surface-container-low border-l-2 border-primary-container">
+<div class="font-label text-primary-container text-[10px] sm:text-xs md:text-sm mb-1.5 sm:mb-2">01 / МОЩНОСТЬ</div>
+<div class="text-2xl sm:text-3xl font-headline font-bold text-white tracking-tighter">1–20+ т/ч</div>
+</div>
+<div class="p-4 sm:p-6 bg-surface-container-low border-l-2 border-secondary-container">
+<div class="font-label text-secondary-container text-[10px] sm:text-xs md:text-sm mb-1.5 sm:mb-2">02 / ЭФФЕКТИВНОСТЬ</div>
+<div class="text-2xl sm:text-3xl font-headline font-bold text-white tracking-tighter">40–70%</div>
+<div class="text-[10px] sm:text-xs text-on-surface-variant uppercase mt-1">Снижение брака</div>
+</div>
+</div>
+<div class="rounded-lg overflow-hidden border border-primary/30 aspect-video w-full max-w-lg mx-auto lg:ml-auto shadow-[0_0_30px_rgba(0,200,255,0.15)]">
+<video class="w-full h-full object-cover" muted loop playsinline autoplay poster="assets/images/products/photoseparator/separator-poster.jpg">
+<source src="assets/images/products/photoseparator/separator-example.mp4" type="video/mp4"/>
+</video>
+</div>
+<p class="font-label text-[10px] text-primary-container/80 text-center lg:text-right max-w-lg mx-auto lg:ml-auto uppercase tracking-wider">Фрагмент работы · <a class="underline hover:text-primary-container" href="#system-demo">полное демо ниже</a></p>
+</div>
+</div>
+</section>
+<!-- StatBar -->
+<section class="bg-surface-container-lowest border-y border-outline-variant/15 py-8 md:py-10" id="stats">
+<div class="max-w-screen-2xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center md:text-left">
+<div class="font-label text-primary text-xs tracking-[0.2em] mb-2">ПРОИЗВОДИТЕЛЬНОСТЬ</div>
+<div class="text-2xl md:text-3xl font-headline font-extrabold text-white">1–20+ т/ч</div>
+</div>
+<div class="text-center md:text-left">
+<div class="font-label text-primary text-xs tracking-[0.2em] mb-2">ОКУПАЕМОСТЬ</div>
+<div class="text-2xl md:text-3xl font-headline font-extrabold text-white leading-tight">6–12 месяцев</div>
+</div>
+<div class="text-center md:text-left">
+<div class="font-label text-primary text-xs tracking-[0.2em] mb-2">ТОЧНОСТЬ</div>
+<div class="text-2xl md:text-3xl font-headline font-extrabold text-white">99.9%</div>
+</div>
+<div class="text-center md:text-left">
+<div class="font-label text-primary text-xs tracking-[0.2em] mb-2">СЕРВИС</div>
+<div class="text-2xl md:text-3xl font-headline font-extrabold text-white">1–3 ДНЯ</div>
+</div>
+</div>
+</section>
+<!-- Technology Core Section -->
+<section class="py-16 md:py-24 px-6 bg-surface border-y border-outline-variant/10" id="tech-core">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-6">
+<h2 class="text-4xl font-headline font-extrabold text-white tracking-tighter">Ядро технологии — ваша готовая система</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                Вы получаете не набор идей «с нуля», а отработанное ядро: промышленная камера для визуального распознавания с алгоритмами распознавания объектов в потоке и электронные платы с комплектом компонентов — они принимают результат анализа и передают электрические сигналы на исполнительные механизмы (отсев, градация и т.&nbsp;п.).
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container-low border border-outline-variant/20 rounded-lg">
+<span class="material-symbols-outlined text-primary mb-2">videocam</span>
+<h4 class="text-white font-bold mb-1">Камера и алгоритмы</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">Визуальный контур: съёмка потока и работа ПО компьютерного зрения — что именно в кадре и по каким признакам принимается решение.</p>
+</div>
+<div class="p-4 bg-surface-container-low border border-outline-variant/20 rounded-lg">
+<span class="material-symbols-outlined text-primary mb-2">developer_board</span>
+<h4 class="text-white font-bold mb-1">Платы и сигналы</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">Железо под задачу: приём данных с камеры и выдача управляющих электрических сигналов по результатам распознавания — без лишних звеньев в цепи.</p>
+</div>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+<strong class="text-white font-headline">Корпус и механика — под вас.</strong> Мы проектируем корпус и механизм отсеивания или градирования под ваш продукт, габариты линии и нужную производительность — так достигается максимальное соответствие вашим условиям. Наше ядро можно встроить в уже существующую ленту: не переплачивать за лишний корпус, где он не нужен, и сократить габариты решения за счёт точечной интеграции вместо «лишнего железа».
+            </p>
+</div>
+<div class="w-full max-w-md mx-auto lg:mx-0 lg:ml-auto lg:max-w-none lg:w-full">
+<div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-5 xl:gap-6">
+<div class="aspect-square overflow-hidden rounded-lg bg-black/20 shadow-lg shadow-black/40">
+<img alt="Печатная плата: топология дорожек и площадки под компоненты" class="h-full w-full object-cover object-center" decoding="async" loading="lazy" src="assets/images/products/photoseparator/plate.jpeg"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg bg-black/20 shadow-lg shadow-black/40">
+<img alt="Промышленная камера машинного зрения" class="h-full w-full object-cover object-center" decoding="async" loading="lazy" src="assets/images/products/photoseparator/SmartCameraX86.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How it Works (from index2) -->
+<section class="py-16 md:py-24 bg-surface" id="how-it-works">
+<div class="max-w-[1440px] mx-auto px-6">
+<h2 class="text-4xl font-headline font-extrabold text-white text-center mb-20 uppercase tracking-widest">Принцип работы системы</h2>
+<div class="relative grid grid-cols-1 md:grid-cols-5 gap-8">
+<div class="relative z-10">
+<div class="font-mono text-primary text-5xl font-bold mb-6 opacity-20">01</div>
+<h4 class="text-white font-bold mb-2">Подача</h4>
+<p class="text-xs text-on-surface-variant">Равномерное распределение продукта тонким слоем через вибропитатель.</p>
+</div>
+<div class="relative z-10">
+<div class="font-mono text-primary text-5xl font-bold mb-6 opacity-20">02</div>
+<h4 class="text-white font-bold mb-2">Инспекция</h4>
+<p class="text-xs text-on-surface-variant">Высокоскоростное сканирование каждой единицы в свободном падении.</p>
+</div>
+<div class="relative z-10">
+<div class="font-mono text-primary text-5xl font-bold mb-6 opacity-20">03</div>
+<h4 class="text-white font-bold mb-2">Анализ</h4>
+<p class="text-xs text-on-surface-variant">Сравнение с эталоном через наши AI-алгоритмы.</p>
+</div>
+<div class="relative z-10">
+<div class="font-mono text-primary text-5xl font-bold mb-6 opacity-20">04</div>
+<h4 class="text-white font-bold mb-2">Отсеивание</h4>
+<p class="text-xs text-on-surface-variant">Пневматический импульс удаляет брак в отдельный желоб.</p>
+</div>
+<div class="relative z-10">
+<div class="font-mono text-primary text-5xl font-bold mb-6 opacity-20">05</div>
+<h4 class="text-white font-bold mb-2">Интеграция</h4>
+<p class="text-xs text-on-surface-variant">Передача данных в вашу ERP-систему для учета выхода годного.</p>
+</div>
+<div class="hidden md:block absolute top-10 left-0 w-full h-px border-t border-dashed border-primary/30 -z-0"></div>
+</div>
+</div>
+</section>
+<!-- Recognition Capabilities -->
+<section class="py-16 md:py-24 px-6 bg-surface-container-low relative overflow-hidden" id="recognition">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-16 text-center lg:text-left">
+<h2 class="text-4xl font-headline font-extrabold text-white tracking-tighter mb-4">Что мы распознаем</h2>
+<p class="text-on-surface-variant max-w-2xl">Наше программное обеспечение настраивается на любые визуальные аномалии и параметры продукта.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
+<div class="space-y-4">
+<h3 class="font-headline font-bold text-primary tracking-widest text-xs uppercase mb-6">Категории продуктов</h3>
+<div class="space-y-3">
+<div class="p-4 bg-surface-container-high border-l-2 border-primary flex justify-between items-center">
+<span class="text-white font-bold">Продукты питания</span>
+<span class="text-[10px] text-on-surface-variant uppercase">Овощи, фрукты, зерно</span>
+</div>
+<div class="p-4 bg-surface-container-high border-l-2 border-primary flex justify-between items-center">
+<span class="text-white font-bold">Технические изделия</span>
+<span class="text-[10px] text-on-surface-variant uppercase">Детали, крепеж</span>
+</div>
+<div class="p-4 bg-surface-container-high border-l-2 border-primary flex justify-between items-center">
+<span class="text-white font-bold">Сырье</span>
+<span class="text-[10px] text-on-surface-variant uppercase">Пиломатериалы, руда</span>
+</div>
+<div class="p-4 bg-surface-container-high border-l-2 border-primary flex justify-between items-center">
+<span class="text-white font-bold">Тара и упаковка</span>
+<span class="text-[10px] text-on-surface-variant uppercase">Бутылки, крышки</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2">
+<h3 class="font-headline font-bold text-primary tracking-widest text-xs uppercase mb-6">Примеры проверки качества (кейсы)</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-start gap-4 p-5 bg-surface border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary-container">search</span>
+<div>
+<p class="text-white font-medium">Поиск гнилых яблок в потоке</p>
+<p class="text-xs text-on-surface-variant mt-1">Автоматическая отбраковка плодов с повреждениями.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-5 bg-surface border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary-container">label</span>
+<div>
+<p class="text-white font-medium">Контроль наличия этикетки</p>
+<p class="text-xs text-on-surface-variant mt-1">Проверка каждой бутылки на конвейере.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-5 bg-surface border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary-container">forest</span>
+<div>
+<p class="text-white font-medium">Сортировка древесины по сучкам</p>
+<p class="text-xs text-on-surface-variant mt-1">Выделение высших сортов пиломатериала.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-5 bg-surface border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary-container">no_food</span>
+<div>
+<p class="text-white font-medium">Отбраковка мяса с включениями</p>
+<p class="text-xs text-on-surface-variant mt-1">Детекция костей или пластика в мясной массе.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="aspect-[4/3] bg-black overflow-hidden border border-outline-variant/30 relative">
+<img alt="Контроль тары на конвейере: классификация объектов в реальном времени" class="w-full h-full object-cover" loading="lazy" src="assets/images/products/photoseparator/680a070c3b99253410dd3dcf-69a86629d3773d2ea3e50090_Manufacturing_poster.0000000.jpg"/>
+<div class="absolute bottom-3 left-3 font-label text-[10px] text-primary-container bg-black/80 px-2 py-1 uppercase">Тара / Контроль</div>
+</div>
+<div class="aspect-[4/3] bg-black overflow-hidden border border-outline-variant/30 relative">
+<img alt="Контроль продукции" class="w-full h-full object-cover" loading="lazy" src="assets/images/products/photoseparator/Bones.png.webp"/>
+<div class="absolute bottom-3 left-3 font-label text-[10px] text-primary-container bg-black/80 px-2 py-1 uppercase">Продукты / Анализ</div>
+</div>
+<div class="aspect-[4/3] bg-black overflow-hidden border border-outline-variant/30 relative">
+<img alt="Сортировка фруктов" class="w-full h-full object-cover" loading="lazy" src="assets/images/products/photoseparator/horticulturae-07-00276-g008.png"/>
+<div class="absolute bottom-3 left-3 font-label text-[10px] text-primary-container bg-black/80 px-2 py-1 uppercase">Фрукты / AI</div>
+</div>
+</div>
+</div>
+</section>
+<!-- System demo video (accent) -->
+<section class="py-16 md:py-24 bg-[#030e20] relative overflow-hidden" id="system-demo">
+<div class="absolute right-0 top-0 w-1/2 h-full bg-primary/5 -skew-x-12 translate-x-1/4 pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center relative z-10">
+<div>
+<div class="font-mono text-secondary mb-4 flex items-center gap-2 text-sm">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+                    LIVE_DEMO
+                </div>
+<h2 class="text-3xl md:text-4xl font-headline font-extrabold text-white mb-4">Пример работы системы</h2>
+<p class="text-on-surface-variant text-sm md:text-base leading-relaxed max-w-xl mb-8">
+                Реальный процесс оптической сортировки: захват кадра, анализ и отсев за миллисекунды. Ниже — фрагмент работы установки (видео из проекта).
+            </p>
+<ul class="space-y-4 text-sm text-on-surface-variant">
+<li class="flex gap-3"><span class="text-primary font-mono shrink-0">01</span> Распознавание дефектов в потоке продукции</li>
+<li class="flex gap-3"><span class="text-primary font-mono shrink-0">02</span> Синхронизация с пневмо- или механическим отсевом</li>
+</ul>
+</div>
+<div class="relative mx-auto w-full max-w-md lg:max-w-lg lg:justify-self-end">
+<div class="border-[10px] border-surface-container-high rounded-xl overflow-hidden shadow-2xl bg-black">
+<video class="w-full aspect-video object-cover" controls playsinline poster="assets/images/products/photoseparator/separator-poster.jpg">
+<source src="assets/images/products/photoseparator/separator-example.mp4" type="video/mp4"/>
+                Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+</div>
+<div class="mt-4 p-4 glass-panel border border-primary/20 rounded-sm font-mono text-[10px] text-primary">
+                    [ SYSTEM_ONLINE ]<br/>
+                    FILE: separator-example.mp4<br/>
+                    LOC: PRODUCTION_LINE
+                </div>
+</div>
+</div>
+</section>
+<!-- Economic Effect (index2) -->
+<section class="py-16 md:py-24 bg-surface" id="economics">
+<div class="max-w-[1440px] mx-auto px-6">
+<h2 class="text-3xl md:text-5xl font-headline font-extrabold text-white text-center mb-16 uppercase">Экономический эффект</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="p-8 bg-surface-container-low border-b-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">trending_down</span>
+<h3 class="text-4xl font-mono font-bold text-white mb-2">40%</h3>
+<p class="text-sm text-on-surface-variant">Минимальное снижение операционных издержек в первый год.</p>
+</div>
+<div class="p-8 bg-surface-container-low border-b-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">update</span>
+<h3 class="text-4xl font-mono font-bold text-white mb-2">6–12</h3>
+<p class="text-sm text-on-surface-variant">Месяцев — ориентировочный срок окупаемости оборудования.</p>
+</div>
+<div class="p-8 bg-surface-container-low border-b-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">all_inclusive</span>
+<h3 class="text-4xl font-mono font-bold text-white mb-2">24/7</h3>
+<p class="text-sm text-on-surface-variant">Бесперебойная работа без потери качества и человеческого фактора.</p>
+</div>
+<div class="p-8 bg-surface-container-low border-b-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">group_off</span>
+<h3 class="text-4xl font-mono font-bold text-white mb-2">0</h3>
+<p class="text-sm text-on-surface-variant">Зависимость от дефицитных кадров на этапе ручной сортировки.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Configuration Examples (index3) -->
+<section class="py-16 md:py-24 px-6 bg-surface" id="config">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-16">
+<h2 class="text-4xl font-headline font-extrabold text-white tracking-tighter mb-4">Примеры конфигураций</h2>
+<div class="h-1 w-24 bg-primary-container"></div>
+<p class="text-on-surface-variant mt-6 max-w-2xl">Мы не продаем стандартные коробки. Мы проектируем корпус, систему захвата и механизмы сброса индивидуально под ваши габариты и каждый специфический продукт.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group bg-surface-container-low overflow-hidden corner-accent">
+<div class="aspect-video relative">
+<img alt="Крупная промышленная установка сортировки" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" loading="lazy" src="assets/images/products/photoseparator/brXmVCZQ-2.jpeg"/>
+<div class="absolute top-4 right-4 font-label text-primary-container">[ 01 ]</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-headline font-bold text-white mb-3">Адаптация под производственную линию</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Интеграция в существующие конвейерные системы любой сложности. Индивидуальное проектирование корпуса под ваши площади.</p>
+</div>
+</div>
+<div class="group bg-surface-container-low overflow-hidden corner-accent">
+<div class="aspect-video relative">
+<img alt="Радиальная сортировка" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" loading="lazy" src="assets/images/products/photoseparator/XWnxVjDr.jpeg"/>
+<div class="absolute top-4 right-4 font-label text-primary-container">[ 02 ]</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-headline font-bold text-white mb-3">Кастомизация механизмов сброса</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Подбор пневматических, механических или радиальных эжекторов в зависимости от веса, хрупкости и формы вашего продукта.</p>
+</div>
+</div>
+<div class="group bg-surface-container-low overflow-hidden corner-accent">
+<div class="aspect-video relative">
+<img alt="Конвейерная линия с сепаратором" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" loading="lazy" src="assets/images/products/photoseparator/RQH6Glbg.jpeg"/>
+<div class="absolute top-4 right-4 font-label text-primary-container">[ 03 ]</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-headline font-bold text-white mb-3">Проектирование под задачу</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Создание уникальных форм-факторов для работы с крупногабаритными продуктами (фрукты, овощи, вторичное сырье).</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Control / Software (index terminal block) -->
+<section class="py-16 md:py-24 px-6 bg-surface-container-low" id="software">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2 order-2 md:order-1 relative">
+<div class="bg-black p-4 rounded-lg border border-outline-variant/30 shadow-2xl">
+<div class="flex items-center gap-2 mb-3 px-2">
+<div class="w-3 h-3 rounded-full bg-red-500"></div>
+<div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+<div class="w-3 h-3 rounded-full bg-green-500"></div>
+<div class="ml-auto font-label text-[10px] text-primary uppercase">Direct_Hardware_Control.bin</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-video bg-surface-container-highest flex flex-col p-4 border border-primary/10">
+<div class="h-2 w-full bg-primary/20 mb-2"></div>
+<div class="h-2 w-3/4 bg-primary/20 mb-2"></div>
+<div class="mt-auto font-label text-[8px] text-primary">IO_SIGNAL_TRANSFER [0.002ms]</div>
+</div>
+<div class="aspect-video bg-surface-container-highest flex flex-col p-4 border border-primary/10">
+<div class="h-full w-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl animate-pulse">settings_input_component</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 font-label text-[9px] text-on-surface-variant leading-relaxed">
+<span class="text-primary-container"># Executing:</span> push_signal_to_ejector(array_idx: 124, delay: 15ms)<br/>
+<span class="text-primary-container"># Status:</span> SYSTEM_OK | PRESSURE: 6.2 BAR | FPS: 450
+                </div>
+<div class="absolute -top-4 -right-4 w-24 h-24 border-t border-r border-primary/40 hidden md:block pointer-events-none"></div>
+</div>
+<div class="w-full md:w-1/2 order-1 md:order-2 space-y-6">
+<h2 class="text-4xl font-headline font-extrabold text-white tracking-tighter">Собственное ПО — сердце системы</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                Наше ПО — это не просто интерфейс, это программно-аппаратный комплекс, который напрямую управляет "железом". Мы пишем код в Беларуси, что гарантирует полный контроль над логикой работы эжекторов и камер.
+            </p>
+<ul class="space-y-4 font-label text-sm text-primary">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-base">terminal</span> 
+                    ПРЯМОЕ УПРАВЛЕНИЕ ЖЕЛЕЗОМ (PLC)
+                </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-base">shield_check</span> 
+                    ОТСУТСТВИЕ САНКЦИОННЫХ РИСКОВ
+                </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-base">settings_remote</span> 
+                    УДАЛЕННАЯ ПОДДЕРЖКА И ТЮНИНГ 24/7
+                </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Advantages (index3) -->
+<section class="py-16 md:py-24 px-6" id="advantages">
+<div class="max-w-screen-2xl mx-auto">
+<h2 class="text-4xl font-headline font-extrabold text-white tracking-tighter mb-16">Наши преимущества</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="p-8 bg-surface-container-high corner-accent">
+<span class="font-label text-primary-container mb-4 block">[ 01 ]</span>
+<h3 class="text-xl font-headline font-bold text-white mb-3">Окупаемость 6–12 мес</h3>
+<p class="text-on-surface-variant text-sm">Высокая точность сортировки и доступная цена обеспечивают кратчайшие сроки возврата инвестиций.</p>
+</div>
+<div class="p-8 bg-surface-container-high corner-accent">
+<span class="font-label text-primary-container mb-4 block">[ 02 ]</span>
+<h3 class="text-xl font-headline font-bold text-white mb-3">Сервис 1-3 дня</h3>
+<p class="text-on-surface-variant text-sm">Собственные инженеры в регионе. Оперативное обслуживание и наличие запчастей без долгого ожидания.</p>
+</div>
+<div class="p-8 bg-surface-container-high corner-accent">
+<span class="font-label text-primary-container mb-4 block">[ 03 ]</span>
+<h3 class="text-xl font-headline font-bold text-white mb-3">Адаптация под вашу линию</h3>
+<p class="text-on-surface-variant text-sm">Мы встраиваем решение в ваш существующий техпроцесс, минимизируя изменения в цеху.</p>
+</div>
+<div class="p-8 bg-surface-container-high corner-accent">
+<span class="font-label text-primary-container mb-4 block">[ 04 ]</span>
+<h3 class="text-xl font-headline font-bold text-white mb-3">Собственное ПО (РБ)</h3>
+<p class="text-on-surface-variant text-sm">Гибкая настройка под любой тип дефектов. Гарантия стабильности, обновлений и техподдержки.</p>
+</div>
+<div class="p-8 bg-surface-container-high corner-accent">
+<span class="font-label text-primary-container mb-4 block">[ 05 ]</span>
+<h3 class="text-xl font-headline font-bold text-white mb-3">100% кастомизация</h3>
+<p class="text-on-surface-variant text-sm">Проектируем габариты, форму и тип эжекторов под конкретные задачи каждого заказчика.</p>
+</div>
+<div class="p-8 bg-surface-container-high corner-accent">
+<span class="font-label text-primary-container mb-4 block">[ 06 ]</span>
+<h3 class="text-xl font-headline font-bold text-white mb-3">Цена от $10k</h3>
+<p class="text-on-surface-variant text-sm">Оптимальное соотношение цены и качества за счет локальной разработки и производства.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Comparison Table (index2) -->
+<section class="py-16 md:py-24 bg-surface-container-low" id="market">
+<div class="max-w-[1440px] mx-auto px-6">
+<h2 class="text-4xl font-headline font-extrabold text-white text-center mb-16 uppercase">Сравнение с рынком</h2>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-highest">
+<th class="p-6 font-mono text-xs text-on-surface-variant uppercase">Параметр</th>
+<th class="p-6 font-headline font-extrabold text-primary border-b-2 border-primary">Промышленные роботы (РБ)</th>
+<th class="p-6 font-headline font-bold text-white/60">TOMRA (EU)</th>
+<th class="p-6 font-headline font-bold text-white/60">Китай (Mainland)</th>
+</tr>
+</thead>
+<tbody class="text-sm font-mono">
+<tr class="border-b border-white/5">
+<td class="p-6 text-on-surface-variant">Стоимость решения</td>
+<td class="p-6 text-white font-bold bg-primary/5">От $10 000</td>
+<td class="p-6 text-white/60">От $65 000</td>
+<td class="p-6 text-white/60">От $15 000</td>
+</tr>
+<tr class="border-b border-white/5">
+<td class="p-6 text-on-surface-variant">ПО и Интерфейс</td>
+<td class="p-6 text-white font-bold bg-primary/5">Свое (RU/BY/EN)</td>
+<td class="p-6 text-white/60">Зависимость от лицензий</td>
+<td class="p-6 text-white/60">Трудности перевода</td>
+</tr>
+<tr class="border-b border-white/5">
+<td class="p-6 text-on-surface-variant">Срок сервиса</td>
+<td class="p-6 text-white font-bold bg-primary/5">1-3 дня (в СНГ)</td>
+<td class="p-6 text-white/60">1-4 недели</td>
+<td class="p-6 text-white/60">Удаленная поддержка</td>
+</tr>
+<tr>
+<td class="p-6 text-on-surface-variant">Кастомизация корпуса</td>
+<td class="p-6 text-white font-bold bg-primary/5">Полная адаптация</td>
+<td class="p-6 text-white/60">Стандартные модели</td>
+<td class="p-6 text-white/60">Ограниченно</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Process (index2) -->
+<section class="py-16 md:py-24 bg-surface-container-lowest" id="process">
+<div class="max-w-[1440px] mx-auto px-6">
+<h2 class="text-4xl font-headline font-extrabold text-white text-center mb-20">Этапы реализации</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="flex flex-col items-center text-center p-6 border border-white/5 rounded-lg hover:border-primary/40 transition-all">
+<div class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center font-mono text-primary text-2xl font-bold mb-6">01</div>
+<h4 class="text-white font-bold mb-2">Выезд и пробы</h4>
+<p class="text-xs text-on-surface-variant">Приезжаем, берем образцы вашего сырья, делаем тестовую сепарацию.</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 border border-white/5 rounded-lg hover:border-primary/40 transition-all">
+<div class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center font-mono text-primary text-2xl font-bold mb-6">02</div>
+<h4 class="text-white font-bold mb-2">Разработка ТЗ</h4>
+<p class="text-xs text-on-surface-variant">Проектируем установку с учетом пропускной способности и габаритов.</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 border border-white/5 rounded-lg hover:border-primary/40 transition-all">
+<div class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center font-mono text-primary text-2xl font-bold mb-6">03</div>
+<h4 class="text-white font-bold mb-2">Производство</h4>
+<p class="text-xs text-on-surface-variant">Сборка, программирование и 48-часовое стресс-тестирование.</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 border border-white/5 rounded-lg hover:border-primary/40 transition-all">
+<div class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center font-mono text-primary text-2xl font-bold mb-6">04</div>
+<h4 class="text-white font-bold mb-2">Пусконаладка</h4>
+<p class="text-xs text-on-surface-variant">Монтаж на линии и бесплатное обучение вашего персонала.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section (index2 layout + clickable links) -->
+<section class="py-16 md:py-24 bg-surface relative overflow-hidden" id="contacts">
+<div class="max-w-[1440px] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 bg-surface-container-low p-6 sm:p-8 md:p-12 rounded-lg border border-primary/10">
+<div>
+<h2 class="text-4xl font-headline font-extrabold text-white mb-8 uppercase">Связаться с инженером</h2>
+<div class="space-y-8">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-sm bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<div class="text-[10px] font-mono text-on-surface-variant uppercase">Телефон</div>
+<a class="text-xl font-bold text-white hover:text-primary transition-colors" href="tel:+375255092206">+375 25 509-22-06</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-sm bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<div class="text-[10px] font-mono text-on-surface-variant uppercase">Email</div>
+<a class="text-xl font-bold text-white hover:text-primary transition-colors" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-sm bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<div class="text-[10px] font-mono text-on-surface-variant uppercase">Производство</div>
+<div class="text-xl font-bold text-white">г. Гродно, Республика Беларусь</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-4 mt-12">
+<a class="px-6 py-3 bg-white/5 hover:bg-white/10 rounded-sm font-mono text-xs flex items-center gap-2 transition-all text-white" href="https://t.me/+375255092206">
+<span class="material-symbols-outlined text-sm">send</span> Telegram
+                    </a>
+<a class="px-6 py-3 bg-white/5 hover:bg-white/10 rounded-sm font-mono text-xs flex items-center gap-2 transition-all text-white" href="https://wa.me/375255092206">
+<span class="material-symbols-outlined text-sm">chat</span> WhatsApp
+                    </a>
+</div>
+</div>
+<form class="space-y-4" action="https://formspree.io/f/xlgpkvjo" method="POST" accept-charset="UTF-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<input class="bg-background border border-white/10 p-4 rounded-sm font-mono text-sm focus:border-primary outline-none text-white" name="name" placeholder="ИМЯ" type="text" autocomplete="name"/>
+<input class="bg-background border border-white/10 p-4 rounded-sm font-mono text-sm focus:border-primary outline-none text-white" name="phone" placeholder="ТЕЛЕФОН" type="tel" autocomplete="tel"/>
+</div>
+<input class="w-full bg-background border border-white/10 p-4 rounded-sm font-mono text-sm focus:border-primary outline-none text-white" name="product" placeholder="ВАША ПРОДУКЦИЯ (НАПР. ГРЕЦКИЙ ОРЕХ)" type="text"/>
+<textarea class="w-full bg-background border border-white/10 p-4 rounded-sm font-mono text-sm focus:border-primary outline-none text-white" name="message" placeholder="КРАТКОЕ ТЕХЗАДАНИЕ" rows="4"></textarea>
+<button class="w-full bg-primary text-on-primary py-5 font-headline font-bold uppercase tracking-widest rounded-sm hover:brightness-110 shadow-lg transition-all" type="submit">Получить консультацию и расчет</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="w-full border-t border-slate-200 bg-slate-50">
+<div class="mx-auto max-w-7xl px-6 py-12 md:px-10 md:py-16">
+<div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 xl:gap-10">
+<div class="sm:col-span-2 lg:col-span-1">
+<div class="headline text-lg font-bold uppercase tracking-tighter text-slate-900">ООО «Промышленные роботы»</div>
+<p class="mt-4 text-sm leading-relaxed text-slate-600">УНП 591043841</p>
+<p class="mt-2 text-sm leading-relaxed text-slate-600">Республика Беларусь, г.&nbsp;Гродно, ул.&nbsp;Академическая, 17</p>
+<p class="mt-4 text-xs uppercase tracking-widest text-slate-400">Полные банковские реквизиты — по запросу</p>
+</div>
+<div>
+<h3 class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-[#00327d]">Навигация</h3>
+<nav class="flex flex-col gap-2.5 text-sm font-semibold text-slate-600">
+<a class="hover:text-[#00327d] transition-colors" href="index.html#services">Услуги</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#solutions">Продукты</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#advantages">Преимущества</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#about">О нас</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#partners">Партнёры</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#contacts">Контакты</a>
+</nav>
+</div>
+<div>
+<h3 class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-[#00327d]">Наши продукты</h3>
+<nav class="flex flex-col gap-2.5 text-sm font-semibold text-slate-600">
+<a class="hover:text-[#00327d] transition-colors" href="photoseparator.html">Фотосепаратор</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#product-manipulator">Робот-манипулятор</a>
+<a class="hover:text-[#00327d] transition-colors" href="index.html#product-agv">Автоматическая рохля</a>
+</nav>
+</div>
+<div>
+<h3 class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-[#00327d]">Контакты</h3>
+<div class="space-y-3 text-sm text-slate-600">
+<a class="block font-semibold text-slate-800 hover:text-[#00327d] transition-colors" href="tel:+375255092206">+375&nbsp;25&nbsp;509&nbsp;22&nbsp;06</a>
+<a class="block font-semibold text-slate-800 hover:text-[#00327d] transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a>
+<p class="leading-snug">г.&nbsp;Гродно, ул.&nbsp;Академическая, 17</p>
+<p class="pt-2"><a class="text-sm font-semibold text-slate-600 hover:text-[#00327d] transition-colors" href="privacy.html">Политика конфиденциальности</a></p>
+</div>
+</div>
+</div>
+<div class="mt-12 border-t border-slate-200 pt-8 text-center text-[11px] text-slate-500 md:text-left">
+<span class="text-slate-400">© 2026 ООО «Промышленные роботы»</span>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
