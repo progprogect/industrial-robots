@@ -144,19 +144,23 @@
 
 <section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
 <div class="container mx-auto px-6 max-w-6xl">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 <div>
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Что это за продукт</p>
-<h2 class="text-3xl md:text-4xl font-bold mb-6">Автономная рохля в контексте вашего объекта</h2>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Назначение</h2>
 <div class="space-y-4 text-on-surface-variant leading-relaxed text-base">
-<p>Автономная рохля — самоходное транспортное средство для перемещения паллет и грузов внутри предприятия без необходимости постоянно управлять техникой вручную. Назначение — типовые внутренние рейсы: из точки A в точку B по заранее согласованной логике.</p>
-<p>Решение востребовано там, где ежедневно повторяются однотипные перевозки: подача на линию, вывоз с линии, движение между складом и комплектованием, между цехами, на ПЗУ и т.п. Идея — снять с людей рутинную транспортировку и сделать процесс предсказуемым по времени и нагрузке.</p>
-<p>Ключевая установка: автоматизация имеет смысл там, где поток стабилен и измерим — иначе экономику внедрения корректно считать только после обследования объекта.</p>
+<p>Автономная рохля — самоходное средство для перемещения паллет и грузов внутри предприятия по заранее согласованной логике, без необходимости постоянно управлять техникой вручную.</p>
+<p>Эффективнее всего там, где поток стабилен и измерим: экономику и сценарий фиксируем после обследования объекта.</p>
 </div>
 </div>
-<div class="border border-outline-variant/40 bg-surface-container-low p-8 md:p-10">
+<div class="relative w-full min-h-[280px] aspect-[4/3] lg:min-h-[320px] lg:aspect-auto self-stretch overflow-hidden bg-slate-100 cyber-border">
+<img alt="Автоматическая рохля на складе: паллетные перевозки" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/images/agv-rohly.png" width="2400" height="1792" loading="lazy" decoding="async"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-slate-900/15 to-transparent pointer-events-none" aria-hidden="true"></div>
+</div>
+</div>
+<div class="mt-14 md:mt-16 border border-outline-variant/40 bg-surface-container-low p-8 md:p-10">
 <h3 class="text-lg font-bold mb-4 uppercase tracking-tight">Для каких задач</h3>
-<ul class="space-y-3 text-sm text-on-surface-variant leading-relaxed">
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-3 text-sm text-on-surface-variant leading-relaxed">
 <li class="flex gap-2"><span class="text-primary font-bold shrink-0">—</span> доставка паллет с сырьём в производственную зону;</li>
 <li class="flex gap-2"><span class="text-primary font-bold shrink-0">—</span> вывоз готовой продукции с линии;</li>
 <li class="flex gap-2"><span class="text-primary font-bold shrink-0">—</span> перемещения между складом и зоной комплектования;</li>
@@ -164,9 +168,37 @@
 <li class="flex gap-2"><span class="text-primary font-bold shrink-0">—</span> подача в упаковку и вывоз в хранение;</li>
 <li class="flex gap-2"><span class="text-primary font-bold shrink-0">—</span> типовые повторяющиеся рейсы в РЦ и на логистических узлах.</li>
 </ul>
-<p class="mt-6 text-xs text-on-surface-variant/90 border-l-2 border-primary pl-4">Если сотрудник большую часть смены только возит груз по одним и тем же маршрутам — такой процесс разумно рассматривать как кандидата на автоматизацию.</p>
+<p class="mt-6 text-xs text-on-surface-variant/90 border-l-2 border-primary pl-4 max-w-3xl">Если сотрудник большую часть смены только возит груз по одним и тем же маршрутам — такой процесс разумно рассматривать как кандидата на автоматизацию.</p>
 </div>
 </div>
+</section>
+
+<section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30">
+<div class="container mx-auto px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Спецификация</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Технические параметры</h2>
+<p class="text-on-surface-variant text-sm max-w-3xl mb-8 leading-relaxed">Ниже — типовой перечень для подбора и сравнения решений класса AGV/рохля. Конкретные значения по вашему объекту фиксируются в ТЗ и паспорте; без «чужих» цифр с паспортов других производителей.</p>
+<div class="overflow-x-auto border border-outline-variant/50 bg-white">
+<table class="w-full text-left text-sm border-collapse">
+<thead>
+<tr class="border-b border-outline-variant/40 bg-surface-container font-label text-[10px] uppercase tracking-widest text-outline">
+<th class="p-4 font-semibold">Параметр</th>
+<th class="p-4 font-semibold">Значение</th>
+</tr>
+</thead>
+<tbody class="text-on-surface-variant divide-y divide-outline-variant/30">
+<tr><td class="p-4 font-medium text-on-surface">Грузоподъёмность, тип паллеты</td><td class="p-4">По согласованию (EUR / полу-паллета, фактический вес груза)</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Скорость движения</td><td class="p-4">Согласуется с регламентом безопасности и пропускной способностью участков</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Навигация и точность позиционирования</td><td class="p-4">Подбираются под площадку; уточняются при обследовании</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Аккумулятор, время работы, зарядка</td><td class="p-4">По спецификации комплектации и графику смен</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Безопасность</td><td class="p-4">Датчики препятствий, зоны скорости, аварийный стоп — в соответствии с требованиями объекта</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Условия пола и среды</td><td class="p-4">Ровность, зазоры, влажность, температура — по факту замеров</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Габариты, радиус разворота</td><td class="p-4">Под проходы и стеллажи; уточняется на этапе проекта</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Интеграция с учётом</td><td class="p-4">WMS/ERP, задания, обмен сигналами — по необходимости и возможности площадки</td></tr>
+</tbody>
+</table>
+</div>
+<p class="mt-4 text-xs text-on-surface-variant/85 italic max-w-3xl">Итоговые цифры вносятся в договорную и проектную документацию после согласования и не являются публичной офертой до этого.</p>
 </div>
 </section>
 
@@ -273,11 +305,7 @@
 <section class="py-16 md:py-24 bg-white">
 <div class="container mx-auto px-6 max-w-4xl">
 <h2 class="text-2xl md:text-3xl font-bold mb-6">Для кого подходит</h2>
-<p class="text-on-surface-variant leading-relaxed mb-6">В первую очередь — производственным компаниям, операторам логистики, складам и РЦ с паллетными перемещениями, а также бизнесу, который целенаправленно сокращает ручной труд на внутренней логистике и хочет измеримый эффект, а не «автоматизацию ради автоматизации».</p>
-<div class="bg-surface-container-low border border-outline-variant/40 p-6 md:p-8">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-3">Кратко</p>
-<p class="text-on-surface-variant leading-relaxed text-sm md:text-base">Автономная рохля берёт на себя повторяющиеся перевозки паллет внутри предприятия, снижает зависимость от ручного труда и делает логистику устойчивее там, где поток стабилен. Ориентир стоимости по презентации — 115&nbsp;000 BYN, гарантия 24 месяца; в предложение входят запуск, настройка, испытание, обучение и сервисная поддержка.</p>
-</div>
+<p class="text-on-surface-variant leading-relaxed">В первую очередь — производственным компаниям, операторам логистики, складам и РЦ с паллетными перемещениями, а также бизнесу, который целенаправленно сокращает ручной труд на внутренней логистике и хочет измеримый эффект, а не «автоматизацию ради автоматизации».</p>
 </div>
 </section>
 
