@@ -283,21 +283,21 @@
 <p class="text-on-surface-variant text-base md:text-lg leading-relaxed">Помимо услуг по изготовлению и интеграции станков под конкретное производство мы развиваем <span class="text-on-surface font-medium">собственную линейку продуктов</span> для типовых и универсальных задач: модульные узлы, роботизированная механика и программно-аппаратные комплексы, которые можно масштабировать и адаптировать без «разработки с нуля» на каждый запуск.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto">
-<div class="group relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border bg-slate-100">
+<div id="product-photoseparator" class="group relative min-h-[280px] sm:min-h-[320px] scroll-mt-28 overflow-hidden cyber-border bg-slate-100">
 <img alt="Схема фотосепаратора" class="absolute inset-0 w-full h-full object-contain object-center p-4 transition-transform duration-1000 group-hover:scale-[1.02]" src="assets/images/photoseparator-diagram.jpeg" width="1200" height="800" loading="lazy"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent p-8 md:p-10 flex flex-col justify-end pointer-events-none">
 <h3 class="text-2xl font-bold text-white mb-2 drop-shadow-sm">Фотосепараторы</h3>
 <p class="text-white/75 text-sm drop-shadow-sm">Очистка продукции от брака · автоматическая сортировка</p>
 </div>
 </div>
-<div class="group relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border">
+<div id="product-agv" class="group relative min-h-[280px] sm:min-h-[320px] scroll-mt-28 overflow-hidden cyber-border">
 <img alt="Автоматическая рохля на складе" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/agv-rohly.png" width="2400" height="1792" loading="lazy"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent p-8 md:p-10 flex flex-col justify-end">
 <h3 class="text-2xl font-bold text-white mb-2">Роботизированные рохли (AGV)</h3>
 <p class="text-white/75 text-sm">Перемещение паллет · работа без оператора</p>
 </div>
 </div>
-<div class="group relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border">
+<div id="product-manipulator" class="group relative min-h-[280px] sm:min-h-[320px] scroll-mt-28 overflow-hidden cyber-border">
 <img alt="Промышленный робот-манипулятор" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/manipulator.webp" width="1920" height="1080" loading="lazy"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent p-8 md:p-10 flex flex-col justify-end">
 <h3 class="text-2xl font-bold text-white mb-2">Роботы-манипуляторы</h3>
@@ -328,26 +328,35 @@
 <p class="text-on-surface-variant leading-relaxed">Конкретика вместо общих слов: локальное производство, сервис в регионе, предсказуемая стоимость владения.</p>
 <p class="text-on-surface-variant leading-relaxed mt-4">Примеры компаний, для которых мы реализовывали решения: <span class="text-on-surface font-medium">McDonald's</span>, <span class="text-on-surface font-medium">Huawei</span>, <span class="text-on-surface font-medium">СООО НПГ «Экологическая Альтернатива»</span>, <span class="text-on-surface font-medium">ООО «Элепарт»</span>, <span class="text-on-surface font-medium">Группа компаний Шведофф</span>, <span class="text-on-surface font-medium">Yango Tech</span> и другие.</p>
 </div>
-<div class="max-w-6xl mb-16">
-<p class="text-[10px] uppercase tracking-[0.4em] font-black text-primary mb-6">Логотипы и бренды</p>
-<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-<div class="border border-outline-variant/40 bg-surface-container-low/80 flex items-center justify-center p-6 min-h-[104px] cyber-border">
-<img alt="McDonald's" class="max-h-10 w-auto max-w-[140px] object-contain" src="assets/logos/logo-mcdonalds.jpg" width="160" height="40" loading="lazy"/>
+<div class="max-w-5xl mx-auto mb-16">
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+<div class="flex h-[7.25rem] sm:h-[7.75rem] items-center justify-center border border-outline-variant/40 bg-white p-3 sm:p-4 cyber-border">
+<div class="flex h-[4.5rem] sm:h-20 w-full max-w-[11rem] sm:max-w-[13rem] items-center justify-center">
+<img alt="McDonald's" class="max-h-full max-w-full w-auto object-contain object-center" src="assets/logos/logo-mcdonalds.jpg" width="160" height="40" loading="lazy"/>
 </div>
-<div class="border border-outline-variant/40 bg-white flex items-center justify-center p-6 min-h-[104px] cyber-border">
-<img alt="Huawei" class="max-h-9 w-auto max-w-[130px] object-contain" src="assets/logos/logo-huawei.svg" width="160" height="36" loading="lazy"/>
 </div>
-<div class="border border-outline-variant/40 bg-white flex items-center justify-center p-6 min-h-[104px] cyber-border">
-<img alt="СООО НПГ «Экологическая Альтернатива»" class="max-h-11 w-auto max-w-[180px] object-contain" src="assets/logos/logo-eco.webp" width="200" height="44" loading="lazy"/>
+<div class="flex h-[7.25rem] sm:h-[7.75rem] items-center justify-center border border-outline-variant/40 bg-white p-3 sm:p-4 cyber-border">
+<div class="flex h-[4.5rem] sm:h-20 w-full max-w-[11rem] sm:max-w-[13rem] items-center justify-center">
+<img alt="Huawei" class="max-h-full max-w-full w-auto object-contain object-center" src="assets/logos/logo-huawei.svg" width="160" height="36" loading="lazy"/>
 </div>
-<div class="border border-outline-variant/40 bg-white flex items-center justify-center p-5 min-h-[104px] cyber-border">
-<img alt="ООО «Элепарт»" class="max-h-9 w-auto max-w-[150px] object-contain" src="assets/logos/logo-elepart.png" width="180" height="40" loading="lazy"/>
 </div>
-<div class="border border-outline-variant/40 bg-white flex items-center justify-center p-6 min-h-[104px] cyber-border sm:col-span-2 lg:col-span-1">
-<img alt="Группа компаний Шведофф" class="max-h-10 w-auto max-w-[160px] object-contain" src="assets/logos/logo-shvedoff.webp" width="200" height="40" loading="lazy"/>
+<div class="flex h-[7.25rem] sm:h-[7.75rem] items-center justify-center border border-outline-variant/40 bg-white p-3 sm:p-4 cyber-border">
+<div class="flex h-[4.5rem] sm:h-20 w-full max-w-[11rem] sm:max-w-[13rem] items-center justify-center">
+<img alt="СООО НПГ «Экологическая Альтернатива»" class="max-h-full max-w-full w-auto object-contain object-center" src="assets/logos/logo-eco.webp" width="200" height="44" loading="lazy"/>
 </div>
-<div class="border border-outline-variant/40 bg-slate-900 flex items-center justify-center p-6 min-h-[104px] cyber-border sm:col-span-2 lg:col-span-1">
-<span class="text-white font-black text-xs uppercase tracking-[0.2em] text-center leading-snug">Yango Tech</span>
+</div>
+<div class="flex h-[7.25rem] sm:h-[7.75rem] items-center justify-center border border-outline-variant/40 bg-white p-3 sm:p-4 cyber-border">
+<div class="flex h-[4.5rem] sm:h-20 w-full max-w-[11rem] sm:max-w-[13rem] items-center justify-center">
+<img alt="ООО «Элепарт»" class="max-h-full max-w-full w-auto object-contain object-center" src="assets/logos/logo-elepart.png" width="180" height="40" loading="lazy"/>
+</div>
+</div>
+<div class="flex h-[7.25rem] sm:h-[7.75rem] items-center justify-center border border-outline-variant/40 bg-white p-3 sm:p-4 cyber-border">
+<div class="flex h-[4.5rem] sm:h-20 w-full max-w-[11rem] sm:max-w-[13rem] items-center justify-center">
+<img alt="Группа компаний Шведофф" class="max-h-full max-w-full w-auto object-contain object-center" src="assets/logos/logo-shvedoff.webp" width="200" height="40" loading="lazy"/>
+</div>
+</div>
+<div class="flex h-[7.25rem] sm:h-[7.75rem] items-center justify-center border border-outline-variant/40 bg-slate-900 p-3 sm:p-4 cyber-border">
+<span class="text-center text-[10px] font-black uppercase tracking-[0.22em] text-white sm:text-[11px]">Yango Tech</span>
 </div>
 </div>
 </div>
@@ -490,6 +499,17 @@
 </div>
 </div>
 </section>
+<!-- Проекты (заглушки для навигации в подвале) -->
+<section class="border-y border-outline-variant/30 bg-surface-container-low py-14 md:py-16" id="projects" aria-labelledby="projects-heading">
+<div class="container mx-auto max-w-5xl px-6">
+<h2 class="mb-8 text-center text-2xl font-bold md:text-3xl" id="projects-heading">Проекты</h2>
+<div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-3 sm:gap-6">
+<div class="scroll-mt-28 border border-outline-variant/30 bg-white p-8 text-on-surface-variant cyber-border" id="project-1">Проект 1</div>
+<div class="scroll-mt-28 border border-outline-variant/30 bg-white p-8 text-on-surface-variant cyber-border" id="project-2">Проект 2</div>
+<div class="scroll-mt-28 border border-outline-variant/30 bg-white p-8 text-on-surface-variant cyber-border" id="project-3">Проект 3</div>
+</div>
+</div>
+</section>
 <!-- Блок 11 — Контакты и форма -->
 <section class="py-28 md:py-32 bg-slate-900 text-white relative overflow-hidden" id="contacts">
 <div class="absolute inset-0 blueprint-grid opacity-5"></div>
@@ -499,27 +519,27 @@
 <h2 class="text-4xl md:text-5xl font-bold mb-12 uppercase tracking-tighter">Контакты</h2>
 <p class="text-white/70 mb-12 max-w-lg">Мы отвечаем в день обращения. Оставьте заявку — перезвоним, уточним задачу и предложим следующий шаг.</p>
 <div class="space-y-10">
-<div class="flex gap-8 group">
-<div class="w-16 h-16 glass-dark flex items-center justify-center border-primary/30 group-hover:bg-primary transition-all shrink-0">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">call</span>
+<div class="flex gap-8">
+<div class="w-16 h-16 flex shrink-0 items-center justify-center border border-white/25 bg-primary shadow-sm">
+<span class="material-symbols-outlined text-3xl text-white">call</span>
 </div>
 <div>
 <div class="text-[10px] uppercase tracking-[0.3em] font-black text-primary-fixed mb-2">Телефон</div>
 <a class="text-xl md:text-2xl font-bold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a>
 </div>
 </div>
-<div class="flex gap-8 group">
-<div class="w-16 h-16 glass-dark flex items-center justify-center border-primary/30 group-hover:bg-primary transition-all shrink-0">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">mail</span>
+<div class="flex gap-8">
+<div class="w-16 h-16 flex shrink-0 items-center justify-center border border-white/25 bg-primary shadow-sm">
+<span class="material-symbols-outlined text-3xl text-white">mail</span>
 </div>
 <div>
 <div class="text-[10px] uppercase tracking-[0.3em] font-black text-primary-fixed mb-2">E-mail</div>
 <a class="text-xl md:text-2xl font-bold underline decoration-primary decoration-2 underline-offset-8 break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a>
 </div>
 </div>
-<div class="flex gap-8 group">
-<div class="w-16 h-16 glass-dark flex items-center justify-center border-primary/30 group-hover:bg-primary transition-all shrink-0">
-<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">location_on</span>
+<div class="flex gap-8">
+<div class="w-16 h-16 flex shrink-0 items-center justify-center border border-white/25 bg-primary shadow-sm">
+<span class="material-symbols-outlined text-3xl text-white">location_on</span>
 </div>
 <div>
 <div class="text-[10px] uppercase tracking-[0.3em] font-black text-primary-fixed mb-2">Адрес</div>
@@ -554,15 +574,53 @@
 </div>
 </section>
 </main>
-<footer class="w-full px-8 md:px-12 py-14 md:py-16 bg-slate-50 border-t border-slate-200">
-<div class="max-w-3xl mx-auto text-sm text-slate-700 leading-relaxed space-y-4">
-<p class="font-bold text-slate-900">ООО «Промышленные Роботы»</p>
-<p>УНП 591043841</p>
-<p>Адрес: Республика Беларусь, г.&nbsp;Гродно, ул.&nbsp;Академическая, 17</p>
-<p>Банк ЗАО «АЛЬФА-БАНК»<br/>Адрес банка: ул.&nbsp;Сурганова, 43–47, 220013 Минск, Республика Беларусь<br/>SWIFT ALFABY2X · БИК ALFABY2X</p>
-<p>Расчётный счёт в белорусских рублях: BY94ALFA30122D53480010270000</p>
-<p>Директор Волкунович Н.&nbsp;С. (на основании Устава)</p>
-<p>E-mail: <a class="text-primary font-medium hover:underline" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a><br/>Тел.: <a class="text-primary font-medium hover:underline" href="tel:+375255092206">+375&nbsp;25&nbsp;509&nbsp;22&nbsp;06</a></p>
+<footer class="w-full border-t border-slate-200 bg-slate-50">
+<div class="mx-auto max-w-7xl px-6 py-12 md:px-10 md:py-16">
+<div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8 xl:gap-10">
+<div class="sm:col-span-2 lg:col-span-1">
+<div class="headline text-lg font-bold uppercase tracking-tighter text-slate-900">ООО «Промышленные роботы»</div>
+<p class="mt-4 text-sm leading-relaxed text-slate-600">УНП 591043841</p>
+<p class="mt-2 text-sm leading-relaxed text-slate-600">Республика Беларусь, г.&nbsp;Гродно, ул.&nbsp;Академическая, 17</p>
+<p class="mt-4 text-xs uppercase tracking-widest text-slate-400">Полные банковские реквизиты — по запросу</p>
+</div>
+<div>
+<h3 class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Навигация</h3>
+<nav class="flex flex-col gap-2.5 text-sm font-semibold text-slate-600">
+<a class="hover:text-primary transition-colors" href="#services">Услуги</a>
+<a class="hover:text-primary transition-colors" href="#solutions">Продукты</a>
+<a class="hover:text-primary transition-colors" href="#advantages">Преимущества</a>
+<a class="hover:text-primary transition-colors" href="#about">О нас</a>
+<a class="hover:text-primary transition-colors" href="#contacts">Контакты</a>
+</nav>
+</div>
+<div>
+<h3 class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Наши продукты</h3>
+<nav class="flex flex-col gap-2.5 text-sm font-semibold text-slate-600">
+<a class="hover:text-primary transition-colors" href="#product-photoseparator">Фотосепаратор</a>
+<a class="hover:text-primary transition-colors" href="#product-manipulator">Робот-манипулятор</a>
+<a class="hover:text-primary transition-colors" href="#product-agv">Автоматическая рохля</a>
+</nav>
+</div>
+<div>
+<h3 class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Проекты</h3>
+<nav class="flex flex-col gap-2.5 text-sm font-semibold text-slate-600">
+<a class="hover:text-primary transition-colors" href="#project-1">Проект 1</a>
+<a class="hover:text-primary transition-colors" href="#project-2">Проект 2</a>
+<a class="hover:text-primary transition-colors" href="#project-3">Проект 3</a>
+</nav>
+</div>
+<div>
+<h3 class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Контакты</h3>
+<div class="space-y-3 text-sm text-slate-600">
+<a class="block font-semibold text-slate-800 hover:text-primary transition-colors" href="tel:+375255092206">+375&nbsp;25&nbsp;509&nbsp;22&nbsp;06</a>
+<a class="block font-semibold text-slate-800 hover:text-primary transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a>
+<p class="leading-snug">г.&nbsp;Гродно, ул.&nbsp;Академическая, 17</p>
+</div>
+</div>
+</div>
+<div class="mt-12 border-t border-slate-200 pt-8 text-center text-[11px] text-slate-500 md:text-left">
+<span class="text-slate-400">© 2026 ООО «Промышленные роботы»</span>
+</div>
 </div>
 </footer>
 </body>
