@@ -1,0 +1,140 @@
+[
+  {
+    "dst": "assets/images/lab-hero.webp",
+    "width": 2400,
+    "height": 1800,
+    "bytes": 451786
+  },
+  {
+    "dst": "assets/images/pcb-board.webp",
+    "width": 960,
+    "height": 1280,
+    "bytes": 149192
+  },
+  {
+    "dst": "assets/images/photoseparator-diagram.webp",
+    "width": 600,
+    "height": 344,
+    "bytes": 19650
+  },
+  {
+    "dst": "assets/images/agv-rohly.webp",
+    "width": 2400,
+    "height": 1792,
+    "bytes": 589744
+  },
+  {
+    "dst": "assets/images/manipulator.webp",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 117236
+  },
+  {
+    "dst": "assets/images/openmv-camera.webp",
+    "width": 1000,
+    "height": 1020,
+    "bytes": 80878
+  },
+  {
+    "dst": "assets/images/director-portrait.webp",
+    "width": 1536,
+    "height": 864,
+    "bytes": 174910
+  },
+  {
+    "dst": "assets/images/manipulator-demo-poster.webp",
+    "width": 720,
+    "height": 1280,
+    "bytes": 59886
+  },
+  {
+    "dst": "assets/images/manipulator-io-board.webp",
+    "width": 730,
+    "height": 400,
+    "bytes": 52912
+  },
+  {
+    "dst": "assets/images/products/photoseparator/hero-apple-detection.webp",
+    "width": 1700,
+    "height": 1166,
+    "bytes": 66992
+  },
+  {
+    "dst": "assets/images/products/photoseparator/separator-poster.webp",
+    "width": 720,
+    "height": 1280,
+    "bytes": 71162
+  },
+  {
+    "dst": "assets/images/products/photoseparator/pcb-topology.webp",
+    "width": 1280,
+    "height": 960,
+    "bytes": 140708
+  },
+  {
+    "dst": "assets/images/products/photoseparator/smart-camera-x86.webp",
+    "width": 450,
+    "height": 450,
+    "bytes": 9998
+  },
+  {
+    "dst": "assets/images/products/photoseparator/conveyor-packaging-control.webp",
+    "width": 1042,
+    "height": 720,
+    "bytes": 52594
+  },
+  {
+    "dst": "assets/images/products/photoseparator/product-control.webp",
+    "width": 680,
+    "height": 568,
+    "bytes": 39920
+  },
+  {
+    "dst": "assets/images/products/photoseparator/fruit-sorting-schematic.webp",
+    "width": 1920,
+    "height": 1111,
+    "bytes": 196626
+  },
+  {
+    "dst": "assets/images/products/photoseparator/gallery-sorting-installation.webp",
+    "width": 1920,
+    "height": 1072,
+    "bytes": 166762
+  },
+  {
+    "dst": "assets/images/products/photoseparator/gallery-radial-sorting.webp",
+    "width": 1920,
+    "height": 1072,
+    "bytes": 132834
+  },
+  {
+    "dst": "assets/images/products/photoseparator/gallery-conveyor-line.webp",
+    "width": 1920,
+    "height": 1072,
+    "bytes": 87526
+  },
+  {
+    "dst": "assets/images/repair/repair-welding.webp",
+    "width": 730,
+    "height": 548,
+    "bytes": 66544
+  },
+  {
+    "dst": "assets/images/repair/repair-pcb-assembly.webp",
+    "width": 800,
+    "height": 533,
+    "bytes": 69980
+  },
+  {
+    "dst": "assets/images/repair/repair-machine-tool.webp",
+    "width": 1920,
+    "height": 1280,
+    "bytes": 261230
+  },
+  {
+    "dst": "assets/images/repair/repair-cnc-software.webp",
+    "width": 1400,
+    "height": 1049,
+    "bytes": 104016
+  }
+]

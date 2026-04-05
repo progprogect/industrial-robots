@@ -1,0 +1,145 @@
+{
+  "comment": "src: исходники в assets/archive/replaced-rasters/… (кроме inplace). Повторная сборка: python3 scripts/optimize-images.py",
+  "entries": [
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/lab-photo.jpg",
+      "dst": "assets/images/lab-hero.webp",
+      "max": 2400,
+      "quality": 82
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/pcb-board.jpg",
+      "dst": "assets/images/pcb-board.webp",
+      "max": 1920,
+      "quality": 84
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/photoseparator-diagram.jpeg",
+      "dst": "assets/images/photoseparator-diagram.webp",
+      "max": 1920,
+      "quality": 88
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/agv-rohly.png",
+      "dst": "assets/images/agv-rohly.webp",
+      "max": 2400,
+      "quality": 82
+    },
+    {
+      "src": "assets/images/manipulator.webp",
+      "dst": "assets/images/manipulator.webp",
+      "max": 1920,
+      "quality": 85,
+      "inplace": true
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/openmv-camera.jpg",
+      "dst": "assets/images/openmv-camera.webp",
+      "max": 1920,
+      "quality": 84
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/director-portrait.jpeg",
+      "dst": "assets/images/director-portrait.webp",
+      "max": 1920,
+      "quality": 82
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/manipulator-demo-poster.jpg",
+      "dst": "assets/images/manipulator-demo-poster.webp",
+      "max": 1280,
+      "quality": 82
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/manipulator-io-board.jpg",
+      "dst": "assets/images/manipulator-io-board.webp",
+      "max": 1920,
+      "quality": 84
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/products/photoseparator/apple-detection-2.jpg",
+      "dst": "assets/images/products/photoseparator/hero-apple-detection.webp",
+      "max": 2400,
+      "quality": 82
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/products/photoseparator/separator-poster.jpg",
+      "dst": "assets/images/products/photoseparator/separator-poster.webp",
+      "max": 1920,
+      "quality": 82
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/products/photoseparator/plate.jpeg",
+      "dst": "assets/images/products/photoseparator/pcb-topology.webp",
+      "max": 1920,
+      "quality": 84
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/products/photoseparator/SmartCameraX86.jpg",
+      "dst": "assets/images/products/photoseparator/smart-camera-x86.webp",
+      "max": 1920,
+      "quality": 84
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/products/photoseparator/680a070c3b99253410dd3dcf-69a86629d3773d2ea3e50090_Manufacturing_poster.0000000.jpg",
+      "dst": "assets/images/products/photoseparator/conveyor-packaging-control.webp",
+      "max": 1920,
+      "quality": 82
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/products/photoseparator/Bones.png.webp",
+      "dst": "assets/images/products/photoseparator/product-control.webp",
+      "max": 1920,
+      "quality": 85
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/products/photoseparator/horticulturae-07-00276-g008.png",
+      "dst": "assets/images/products/photoseparator/fruit-sorting-schematic.webp",
+      "max": 1920,
+      "quality": 88
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/products/photoseparator/brXmVCZQ-2.jpeg",
+      "dst": "assets/images/products/photoseparator/gallery-sorting-installation.webp",
+      "max": 1920,
+      "quality": 82
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/products/photoseparator/XWnxVjDr.jpeg",
+      "dst": "assets/images/products/photoseparator/gallery-radial-sorting.webp",
+      "max": 1920,
+      "quality": 82
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/products/photoseparator/RQH6Glbg.jpeg",
+      "dst": "assets/images/products/photoseparator/gallery-conveyor-line.webp",
+      "max": 1920,
+      "quality": 82
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/repair/repair-welding.png",
+      "dst": "assets/images/repair/repair-welding.webp",
+      "max": 1920,
+      "quality": 84
+    },
+    {
+      "src": "assets/images/repair/repair-pcb-assembly.webp",
+      "dst": "assets/images/repair/repair-pcb-assembly.webp",
+      "max": 1920,
+      "quality": 85,
+      "inplace": true
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/repair/repair-machine-tool.png",
+      "dst": "assets/images/repair/repair-machine-tool.webp",
+      "max": 1920,
+      "quality": 84
+    },
+    {
+      "src": "assets/archive/replaced-rasters/assets/images/repair/repair-cnc-software.jpg",
+      "dst": "assets/images/repair/repair-cnc-software.webp",
+      "max": 1920,
+      "quality": 84
+    }
+  ]
+}
