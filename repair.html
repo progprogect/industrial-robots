@@ -96,7 +96,9 @@
     </style>
 </head>
 <body class="bg-slate-950 text-slate-300 selection:bg-primary selection:text-white">
-<a class="fixed bottom-[max(1.5rem,env(safe-area-inset-bottom))] right-[max(1.5rem,env(safe-area-inset-right))] z-[60] inline-flex max-w-[calc(100vw-2rem)] min-h-11 items-center justify-center border border-white/20 px-3 sm:px-6 py-3 text-center text-[10px] font-black uppercase tracking-[0.25em] text-white shadow-2xl transition-transform hover:scale-105 machined-gradient touch-manipulation" href="#contacts">Оставить заявку</a>
+<a class="lg:hidden fixed bottom-[max(1.5rem,env(safe-area-inset-bottom))] right-[max(1.5rem,env(safe-area-inset-right))] z-[60] inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/20 machined-gradient text-white shadow-2xl transition-transform hover:scale-105 touch-manipulation" href="tel:+375255092206" aria-label="Позвонить: +375 25 509 22 06"><span class="material-symbols-outlined text-[28px] font-normal" aria-hidden="true">call</span></a>
+<a class="hidden lg:inline-flex fixed bottom-[max(1.5rem,env(safe-area-inset-bottom))] right-[max(1.5rem,env(safe-area-inset-right))] z-[60] max-w-[calc(100vw-2rem)] min-h-11 items-center justify-center border border-white/20 px-3 sm:px-6 py-3 text-center text-[10px] font-black uppercase tracking-[0.25em] text-white shadow-2xl transition-transform hover:scale-105 machined-gradient touch-manipulation" href="#contacts">Оставить заявку</a>
+
 <nav class="fixed left-0 right-0 top-0 z-50 w-full bg-surface pb-2.5 pt-[max(0.65rem,env(safe-area-inset-top))] sm:pb-3">
 <div class="mx-auto flex max-w-7xl flex-nowrap items-start justify-between gap-2 px-4 py-1.5 sm:gap-3 sm:px-6 sm:py-2.5 md:gap-4 md:px-8 lg:items-center">
 <a class="headline min-w-0 flex-1 pr-1 text-sm leading-snug break-words font-bold uppercase tracking-tight text-slate-900 hover:text-[#00327d] transition-colors sm:text-xl sm:tracking-tighter lg:flex-none" href="index.html">ООО «Промышленные роботы»</a>
@@ -322,23 +324,25 @@
 </div>
 </div>
 <div class="bg-tertiary border border-white/10 p-6 md:p-8 shadow-2xl cyber-border">
-<form class="space-y-5" action="https://formspree.io/f/xlgpkvjo" method="POST" accept-charset="UTF-8">
+<form class="space-y-5" action="https://formspree.io/f/xaqllkqo" method="POST" accept-charset="UTF-8">
+<input type="hidden" name="_subject" value="Заявка: ремонт"/>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true"/>
 <input type="hidden" name="product" value="Ремонт оборудования"/>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="rep-name">Имя</label>
-<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-3 outline-none text-lg text-slate-100 placeholder:text-slate-600" id="rep-name" name="name" type="text" required autocomplete="name" placeholder="Иван Иванов"/>
+<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg text-slate-100 placeholder:text-slate-600 min-h-[44px] sm:min-h-0" id="rep-name" name="name" type="text" required autocomplete="name" placeholder="Иван Иванов"/>
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="rep-phone">Телефон</label>
-<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-3 outline-none text-lg text-slate-100 placeholder:text-slate-600" id="rep-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
+<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg text-slate-100 placeholder:text-slate-600 min-h-[44px] sm:min-h-0" id="rep-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="rep-company">Компания / объект</label>
-<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-3 outline-none text-lg text-slate-100 placeholder:text-slate-600" id="rep-company" name="company" type="text" autocomplete="organization"/>
+<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg text-slate-100 placeholder:text-slate-600 min-h-[44px] sm:min-h-0" id="rep-company" name="company" type="text" autocomplete="organization" placeholder="ООО …, цех / город"/>
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="rep-msg">Коротко о задаче</label>
-<textarea class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-3 outline-none resize-none text-lg text-slate-100 placeholder:text-slate-600" id="rep-msg" name="message" rows="3" placeholder="Что сломалось, марка, город…"></textarea>
+<textarea class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-2.5 sm:py-3 px-1 outline-none resize-none text-base sm:text-lg text-slate-100 placeholder:text-slate-600 placeholder:leading-relaxed" id="rep-msg" name="message" rows="3" placeholder="Что сломалось, марка, город…"></textarea>
 </div>
 <button class="w-full machined-gradient text-on-primary py-5 font-black uppercase tracking-[0.3em] text-xs hover:shadow-xl transition-all" type="submit">Отправить</button>
 <p class="text-[10px] text-center text-slate-500 uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary-fixed underline underline-offset-2 hover:text-white" href="privacy.html">политикой конфиденциальности</a></p>

@@ -23,6 +23,7 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "REPAIR_SERVICE_HREF": "repair.html",
         "CONTACTS_PAGE_HREF": "contacts.html",
         "CTA_CONTACTS_HREF": "contacts.html#contacts",
+        "PHONE_TEL_HREF": "tel:+375255092206",
     },
     "photoseparator.src.html": {
         "INDEX_PREFIX": "index.html",
@@ -33,6 +34,7 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "REPAIR_SERVICE_HREF": "repair.html",
         "CONTACTS_PAGE_HREF": "contacts.html",
         "CTA_CONTACTS_HREF": "#contacts",
+        "PHONE_TEL_HREF": "tel:+375255092206",
     },
     "privacy.src.html": {
         "INDEX_PREFIX": "index.html",
@@ -43,6 +45,7 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "REPAIR_SERVICE_HREF": "repair.html",
         "CONTACTS_PAGE_HREF": "contacts.html",
         "CTA_CONTACTS_HREF": "contacts.html#contacts",
+        "PHONE_TEL_HREF": "tel:+375255092206",
     },
     "agv.src.html": {
         "INDEX_PREFIX": "index.html",
@@ -53,6 +56,7 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "REPAIR_SERVICE_HREF": "repair.html",
         "CONTACTS_PAGE_HREF": "contacts.html",
         "CTA_CONTACTS_HREF": "#contacts",
+        "PHONE_TEL_HREF": "tel:+375255092206",
     },
     "manipulator.src.html": {
         "INDEX_PREFIX": "index.html",
@@ -63,6 +67,7 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "REPAIR_SERVICE_HREF": "repair.html",
         "CONTACTS_PAGE_HREF": "contacts.html",
         "CTA_CONTACTS_HREF": "#contacts",
+        "PHONE_TEL_HREF": "tel:+375255092206",
     },
     "contacts.src.html": {
         "INDEX_PREFIX": "index.html",
@@ -73,6 +78,7 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "REPAIR_SERVICE_HREF": "repair.html",
         "CONTACTS_PAGE_HREF": "contacts.html",
         "CTA_CONTACTS_HREF": "#contacts",
+        "PHONE_TEL_HREF": "tel:+375255092206",
     },
     "repair.src.html": {
         "INDEX_PREFIX": "index.html",
@@ -83,6 +89,7 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "REPAIR_SERVICE_HREF": "repair.html",
         "CONTACTS_PAGE_HREF": "contacts.html",
         "CTA_CONTACTS_HREF": "#contacts",
+        "PHONE_TEL_HREF": "tel:+375255092206",
     },
 }
 
