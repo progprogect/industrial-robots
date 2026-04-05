@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<title>Ремонт промышленного оборудования, грузовиков и сельхозтехники — Гродно и область | ООО «Промышленные роботы»</title>
-<meta name="description" content="Ремонт станков, электроники и автоматики, грузового транспорта и сельхозтехники с выездом по Гродненской области и Беларуси. Инженеры с опытом более 20 лет. Диагностика, ориентиры цен, гарантия."/>
+<title>Ремонт промышленного оборудования — Гродно | ООО «Промышленные роботы»</title>
+<meta name="description" content="Ремонт станков, электроники, выезд по области. Выезд и диагностика — 90 BYN, остальное по смете после осмотра. Звоните — обсудим."/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -84,19 +84,18 @@
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3, .headline { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
-        .blueprint-grid { background-image: radial-gradient(rgba(195, 198, 213, 0.4) 0.5px, transparent 0.5px); background-size: 32px 32px; }
-        .blueprint-lines { background-image: linear-gradient(rgba(195, 198, 213, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(195, 198, 213, 0.1) 1px, transparent 1px); background-size: 100px 100px; }
+        .blueprint-grid { background-image: radial-gradient(rgba(195, 198, 213, 0.35) 0.5px, transparent 0.5px); background-size: 32px 32px; }
         .machined-gradient { background: linear-gradient(135deg, #00327d 0%, #0047ab 100%); }
-        .hero-overlay {
+        .hero-overlay-weld {
             background:
-                linear-gradient(to top, rgb(15 23 42 / 0.9) 0%, rgb(15 23 42 / 0.45) 42%, transparent 72%),
-                linear-gradient(90deg, rgb(15 23 42 / 0.88) 0%, rgb(15 23 42 / 0.42) 48%, rgb(15 23 42 / 0.12) 100%);
+                linear-gradient(to top, rgb(15 23 42 / 0.94) 0%, rgb(15 23 42 / 0.58) 48%, rgb(15 23 42 / 0.28) 72%),
+                linear-gradient(90deg, rgb(15 23 42 / 0.9) 0%, rgb(15 23 42 / 0.5) 52%, rgb(15 23 42 / 0.18) 100%);
         }
         .cyber-border { position: relative; }
-        .cyber-border::after { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px; border: 1px solid rgba(0, 50, 125, 0.2); pointer-events: none; }
+        .cyber-border::after { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px; border: 1px solid rgba(0, 71, 171, 0.35); pointer-events: none; }
     </style>
 </head>
-<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary blueprint-lines">
+<body class="bg-slate-950 text-slate-300 selection:bg-primary selection:text-white">
 <a class="fixed bottom-[max(1.5rem,env(safe-area-inset-bottom))] right-[max(1.5rem,env(safe-area-inset-right))] z-[60] inline-flex max-w-[calc(100vw-2rem)] min-h-11 items-center justify-center border border-white/20 px-5 py-3 text-center text-[10px] font-black uppercase tracking-[0.25em] text-white shadow-2xl transition-transform hover:scale-105 machined-gradient sm:px-6 touch-manipulation" href="#contacts">Оставить заявку</a>
 <nav class="fixed left-0 right-0 top-0 z-50 w-full bg-surface px-4 pb-2.5 pt-[max(0.65rem,env(safe-area-inset-top))] sm:px-6 sm:pb-3">
 <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-2.5 sm:px-6 md:gap-4 md:px-8">
@@ -173,288 +172,173 @@
 <main>
 <section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-20 sm:pt-24">
 <div class="absolute inset-0 z-0">
-<img src="assets/images/repair/repair-machine-tool.png" alt="Ремонт и обслуживание промышленного станка, механические узлы" class="w-full h-full object-cover object-center" width="1200" height="800" fetchpriority="high" decoding="async"/>
-<div class="absolute inset-0 hero-overlay"></div>
-<div class="absolute inset-0 blueprint-grid opacity-30"></div>
+<img src="assets/images/repair/repair-welding.png" alt="Сварочные работы в промышленном цеху" class="w-full h-full object-cover object-center" width="1200" height="800" fetchpriority="high" decoding="async"/>
+<div class="absolute inset-0 hero-overlay-weld"></div>
+<div class="absolute inset-0 blueprint-grid opacity-25"></div>
 </div>
 <div class="relative z-10 container mx-auto px-6 max-w-6xl w-full">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-3">Сервис · ремонт</p>
 <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-5">Ремонт промышленного оборудования в Гродно и области</h1>
-<p class="text-base md:text-lg text-white/90 max-w-5xl mb-6 border-l-2 border-primary-fixed pl-5 md:pl-6 font-light leading-relaxed space-y-3">
-<span class="block">Электроника, механика, ПО и платы — восстанавливаем линии и станки, подбираем запчасти и <strong class="text-white font-medium">выезжаем на объект</strong> при срочных остановках по области и по согласованию по Республике Беларусь.</span>
-<span class="block">Отдельно берёмся за <strong class="text-white font-medium">грузовой транспорт и сельхозтехнику</strong> — диагностика и ремонт с выездом к заказчику на базу, в поле или на парковку, без лишнего простоя.</span>
+<p class="text-base md:text-lg text-slate-100/95 max-w-5xl mb-6 border-l-2 border-secondary pl-5 md:pl-6 leading-relaxed">
+Станки, электроника, автоматика, <strong class="text-white">грузовой транспорт и сельхозтехника</strong> — выезжаем на объект, разбираемся и предлагаем решение. <strong class="text-white">Позвоните</strong> — коротко обсудим задачу и формат выезда.
 </p>
+<div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:items-center mb-6">
+<a class="text-2xl sm:text-3xl font-bold text-white tracking-tight hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a>
+<span class="hidden sm:inline text-slate-500">|</span>
+<span class="text-sm text-slate-400 uppercase tracking-widest">звонок по будням</span>
+</div>
 <div class="flex flex-wrap gap-4 items-center">
-<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center" href="#contacts">Заявка на ремонт</a>
-<a class="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors" href="#pricing">Ориентиры цен</a>
+<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center" href="#contacts">Заявка</a>
+<a class="inline-flex items-center gap-2 border border-white/25 text-white px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors" href="#pricing">Цена выезда</a>
 </div>
 </div>
 </section>
 
-<section class="py-12 md:py-16 bg-white border-y border-outline-variant/30" id="team">
+<section class="py-10 md:py-14 bg-tertiary border-y border-primary/20" id="scope">
 <div class="container mx-auto px-6 max-w-6xl">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-3">Команда</p>
-<h2 class="text-2xl md:text-3xl font-bold mb-4">Инженеры с опытом более 20 лет</h2>
-<p class="text-on-surface-variant leading-relaxed mb-4 max-w-4xl">У наших специалистов — многолетняя практика на <strong class="text-on-surface">заводах ЖБУ</strong>, в <strong class="text-on-surface">логистических компаниях</strong> и на производственных линиях. Совмещаем электронику, механику и программное обеспечение: от поиска неисправности до пусконаладки и сопровождения.</p>
-<p class="text-sm text-on-surface-variant/90 max-w-4xl border-l-2 border-primary pl-4">Ставим целью закрывать задачи по ремонту оборудования комплексно и подбирать решение в нестандартных случаях — после осмотра, диагностики и согласования объёма работ.</p>
-</div>
-</section>
-
-<section class="py-12 md:py-16 bg-surface-container-low border-y border-outline-variant/30" id="mobile-service">
-<div class="container mx-auto px-6 max-w-6xl">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-3">Выезд на объект</p>
-<h2 class="text-2xl md:text-3xl font-bold mb-4">Грузовой транспорт и сельхозтехника</h2>
-<p class="text-on-surface-variant leading-relaxed mb-6 max-w-4xl">Ремонтируем и обслуживаем <strong class="text-on-surface">грузовые автомобили</strong> и <strong class="text-on-surface">сельхозтехнику</strong> с выездом к заказчику по Гродненской области и по согласованию по Беларуси. Работаем на автобазе, в гараже, на поле или в парке техники — когда это возможно по задаче, без лишней эвакуации узлов.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-on-surface-variant">
-<div class="border border-outline-variant/40 bg-white p-5 cyber-border">
-<p class="font-bold text-on-surface mb-2">Типовые задачи</p>
-<ul class="list-disc pl-5 space-y-1.5">
-<li>Электрика и диагностика, поиск обрывов, сбоев и «плавающих» неисправностей</li>
-<li>Гидравлика и пневматика — по согласованию после осмотра</li>
-<li>Согласование с механикой, настройка после ремонта на месте</li>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-secondary-fixed mb-3">Направления</p>
+<h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-5">Что берём в работу</h2>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-300 leading-snug">
+<li class="flex gap-2 border border-white/10 bg-slate-950/40 p-3"><span class="text-secondary shrink-0">—</span> ЧПУ, приводы, шкафы, ПО и параметризация</li>
+<li class="flex gap-2 border border-white/10 bg-slate-950/40 p-3"><span class="text-secondary shrink-0">—</span> Платы, силовая электроника, частотники</li>
+<li class="flex gap-2 border border-white/10 bg-slate-950/40 p-3"><span class="text-secondary shrink-0">—</span> Механика станков, редукторы, направляющие</li>
+<li class="flex gap-2 border border-white/10 bg-slate-950/40 p-3"><span class="text-secondary shrink-0">—</span> Гидравлика, пневматика</li>
+<li class="flex gap-2 border border-white/10 bg-slate-950/40 p-3"><span class="text-secondary shrink-0">—</span> Сварка и восстановление металла</li>
+<li class="flex gap-2 border border-white/10 bg-slate-950/40 p-3"><span class="text-secondary shrink-0">—</span> Грузовики и сельхозтехника — выезд к вам</li>
+<li class="flex gap-2 border border-white/10 bg-slate-950/40 p-3 sm:col-span-2"><span class="text-secondary shrink-0">—</span> Прочее — после короткого разговора по телефону</li>
 </ul>
 </div>
-<div class="border border-outline-variant/40 bg-white p-5 cyber-border">
-<p class="font-bold text-on-surface mb-2">Как оформляем</p>
-<p>Объём, сроки и стоимость фиксируем после диагностики; выезд оцениваем по тем же принципам, что и для промышленного оборудования — см. <a class="text-primary font-semibold underline underline-offset-2 hover:text-primary-container" href="#pricing">ориентиры цен</a> на выезд.</p>
+</section>
+
+<section class="py-10 md:py-14 bg-slate-900 border-y border-white/5" id="team">
+<div class="container mx-auto px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-3">Команда</p>
+<h2 class="text-xl md:text-2xl font-bold text-slate-100 mb-3">Инженеры с опытом более 20 лет</h2>
+<p class="text-slate-400 leading-relaxed max-w-3xl text-sm md:text-base">Практика на заводах ЖБУ, в логистике и на производственных линиях. Электроника, механика и софт — в одной связке.</p>
+</div>
+</section>
+
+<section class="py-10 md:py-14 bg-tertiary border-y border-primary/15">
+<div class="container mx-auto px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-secondary-fixed mb-4">Как работаем</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="relative w-full overflow-hidden bg-slate-950 aspect-[4/3] cyber-border">
+<img alt="Электроника и платы" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" src="assets/images/repair/repair-pcb-assembly.webp" width="800" height="600" loading="lazy" decoding="async"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 to-transparent"></div>
+<p class="absolute bottom-0 left-0 right-0 p-4 text-sm font-bold text-white">Электроника и платы</p>
+</div>
+<div class="relative w-full overflow-hidden bg-slate-950 aspect-[4/3] cyber-border">
+<img alt="Ремонт станка" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" src="assets/images/repair/repair-machine-tool.png" width="1200" height="800" loading="lazy" decoding="async"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 to-transparent"></div>
+<p class="absolute bottom-0 left-0 right-0 p-4 text-sm font-bold text-white">Станки и механика</p>
+</div>
+<div class="relative w-full overflow-hidden bg-slate-950 aspect-[4/3] cyber-border">
+<img alt="Настройка ПО и панели" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" src="assets/images/repair/repair-cnc-software.jpg" width="1200" height="800" loading="lazy" decoding="async"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 to-transparent"></div>
+<p class="absolute bottom-0 left-0 right-0 p-4 text-sm font-bold text-white">ПО и автоматика</p>
 </div>
 </div>
 </div>
 </section>
 
-<section class="py-12 md:py-16 bg-white border-y border-outline-variant/30" id="scope">
+<section class="py-10 md:py-14 bg-slate-950 border-y border-white/5">
 <div class="container mx-auto px-6 max-w-6xl">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-3">Компетенции</p>
-<h2 class="text-3xl md:text-4xl font-bold mb-5">Что ремонтируем</h2>
-<p class="text-on-surface-variant text-base max-w-3xl mb-6 leading-relaxed">Работаем поэлементно и с заменой узлов — в зависимости от поломки, доступности деталей и экономики для вашего производства. Ниже — типовые направления, по которым к нам чаще всего обращаются; если вашего случая нет в списке, всё равно напишите или позвоните — разберём после краткого описания.</p>
-<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm text-on-surface-variant leading-relaxed">
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> электронные платы, силовая электроника, блоки питания;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> системы <strong class="text-on-surface font-semibold">ЧПУ</strong>, контроллеры, панели <strong class="text-on-surface font-semibold">HMI</strong>;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> <strong class="text-on-surface font-semibold">частотные преобразователи</strong>, приводная электроника, сервоусилители;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> прошивка и параметризация ПЛК, контроллеров, приводов;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> ПО станков и линий, восстановление резервных копий, настройка циклов;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> шкафы автоматики, силовые цепи, клеммники и разводка;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> датчики, сигналы, обрывы и помехи в линиях связи;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> механические узлы, редукторы, направляющие, шпиндели;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> моторы, сервоприводы, механика позиционирования;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> гидравлика и пневматика;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> конвейерное и вспомогательное оборудование линий;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> насосное и компрессорное — по согласованию после осмотра;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3"><span class="text-primary font-bold shrink-0">—</span> профилактика, <strong class="text-on-surface font-semibold">ТО</strong>, пусконаладка после ремонта;</li>
-<li class="flex gap-2 border border-outline-variant/40 bg-surface-container-low p-3 sm:col-span-2 lg:col-span-3"><span class="text-primary font-bold shrink-0">—</span> прочее промышленное оборудование и нестандартные задачи — по согласованию после диагностики.</li>
-</ul>
-<p class="mt-5 text-sm text-on-surface-variant border-l-2 border-primary pl-4 max-w-3xl">Ориентируемся на китайское, российское, белорусское и европейское оборудование — по согласованию подбираем оригинальные и совместимые решения, в том числе устаревшие серии и снятые с производства позиции.</p>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-3">Запчасти</p>
+<p class="text-slate-400 text-sm md:text-base max-w-3xl leading-relaxed">Ищем оригиналы и аналоги, при необходимости — изготовление под задачу. Сроки и возможность поставки согласуем отдельно.</p>
 </div>
 </section>
 
-<section class="py-12 md:py-16 bg-surface-container-low border-y border-outline-variant/30">
+<section class="py-10 md:py-14 bg-tertiary border-y border-primary/20" id="pricing">
 <div class="container mx-auto px-6 max-w-6xl">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
-<div class="order-2 lg:order-1">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-3">Электроника</p>
-<h2 class="text-2xl md:text-3xl font-bold mb-3">Платы, пайка, силовая часть</h2>
-<p class="text-on-surface-variant leading-relaxed mb-3">Диагностика цепей, замена компонентов, восстановление после КЗ и влаги. Разбираем типичные симптомы: ошибки приводов и энкодеров, перегрев силовых модулей, «немые» панели и сбои после вибраций.</p>
-<p class="text-on-surface-variant leading-relaxed mb-3">Часть работ делаем на объекте (быстрая проверка, обмен модулей, настройка), часть — в мастерской при необходимости пайки под микроскопом и стендовых проверок. При необходимости — прошивка и согласование с механической частью.</p>
-<p class="text-sm text-on-surface-variant/90 border-l-2 border-primary pl-3">Компонентный ремонт в ряде случаев даёт заметную экономию по сравнению с заменой целого блока.</p>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-secondary-fixed mb-3">Стоимость</p>
+<h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-4">Выезд и диагностика</h2>
+<div class="max-w-2xl border border-secondary/30 bg-slate-950/50 p-6 md:p-8 cyber-border mb-4">
+<p class="text-4xl md:text-5xl font-bold text-white mb-2">90&nbsp;<span class="text-2xl md:text-3xl font-semibold text-secondary-fixed">BYN</span></p>
+<p class="text-slate-400 text-sm leading-relaxed">Включает выезд специалиста и диагностику на объекте. Ремонт, запчасти и последующие работы — <strong class="text-slate-200">по смете после осмотра</strong>, сумму обсуждаем до начала работ.</p>
 </div>
-<div class="order-1 lg:order-2 relative w-full overflow-hidden bg-slate-100 cyber-border aspect-[4/3]">
-<img alt="Ремонт и монтаж электронной платы" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/images/repair/repair-pcb-assembly.webp" width="800" height="600" loading="lazy" decoding="async"/>
-</div>
+<p class="text-xs text-slate-500 max-w-2xl mb-4">Срочный выезд в пределах области — по возможности в тот же день, время согласуем по телефону.</p>
+<p class="text-xs text-slate-500 italic max-w-2xl">Цифры не являются публичной офертой; итог — после согласования объёма.</p>
+<div class="mt-6 flex flex-wrap gap-4">
+<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center" href="#contacts">Написать о задаче</a>
+<a class="inline-flex items-center gap-2 border border-white/20 text-slate-200 px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/5 transition-colors" href="tel:+375255092206">Позвонить</a>
 </div>
 </div>
 </section>
 
-<section class="py-12 md:py-16 bg-white border-y border-outline-variant/30">
+<section class="py-10 md:py-14 bg-slate-900 border-y border-white/5" id="faq">
 <div class="container mx-auto px-6 max-w-6xl">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
-<div class="relative w-full overflow-hidden bg-slate-100 cyber-border aspect-[4/3]">
-<img alt="Ремонт и обслуживание станка: механические узлы" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/images/repair/repair-machine-tool.png" width="1200" height="800" loading="lazy" decoding="async"/>
-</div>
-<div>
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-3">Механика и станки</p>
-<h2 class="text-2xl md:text-3xl font-bold mb-3">Промышленные станки и линии</h2>
-<p class="text-on-surface-variant leading-relaxed mb-3">Капитальный и текущий ремонт узлов, шпинделей, револьверных головок, направляющих, крепёжных интерфейсов. Учитываем допуски и износ — при необходимости совмещаем с электронной частью (обнуление, калибровка, проверка циклов).</p>
-<p class="text-on-surface-variant leading-relaxed">Подбираем режимы и проводим проверку после ремонта на объекте, чтобы сократить повторный простой.</p>
-</div>
-</div>
-</div>
-</section>
-
-<section class="py-12 md:py-16 bg-surface-container-low border-y border-outline-variant/30">
-<div class="container mx-auto px-6 max-w-6xl">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
-<div>
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-3">Металл и сварка</p>
-<h2 class="text-2xl md:text-3xl font-bold mb-3">Сварочные и восстановительные работы</h2>
-<p class="text-on-surface-variant leading-relaxed mb-3">Восстановление рам, кожухов и несущих элементов при износе и авариях — в связке с последующей механообработкой и контролем геометрии при необходимости.</p>
-<ul class="text-sm text-on-surface-variant list-disc pl-5 space-y-1.5">
-<li>Локальный ремонт трещин и разрушений без полной замены узла, если это допускает безопасность.</li>
-<li>Согласование с последующей сборкой и эксплуатационным режимом.</li>
-</ul>
-</div>
-<div class="relative w-full overflow-hidden bg-slate-100 cyber-border aspect-[4/3]">
-<img alt="Сварочные работы в цеху" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/images/repair/repair-welding.png" width="1200" height="800" loading="lazy" decoding="async"/>
-</div>
-</div>
-</div>
-</section>
-
-<section class="py-12 md:py-16 bg-white border-y border-outline-variant/30">
-<div class="container mx-auto px-6 max-w-6xl">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-3">Логистика запчастей</p>
-<h2 class="text-3xl md:text-4xl font-bold mb-5">Снабжение и запчасти</h2>
-<p class="text-on-surface-variant text-sm max-w-3xl mb-6 leading-relaxed">Сокращаем время простоя: параллельно с ремонтом ищем позиции на складах партнёров и под заказ, согласуем замену на аналог, если оригинал недоступен или нецелесообразен по срокам.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-on-surface-variant leading-relaxed">
-<div class="border border-outline-variant/40 bg-surface-container-low p-6 cyber-border">
-<p class="text-[10px] font-black uppercase tracking-widest text-primary mb-2">Наличие и поставки</p>
-<p>Расширенная база подрядчиков и поставщиков оборудования и комплектующих. Редкие позиции можем заказать, в том числе из Европы — <strong class="text-on-surface">возможность и сроки уточняются под конкретный заказ</strong>.</p>
-</div>
-<div class="border border-outline-variant/40 bg-surface-container-low p-6 cyber-border">
-<p class="text-[10px] font-black uppercase tracking-widest text-primary mb-2">Изготовление под задачу</p>
-<p>При отсутствии серийной детали — проектируем и изготавливаем <strong class="text-on-surface">специализированные запчасти на заказ</strong> под ваш узел и допуски.</p>
-</div>
-</div>
-</div>
-</section>
-
-<section class="py-12 md:py-16 bg-surface-container-high border-y border-outline-variant/40">
-<div class="container mx-auto px-6 max-w-6xl">
-<div class="max-w-4xl">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-3">Срочность</p>
-<h2 class="text-3xl md:text-4xl font-bold mb-4">Аварийная ситуация</h2>
-<p class="text-on-surface-variant leading-relaxed text-base md:text-lg">При остановке линии в ряде случаев можем организовать <strong class="text-on-surface">выезд в пределах Гродненской области в тот же день</strong> — согласуем приоритет и состав работ по телефону. То же касается <strong class="text-on-surface">парка грузовиков и сельхозтехники</strong>: при необходимости выезжаем на базу, к полю или в зону погрузки — чтобы не тянуть время.</p>
-<p class="mt-3 text-sm text-on-surface-variant/90">Точное время выезда зависит от загрузки, удалённости и сложности задачи.</p>
-</div>
-</div>
-</section>
-
-<section class="py-12 md:py-16 bg-white border-y border-outline-variant/30" id="faq">
-<div class="container mx-auto px-6 max-w-6xl">
-<h2 class="text-3xl md:text-4xl font-bold mb-3 text-center">Что обычно уточняют при ремонте</h2>
-<p class="text-on-surface-variant text-center max-w-2xl mx-auto mb-8 text-sm">Прозрачно отвечаем до пуска работ — без «скрытых» строк в смете.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-on-surface-variant leading-relaxed">
+<h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-6 text-center">Вопросы</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm text-slate-400 leading-relaxed">
 <div class="border-l-2 border-primary pl-4">
-<h3 class="font-bold text-on-surface mb-2">Сроки и простой</h3>
-<p>Оцениваем срок после диагностики; при необходимости предлагаем временное решение или обходной путь, чтобы сократить остановку.</p>
+<h3 class="font-bold text-slate-100 mb-1">Как быстро приедете?</h3>
+<p>По Гродненской области стараемся в тот же день — зависит от загрузки и удалённости.</p>
 </div>
 <div class="border-l-2 border-primary pl-4">
-<h3 class="font-bold text-on-surface mb-2">Гарантия и документы</h3>
-<p>Фиксируем объём работ и гарантийные обязательства в акте; срок гарантии зависит от типа работ — ориентир <strong class="text-on-surface">от 3 до 12 месяцев</strong>.</p>
+<h3 class="font-bold text-slate-100 mb-1">Гарантия?</h3>
+<p>На работы и запчасти — по договору, ориентир <strong class="text-slate-200">от 3 до 12 месяцев</strong> в зависимости от задачи.</p>
 </div>
 <div class="border-l-2 border-primary pl-4">
-<h3 class="font-bold text-on-surface mb-2">Диагностика и смета</h3>
-<p>Стоимость диагностики и ремонта согласуем до старта; при необходимости — разбор по этапам.</p>
+<h3 class="font-bold text-slate-100 mb-1">Привозить технику или выезд?</h3>
+<p>Решаем по разговору: что быстрее и дешевле для вас.</p>
 </div>
 <div class="border-l-2 border-primary pl-4">
-<h3 class="font-bold text-on-surface mb-2">Оригинал или аналог</h3>
-<p>Подбираем варианты по бюджету и срокам; согласуем срок поставки редких позиций.</p>
+<h3 class="font-bold text-slate-100 mb-1">Не только станки?</h3>
+<p>Да: линии, автоматика, грузовой парк и сельхозтехника — см. список выше.</p>
 </div>
-<div class="border-l-2 border-primary pl-4">
-<h3 class="font-bold text-on-surface mb-2">Выезд или привоз</h3>
-<p>Оцениваем целесообразность выезда инженера или ремонта в мастерской — с учётом логистики и простоя.</p>
-</div>
-<div class="border-l-2 border-primary pl-4">
-<h3 class="font-bold text-on-surface mb-2">Срочность</h3>
-<p>Срочные работы и выезды вне графика могут увеличивать стоимость — обозначаем коэффициент заранее.</p>
-</div>
-<div class="border-l-2 border-primary pl-4">
-<h3 class="font-bold text-on-surface mb-2">Только станки или шире?</h3>
-<p>Работаем не только со станками и линиями: автоматика, приводы, грузовой транспорт и сельхозтехника — см. разделы выше. Если задача на стыке направлений, как раз объединяем компетенции.</p>
-</div>
-<div class="border-l-2 border-primary pl-4">
-<h3 class="font-bold text-on-surface mb-2">Выезд к грузовику или трактору?</h3>
-<p>Да, по согласованию зоны и условий — звоните, кратко опишите технику и симптомы; подскажем, что сможем сделать на месте и что потребует эвакуации узла.</p>
+<div class="border-l-2 border-primary pl-4 md:col-span-2">
+<h3 class="font-bold text-slate-100 mb-1">Что с оплатой?</h3>
+<p>Условия фиксируем до старта ремонта; объём можно разбить по этапам.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section class="py-12 md:py-16 bg-surface-container-low border-y border-outline-variant/30" id="pricing">
+<section class="py-8 md:py-12 bg-tertiary border-y border-primary/15">
 <div class="container mx-auto px-6 max-w-6xl">
-<div class="max-w-3xl mb-6">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-3">Ориентиры</p>
-<h2 class="text-3xl md:text-4xl font-bold mb-3">Стоимость ремонта производственного оборудования</h2>
-<p class="text-on-surface-variant leading-relaxed">Итог формируется из диагностики, запчастей, трудоёмкости мастеров и дополнительных факторов вроде срочности и выезда. Компонентный ремонт в ряде случаев даёт экономию по сравнению с заменой целых блоков; точная сумма — после осмотра. Для выезда к грузовой и сельхозтехнике действуют те же принципы оценки выезда, что и в таблице ниже.</p>
-</div>
-<div class="overflow-x-auto border border-outline-variant/50 bg-white cyber-border shadow-sm">
-<table class="w-full text-left text-sm border-collapse min-w-[min(100%,28rem)]">
-<thead>
-<tr class="border-b border-outline-variant/40 bg-surface-container font-label text-[10px] uppercase tracking-widest text-outline">
-<th class="p-4 font-semibold">Услуга</th>
-<th class="p-4 font-semibold">Цена (ориентир)</th>
-</tr>
-</thead>
-<tbody class="text-on-surface-variant divide-y divide-outline-variant/30">
-<tr><td class="p-4 font-medium text-on-surface">Диагностика</td><td class="p-4">от 150&nbsp;BYN</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Работы по датчикам и сигналам</td><td class="p-4">от 70&nbsp;BYN</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Работы по ПО, параметризация</td><td class="p-4">от 70&nbsp;BYN</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Выезд по Гродненской области</td><td class="p-4">от 130&nbsp;BYN</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Выезд по Республике Беларусь</td><td class="p-4">от 450&nbsp;BYN</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Техническое обслуживание</td><td class="p-4">от 95&nbsp;BYN</td></tr>
-</tbody>
-</table>
-</div>
-<p class="mt-4 text-xs text-on-surface-variant/85 italic max-w-3xl">Цифры не являются публичной офертой; итоговая стоимость — после согласования объёма и условий.</p>
-<div class="mt-6 flex flex-wrap gap-4 items-center">
-<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center" href="#contacts">Заказать диагностику — бесплатно при согласовании ремонта</a>
-</div>
-<p class="mt-3 text-sm text-on-surface-variant max-w-2xl">Диагностика не взимается отдельно, если вы согласны с нашим предложением по ремонту и выполняем работы у нас — условия фиксируем до начала.</p>
+<h2 class="text-lg md:text-xl font-bold text-slate-100 mb-2">Гарантия</h2>
+<p class="text-slate-400 text-sm max-w-3xl leading-relaxed">Обязательства фиксируем в акте; исключения проговариваем заранее, если это влияет на срок службы узла.</p>
 </div>
 </section>
 
-<section class="py-12 md:py-16 bg-white border-y border-outline-variant/30">
-<div class="container mx-auto px-6 max-w-6xl">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-start">
-<div>
-<h2 class="text-2xl md:text-3xl font-bold mb-3">Гарантия</h2>
-<p class="text-on-surface-variant leading-relaxed">На выполненные работы и установленные запчасти предоставляем гарантию по договору, срок ориентировочно <strong class="text-on-surface">от 3 до 12 месяцев</strong> в зависимости от вида работ и компонентов.</p>
-</div>
-<div class="text-on-surface-variant text-sm leading-relaxed border-l-2 border-primary pl-4">
-<p class="mb-2">Гарантийные обязательства фиксируем в акте выполненных работ; при необходимости уточняем исключения (например, эксплуатация вне регламента или вмешательство третьих лиц) до старта.</p>
-</div>
-</div>
-</div>
-</section>
-
-<section class="py-14 md:py-24 bg-slate-900 text-white relative overflow-hidden" id="contacts">
-<div class="absolute inset-0 blueprint-grid opacity-5"></div>
+<section class="py-12 md:py-20 bg-slate-950 text-slate-200 relative overflow-hidden border-t border-primary/20" id="contacts">
+<div class="absolute inset-0 blueprint-grid opacity-[0.07]"></div>
 <div class="container mx-auto px-6 relative z-10 max-w-6xl">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
 <div>
-<h2 class="text-3xl md:text-4xl font-bold mb-5 uppercase tracking-tighter">Заявка на ремонт или расчёт</h2>
-<p class="text-white/75 mb-6 max-w-lg">Опишите оборудование (станок, линия, грузовик, трактор), симптомы и город — перезвоним и предложим формат: выезд, привоз или дистанционная консультация.</p>
-<div class="space-y-6 text-sm">
+<h2 class="text-2xl md:text-3xl font-bold mb-3 text-white uppercase tracking-tighter">Связь</h2>
+<p class="text-slate-400 mb-6 max-w-lg text-sm leading-relaxed">Позвоните — скажем, что подготовить или когда можем приехать. Или оставьте заявку — перезвоним.</p>
+<div class="space-y-5 text-sm">
 <div class="flex gap-4">
-<span class="material-symbols-outlined text-primary-fixed">call</span>
-<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
+<span class="material-symbols-outlined text-secondary-fixed">call</span>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="text-xl font-semibold text-white hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
 </div>
 <div class="flex gap-4">
-<span class="material-symbols-outlined text-primary-fixed">mail</span>
-<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a></div>
+<span class="material-symbols-outlined text-secondary-fixed">mail</span>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="text-lg font-semibold text-slate-200 hover:text-primary-fixed transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a></div>
 </div>
 </div>
 </div>
-<div class="bg-white text-on-surface p-8 md:p-10 shadow-2xl">
-<form class="space-y-6" action="https://formspree.io/f/xlgpkvjo" method="POST" accept-charset="UTF-8">
+<div class="bg-tertiary border border-white/10 p-6 md:p-8 shadow-2xl cyber-border">
+<form class="space-y-5" action="https://formspree.io/f/xlgpkvjo" method="POST" accept-charset="UTF-8">
 <input type="hidden" name="product" value="Ремонт оборудования"/>
 <div>
-<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="rep-name">Имя</label>
-<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-3 outline-none text-lg" id="rep-name" name="name" type="text" required autocomplete="name" placeholder="Иван Иванов"/>
+<label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="rep-name">Имя</label>
+<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-3 outline-none text-lg text-slate-100 placeholder:text-slate-600" id="rep-name" name="name" type="text" required autocomplete="name" placeholder="Иван Иванов"/>
 </div>
 <div>
-<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="rep-phone">Телефон</label>
-<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-3 outline-none text-lg" id="rep-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
+<label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="rep-phone">Телефон</label>
+<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-3 outline-none text-lg text-slate-100 placeholder:text-slate-600" id="rep-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
 </div>
 <div>
-<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="rep-company">Компания / объект</label>
-<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-3 outline-none text-lg" id="rep-company" name="company" type="text" autocomplete="organization"/>
+<label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="rep-company">Компания / объект</label>
+<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-3 outline-none text-lg text-slate-100 placeholder:text-slate-600" id="rep-company" name="company" type="text" autocomplete="organization"/>
 </div>
 <div>
-<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="rep-msg">Оборудование и неисправность</label>
-<textarea class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-3 outline-none resize-none text-lg" id="rep-msg" name="message" rows="4" placeholder="Станок, линия, грузовик или трактор, марка, что произошло, когда нужен выезд…"></textarea>
+<label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="rep-msg">Коротко о задаче</label>
+<textarea class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-3 outline-none resize-none text-lg text-slate-100 placeholder:text-slate-600" id="rep-msg" name="message" rows="3" placeholder="Что сломалось, марка, город…"></textarea>
 </div>
 <button class="w-full machined-gradient text-on-primary py-5 font-black uppercase tracking-[0.3em] text-xs hover:shadow-xl transition-all" type="submit">Отправить</button>
-<p class="text-[10px] text-center text-outline uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary underline underline-offset-2 hover:text-primary-container" href="privacy.html">политикой конфиденциальности</a></p>
+<p class="text-[10px] text-center text-slate-500 uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary-fixed underline underline-offset-2 hover:text-white" href="privacy.html">политикой конфиденциальности</a></p>
 </form>
 </div>
 </div>
