@@ -80,7 +80,7 @@
         }
     </script>
 <style>
-        html { scroll-padding-top: 5.625rem; }
+        html { scroll-padding-top: 4.5rem; }
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3, .headline { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
@@ -105,17 +105,17 @@
 <div class="absolute inset-0 hero-overlay"></div>
 <div class="absolute inset-0 blueprint-grid opacity-30"></div>
 </div>
-<div class="relative z-10 container mx-auto px-6 max-w-6xl w-full">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-10 xl:gap-12 lg:items-center">
+<div class="relative z-10 container mx-auto px-4 sm:px-6 max-w-6xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-12 lg:items-center">
 <div>
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">Робот&#x2011;манипулятор · автоматизация операций</p>
 <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-6">Робот&#x2011;манипулятор для&#xA0;производства и складских операций</h1>
 <p class="text-lg md:text-xl text-white/85 max-w-2xl mb-10 border-l-2 border-primary-fixed pl-6 font-light leading-relaxed">
 Решение для перемещения, укладки и контроля грузов до 30&nbsp;кг с возможностью глубокой интеграции в линию: ПЛК, учёт, машинное зрение.
 </p>
-<div class="flex flex-wrap gap-4 items-center">
-<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center" href="#contacts">Оставить заявку</a>
-<a class="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors" href="{{INDEX_PREFIX}}#solutions">Все продукты на главной</a>
+<div class="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
+<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center w-full sm:w-auto" href="#contacts">Оставить заявку</a>
+<a class="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors w-full sm:w-auto" href="{{INDEX_PREFIX}}#solutions">Все продукты на главной</a>
 </div>
 </div>
 <div class="flex w-full justify-center lg:justify-end pt-4 lg:pt-0">
@@ -131,8 +131,8 @@
 </section>
 
 <section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
-<div class="container mx-auto px-6 max-w-6xl">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
 <div>
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Назначение</p>
 <h2 class="text-3xl md:text-4xl font-bold mb-6">Зачем робот на линии</h2>
@@ -150,7 +150,7 @@
 </section>
 
 <section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30">
-<div class="container mx-auto px-6 max-w-6xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Спецификация</p>
 <h2 class="text-3xl md:text-4xl font-bold mb-6">Технические параметры</h2>
 <p class="text-on-surface-variant text-sm max-w-3xl mb-8 leading-relaxed">Ключевые ориентиры по комплектации. Итоговые значения фиксируются в ТЗ и паспорте после обследования объекта.</p>
@@ -178,8 +178,8 @@
 </section>
 
 <section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
-<div class="container mx-auto px-6 max-w-6xl">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 <div class="order-2 lg:order-1">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Подключения</p>
 <h2 class="text-3xl md:text-4xl font-bold mb-6">Плата ввода-вывода и связь с оборудованием</h2>
@@ -194,7 +194,7 @@
 </section>
 
 <section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30">
-<div class="container mx-auto px-6 max-w-4xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-4xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Демонстрация</p>
 <h2 class="text-3xl md:text-4xl font-bold mb-4">Пример работы робота</h2>
 <p class="text-on-surface-variant text-sm mb-8 max-w-3xl leading-relaxed" id="video-manip-desc">Короткий фрагмент работы установки на объекте. При необходимости организуем просмотр сценария, близкого к вашей задаче.</p>
@@ -208,7 +208,7 @@
 </section>
 
 <section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
-<div class="container mx-auto px-6 max-w-6xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 <div class="space-y-4 text-on-surface-variant leading-relaxed">
 <h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-2">Захваты</h2>
@@ -224,7 +224,7 @@
 </section>
 
 <section class="py-16 md:py-24 bg-surface-container-high border-y border-outline-variant/40">
-<div class="container mx-auto px-6 max-w-6xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <h2 class="text-3xl md:text-4xl font-bold mb-10">Стоимость и состав поставки</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
 <div class="bg-white border border-outline-variant/50 p-8 cyber-border">
@@ -244,7 +244,7 @@
 
 <section class="py-16 md:py-24 bg-slate-900 text-white relative overflow-hidden">
 <div class="absolute inset-0 blueprint-grid opacity-10"></div>
-<div class="container mx-auto px-6 max-w-6xl relative z-10">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
 <h2 class="text-3xl md:text-4xl font-bold mb-8">Сервис и поддержка</h2>
 <p class="text-white/80 max-w-3xl mb-8 leading-relaxed">Сервис для клиентов ведётся из <strong class="text-white">Гродно</strong>. Ориентиры по реакции (не договор SLA, уточняются при заключении договора):</p>
 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-sm text-white/85">
@@ -257,7 +257,7 @@
 </section>
 
 <section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
-<div class="container mx-auto px-6 max-w-4xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-4xl">
 <h2 class="text-2xl md:text-3xl font-bold mb-8">Что обычно уточняют с производств</h2>
 <div class="space-y-6 text-on-surface-variant text-sm leading-relaxed">
 <div class="border-l-2 border-primary pl-4">
@@ -282,16 +282,16 @@
 </section>
 
 <section class="py-16 md:py-24 bg-surface-container-low">
-<div class="container mx-auto px-6 max-w-4xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-4xl">
 <h2 class="text-2xl md:text-3xl font-bold mb-6">Для кого подходит</h2>
 <p class="text-on-surface-variant leading-relaxed">Производственным площадкам и складам, где нужно стабильно выполнять повторяющиеся операции с грузами до 30&nbsp;кг, готовым к интеграции в линию и учёт. Если важны предсказуемая поддержка в регионе и сопровождение внедрения «под ключ» по договору — обсудим сценарий на вашем объекте.</p>
 </div>
 </section>
 
-<section class="py-16 md:py-28 bg-slate-900 text-white relative overflow-hidden" id="contacts">
+<section class="pt-16 pb-28 md:pt-24 md:pb-32 lg:py-28 bg-slate-900 text-white relative overflow-hidden" id="contacts">
 <div class="absolute inset-0 blueprint-grid opacity-5"></div>
-<div class="container mx-auto px-6 relative z-10 max-w-6xl">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+<div class="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
 <div>
 <h2 class="text-3xl md:text-4xl font-bold mb-6 uppercase tracking-tighter">Запросить расчёт или консультацию</h2>
 <p class="text-white/75 mb-8 max-w-lg">Опишите операцию, габариты груза и желаемую связь с учётом — подготовим обратную связь по комплектации и внедрению.</p>

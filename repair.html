@@ -80,7 +80,7 @@
         }
     </script>
 <style>
-        html { scroll-padding-top: 5.625rem; }
+        html { scroll-padding-top: 4.5rem; }
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3, .headline { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
@@ -96,11 +96,11 @@
     </style>
 </head>
 <body class="bg-slate-950 text-slate-300 selection:bg-primary selection:text-white">
-<a class="fixed bottom-[max(1.5rem,env(safe-area-inset-bottom))] right-[max(1.5rem,env(safe-area-inset-right))] z-[60] inline-flex max-w-[calc(100vw-2rem)] min-h-11 items-center justify-center border border-white/20 px-5 py-3 text-center text-[10px] font-black uppercase tracking-[0.25em] text-white shadow-2xl transition-transform hover:scale-105 machined-gradient sm:px-6 touch-manipulation" href="#contacts">Оставить заявку</a>
-<nav class="fixed left-0 right-0 top-0 z-50 w-full bg-surface px-4 pb-2.5 pt-[max(0.65rem,env(safe-area-inset-top))] sm:px-6 sm:pb-3">
-<div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-2.5 sm:px-6 md:gap-4 md:px-8">
-<a class="headline min-w-0 max-w-[min(100%,14rem)] truncate text-base font-bold uppercase tracking-tighter text-slate-900 hover:text-[#00327d] transition-colors sm:max-w-none sm:text-xl" href="index.html">ООО «Промышленные роботы»</a>
-<div class="hidden flex-wrap items-center gap-6 lg:flex xl:gap-8">
+<a class="fixed bottom-[max(1.5rem,env(safe-area-inset-bottom))] right-[max(1.5rem,env(safe-area-inset-right))] z-[60] inline-flex max-w-[calc(100vw-2rem)] min-h-11 items-center justify-center border border-white/20 px-3 sm:px-6 py-3 text-center text-[10px] font-black uppercase tracking-[0.25em] text-white shadow-2xl transition-transform hover:scale-105 machined-gradient touch-manipulation" href="#contacts">Оставить заявку</a>
+<nav class="fixed left-0 right-0 top-0 z-50 w-full bg-surface pb-2.5 pt-[max(0.65rem,env(safe-area-inset-top))] sm:pb-3">
+<div class="mx-auto flex max-w-7xl flex-nowrap items-start justify-between gap-2 px-4 py-1.5 sm:gap-3 sm:px-6 sm:py-2.5 md:gap-4 md:px-8 lg:items-center">
+<a class="headline min-w-0 flex-1 pr-1 text-sm leading-snug break-words font-bold uppercase tracking-tight text-slate-900 hover:text-[#00327d] transition-colors sm:text-xl sm:tracking-tighter lg:flex-none" href="index.html">ООО «Промышленные роботы»</a>
+<div class="hidden flex-wrap items-center gap-6 lg:flex lg:flex-1 lg:justify-center xl:gap-8">
 <div class="relative group">
 <a class="inline-flex items-center gap-0.5 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-colors hover:text-[#00327d]" href="index.html#services" aria-haspopup="true" id="nav-services-trigger" aria-controls="nav-services-submenu">Услуги<span class="material-symbols-outlined text-[16px] font-normal opacity-60" aria-hidden="true">expand_more</span></a>
 <div class="absolute left-0 top-full z-[60] hidden w-max min-w-[16rem] max-w-[min(22rem,calc(100vw-2rem))] pt-1.5 group-hover:block group-focus-within:block" id="nav-services-submenu" role="navigation" aria-label="Услуги компании">
@@ -129,9 +129,9 @@
 <a class="text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-colors hover:text-[#00327d]" href="index.html#partners">Партнёры</a>
 <a class="text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-colors hover:text-[#00327d]" href="contacts.html#contacts">Контакты</a>
 </div>
-<div class="flex shrink-0 items-center gap-2 lg:gap-3">
-<a class="machined-gradient inline-flex min-h-11 items-center justify-center px-5 py-2.5 text-center text-[10px] font-black uppercase tracking-[0.2em] text-white shadow-lg transition-all hover:shadow-[#00327d]/20 md:px-8 touch-manipulation" href="#contacts">Оставить заявку</a>
-<button type="button" id="mobile-nav-open" class="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded border border-slate-200 bg-white text-slate-800 transition-colors hover:bg-slate-50 lg:hidden touch-manipulation" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Открыть меню">
+<div class="flex shrink-0 items-start gap-2 lg:items-center lg:gap-3">
+<a class="machined-gradient hidden h-11 items-center justify-center px-5 text-center text-[10px] font-black uppercase tracking-[0.2em] text-white shadow-lg transition-all hover:shadow-[#00327d]/20 md:px-8 touch-manipulation lg:inline-flex" href="#contacts">Оставить заявку</a>
+<button type="button" id="mobile-nav-open" class="mt-0.5 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded border border-slate-200 bg-white text-slate-800 transition-colors hover:bg-slate-50 lg:mt-0 lg:hidden touch-manipulation" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Открыть меню">
 <span class="material-symbols-outlined text-2xl" aria-hidden="true">menu</span>
 </button>
 </div>
@@ -145,6 +145,9 @@
 <button type="button" id="mobile-nav-close" class="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded border border-slate-200 text-slate-800 transition-colors hover:bg-slate-50 touch-manipulation" aria-label="Закрыть меню">
 <span class="material-symbols-outlined text-2xl" aria-hidden="true">close</span>
 </button>
+</div>
+<div class="border-b border-slate-200 px-4 pb-3">
+<a class="machined-gradient flex min-h-11 w-full items-center justify-center px-5 text-center text-[10px] font-black uppercase tracking-[0.2em] text-white shadow-lg transition-all hover:shadow-[#00327d]/20 touch-manipulation" href="#contacts">Оставить заявку</a>
 </div>
 <nav class="flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2" aria-label="Основная навигация">
 <a class="block min-h-11 py-3 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="index.html#services">Раздел «Услуги» на главной</a>
@@ -176,26 +179,26 @@
 <div class="absolute inset-0 hero-overlay-weld"></div>
 <div class="absolute inset-0 blueprint-grid opacity-25"></div>
 </div>
-<div class="relative z-10 container mx-auto px-6 max-w-6xl w-full">
+<div class="relative z-10 container mx-auto px-4 sm:px-6 max-w-6xl w-full">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-3">Сервис · ремонт</p>
-<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-5">Ремонт промышленного оборудования в Гродно и области</h1>
+<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.08] mb-5 break-words">Ремонт промышленного оборудования в Гродно и области</h1>
 <p class="text-base md:text-lg text-slate-100/95 max-w-5xl mb-6 border-l-2 border-secondary pl-5 md:pl-6 leading-relaxed">
 Станки, электроника, автоматика, <strong class="text-white">грузовой транспорт и сельхозтехника</strong> — выезжаем на объект, разбираемся и предлагаем решение. <strong class="text-white">Позвоните</strong> — коротко обсудим задачу и формат выезда.
 </p>
-<div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:items-center mb-6">
-<a class="text-2xl sm:text-3xl font-bold text-white tracking-tight hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a>
+<div class="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-4 sm:items-center mb-6 min-w-0">
+<a class="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight hover:text-primary-fixed transition-colors break-words" href="tel:+375255092206">+375 25 509 22 06</a>
 <span class="hidden sm:inline text-slate-500">|</span>
 <span class="text-sm text-slate-400 uppercase tracking-widest">звонок по будням и выходным</span>
 </div>
-<div class="flex flex-wrap gap-4 items-center">
-<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center" href="#contacts">Заявка</a>
-<a class="inline-flex items-center gap-2 border border-white/25 text-white px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors" href="#pricing">Цена выезда</a>
+<div class="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
+<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center w-full sm:w-auto" href="#contacts">Заявка</a>
+<a class="inline-flex items-center justify-center gap-2 border border-white/25 text-white px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors w-full sm:w-auto" href="#pricing">Цена выезда</a>
 </div>
 </div>
 </section>
 
 <section class="py-10 md:py-14 bg-tertiary border-y border-primary/20" id="scope">
-<div class="container mx-auto px-6 max-w-6xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-secondary-fixed mb-3">Направления</p>
 <h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-5">Что мы ремонтируем</h2>
 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-300 leading-snug">
@@ -211,7 +214,7 @@
 </section>
 
 <section class="py-10 md:py-14 bg-slate-900 border-y border-white/5" id="team">
-<div class="container mx-auto px-6 max-w-6xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-3">Команда</p>
 <h2 class="text-xl md:text-2xl font-bold text-slate-100 mb-3">Инженеры с опытом более 20 лет</h2>
 <p class="text-slate-400 leading-relaxed max-w-3xl text-sm md:text-base">Практика на заводах ЖБУ, в логистике и на производственных линиях. Электроника, механика и софт — в одной связке.</p>
@@ -219,20 +222,20 @@
 </section>
 
 <section class="py-10 md:py-14 bg-tertiary border-y border-primary/15">
-<div class="container mx-auto px-6 max-w-6xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-secondary-fixed mb-4">Как работаем</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-<div class="relative w-full overflow-hidden bg-slate-950 aspect-[4/3] cyber-border">
+<div class="relative w-full overflow-hidden bg-slate-950 aspect-video sm:aspect-[4/3] cyber-border">
 <img alt="Электроника и платы" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" src="assets/images/repair/repair-pcb-assembly.webp" width="800" height="600" loading="lazy" decoding="async"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 to-transparent"></div>
 <p class="absolute bottom-0 left-0 right-0 p-4 text-sm font-bold text-white">Электроника и платы</p>
 </div>
-<div class="relative w-full overflow-hidden bg-slate-950 aspect-[4/3] cyber-border">
+<div class="relative w-full overflow-hidden bg-slate-950 aspect-video sm:aspect-[4/3] cyber-border">
 <img alt="Ремонт станка" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" src="assets/images/repair/repair-machine-tool.png" width="1200" height="800" loading="lazy" decoding="async"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 to-transparent"></div>
 <p class="absolute bottom-0 left-0 right-0 p-4 text-sm font-bold text-white">Станки и механика</p>
 </div>
-<div class="relative w-full overflow-hidden bg-slate-950 aspect-[4/3] cyber-border">
+<div class="relative w-full overflow-hidden bg-slate-950 aspect-video sm:aspect-[4/3] cyber-border">
 <img alt="Настройка ПО и панели" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" src="assets/images/repair/repair-cnc-software.jpg" width="1200" height="800" loading="lazy" decoding="async"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 to-transparent"></div>
 <p class="absolute bottom-0 left-0 right-0 p-4 text-sm font-bold text-white">ПО и автоматика</p>
@@ -242,14 +245,14 @@
 </section>
 
 <section class="py-10 md:py-14 bg-slate-950 border-y border-white/5">
-<div class="container mx-auto px-6 max-w-6xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-3">Запчасти</p>
 <p class="text-slate-400 text-sm md:text-base max-w-3xl leading-relaxed">Ищем оригиналы и аналоги, при необходимости — изготовление под задачу. Сроки и возможность поставки согласуем отдельно.</p>
 </div>
 </section>
 
 <section class="py-10 md:py-14 bg-tertiary border-y border-primary/20" id="pricing">
-<div class="container mx-auto px-6 max-w-6xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-secondary-fixed mb-3">Стоимость</p>
 <h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-4">Выезд и диагностика</h2>
 <div class="max-w-2xl border border-secondary/30 bg-slate-950/50 p-6 md:p-8 cyber-border mb-4">
@@ -258,15 +261,15 @@
 </div>
 <p class="text-xs text-slate-500 max-w-2xl mb-4">Срочный выезд в пределах области — по возможности в тот же день, время согласуем по телефону.</p>
 <p class="text-xs text-slate-500 italic max-w-2xl">Цифры не являются публичной офертой; итог — после согласования объёма.</p>
-<div class="mt-6 flex flex-wrap gap-4">
-<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-flex items-center justify-center text-center" href="tel:+375255092206">Позвонить</a>
-<a class="inline-flex items-center gap-2 border border-white/20 text-slate-200 px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/5 transition-colors" href="#contacts">Написать о задаче</a>
+<div class="mt-6 flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
+<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-flex items-center justify-center text-center w-full sm:w-auto" href="tel:+375255092206">Позвонить</a>
+<a class="inline-flex items-center justify-center gap-2 border border-white/20 text-slate-200 px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/5 transition-colors w-full sm:w-auto" href="#contacts">Написать о задаче</a>
 </div>
 </div>
 </section>
 
 <section class="py-10 md:py-14 bg-slate-900 border-y border-white/5" id="faq">
-<div class="container mx-auto px-6 max-w-6xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-6 text-center">Вопросы</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm text-slate-400 leading-relaxed">
 <div class="border-l-2 border-primary pl-4">
@@ -294,15 +297,15 @@
 </section>
 
 <section class="py-8 md:py-12 bg-tertiary border-y border-primary/15">
-<div class="container mx-auto px-6 max-w-6xl">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <h2 class="text-lg md:text-xl font-bold text-slate-100 mb-2">Гарантия</h2>
 <p class="text-slate-400 text-sm max-w-3xl leading-relaxed">Обязательства фиксируем в акте; исключения проговариваем заранее, если это влияет на срок службы узла.</p>
 </div>
 </section>
 
-<section class="py-12 md:py-20 bg-slate-950 text-slate-200 relative overflow-hidden border-t border-primary/20" id="contacts">
+<section class="pt-12 pb-28 md:pt-20 md:pb-32 lg:py-20 bg-slate-950 text-slate-200 relative overflow-hidden border-t border-primary/20" id="contacts">
 <div class="absolute inset-0 blueprint-grid opacity-[0.07]"></div>
-<div class="container mx-auto px-6 relative z-10 max-w-6xl">
+<div class="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
 <div>
 <h2 class="text-2xl md:text-3xl font-bold mb-3 text-white uppercase tracking-tighter">Связь</h2>
