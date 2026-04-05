@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<link rel="icon" href="favicon.ico" sizes="any"/>
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
-<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<link rel="preload" as="image" href="{{SITE_ROOT_PREFIX}}/assets/images/lab-hero.webp" fetchpriority="high"/>
+<link rel="icon" href="{{SITE_ROOT_PREFIX}}/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="{{SITE_ROOT_PREFIX}}/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="{{SITE_ROOT_PREFIX}}/favicon-16x16.png"/>
+<link rel="apple-touch-icon" href="{{SITE_ROOT_PREFIX}}/apple-touch-icon.png"/>
 <!-- @include partials/seo-meta.html -->
 <!-- @include partials/json-ld-organization.html -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -121,7 +122,7 @@
 <!-- Блок 1 — Hero (логотипы партнёров — полоса под фиксированной шапкой, тот же фон) -->
 <section class="relative min-h-screen flex flex-col overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img alt="Лаборатория и испытательный полигон" class="w-full h-full object-cover object-center" src="assets/images/lab-hero.webp" width="2400" height="1800" fetchpriority="high" decoding="async"/>
+<img alt="Лаборатория и испытательный полигон" class="w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/lab-hero.webp" width="2400" height="1800" fetchpriority="high" decoding="async"/>
 <div class="absolute inset-0 hero-overlay"></div>
 <div class="absolute inset-0 blueprint-grid opacity-20"></div>
 </div>
@@ -134,26 +135,26 @@
 </div>
 <div class="overflow-hidden pb-3 md:pb-4">
 <div class="marquee-partners-track">
-<!-- Два одинаковых ряда для бесшовной анимации. Логотипы: scripts/build-logos-from-transparent-png.py; Yango — текст «Yango Tech». -->
+<!-- Два одинаковых ряда нужны для translateX(-50%) в marquee-partners; убрать дубль без смены CSS нельзя. Логотипы — лёгкие WebP в assets/logos-raster/; Yango — текст «Yango Tech». -->
 <div class="flex items-center gap-8 md:gap-14 lg:gap-16 px-4 sm:px-6 shrink-0">
-<img alt="HikRobot" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="assets/logos/logo-hikrobot.svg" width="1200" height="600" loading="lazy" decoding="async"/>
-<img alt="Echo" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="assets/logos/logo-echo.svg" width="1200" height="600" loading="lazy" decoding="async"/>
-<img alt="McDonald's" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="assets/logos/logo-mcdonalds.svg" width="1200" height="600" loading="lazy" decoding="async"/>
-<div class="flex h-12 shrink-0 items-center justify-center rounded border border-white/20 bg-white/95 px-3"><img alt="Элепарт" class="h-8 w-auto max-w-[120px] shrink-0 object-contain" src="assets/logos/logo-elepart.svg" width="1200" height="600" loading="lazy" decoding="async"/></div>
-<img alt="Экологическая Альтернатива" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="assets/logos/logo-eco.svg" width="1200" height="328" loading="lazy" decoding="async"/>
-<img alt="Шведофф" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="assets/logos/logo-shvedoff.svg" width="600" height="416" loading="lazy" decoding="async"/>
+<img alt="HikRobot" fetchpriority="low" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-hikrobot.webp" width="280" height="140" decoding="async"/>
+<img alt="Echo" fetchpriority="low" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-echo.webp" width="280" height="140" decoding="async"/>
+<img alt="McDonald's" fetchpriority="low" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-mcdonalds.webp" width="280" height="140" decoding="async"/>
+<div class="flex h-12 shrink-0 items-center justify-center rounded border border-white/20 bg-white/95 px-3"><img alt="Элепарт" fetchpriority="low" class="h-8 w-auto max-w-[120px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-elepart.webp" width="280" height="140" decoding="async"/></div>
+<img alt="Экологическая Альтернатива" fetchpriority="low" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-eco.webp" width="280" height="77" decoding="async"/>
+<img alt="Шведофф" fetchpriority="low" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-shvedoff.webp" width="231" height="160" decoding="async"/>
 <span class="font-headline font-bold text-white/95 tracking-tight text-sm md:text-base shrink-0 max-w-[140px] text-center leading-tight">Yango Tech</span>
-<img alt="Huawei" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="assets/logos/logo-huawei.svg" width="1200" height="600" loading="lazy" decoding="async"/>
+<img alt="Huawei" fetchpriority="low" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-huawei.webp" width="280" height="140" decoding="async"/>
 </div>
 <div class="flex items-center gap-8 md:gap-14 lg:gap-16 px-4 sm:px-6 shrink-0" aria-hidden="true">
-<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="assets/logos/logo-hikrobot.svg" width="1200" height="600" loading="lazy" decoding="async"/>
-<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="assets/logos/logo-echo.svg" width="1200" height="600" loading="lazy" decoding="async"/>
-<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="assets/logos/logo-mcdonalds.svg" width="1200" height="600" loading="lazy" decoding="async"/>
-<div class="flex h-12 shrink-0 items-center justify-center rounded border border-white/20 bg-white/95 px-3"><img alt="" class="h-8 w-auto max-w-[120px] shrink-0 object-contain" src="assets/logos/logo-elepart.svg" width="1200" height="600" loading="lazy" decoding="async"/></div>
-<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="assets/logos/logo-eco.svg" width="1200" height="328" loading="lazy" decoding="async"/>
-<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="assets/logos/logo-shvedoff.svg" width="600" height="416" loading="lazy" decoding="async"/>
+<img alt="" fetchpriority="low" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-hikrobot.webp" width="280" height="140" decoding="async"/>
+<img alt="" fetchpriority="low" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-echo.webp" width="280" height="140" decoding="async"/>
+<img alt="" fetchpriority="low" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-mcdonalds.webp" width="280" height="140" decoding="async"/>
+<div class="flex h-12 shrink-0 items-center justify-center rounded border border-white/20 bg-white/95 px-3"><img alt="" fetchpriority="low" class="h-8 w-auto max-w-[120px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-elepart.webp" width="280" height="140" decoding="async"/></div>
+<img alt="" fetchpriority="low" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-eco.webp" width="280" height="77" decoding="async"/>
+<img alt="" fetchpriority="low" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-shvedoff.webp" width="231" height="160" decoding="async"/>
 <span class="font-headline font-bold text-white/95 tracking-tight text-sm md:text-base shrink-0 max-w-[140px] text-center leading-tight" aria-hidden="true">Yango Tech</span>
-<img alt="" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="assets/logos/logo-huawei.svg" width="1200" height="600" loading="lazy" decoding="async"/>
+<img alt="" fetchpriority="low" class="h-9 md:h-10 w-auto max-w-[140px] shrink-0 object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-huawei.webp" width="280" height="140" decoding="async"/>
 </div>
 </div>
 </div>
@@ -214,7 +215,7 @@
 <div class="relative order-1 lg:order-2">
 <div class="relative pb-4 md:pb-0">
 <div class="relative aspect-[4/5] overflow-hidden cyber-border shadow-[24px_24px_0px_0px_#e7e8e9] sm:shadow-[40px_40px_0px_0px_#f3f4f5]">
-<img alt="Печатная плата, электроника собственной разработки" class="relative z-0 w-full h-full object-cover" src="assets/images/pcb-board.webp" width="960" height="1280" loading="lazy"/>
+<img alt="Печатная плата, электроника собственной разработки" class="relative z-0 w-full h-full object-cover" src="{{SITE_ROOT_PREFIX}}/assets/images/pcb-board.webp" width="960" height="1280" loading="lazy" decoding="async"/>
 <div class="media-subtle-dim-overlay" aria-hidden="true"></div>
 </div>
 <div class="mt-6 md:mt-0 md:absolute md:bottom-0 md:left-0 md:-translate-x-4 lg:-translate-x-8 md:max-w-sm glass-panel p-6 md:p-8 border-primary/20 shadow-lg">
@@ -285,31 +286,31 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto">
 <div id="product-photoseparator" class="group relative min-h-[280px] sm:min-h-[320px] scroll-mt-28 overflow-hidden cyber-border bg-slate-100">
-<img alt="Схема фотосепаратора" class="absolute inset-0 w-full h-full object-contain object-center p-4 transition-transform duration-1000 group-hover:scale-[1.02]" src="assets/images/photoseparator-diagram.webp" width="600" height="344" loading="lazy"/>
+<img alt="Схема фотосепаратора" class="absolute inset-0 w-full h-full object-contain object-center p-4 transition-transform duration-1000 group-hover:scale-[1.02]" src="{{SITE_ROOT_PREFIX}}/assets/images/photoseparator-diagram.webp" width="600" height="344" loading="lazy" decoding="async"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent p-8 md:p-10 flex flex-col justify-end pointer-events-none">
 <h3 class="text-2xl font-bold text-white mb-2 drop-shadow-sm">Фотосепараторы</h3>
 <p class="text-white/75 text-sm drop-shadow-sm">Очистка продукции от брака · автоматическая сортировка</p>
-<a class="pointer-events-auto mt-3 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.25em] text-white/90 hover:text-primary-fixed transition-colors" href="photoseparator.html">Подробнее <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
+<a class="pointer-events-auto mt-3 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.25em] text-white/90 hover:text-primary-fixed transition-colors" href="{{PHOTO_PRODUCT_HREF}}">Подробнее <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
 </div>
 </div>
 <div id="product-agv" class="group relative min-h-[280px] sm:min-h-[320px] scroll-mt-28 overflow-hidden cyber-border">
-<img alt="Автоматическая рохля на складе" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/agv-rohly.webp" width="2400" height="1792" loading="lazy"/>
+<img alt="Автоматическая рохля на складе" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="{{SITE_ROOT_PREFIX}}/assets/images/agv-rohly.webp" width="2400" height="1792" loading="lazy" decoding="async"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent p-8 md:p-10 flex flex-col justify-end pointer-events-none">
 <h3 class="text-2xl font-bold text-white mb-2">Роботизированные рохли (AGV)</h3>
 <p class="text-white/75 text-sm">Перемещение паллет · работа без оператора</p>
-<a class="pointer-events-auto mt-3 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.25em] text-white/90 hover:text-primary-fixed transition-colors" href="agv.html">Подробнее <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
+<a class="pointer-events-auto mt-3 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.25em] text-white/90 hover:text-primary-fixed transition-colors" href="{{AGV_PRODUCT_HREF}}">Подробнее <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
 </div>
 </div>
 <div id="product-manipulator" class="group relative min-h-[280px] sm:min-h-[320px] scroll-mt-28 overflow-hidden cyber-border">
-<img alt="Промышленный робот-манипулятор" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/manipulator.webp" width="1920" height="1080" loading="lazy"/>
+<img alt="Промышленный робот-манипулятор" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="{{SITE_ROOT_PREFIX}}/assets/images/manipulator.webp" width="1920" height="1080" loading="lazy" decoding="async"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent p-8 md:p-10 flex flex-col justify-end pointer-events-none">
 <h3 class="text-2xl font-bold text-white mb-2">Роботы-манипуляторы</h3>
 <p class="text-white/75 text-sm">Интеграция в производственные линии</p>
-<a class="pointer-events-auto mt-3 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.25em] text-white/90 hover:text-primary-fixed transition-colors" href="manipulator.html">Подробнее <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
+<a class="pointer-events-auto mt-3 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.25em] text-white/90 hover:text-primary-fixed transition-colors" href="{{MANIPULATOR_PRODUCT_HREF}}">Подробнее <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
 </div>
 </div>
 <div class="relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border bg-tertiary p-8 md:p-10 flex flex-col justify-between">
-<img alt="Модуль камеры машинного зрения (OpenMV)" class="absolute inset-0 w-full h-full object-cover object-center" src="assets/images/openmv-camera.webp" width="1000" height="1020" loading="lazy"/>
+<img alt="Модуль камеры машинного зрения (OpenMV)" class="absolute inset-0 w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/openmv-camera.webp" width="1000" height="1020" loading="lazy" decoding="async"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/50 to-slate-900/30 z-[1] pointer-events-none"></div>
 <div class="relative z-10">
 <div class="inline-flex items-center gap-2 bg-secondary text-white px-3 py-1 text-[9px] font-black uppercase tracking-widest mb-6">
@@ -335,27 +336,27 @@
 <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
 <div class="flex h-[7.25rem] sm:h-[7.75rem] items-center justify-center border border-outline-variant/40 bg-white p-3 sm:p-4 cyber-border">
 <div class="flex h-[4.5rem] sm:h-20 w-full max-w-[11rem] sm:max-w-[13rem] items-center justify-center">
-<img alt="McDonald's" class="max-h-full max-w-full w-auto object-contain object-center" src="assets/logos/logo-mcdonalds.svg" width="1200" height="600" loading="lazy"/>
+<img alt="McDonald's" fetchpriority="low" class="max-h-full max-w-full w-auto object-contain object-center" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-mcdonalds.webp" width="280" height="140" loading="lazy" decoding="async"/>
 </div>
 </div>
 <div class="flex h-[7.25rem] sm:h-[7.75rem] items-center justify-center border border-outline-variant/40 bg-white p-3 sm:p-4 cyber-border">
 <div class="flex h-[4.5rem] sm:h-20 w-full max-w-[11rem] sm:max-w-[13rem] items-center justify-center">
-<img alt="Huawei" class="max-h-full max-w-full w-auto object-contain object-center" src="assets/logos/logo-huawei.svg" width="1200" height="600" loading="lazy"/>
+<img alt="Huawei" fetchpriority="low" class="max-h-full max-w-full w-auto object-contain object-center" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-huawei.webp" width="280" height="140" loading="lazy" decoding="async"/>
 </div>
 </div>
 <div class="flex h-[7.25rem] sm:h-[7.75rem] items-center justify-center border border-outline-variant/40 bg-white p-3 sm:p-4 cyber-border">
 <div class="flex h-[4.5rem] sm:h-20 w-full max-w-[11rem] sm:max-w-[13rem] items-center justify-center">
-<img alt="СООО НПГ «Экологическая Альтернатива»" class="max-h-full max-w-full w-auto object-contain object-center" src="assets/logos/logo-eco.svg" width="1200" height="328" loading="lazy"/>
+<img alt="СООО НПГ «Экологическая Альтернатива»" fetchpriority="low" class="max-h-full max-w-full w-auto object-contain object-center" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-eco.webp" width="280" height="77" loading="lazy" decoding="async"/>
 </div>
 </div>
 <div class="flex h-[7.25rem] sm:h-[7.75rem] items-center justify-center border border-outline-variant/40 bg-white p-3 sm:p-4 cyber-border">
 <div class="flex h-[4.5rem] sm:h-20 w-full max-w-[11rem] sm:max-w-[13rem] items-center justify-center">
-<img alt="ООО «Элепарт»" class="max-h-full max-w-full w-auto object-contain object-center" src="assets/logos/logo-elepart.svg" width="1200" height="600" loading="lazy"/>
+<img alt="ООО «Элепарт»" fetchpriority="low" class="max-h-full max-w-full w-auto object-contain object-center" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-elepart.webp" width="280" height="140" loading="lazy" decoding="async"/>
 </div>
 </div>
 <div class="flex h-[7.25rem] sm:h-[7.75rem] items-center justify-center border border-outline-variant/40 bg-white p-3 sm:p-4 cyber-border">
 <div class="flex h-[4.5rem] sm:h-20 w-full max-w-[11rem] sm:max-w-[13rem] items-center justify-center">
-<img alt="Группа компаний Шведофф" class="max-h-full max-w-full w-auto object-contain object-center" src="assets/logos/logo-shvedoff.svg" width="600" height="416" loading="lazy"/>
+<img alt="Группа компаний Шведофф" fetchpriority="low" class="max-h-full max-w-full w-auto object-contain object-center" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-shvedoff.webp" width="231" height="160" loading="lazy" decoding="async"/>
 </div>
 </div>
 <div class="flex h-[7.25rem] sm:h-[7.75rem] items-center justify-center border border-outline-variant/40 bg-white p-3 sm:p-4 cyber-border">
@@ -454,7 +455,7 @@
 <div class="md:flow-root">
 <figure class="relative group mb-8 md:mb-0 md:mr-8 lg:mr-10 md:float-left w-full md:w-[min(100%,42rem)] md:max-w-[65%]">
 <div class="relative cyber-border shadow-2xl">
-<img alt="Волкунович Никита Сергеевич" class="relative z-0 block w-full h-auto max-w-full" src="assets/images/director-portrait.webp" width="1536" height="864" loading="lazy" decoding="async"/>
+<img alt="Волкунович Никита Сергеевич" class="relative z-0 block w-full h-auto max-w-full" src="{{SITE_ROOT_PREFIX}}/assets/images/director-portrait.webp" width="1536" height="864" loading="lazy" decoding="async"/>
 <div class="media-subtle-dim-overlay" aria-hidden="true"></div>
 </div>
 </figure>
@@ -529,7 +530,7 @@
 <button class="w-full machined-gradient text-on-primary py-6 font-black uppercase tracking-[0.35em] hover:shadow-2xl transition-all text-xs" type="submit">
                             Отправить заявку
                         </button>
-<p class="text-[10px] text-center text-outline uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary underline underline-offset-2 hover:text-primary-container" href="privacy.html">политикой конфиденциальности</a></p>
+<p class="text-[10px] text-center text-outline uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary underline underline-offset-2 hover:text-primary-container" href="{{PRIVACY_PAGE_HREF}}">политикой конфиденциальности</a></p>
 <p class="text-[10px] text-center text-outline uppercase tracking-[0.25em] font-bold">Мы отвечаем в день обращения</p>
 </form>
 </div>

@@ -3,11 +3,13 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<link rel="icon" href="favicon.ico" sizes="any"/>
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
-<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<link rel="preload" as="image" href="{{SITE_ROOT_PREFIX}}/assets/images/repair/repair-welding.webp" fetchpriority="high"/>
+<link rel="icon" href="{{SITE_ROOT_PREFIX}}/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="{{SITE_ROOT_PREFIX}}/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="{{SITE_ROOT_PREFIX}}/favicon-16x16.png"/>
+<link rel="apple-touch-icon" href="{{SITE_ROOT_PREFIX}}/apple-touch-icon.png"/>
 <!-- @include partials/seo-meta.html -->
+<!-- @include partials/json-ld-extra.html -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -103,7 +105,7 @@
 <main>
 <section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-20 sm:pt-24">
 <div class="absolute inset-0 z-0">
-<img src="assets/images/repair/repair-welding.webp" alt="Сварочные работы в промышленном цеху" class="w-full h-full object-cover object-center" width="730" height="548" fetchpriority="high" decoding="async"/>
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/repair/repair-welding.webp" alt="Сварочные работы в промышленном цеху" class="w-full h-full object-cover object-center" width="730" height="548" fetchpriority="high" decoding="async"/>
 <div class="absolute inset-0 hero-overlay-weld"></div>
 <div class="absolute inset-0 blueprint-grid opacity-25"></div>
 </div>
@@ -154,17 +156,17 @@
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-secondary-fixed mb-4">Как работаем</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 <div class="relative w-full overflow-hidden bg-slate-950 aspect-video sm:aspect-[4/3] cyber-border">
-<img alt="Электроника и платы" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" src="assets/images/repair/repair-pcb-assembly.webp" width="800" height="533" loading="lazy" decoding="async"/>
+<img alt="Электроника и платы" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" src="{{SITE_ROOT_PREFIX}}/assets/images/repair/repair-pcb-assembly.webp" width="800" height="533" loading="lazy" decoding="async"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 to-transparent"></div>
 <p class="absolute bottom-0 left-0 right-0 p-4 text-sm font-bold text-white">Электроника и платы</p>
 </div>
 <div class="relative w-full overflow-hidden bg-slate-950 aspect-video sm:aspect-[4/3] cyber-border">
-<img alt="Ремонт станка" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" src="assets/images/repair/repair-machine-tool.webp" width="1920" height="1280" loading="lazy" decoding="async"/>
+<img alt="Ремонт станка" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" src="{{SITE_ROOT_PREFIX}}/assets/images/repair/repair-machine-tool.webp" width="1920" height="1280" loading="lazy" decoding="async"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 to-transparent"></div>
 <p class="absolute bottom-0 left-0 right-0 p-4 text-sm font-bold text-white">Станки и механика</p>
 </div>
 <div class="relative w-full overflow-hidden bg-slate-950 aspect-video sm:aspect-[4/3] cyber-border">
-<img alt="Настройка ПО и панели" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" src="assets/images/repair/repair-cnc-software.webp" width="1400" height="1049" loading="lazy" decoding="async"/>
+<img alt="Настройка ПО и панели" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" src="{{SITE_ROOT_PREFIX}}/assets/images/repair/repair-cnc-software.webp" width="1400" height="1049" loading="lazy" decoding="async"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 to-transparent"></div>
 <p class="absolute bottom-0 left-0 right-0 p-4 text-sm font-bold text-white">ПО и автоматика</p>
 </div>
@@ -271,7 +273,7 @@
 <textarea class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-2.5 sm:py-3 px-1 outline-none resize-none text-base sm:text-lg text-slate-100 placeholder:text-slate-600 placeholder:leading-relaxed" id="rep-msg" name="message" rows="3" placeholder="Что сломалось, марка, город…"></textarea>
 </div>
 <button class="w-full machined-gradient text-on-primary py-5 font-black uppercase tracking-[0.3em] text-xs hover:shadow-xl transition-all" type="submit">Отправить</button>
-<p class="text-[10px] text-center text-slate-500 uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary-fixed underline underline-offset-2 hover:text-white" href="privacy.html">политикой конфиденциальности</a></p>
+<p class="text-[10px] text-center text-slate-500 uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary-fixed underline underline-offset-2 hover:text-white" href="{{PRIVACY_PAGE_HREF}}">политикой конфиденциальности</a></p>
 </form>
 </div>
 </div>

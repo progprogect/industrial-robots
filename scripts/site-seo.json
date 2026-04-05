@@ -1,5 +1,6 @@
 {
-  "site_origin": "https://www.example.com",
+  "site_origin": "https://promroboty.by",
+  "base_path": "",
   "og_locale": "ru_BY",
   "site_name": "ООО «Промышленные роботы»",
   "default_og_image": "assets/images/lab-hero.webp",

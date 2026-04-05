@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<link rel="icon" href="favicon.ico" sizes="any"/>
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
-<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<link rel="icon" href="{{SITE_ROOT_PREFIX}}/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="{{SITE_ROOT_PREFIX}}/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="{{SITE_ROOT_PREFIX}}/favicon-16x16.png"/>
+<link rel="apple-touch-icon" href="{{SITE_ROOT_PREFIX}}/apple-touch-icon.png"/>
 <!-- @include partials/seo-meta.html -->
+<!-- @include partials/json-ld-extra.html -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -159,12 +160,12 @@
 <p>Руководитель: Волкунович Н.&nbsp;С., действует на основании Устава.</p>
 <p>Тел.: <a class="text-primary font-semibold hover:underline" href="tel:+375255092206">+375&nbsp;25&nbsp;509&nbsp;22&nbsp;06</a></p>
 <p>E-mail: <a class="text-primary font-semibold hover:underline break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a></p>
-<p>Дополнительные контакты и форма обратной связи: <a class="text-primary font-semibold hover:underline" href="contacts.html">страница «Контакты»</a>.</p>
+<p>Дополнительные контакты и форма обратной связи: <a class="text-primary font-semibold hover:underline" href="{{CONTACTS_PAGE_HREF}}">страница «Контакты»</a>.</p>
 </div>
 </section>
 
 <p class="text-xs text-on-surface-variant/80 leading-relaxed">
-Политика может обновляться; актуальная версия всегда размещена по адресу <a class="font-mono text-primary/90 hover:underline" href="privacy.html">/privacy.html</a>.
+Политика может обновляться; актуальная версия всегда размещена по адресу <a class="font-mono text-primary/90 hover:underline" href="{{PRIVACY_PAGE_HREF}}">{{PRIVACY_PAGE_HREF}}</a>.
 </p>
 </main>
 <!-- @include partials/footer.html -->

@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<link rel="icon" href="favicon.ico" sizes="any"/>
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
-<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<link rel="icon" href="{{SITE_ROOT_PREFIX}}/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="{{SITE_ROOT_PREFIX}}/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="{{SITE_ROOT_PREFIX}}/favicon-16x16.png"/>
+<link rel="apple-touch-icon" href="{{SITE_ROOT_PREFIX}}/apple-touch-icon.png"/>
 <!-- @include partials/seo-meta.html -->
 <!-- @include partials/json-ld-localbusiness.html -->
+<!-- @include partials/json-ld-extra.html -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -188,7 +189,7 @@
 <textarea class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none resize-none text-base sm:text-lg placeholder:text-outline-variant placeholder:leading-relaxed" id="contacts-msg" name="message" rows="4" placeholder="Задача, продукт, сроки…"></textarea>
 </div>
 <button class="w-full machined-gradient text-on-primary py-5 font-black uppercase tracking-[0.3em] text-xs hover:shadow-xl transition-all" type="submit">Отправить</button>
-<p class="text-[10px] text-center text-outline uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary underline underline-offset-2 hover:text-primary-container" href="privacy.html">политикой конфиденциальности</a></p>
+<p class="text-[10px] text-center text-outline uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary underline underline-offset-2 hover:text-primary-container" href="{{PRIVACY_PAGE_HREF}}">политикой конфиденциальности</a></p>
 </form>
 </div>
 </div>
