@@ -3,7 +3,19 @@
 <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-2.5 sm:px-6 md:gap-4 md:px-8">
 <a class="headline min-w-0 max-w-[min(100%,14rem)] truncate text-base font-bold uppercase tracking-tighter text-slate-900 hover:text-[#00327d] transition-colors sm:max-w-none sm:text-xl" href="{{HOME_HREF}}">ООО «Промышленные роботы»</a>
 <div class="hidden flex-wrap items-center gap-6 lg:flex xl:gap-8">
-<a class="text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-colors hover:text-[#00327d]" href="{{INDEX_PREFIX}}#services">Услуги</a>
+<div class="relative group">
+<a class="inline-flex items-center gap-0.5 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-colors hover:text-[#00327d]" href="{{INDEX_PREFIX}}#services" aria-haspopup="true" id="nav-services-trigger" aria-controls="nav-services-submenu">Услуги<span class="material-symbols-outlined text-[16px] font-normal opacity-60" aria-hidden="true">expand_more</span></a>
+<div class="absolute left-0 top-full z-[60] hidden w-max min-w-[16rem] max-w-[min(22rem,calc(100vw-2rem))] pt-1.5 group-hover:block group-focus-within:block" id="nav-services-submenu" role="navigation" aria-label="Услуги компании">
+<div class="border border-slate-200/80 bg-white/95 py-1.5 shadow-lg backdrop-blur-md">
+<a class="block px-4 py-2.5 text-[10px] font-bold uppercase tracking-widest text-slate-700 transition-colors hover:bg-slate-50 hover:text-[#00327d]" href="{{REPAIR_SERVICE_HREF}}">Ремонт оборудования на производстве</a>
+<span class="block px-4 py-2.5 text-[10px] font-bold uppercase tracking-widest text-slate-400 cursor-not-allowed select-none" title="Страница в подготовке">Производство станков и роботов на заказ</span>
+<span class="block px-4 py-2.5 text-[10px] font-bold uppercase tracking-widest text-slate-400 cursor-not-allowed select-none" title="Страница в подготовке">Интеграция роботизированных систем</span>
+<span class="block px-4 py-2.5 text-[10px] font-bold uppercase tracking-widest text-slate-400 cursor-not-allowed select-none" title="Страница в подготовке">Внедрение роботов-манипуляторов</span>
+<span class="block px-4 py-2.5 text-[10px] font-bold uppercase tracking-widest text-slate-400 cursor-not-allowed select-none" title="Страница в подготовке">Разработка ПО и компьютерное зрение</span>
+<span class="block px-4 py-2.5 text-[10px] font-bold uppercase tracking-widest text-slate-400 cursor-not-allowed select-none" title="Страница в подготовке">Модернизация (доработка) оборудования</span>
+</div>
+</div>
+</div>
 <div class="relative group">
 <a class="inline-flex items-center gap-0.5 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-colors hover:text-[#00327d]" href="{{INDEX_PREFIX}}#solutions" aria-haspopup="true" id="nav-products-trigger" aria-controls="nav-products-submenu">Продукты<span class="material-symbols-outlined text-[16px] font-normal opacity-60" aria-hidden="true">expand_more</span></a>
 <div class="absolute left-0 top-full z-[60] hidden w-max min-w-[13rem] pt-1.5 group-hover:block group-focus-within:block" id="nav-products-submenu" role="navigation" aria-label="Подстраницы продуктов">
@@ -37,7 +49,14 @@
 </button>
 </div>
 <nav class="flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2" aria-label="Основная навигация">
-<a class="block min-h-11 py-3 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{INDEX_PREFIX}}#services">Услуги</a>
+<a class="block min-h-11 py-3 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{INDEX_PREFIX}}#services">Раздел «Услуги» на главной</a>
+<p class="pt-2 text-[10px] font-black uppercase tracking-widest text-slate-400">Направления</p>
+<a class="block min-h-11 py-3 pl-2 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{REPAIR_SERVICE_HREF}}">Ремонт оборудования на производстве</a>
+<span class="block min-h-11 py-3 pl-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">Производство станков и роботов на заказ</span>
+<span class="block min-h-11 py-3 pl-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">Интеграция роботизированных систем</span>
+<span class="block min-h-11 py-3 pl-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">Внедрение роботов-манипуляторов</span>
+<span class="block min-h-11 py-3 pl-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">Разработка ПО и компьютерное зрение</span>
+<span class="block min-h-11 py-3 pl-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">Модернизация (доработка) оборудования</span>
 <p class="pt-4 text-[10px] font-black uppercase tracking-widest text-slate-400">Продукты</p>
 <a class="block min-h-11 py-3 pl-2 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{PHOTO_PRODUCT_HREF}}">Фотосепаратор</a>
 <a class="block min-h-11 py-3 pl-2 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{MANIPULATOR_PRODUCT_HREF}}">Робот-манипулятор</a>
