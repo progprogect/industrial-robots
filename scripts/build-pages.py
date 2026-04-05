@@ -459,11 +459,12 @@ def redirect_stub_html(site_origin: str, base_path: str, slug: str) -> str:
     target = canonical_url(site_origin, base_path, slug)
     rel = page_path(base_path, slug)
     rel_js = json.dumps(rel, ensure_ascii=False)
+    gtag = read_partial("partials/gtag.html")
     return f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="utf-8"/>
-<link rel="canonical" href="{html.escape(target, quote=True)}"/>
+{gtag}<link rel="canonical" href="{html.escape(target, quote=True)}"/>
 <meta http-equiv="refresh" content="0;url={html.escape(rel, quote=True)}"/>
 <title>Перенаправление</title>
 <script>location.replace({rel_js});</script>
