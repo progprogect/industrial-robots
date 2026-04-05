@@ -20,7 +20,8 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "PHOTO_PRODUCT_HREF": "photoseparator.html",
         "AGV_PRODUCT_HREF": "agv.html",
         "MANIPULATOR_PRODUCT_HREF": "manipulator.html",
-        "CTA_CONTACTS_HREF": "#contacts",
+        "CONTACTS_PAGE_HREF": "contacts.html",
+        "CTA_CONTACTS_HREF": "contacts.html#contacts",
     },
     "photoseparator.src.html": {
         "INDEX_PREFIX": "index.html",
@@ -28,6 +29,7 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "PHOTO_PRODUCT_HREF": "photoseparator.html",
         "AGV_PRODUCT_HREF": "agv.html",
         "MANIPULATOR_PRODUCT_HREF": "manipulator.html",
+        "CONTACTS_PAGE_HREF": "contacts.html",
         "CTA_CONTACTS_HREF": "#contacts",
     },
     "privacy.src.html": {
@@ -36,7 +38,8 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "PHOTO_PRODUCT_HREF": "photoseparator.html",
         "AGV_PRODUCT_HREF": "agv.html",
         "MANIPULATOR_PRODUCT_HREF": "manipulator.html",
-        "CTA_CONTACTS_HREF": "index.html#contacts",
+        "CONTACTS_PAGE_HREF": "contacts.html",
+        "CTA_CONTACTS_HREF": "contacts.html#contacts",
     },
     "agv.src.html": {
         "INDEX_PREFIX": "index.html",
@@ -44,6 +47,7 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "PHOTO_PRODUCT_HREF": "photoseparator.html",
         "AGV_PRODUCT_HREF": "agv.html",
         "MANIPULATOR_PRODUCT_HREF": "manipulator.html",
+        "CONTACTS_PAGE_HREF": "contacts.html",
         "CTA_CONTACTS_HREF": "#contacts",
     },
     "manipulator.src.html": {
@@ -52,6 +56,16 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "PHOTO_PRODUCT_HREF": "photoseparator.html",
         "AGV_PRODUCT_HREF": "agv.html",
         "MANIPULATOR_PRODUCT_HREF": "manipulator.html",
+        "CONTACTS_PAGE_HREF": "contacts.html",
+        "CTA_CONTACTS_HREF": "#contacts",
+    },
+    "contacts.src.html": {
+        "INDEX_PREFIX": "index.html",
+        "HOME_HREF": "index.html",
+        "PHOTO_PRODUCT_HREF": "photoseparator.html",
+        "AGV_PRODUCT_HREF": "agv.html",
+        "MANIPULATOR_PRODUCT_HREF": "manipulator.html",
+        "CONTACTS_PAGE_HREF": "contacts.html",
         "CTA_CONTACTS_HREF": "#contacts",
     },
 }
@@ -62,6 +76,7 @@ OUT_NAMES = {
     "privacy.src.html": "privacy.html",
     "agv.src.html": "agv.html",
     "manipulator.src.html": "manipulator.html",
+    "contacts.src.html": "contacts.html",
 }
 
 
