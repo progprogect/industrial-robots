@@ -19,6 +19,7 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "HOME_HREF": "index.html",
         "PHOTO_PRODUCT_HREF": "photoseparator.html",
         "AGV_PRODUCT_HREF": "agv.html",
+        "MANIPULATOR_PRODUCT_HREF": "manipulator.html",
         "CTA_CONTACTS_HREF": "#contacts",
     },
     "photoseparator.src.html": {
@@ -26,6 +27,7 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "HOME_HREF": "index.html",
         "PHOTO_PRODUCT_HREF": "photoseparator.html",
         "AGV_PRODUCT_HREF": "agv.html",
+        "MANIPULATOR_PRODUCT_HREF": "manipulator.html",
         "CTA_CONTACTS_HREF": "#contacts",
     },
     "privacy.src.html": {
@@ -33,6 +35,7 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "HOME_HREF": "index.html",
         "PHOTO_PRODUCT_HREF": "photoseparator.html",
         "AGV_PRODUCT_HREF": "agv.html",
+        "MANIPULATOR_PRODUCT_HREF": "manipulator.html",
         "CTA_CONTACTS_HREF": "index.html#contacts",
     },
     "agv.src.html": {
@@ -40,6 +43,15 @@ PAGE_VARS: dict[str, dict[str, str]] = {
         "HOME_HREF": "index.html",
         "PHOTO_PRODUCT_HREF": "photoseparator.html",
         "AGV_PRODUCT_HREF": "agv.html",
+        "MANIPULATOR_PRODUCT_HREF": "manipulator.html",
+        "CTA_CONTACTS_HREF": "#contacts",
+    },
+    "manipulator.src.html": {
+        "INDEX_PREFIX": "index.html",
+        "HOME_HREF": "index.html",
+        "PHOTO_PRODUCT_HREF": "photoseparator.html",
+        "AGV_PRODUCT_HREF": "agv.html",
+        "MANIPULATOR_PRODUCT_HREF": "manipulator.html",
         "CTA_CONTACTS_HREF": "#contacts",
     },
 }
@@ -49,6 +61,7 @@ OUT_NAMES = {
     "photoseparator.src.html": "photoseparator.html",
     "privacy.src.html": "privacy.html",
     "agv.src.html": "agv.html",
+    "manipulator.src.html": "manipulator.html",
 }
 
 
