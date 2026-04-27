@@ -353,10 +353,26 @@ def build_page_vars(src_name: str) -> dict[str, str]:
     else:
         cta_contacts = f"{contacts_path}#contacts"
 
+    brand_cls_static = (
+        "headline min-w-0 flex-1 pr-1 text-sm leading-snug break-words font-bold uppercase "
+        "tracking-tight text-slate-900 sm:text-xl sm:tracking-tighter lg:flex-none"
+    )
+    brand_cls_link = brand_cls_static + " hover:text-[#00327d] transition-colors"
+    if src_name == "index.src.html":
+        header_brand_html = (
+            f'<span class="{brand_cls_static}">ООО «Промышленные роботы»</span>'
+        )
+    else:
+        header_brand_html = (
+            f'<a class="{brand_cls_link}" href="{html.escape(home_path, quote=True)}">'
+            f"ООО «Промышленные роботы»</a>"
+        )
+
     return {
         "SITE_ROOT_PREFIX": site_root_prefix(bp),
         "HOME_PATH": home_path,
         "HOME_HREF": home_path,
+        "HEADER_BRAND_HTML": header_brand_html,
         "PHOTO_PRODUCT_HREF": po("fotoseparator"),
         "AGV_PRODUCT_HREF": po("agv"),
         "MANIPULATOR_PRODUCT_HREF": po("robot-manipulyator"),
