@@ -25,6 +25,7 @@ PAGE_SLUGS: dict[str, str] = {
     "privacy.src.html": "politika-konfidencialnosti",
     "agv.src.html": "agv",
     "manipulator.src.html": "robot-manipulyator",
+    "manipulator-setup.src.html": "nastrojka-manipulyatorov",
     "contacts.src.html": "kontakty",
     "repair.src.html": "remont",
 }
@@ -45,6 +46,7 @@ PAGE_ORDER: list[str] = [
     "privacy.src.html",
     "agv.src.html",
     "manipulator.src.html",
+    "manipulator-setup.src.html",
     "contacts.src.html",
     "repair.src.html",
 ]
@@ -55,6 +57,7 @@ SITEMAP_META: dict[str, tuple[str, str]] = {
     "photoseparator.src.html": ("0.9", "monthly"),
     "agv.src.html": ("0.9", "monthly"),
     "manipulator.src.html": ("0.9", "monthly"),
+    "manipulator-setup.src.html": ("0.9", "monthly"),
     "repair.src.html": ("0.85", "monthly"),
     "contacts.src.html": ("0.8", "monthly"),
     "privacy.src.html": ("0.3", "yearly"),
@@ -109,6 +112,15 @@ SEO_PAGE: dict[str, dict[str, str]] = {
         ),
         "OG_IMAGE": "assets/images/manipulator.webp",
         "BREADCRUMB_NAME": "Робот-манипулятор",
+    },
+    "manipulator-setup.src.html": {
+        "SEO_TITLE": "Настройка роботов-манипуляторов — ООО «Промышленные роботы»",
+        "SEO_DESCRIPTION": (
+            "Установка и настройка промышленных роботов-манипуляторов FANUC, KUKA, ABB, UR. Услуга от 5 000 USD, сроки 2–3 дня. "
+            "Подбор, доставка, интеграция в линию. Гродно, РБ."
+        ),
+        "OG_IMAGE": "assets/images/manipulator-setup-welding.webp",
+        "BREADCRUMB_NAME": "Настройка манипуляторов",
     },
     "contacts.src.html": {
         "SEO_TITLE": "Контакты — ООО «Промышленные роботы»",
@@ -285,14 +297,14 @@ def build_webpage_ld(site_origin: str, base_path: str, src_name: str, site_name:
 
 
 def build_product_or_service_ld(site_origin: str, base_path: str, src_name: str, site_name: str) -> dict[str, Any] | None:
-    if src_name == "repair.src.html":
+    if src_name in ("repair.src.html", "manipulator-setup.src.html"):
         seo = SEO_PAGE[src_name]
         cid = canonical_url(site_origin, base_path, PAGE_SLUGS[src_name])
         home = canonical_url(site_origin, base_path, "")
         return {
             "@context": "https://schema.org",
             "@type": "Service",
-            "name": seo.get("BREADCRUMB_NAME", "Ремонт оборудования"),
+            "name": seo.get("BREADCRUMB_NAME", "Услуга"),
             "description": seo["SEO_DESCRIPTION"],
             "url": cid,
             "provider": {"@type": "Organization", "name": site_name, "url": home},
@@ -348,6 +360,7 @@ def build_page_vars(src_name: str) -> dict[str, str]:
         "PHOTO_PRODUCT_HREF": po("fotoseparator"),
         "AGV_PRODUCT_HREF": po("agv"),
         "MANIPULATOR_PRODUCT_HREF": po("robot-manipulyator"),
+        "MANIPULATOR_SETUP_HREF": po("nastrojka-manipulyatorov"),
         "REPAIR_SERVICE_HREF": po("remont"),
         "CONTACTS_PAGE_HREF": contacts_path,
         "PRIVACY_PAGE_HREF": po("politika-konfidencialnosti"),

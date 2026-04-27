@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="light" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<!-- @include partials/gtag.html -->
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<link rel="preload" as="image" href="{{SITE_ROOT_PREFIX}}/assets/images/manipulator-setup-factory.webp" fetchpriority="high"/>
+<link rel="icon" href="{{SITE_ROOT_PREFIX}}/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="{{SITE_ROOT_PREFIX}}/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="{{SITE_ROOT_PREFIX}}/favicon-16x16.png"/>
+<link rel="apple-touch-icon" href="{{SITE_ROOT_PREFIX}}/apple-touch-icon.png"/>
+<!-- @include partials/seo-meta.html -->
+<!-- @include partials/json-ld-extra.html -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary-fixed": "#351000",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#2b364c",
+                        "on-surface": "#191c1d",
+                        "on-background": "#191c1d",
+                        "on-primary-fixed": "#001946",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#bbc6e2",
+                        "inverse-primary": "#b1c5ff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "primary-container": "#0047ab",
+                        "surface-tint": "#2559bd",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-primary-container": "#a5bdff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3c475d",
+                        "tertiary-fixed": "#d7e2ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fe6b00",
+                        "secondary-fixed-dim": "#ffb693",
+                        "surface": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed": "#dae2ff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#424d64",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#101b30",
+                        "surface-dim": "#d9dadb",
+                        "background": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface-variant": "#434653",
+                        "on-secondary-container": "#572000",
+                        "outline-variant": "#c3c6d5",
+                        "secondary": "#a04100",
+                        "on-tertiary-container": "#b3bed9",
+                        "on-primary-fixed-variant": "#00419e",
+                        "primary": "#00327d",
+                        "surface-container": "#edeeef",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "on-primary": "#ffffff",
+                        "outline": "#737784",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-fixed": "#ffdbcc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html { scroll-padding-top: 4.5rem; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .blueprint-grid { background-image: radial-gradient(rgba(195, 198, 213, 0.4) 0.5px, transparent 0.5px); background-size: 32px 32px; }
+        .blueprint-lines { background-image: linear-gradient(rgba(195, 198, 213, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(195, 198, 213, 0.1) 1px, transparent 1px); background-size: 100px 100px; }
+        .machined-gradient { background: linear-gradient(135deg, #00327d 0%, #0047ab 100%); }
+        .hero-overlay {
+            background:
+                linear-gradient(to top, rgb(15 23 42 / 0.9) 0%, rgb(15 23 42 / 0.45) 42%, transparent 72%),
+                linear-gradient(90deg, rgb(15 23 42 / 0.88) 0%, rgb(15 23 42 / 0.42) 48%, rgb(15 23 42 / 0.12) 100%);
+        }
+        .cyber-border { position: relative; }
+        .cyber-border::after { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px; border: 1px solid rgba(0, 50, 125, 0.2); pointer-events: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary blueprint-lines">
+<!-- @include partials/header.html -->
+<main>
+<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-20 sm:pt-24">
+<div class="absolute inset-0 z-0">
+<img alt="Промышленная автоматизация и робототехника на производстве" class="w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/manipulator-setup-factory.webp" width="1920" height="1080" fetchpriority="high" decoding="async"/>
+<div class="absolute inset-0 hero-overlay"></div>
+<div class="absolute inset-0 blueprint-grid opacity-30"></div>
+</div>
+<div class="relative z-10 container mx-auto px-4 sm:px-6 max-w-6xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-12 lg:items-center">
+<div>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">Настройка роботов&#x2011;манипуляторов</p>
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-6">Установим и настроим промышленного робота за 2–3&nbsp;дня</h1>
+<p class="text-lg md:text-xl text-white/85 max-w-2xl mb-10 border-l-2 border-primary-fixed pl-6 font-light leading-relaxed">
+Настраиваем роботов мировых брендов под вашу операцию — от выбора и заказа до запуска на площадке.
+</p>
+<div class="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
+<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center w-full sm:w-auto" href="#contacts">Получить консультацию</a>
+<a class="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors w-full sm:w-auto" href="#demo">Посмотреть пример работы</a>
+</div>
+</div>
+<div class="flex w-full justify-center lg:justify-end pt-4 lg:pt-0">
+<div class="w-full max-w-[min(22rem,100%)] border border-outline-variant/50 bg-black overflow-hidden cyber-border shadow-lg">
+<video class="w-full h-auto max-h-[min(65vh,32rem)] object-contain bg-black" muted loop playsinline autoplay poster="{{SITE_ROOT_PREFIX}}/assets/images/manipulator-demo-poster.webp" width="720" height="1280" aria-label="Демонстрация работы робота на объекте (без звука, зациклено)">
+<source src="{{SITE_ROOT_PREFIX}}/assets/videos/manipulator-demo.mp4" type="video/mp4"/>
+Ваш браузер не поддерживает воспроизведение видео. Перейдите к <a class="text-primary underline" href="#demo">разделу с демо</a> или напишите в <a class="text-primary underline" href="#contacts">форме заявки</a>.
+</video>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-12 md:py-14 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-center text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-6">Производители</p>
+<p class="text-center text-sm md:text-base text-on-surface-variant mb-8 max-w-3xl mx-auto leading-relaxed">Работаем с оборудованием ведущих мировых производителей</p>
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-4 md:gap-x-12 text-xs md:text-sm font-bold uppercase tracking-widest text-on-surface/90">
+<span class="opacity-90">FANUC</span>
+<span class="opacity-90">Universal Robots</span>
+<span class="opacity-90">KUKA</span>
+<span class="opacity-90">ABB</span>
+<span class="opacity-90">Yaskawa</span>
+<span class="opacity-90">Kawasaki</span>
+</div>
+<p class="text-center text-xs text-on-surface-variant/85 mt-6 max-w-2xl mx-auto">Подбор, заказ и доставку помогаем организовать</p>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+<div>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Суть услуги</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Настройка под вашу задачу, а не «робот из коробки»</h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed text-base">
+<p>«Купить робота» — только половина пути: без программ движений, сценариев работы и связи с вашим оборудованием (линия, ПЛК, учёт, датчики) манипулятор не выполнит вашу операцию.</p>
+<p><strong class="text-on-surface">Настройка</strong> — это программы траекторий и циклов, отладка на объекте, интеграция сигналов и безопасность зоны работы. Мы делаем так, чтобы робот работал в вашем процессе, а не «стоял на складе после распаковки».</p>
+</div>
+</div>
+<div class="relative w-full min-h-[280px] aspect-[4/3] lg:min-h-[320px] lg:aspect-auto self-stretch overflow-hidden bg-slate-100 cyber-border">
+<img alt="Робот-манипулятор выполняет сварку детали на производстве" class="absolute inset-0 w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/manipulator-setup-welding.webp" width="1920" height="1080" loading="lazy" decoding="async"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-slate-900/15 to-transparent pointer-events-none" aria-hidden="true"></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Задачи</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-10">Для каких операций подходит</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">inventory_2</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">Паллетирование</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Укладка грузов на поддоны по заданному шаблону.</p>
+</div>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">precision_manufacturing</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">Сварка и пайка</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Повторяемые точные циклы для стабильного качества шва.</p>
+</div>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">swap_horiz</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">Подача / приём на линии</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Обмен деталями между операциями без простоев конвейера.</p>
+</div>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">visibility</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">Контроль качества</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Сценарии с компьютерным зрением по согласованным критериям.</p>
+</div>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">handyman</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">Сборочные операции</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Монтаж узлов, вкручивание, клипсы — базовые сборочные манипуляции.</p>
+</div>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">category</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">Сортировка и перекладывание</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Разделение потоков по признакам и перенос между зонами.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Ориентиры по классам</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Два класса манипуляторов</h2>
+<p class="text-on-surface-variant text-sm max-w-3xl mb-8 leading-relaxed">Подбираем модель по грузу, зоне, точности и бюджету. Ниже — примеры серий для ориентира (не исчерпывающий список).</p>
+<div class="overflow-x-auto border border-outline-variant/50 bg-surface-container-low">
+<table class="w-full text-left text-sm border-collapse min-w-[36rem]">
+<thead>
+<tr class="border-b border-outline-variant/40 bg-white font-label text-[10px] uppercase tracking-widest text-outline">
+<th class="p-4 font-semibold">Лёгкие (до 25&nbsp;кг)</th>
+<th class="p-4 font-semibold">Тяжёлые (до 100&nbsp;кг)</th>
+</tr>
+</thead>
+<tbody class="text-on-surface-variant divide-y divide-outline-variant/30 bg-white">
+<tr><td class="p-4 font-medium text-on-surface">FANUC LR Mate 200iD</td><td class="p-4 font-medium text-on-surface">FANUC R-2000iD</td></tr>
+<tr><td class="p-4">Universal Robots UR10e</td><td class="p-4">KUKA KR 100 HA</td></tr>
+<tr><td class="p-4">KUKA KR 10 R1100</td><td class="p-4">ABB IRB 6700</td></tr>
+<tr><td class="p-4">ABB IRB 1200</td><td class="p-4">Yaskawa GP180</td></tr>
+<tr><td class="p-4">Yaskawa GP25</td><td class="p-4">Kawasaki BX200L</td></tr>
+</tbody>
+</table>
+</div>
+<p class="mt-6 text-sm text-on-surface-variant leading-relaxed max-w-3xl">Ориентир по цене самих роботов: <strong class="text-on-surface">от 20&nbsp;000–30&nbsp;000&nbsp;USD</strong> (лёгкие комплектации) до <strong class="text-on-surface">150&nbsp;000–200&nbsp;000&nbsp;USD</strong> (тяжёлые промышленные решения). Итог зависит от комплектации, опций и поставщика.</p>
+<div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-slate-100 cyber-border max-h-[min(52vh,28rem)] lg:max-h-none">
+<img alt="Рука промышленного робота в производственном цеху" class="absolute inset-0 w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/manipulator-setup-arm.webp" width="1920" height="1080" loading="lazy" decoding="async"/>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed border-l-2 border-primary pl-4">Фото иллюстрирует типовую зону установки: ограждения, обучение персонала и настройка сценария выполняются на вашей площадке в рамках проекта.</p>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Процесс</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-10">Как выглядит внедрение</h2>
+<ol class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6 list-none">
+<li class="border border-outline-variant/50 bg-white p-6 cyber-border">
+<span class="text-[10px] font-black uppercase tracking-widest text-outline block mb-2">Шаг 1</span>
+<h3 class="font-bold text-on-surface mb-2">Консультация</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Разбираем вашу операцию, ограничения площадки и ожидания по циклу.</p>
+</li>
+<li class="border border-outline-variant/50 bg-white p-6 cyber-border">
+<span class="text-[10px] font-black uppercase tracking-widest text-outline block mb-2">Шаг 2</span>
+<h3 class="font-bold text-on-surface mb-2">Подбор модели</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Предлагаем комплектацию под задачу и бюджет: робот, периферия, ПО.</p>
+</li>
+<li class="border border-outline-variant/50 bg-white p-6 cyber-border">
+<span class="text-[10px] font-black uppercase tracking-widest text-outline block mb-2">Шаг 3</span>
+<h3 class="font-bold text-on-surface mb-2">Заказ и доставка</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Помогаем с логистикой; из Китая чаще 3–6 недель, собственное производство — быстрее.</p>
+</li>
+<li class="border border-outline-variant/50 bg-white p-6 cyber-border">
+<span class="text-[10px] font-black uppercase tracking-widest text-outline block mb-2">Шаг 4</span>
+<h3 class="font-bold text-on-surface mb-2">Установка и настройка</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Обычно 2–3 дня на площадке: монтаж, программы, отладка с вашей линией.</p>
+</li>
+<li class="border border-outline-variant/50 bg-white p-6 cyber-border md:col-span-2 xl:col-span-1">
+<span class="text-[10px] font-black uppercase tracking-widest text-outline block mb-2">Шаг 5</span>
+<h3 class="font-bold text-on-surface mb-2">Сдача</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Пуск, обучение персонала, передача документации и поддержка по согласованию.</p>
+</li>
+</ol>
+<p class="mt-8 text-sm text-on-surface-variant border-l-2 border-secondary pl-4 max-w-3xl"><strong class="text-on-surface">Примечание:</strong> при наличии всего оборудования минимальный срок от звонка до запуска — около <strong class="text-on-surface">1&nbsp;недели</strong> (по согласованию и при готовности площадки).</p>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-surface-container-high border-y border-outline-variant/40">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Коммерческие ориентиры</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-10">Стоимость услуги и оборудования</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+<div class="bg-white border border-outline-variant/50 p-8 cyber-border">
+<p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Настройка и интеграция</p>
+<p class="text-3xl sm:text-4xl font-bold text-primary mb-2">от 5&nbsp;000&nbsp;<span class="text-xl font-headline">USD</span></p>
+<p class="text-xs text-on-surface-variant leading-relaxed">Зависит от сложности сценария, объёма интеграции и состава работ на площадке.</p>
+</div>
+<div class="bg-white border border-outline-variant/50 p-8 cyber-border">
+<p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Стоимость роботов</p>
+<p class="text-3xl sm:text-4xl font-bold text-on-surface mb-2">от 20&nbsp;000&nbsp;<span class="text-xl font-headline">USD</span></p>
+<p class="text-xs text-on-surface-variant leading-relaxed">До 150&nbsp;000–200&nbsp;000&nbsp;USD и выше для тяжёлых промышленных комплектаций — по проекту.</p>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant/90 italic max-w-3xl">Все цифры — ориентировочные; точный расчёт — после консультации и уточнения объёма работ.</p>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-slate-900 text-white relative overflow-hidden">
+<div class="absolute inset-0 blueprint-grid opacity-10"></div>
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">Экономический эффект</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-8">Окупаемость услуги в контексте ФОТ</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+<div class="space-y-5 text-white/85 text-sm md:text-base leading-relaxed">
+<p>Один промышленный робот может закрыть объём, на который при ручном режиме обычно выделяют <strong class="text-white">до 6 сотрудников</strong> в режиме 3×2 (три смены по два человека на операцию — ориентир для обсуждения).</p>
+<p>При средней полной стоимости одного сотрудника с налогами порядка <strong class="text-white">~5&nbsp;000&nbsp;BYN/мес.</strong> экономия на ФОТ может достигать <strong class="text-white">до 30&nbsp;000&nbsp;BYN в месяц</strong> — в упрощённой модели при полной замене ставок.</p>
+<p class="border border-white/15 p-4 text-white/95"><strong class="text-primary-fixed">Вывод:</strong> услуга по настройке часто окупается уже за счёт экономии ФОТ в первый месяц — при подходящей загрузке и процессе.</p>
+</div>
+<ul class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+<li class="border border-white/15 p-6 bg-white/5"><span class="block text-3xl md:text-4xl font-bold text-white mb-1">до 6</span><span class="text-[10px] uppercase tracking-widest text-white/70">человек на операцию</span></li>
+<li class="border border-white/15 p-6 bg-white/5"><span class="block text-3xl md:text-4xl font-bold text-white mb-1">~5&nbsp;000</span><span class="text-[10px] uppercase tracking-widest text-white/70">BYN / мес. за ставку</span></li>
+<li class="border border-white/15 p-6 bg-white/5"><span class="block text-3xl md:text-4xl font-bold text-white mb-1">до 30&nbsp;000</span><span class="text-[10px] uppercase tracking-widest text-white/70">BYN экономии / мес.</span></li>
+</ul>
+</div>
+<p class="text-xs text-white/50 italic mt-10 max-w-3xl">Оценочно, исходя из рыночных ставок; реальный эффект зависит от вашего процесса, сменности и базы для расчёта.</p>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30" id="demo">
+<div class="container mx-auto px-4 sm:px-6 max-w-4xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Демонстрация</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Пример работы</h2>
+<p class="text-on-surface-variant text-sm mb-8 max-w-3xl leading-relaxed" id="video-setup-desc">Фрагмент работы установки. Организуем просмотр сценария под вашу задачу.</p>
+<div class="border border-outline-variant/50 bg-black overflow-hidden cyber-border">
+<video class="w-full h-auto max-h-[70vh] object-contain bg-black" controls playsinline preload="none" poster="{{SITE_ROOT_PREFIX}}/assets/images/manipulator-demo-poster.webp" width="720" height="1280" aria-describedby="video-setup-desc">
+<source src="{{SITE_ROOT_PREFIX}}/assets/videos/manipulator-demo.mp4" type="video/mp4"/>
+Ваш браузер не поддерживает воспроизведение видео. Опишите задачу в <a class="text-primary underline" href="#contacts">форме заявки</a>.
+</video>
+</div>
+</div>
+</section>
+
+<section class="pt-16 pb-28 md:pt-24 md:pb-32 lg:py-28 bg-slate-900 text-white relative overflow-hidden" id="contacts">
+<div class="absolute inset-0 blueprint-grid opacity-5"></div>
+<div class="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold mb-6 uppercase tracking-tighter">Получить консультацию по подбору и стоимости</h2>
+<p class="text-white/75 mb-8 max-w-lg">Опишите операцию — ответим по существу: что подойдёт, сколько стоит, в какие сроки.</p>
+<div class="space-y-6 text-sm">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-fixed">call</span>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-fixed">mail</span>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a></div>
+</div>
+</div>
+</div>
+<div class="bg-white text-on-surface p-8 md:p-10 shadow-2xl">
+<form class="space-y-6" action="https://formspree.io/f/xaqllkqo" method="POST" accept-charset="UTF-8">
+<input type="hidden" name="_subject" value="Заявка: настройка манипулятора"/>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true"/>
+<input type="hidden" name="product" value="Настройка манипулятора"/>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="setup-name">Имя</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="setup-name" name="name" type="text" required autocomplete="name" placeholder="Иван Иванов"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="setup-phone">Телефон</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="setup-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="setup-company">Компания</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="setup-company" name="company" type="text" autocomplete="organization" placeholder="ООО …"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="setup-msg">Задача / комментарий</label>
+<textarea class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none resize-none text-base sm:text-lg placeholder:text-outline-variant placeholder:leading-relaxed" id="setup-msg" name="message" rows="4" placeholder="Операция, вес груза, интеграция с ПЛК/учётом, желаемые сроки…"></textarea>
+</div>
+<button class="w-full machined-gradient text-on-primary py-5 font-black uppercase tracking-[0.3em] text-xs hover:shadow-xl transition-all" type="submit">Отправить</button>
+<p class="text-[10px] text-center text-outline uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary underline underline-offset-2 hover:text-primary-container" href="{{PRIVACY_PAGE_HREF}}">политикой конфиденциальности</a></p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- @include partials/footer.html -->
+</body>
+</html>
