@@ -7,3 +7,26 @@
 
   gtag('config', 'G-4244EE5DR4');
 </script>
+<script>
+  /* Отслеживание кликов по телефону — phone_call_click (GA4 Key Event) */
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        gtag('event', 'phone_call_click', {
+          'event_category': 'engagement',
+          'phone_number': this.href.replace('tel:', '')
+        });
+      });
+    });
+
+    /* Отслеживание отправки формы — form_submit (GA4 Key Event) */
+    document.querySelectorAll('form').forEach(function(f) {
+      f.addEventListener('submit', function() {
+        gtag('event', 'form_submit', {
+          'event_category': 'engagement',
+          'event_label': 'Contact Form'
+        });
+      });
+    });
+  });
+</script>
