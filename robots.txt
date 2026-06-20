@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
+# Build sources and internal tools — not for indexing
+Disallow: /pages-src/
+Disallow: /partials/
+Disallow: /scripts/
+Disallow: /.cursor/
+Disallow: /.agents/
+Disallow: /skills-lock.json
+Disallow: /audit-output/
+
 Sitemap: https://promroboty.by/sitemap.xml

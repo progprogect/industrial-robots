@@ -7,6 +7,10 @@
 # Cursor AI — keep in git (project knowledge)
 # DO NOT ignore: .cursor/rules/, .cursor/skills/, .cursor/project-context.md
 
+# Cursor Agent files (not for the public repo)
+.agents/
+skills-lock.json
+
 # OS
 .DS_Store
 Thumbs.db
