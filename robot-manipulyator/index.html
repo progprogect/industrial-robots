@@ -276,13 +276,10 @@
 </div>
 </div>
 <div class="flex w-full justify-center lg:justify-end pt-4 lg:pt-0">
-<div class="w-full max-w-[min(26rem,100%)] bg-black overflow-hidden cyber-border shadow-lg flex items-center justify-center p-4">
-<img
-  alt="Промышленный робот-манипулятор Прогресс-1 белорусского производства"
-  class="w-full h-auto max-h-[min(65vh,34rem)] object-contain"
-  src="/assets/images/progress-1-robot.png"
-  width="800" height="900"
-  fetchpriority="high" decoding="async"/>
+<div class="w-full max-w-[min(26rem,100%)] bg-black overflow-hidden cyber-border shadow-lg">
+<video class="w-full h-auto max-h-[min(65vh,34rem)] object-contain bg-black" muted loop playsinline autoplay poster="/assets/images/poster-vedra.webp" width="720" height="1280" aria-label="Демонстрация работы робота на производственной линии (без звука, зациклено)">
+<source src="/assets/videos/vedra.mp4" type="video/mp4"/>
+</video>
 </div>
 </div>
 </div>
@@ -298,12 +295,11 @@
 <div class="space-y-4 text-on-surface-variant leading-relaxed text-base">
 <p>Робот-манипулятор берёт на себя повторяющиеся операции с деталями, упаковкой и поддонами: стабильный цикл, предсказуемая нагрузка на персонал, меньше ошибок на ручных этапах.</p>
 <p>Конфигурацию подбираем под задачу: тип захвата, сценарий движения, связь с вашими системами и требованиями безопасности на площадке.</p>
-<p class="mt-6 text-sm"><a class="font-semibold text-primary underline underline-offset-2 hover:text-primary-container" href="/nastrojka-manipulyatorov/">Работаем с роботами сторонних производителей</a><span class="text-on-surface-variant"> — подробнее об услуге настройки и интеграции.</span></p>
+<p class="mt-6 text-sm"><span class="text-on-surface-variant">Помимо наших роботов, мы </span><a class="font-semibold text-primary underline underline-offset-2 hover:text-primary-container" href="/nastrojka-manipulyatorov/">работаем с роботами сторонних производителей</a><span class="text-on-surface-variant"> — подробнее об услуге настройки и интеграции.</span></p>
 </div>
 </div>
-<div class="relative w-full min-h-[280px] aspect-[4/3] lg:min-h-[320px] lg:aspect-auto self-stretch overflow-hidden bg-slate-100 cyber-border">
-<img alt="Робот-манипулятор в производственной зоне" class="absolute inset-0 w-full h-full object-cover object-center" src="/assets/images/manipulator.webp" width="1920" height="1080" loading="lazy" decoding="async"/>
-<div class="absolute inset-0 bg-gradient-to-tr from-slate-900/15 to-transparent pointer-events-none" aria-hidden="true"></div>
+<div class="relative w-full min-h-[280px] aspect-[4/3] lg:min-h-[320px] lg:aspect-auto self-stretch overflow-hidden bg-black cyber-border flex items-center justify-center p-4">
+<img alt="Промышленный робот-манипулятор Прогресс-1" class="w-full h-auto max-h-full object-contain" src="/assets/images/progress-1-robot.png" width="800" height="900" loading="lazy" decoding="async"/>
 </div>
 </div>
 </div>
@@ -361,24 +357,30 @@
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Видеопримеры работ</p>
 <h2 class="text-3xl md:text-4xl font-bold mb-4">Роботы в действии</h2>
-<p class="text-on-surface-variant text-sm mb-8 max-w-3xl leading-relaxed">Реальные сценарии на производстве: паллетирование, перекладка, укладка. При необходимости организуем просмотр сценария под вашу задачу.</p>
+<p class="text-on-surface-variant text-sm mb-8 max-w-3xl leading-relaxed">Демонстрационные записи для понимания возможностей роботизированных комплексов: паллетирование, перекладка, укладка.</p>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
 <div class="border border-outline-variant/50 bg-black overflow-hidden cyber-border">
-<video class="w-full h-auto object-contain bg-black" controls playsinline preload="none" poster="/assets/images/poster-vedra.webp" width="720" height="1280" aria-label="Робот перекладывает вёдра на производственной линии">
+<div class="aspect-[9/16] relative">
+<video class="absolute inset-0 w-full h-full object-cover bg-black" controls playsinline preload="none" poster="/assets/images/poster-vedra.webp" width="720" height="1280" aria-label="Робот перекладывает вёдра на производственной линии">
 <source src="/assets/videos/vedra.mp4" type="video/mp4"/>
 </video>
+</div>
 <p class="text-xs text-on-surface-variant/80 p-3 text-center">Перекладка вёдер</p>
 </div>
 <div class="border border-outline-variant/50 bg-black overflow-hidden cyber-border">
-<video class="w-full h-auto object-contain bg-black" controls playsinline preload="none" poster="/assets/images/poster-kanistry.webp" width="720" height="1280" aria-label="Робот укладывает канистры в паллеты">
+<div class="aspect-[9/16] relative">
+<video class="absolute inset-0 w-full h-full object-cover bg-black" controls playsinline preload="none" poster="/assets/images/poster-kanistry.webp" width="720" height="1280" aria-label="Робот укладывает канистры в паллеты">
 <source src="/assets/videos/kanistry.mp4" type="video/mp4"/>
 </video>
+</div>
 <p class="text-xs text-on-surface-variant/80 p-3 text-center">Укладка канистр</p>
 </div>
 <div class="border border-outline-variant/50 bg-black overflow-hidden cyber-border">
-<video class="w-full h-auto object-contain bg-black" controls playsinline preload="none" poster="/assets/images/poster-korobki.webp" width="720" height="1280" aria-label="Робот паллетирует коробки в автоматическом режиме">
+<div class="aspect-[9/16] relative">
+<video class="absolute inset-0 w-full h-full object-cover bg-black" controls playsinline preload="none" poster="/assets/images/poster-korobki.webp" width="720" height="1280" aria-label="Робот паллетирует коробки в автоматическом режиме">
 <source src="/assets/videos/korobki.mp4" type="video/mp4"/>
 </video>
+</div>
 <p class="text-xs text-on-surface-variant/80 p-3 text-center">Паллетирование коробок</p>
 </div>
 </div>
