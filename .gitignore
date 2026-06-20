@@ -10,6 +10,10 @@
 # Cursor Agent files (not for the public repo)
 .agents/
 skills-lock.json
+# исходные видео с кириллическими именами — перемещены в assets/videos/
+ведра.mp4
+канистры.mp4
+коробки.mp4
 
 # OS
 .DS_Store

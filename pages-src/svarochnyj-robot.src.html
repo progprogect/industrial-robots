@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html class="light" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<!-- @include partials/gtag.html -->
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<link rel="preload" as="image" href="{{SITE_ROOT_PREFIX}}/assets/images/progress-1-robot.png" fetchpriority="high"/>
+<link rel="icon" href="{{SITE_ROOT_PREFIX}}/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="{{SITE_ROOT_PREFIX}}/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="{{SITE_ROOT_PREFIX}}/favicon-16x16.png"/>
+<link rel="apple-touch-icon" href="{{SITE_ROOT_PREFIX}}/apple-touch-icon.png"/>
+<!-- @include partials/seo-meta.html -->
+<!-- @include partials/json-ld-extra.html -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary-fixed": "#351000",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#2b364c",
+                        "on-surface": "#191c1d",
+                        "on-background": "#191c1d",
+                        "on-primary-fixed": "#001946",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#bbc6e2",
+                        "inverse-primary": "#b1c5ff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "primary-container": "#0047ab",
+                        "surface-tint": "#2559bd",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-primary-container": "#a5bdff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3c475d",
+                        "tertiary-fixed": "#d7e2ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fe6b00",
+                        "secondary-fixed-dim": "#ffb693",
+                        "surface": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed": "#dae2ff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#424d64",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#101b30",
+                        "surface-dim": "#d9dadb",
+                        "background": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface-variant": "#434653",
+                        "on-secondary-container": "#572000",
+                        "outline-variant": "#c3c6d5",
+                        "secondary": "#a04100",
+                        "on-tertiary-container": "#b3bed9",
+                        "on-primary-fixed-variant": "#00419e",
+                        "primary": "#00327d",
+                        "surface-container": "#edeeef",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "on-primary": "#ffffff",
+                        "outline": "#737784",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-fixed": "#ffdbcc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html { scroll-padding-top: 4.5rem; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .blueprint-grid { background-image: radial-gradient(rgba(195, 198, 213, 0.4) 0.5px, transparent 0.5px); background-size: 32px 32px; }
+        .blueprint-lines { background-image: linear-gradient(rgba(195, 198, 213, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(195, 198, 213, 0.1) 1px, transparent 1px); background-size: 100px 100px; }
+        .machined-gradient { background: linear-gradient(135deg, #00327d 0%, #0047ab 100%); }
+        .hero-dark { background: rgb(15 23 42); }
+        .cyber-border { position: relative; }
+        .cyber-border::after { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px; border: 1px solid rgba(0, 50, 125, 0.2); pointer-events: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary blueprint-lines">
+<!-- @include partials/header.html -->
+<main>
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════ -->
+<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-20 sm:pt-24 hero-dark">
+<div class="absolute inset-0 blueprint-grid opacity-10"></div>
+<div class="relative z-10 container mx-auto px-4 sm:px-6 max-w-6xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-12 lg:items-center">
+<div>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">Сварочный робот · белорусское производство</p>
+<div class="flex items-center gap-3 mb-4">
+  <span class="text-[10px] font-black uppercase tracking-widest bg-secondary-container text-on-primary px-3 py-1">ПРОГРЕСС&#x2011;1</span>
+  <span class="text-[10px] font-black uppercase tracking-widest border border-white/20 text-white/60 px-3 py-1">Предзаказ открыт</span>
+</div>
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-6">Сварочный робот&#x2011;манипулятор собственного производства</h1>
+<p class="text-lg md:text-xl text-white/85 max-w-2xl mb-10 border-l-2 border-primary-fixed pl-6 font-light leading-relaxed">
+6 осей · 150&nbsp;кг · вылет 3 100&nbsp;мм · MIG/MAG, TIG, лазерная сварка. Разработан и производится в Республике Беларусь.
+</p>
+<div class="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
+<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center w-full sm:w-auto" href="#contacts">Оставить заявку на предзаказ</a>
+<a class="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors w-full sm:w-auto" href="{{MANIPULATOR_PRODUCT_HREF}}">Робот-манипулятор →</a>
+</div>
+</div>
+<div class="flex w-full justify-center lg:justify-end pt-4 lg:pt-0">
+<div class="w-full max-w-[min(26rem,100%)] bg-black overflow-hidden cyber-border flex items-center justify-center p-4">
+<img
+  alt="Сварочный робот-манипулятор Прогресс-1 — белорусское производство"
+  class="w-full h-auto max-h-[min(70vh,34rem)] object-contain"
+  src="{{SITE_ROOT_PREFIX}}/assets/images/progress-1-robot.png"
+  width="800" height="900"
+  fetchpriority="high" decoding="async"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     ХАРАКТЕРИСТИКИ
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Спецификация</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Технические характеристики Прогресс-1</h2>
+<p class="text-on-surface-variant text-sm max-w-3xl mb-8 leading-relaxed">Ключевые параметры сварочного исполнения. Итоговые значения фиксируются в ТЗ и паспорте после обследования объекта.</p>
+<div class="overflow-x-auto border border-outline-variant/50 bg-white">
+<table class="w-full text-left text-sm border-collapse">
+<thead>
+<tr class="border-b border-outline-variant/40 bg-surface-container font-label text-[10px] uppercase tracking-widest text-outline">
+<th class="p-4 font-semibold">Параметр</th>
+<th class="p-4 font-semibold">Значение</th>
+</tr>
+</thead>
+<tbody class="text-on-surface-variant divide-y divide-outline-variant/30">
+<tr><td class="p-4 font-medium text-on-surface">Модель</td><td class="p-4">Прогресс-1 (собственное производство, РБ)</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Количество осей</td><td class="p-4">6</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Грузоподъёмность</td><td class="p-4">150&nbsp;кг — с горелкой или захватом</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Максимальный вылет</td><td class="p-4">3 100&nbsp;мм</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Максимальная высота TCP</td><td class="p-4">2 760&nbsp;мм</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Точность позиционирования</td><td class="p-4">±0.05–0.1&nbsp;мм</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Виды сварки</td><td class="p-4">MIG/MAG (стандарт), TIG (высокоточные швы), лазерная — по установленному источнику</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Система управления</td><td class="p-4">Промышленный ПК на борту, локальная обработка данных компьютерного зрения</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Производительность</td><td class="p-4">10+ циклов в минуту и более в зависимости от задачи</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Гарантия</td><td class="p-4">12 месяцев</td></tr>
+</tbody>
+</table>
+</div>
+<p class="mt-4 text-xs text-on-surface-variant/85 italic max-w-3xl">Цифры не являются публичной офертой до согласования в договорной документации.</p>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     УНИВЕРСАЛЬНОСТЬ
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+<div>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Универсальность</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Один робот — сварка и перемещение</h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed text-base">
+<p>Прогресс-1 — это тот же робот-манипулятор в сварочном исполнении. Сварочная горелка устанавливается как насадка на фланец: при необходимости она снимается и заменяется захватом, после чего тот же робот переходит к перемещению деталей, паллетированию или сборке.</p>
+<p>Грузоподъёмность 150&nbsp;кг означает значительный запас прочности даже при сварочных задачах — робот без труда удерживает горелку, кабельный пакет и сварочный источник, а запас по нагрузке позволяет маневрировать с крупными заготовками.</p>
+<p>MIG/MAG — стандарт для конструкционной стали, нержавейки и алюминия. TIG — для высокоточных швов на тонком металле. Лазерная сварка доступна при использовании соответствующего источника.</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-container-low border border-outline-variant/50 p-6 cyber-border">
+<div class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">bolt</span>
+<div>
+<h3 class="font-bold text-on-surface mb-1">MIG/MAG — стандарт промышленной сварки</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Конструкционная сталь, нержавейка, алюминий. Высокая скорость, непрерывный шов.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/50 p-6 cyber-border">
+<div class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">precision_manufacturing</span>
+<div>
+<h3 class="font-bold text-on-surface mb-1">TIG — точные швы на тонком металле</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Нержавеющая сталь, тонколистовые изделия, высокие требования к качеству шва.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/50 p-6 cyber-border">
+<div class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">swap_horiz</span>
+<div>
+<h3 class="font-bold text-on-surface mb-1">Смена насадки — смена задачи</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Горелка → захват → другой инструмент. Один робот закрывает несколько операций на линии.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     КОМПЬЮТЕРНОЕ ЗРЕНИЕ
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Интеллект</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Компьютерное зрение для точной сварки</h2>
+<p class="text-on-surface-variant max-w-3xl mb-10 leading-relaxed">Прогресс-1 оснащён системой машинного зрения на борту. Промышленный ПК обрабатывает данные локально — без зависимости от внешних серверов и с минимальной задержкой.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">visibility</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">Адаптация к позиции детали</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Робот сам выравнивает положение горелки по реальному положению заготовки — не требуется центрирующих механизмов.</p>
+</div>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">tune</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">Коррекция угла шва в реальном времени</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">При отклонении траектории или внештатной ситуации — корректирует направление движения или останавливает цикл.</p>
+</div>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">speed</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">10+ циклов в минуту</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Высокая скорость за счёт синхронизации всех узлов и обратной связи от зрительной системы.</p>
+</div>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">memory</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">Промышленный ПК на борту</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Вычисления выполняются локально — не нужно выносить обработку на внешний сервер или облако.</p>
+</div>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">people</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">Совместная работа с оператором</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Зрение позволяет роботу адаптироваться к смежным ручным операциям без жёстких центрирующих ограждений.</p>
+</div>
+</div>
+<div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">integration_instructions</span>
+<div>
+<h3 class="font-bold text-on-surface mb-2">Упрощённая интеграция</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Меньше вспомогательного оборудования — ниже стоимость внедрения и проще встраивание в существующую линию.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     ВЕРСИЯ СО СВАРОЧНОЙ ГОРЕЛКОЙ
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+<div class="order-2 lg:order-1">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Комплектация</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Прогресс-1 в сварочном исполнении</h2>
+<p class="text-on-surface-variant leading-relaxed mb-4">Сварочная версия включает горелку (TIG / MIG / MAG), систему подачи сварочной проволоки, кабельный пакет и сварочный источник.</p>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Сварочная горелка TIG / MIG / MAG</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Система подачи сварочной проволоки</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Кабельный пакет</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Сварочный источник</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Промышленный ПК с системой компьютерного зрения</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Шкаф управления роботом</li>
+</ul>
+</div>
+<div class="order-1 lg:order-2 relative w-full overflow-hidden bg-slate-50 cyber-border flex items-center justify-center p-6">
+<img
+  alt="Прогресс-1 сварочный робот-манипулятор со сварочной горелкой и компонентами"
+  class="w-full h-auto max-h-[min(55vh,28rem)] object-contain"
+  src="{{SITE_ROOT_PREFIX}}/assets/images/progress-1-welding.png"
+  width="600" height="700"
+  loading="lazy" decoding="async"/>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     РОБОТИЗИРОВАННЫЙ КОМПЛЕКС ПОД КЛЮЧ
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Комплекс под ключ</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Роботизированный сварочный комплекс</h2>
+<p class="text-on-surface-variant max-w-3xl mb-8 leading-relaxed">Ниже — пример роботизированного комплекса для сварки трубной доски с трубами. Конфигурация адаптируется под задачу заказчика.</p>
+<div class="border border-outline-variant/50 bg-white cyber-border overflow-hidden mb-8">
+<img
+  alt="Пример роботизированного сварочного комплекса Прогресс-1: общий вид, позиционер, компоновка, состав"
+  class="w-full h-auto"
+  src="{{SITE_ROOT_PREFIX}}/assets/images/progress-1-complex.png"
+  width="1200" height="800"
+  loading="lazy" decoding="async"/>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div>
+<h3 class="text-xl font-bold mb-4">Состав комплекса</h3>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Промышленный робот Прогресс-1</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Позиционер (вращатель) для изделия</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Система крепления заготовки</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Шкаф управления роботом</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Система подачи сварочной проволоки</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Средства безопасности и ограждения</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-secondary text-base">add_circle</span>Дополнительное оборудование — по заказу</li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">Что мы поставляем</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm mb-4">Мы проектируем, разрабатываем и поставляем все компоненты комплекса — или помогаем с закупкой отдельных элементов, если часть оборудования уже есть на производстве.</p>
+<p class="text-on-surface-variant leading-relaxed text-sm">Разработка компоновки, согласование ТЗ, изготовление, монтаж и пусконаладка — весь цикл под ключ или отдельными этапами в зависимости от ваших потребностей.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     ПРЕДЗАКАЗ И ГОСПРОГРАММА
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-24 bg-slate-900 text-white relative overflow-hidden">
+<div class="absolute inset-0 blueprint-grid opacity-10"></div>
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">Предзаказ</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Собственный белорусский робот — предзаказ открыт</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+<div class="space-y-4 text-white/85 leading-relaxed">
+<p>Прогресс-1 разрабатывается в рамках государственной программы технологической самодостаточности Республики Беларусь. Мы принимаем предзаказы и готовы гарантировать работоспособность и заявленные характеристики.</p>
+<p>Наша цель — развитие белорусского машиностроения. Прогресс-1 производится здесь, без зависимости от иностранных поставщиков по ключевым узлам, с локальным сервисом и быстрой заменой деталей.</p>
+<div class="border border-white/15 p-4 mt-2">
+<p class="text-sm text-white/95"><strong class="text-primary-fixed">Государственная поддержка:</strong> при закупке отечественного оборудования возможно получение финансирования в рамках программ роботизации производства РБ. Мы помогаем оформить документацию и сориентироваться в доступных инструментах.</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="border border-white/15 bg-white/5 p-6 cyber-border">
+<p class="text-[10px] font-black uppercase tracking-widest text-white/45 mb-2">Ориентир стоимости</p>
+<p class="text-4xl font-bold text-white mb-1">от 160&nbsp;000 <span class="text-xl font-headline">BYN</span></p>
+<p class="text-xs text-white/60 mt-1">С захватом / горелкой под задачу. Итоговая стоимость — после уточнения конфигурации.</p>
+</div>
+<div class="border border-white/15 bg-white/5 p-6 cyber-border">
+<p class="text-[10px] font-black uppercase tracking-widest text-white/45 mb-2">Рассрочка</p>
+<p class="text-2xl font-bold text-white mb-1">до 12 месяцев</p>
+<p class="text-xs text-white/60">На собственный робот Прогресс-1. Условия согласуются индивидуально.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     АЛЬТЕРНАТИВЫ — МИРОВЫЕ БРЕНДЫ
+═══════════════════════════════════════════════ -->
+<section class="py-12 md:py-16 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-center text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Альтернативные поставки</p>
+<p class="text-center text-sm md:text-base text-on-surface-variant mb-10 max-w-3xl mx-auto leading-relaxed">Если задача требует иной конфигурации — подберём и поставим сварочного робота мирового производителя. Наш приоритет — собственный Прогресс-1, но при необходимости работаем и с международными брендами.</p>
+<div class="mb-6">
+<p class="text-center text-[9px] font-black uppercase tracking-[0.3em] text-secondary mb-5">Китайские производители</p>
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-3 md:gap-x-10 text-sm md:text-base font-bold uppercase tracking-widest text-on-surface">
+<span>ESTUN</span>
+<span>Siasun</span>
+<span>EFORT</span>
+<span>Inovance</span>
+<span>JAKA Robotics</span>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 pt-6">
+<p class="text-center text-[9px] font-black uppercase tracking-[0.3em] text-outline mb-5">Мировые бренды</p>
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-3 md:gap-x-10 text-xs md:text-sm font-bold uppercase tracking-widest text-on-surface/60">
+<span>FANUC</span>
+<span>KUKA</span>
+<span>ABB</span>
+<span>Yaskawa</span>
+<span>Kawasaki</span>
+<span>Panasonic</span>
+</div>
+</div>
+<p class="text-center text-xs text-on-surface-variant/75 mt-8 max-w-2xl mx-auto">Подбор, заказ и доставку помогаем организовать — включая прямые поставки из Китая</p>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     ФОРМА
+═══════════════════════════════════════════════ -->
+<section class="pt-16 pb-28 md:pt-24 md:pb-32 lg:py-28 bg-slate-900 text-white relative overflow-hidden" id="contacts">
+<div class="absolute inset-0 blueprint-grid opacity-5"></div>
+<div class="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold mb-6 uppercase tracking-tighter">Оставить заявку на предзаказ</h2>
+<p class="text-white/75 mb-8 max-w-lg">Опишите задачу, объём производства и требования к сварочному процессу — подготовим ответ по конфигурации и срокам поставки.</p>
+<div class="space-y-6 text-sm">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-fixed">call</span>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-fixed">mail</span>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a></div>
+</div>
+</div>
+</div>
+<div class="bg-white text-on-surface p-8 md:p-10 shadow-2xl">
+<form class="space-y-6" action="https://formspree.io/f/xaqllkqo" method="POST" accept-charset="UTF-8">
+<input type="hidden" name="_subject" value="Заявка: сварочный робот Прогресс-1"/>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true"/>
+<input type="hidden" name="product" value="Сварочный робот Прогресс-1"/>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="weld-name">Имя</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="weld-name" name="name" type="text" required autocomplete="name" placeholder="Иван Иванов"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="weld-phone">Телефон</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="weld-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="weld-company">Компания</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="weld-company" name="company" type="text" autocomplete="organization" placeholder="ООО …"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="weld-msg">Задача / комментарий</label>
+<textarea class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none resize-none text-base sm:text-lg placeholder:text-outline-variant placeholder:leading-relaxed" id="weld-msg" name="message" rows="4" placeholder="Тип металла, толщина, объём производства, требования к швам…"></textarea>
+</div>
+<button class="w-full machined-gradient text-on-primary py-5 font-black uppercase tracking-[0.3em] text-xs hover:shadow-xl transition-all" type="submit">Отправить заявку</button>
+<p class="text-[10px] text-center text-outline uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary underline underline-offset-2 hover:text-primary-container" href="{{PRIVACY_PAGE_HREF}}">политикой конфиденциальности</a></p>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- @include partials/footer.html -->
+</body>
+</html>

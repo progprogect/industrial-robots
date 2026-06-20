@@ -25,6 +25,7 @@ PAGE_SLUGS: dict[str, str] = {
     "privacy.src.html": "politika-konfidencialnosti",
     "agv.src.html": "agv",
     "manipulator.src.html": "robot-manipulyator",
+    "svarochnyj-robot.src.html": "svarochnyj-robot",
     "manipulator-setup.src.html": "nastrojka-manipulyatorov",
     "contacts.src.html": "kontakty",
     "repair.src.html": "remont",
@@ -36,6 +37,7 @@ REDIRECT_STUBS: dict[str, str] = {
     "privacy.html": "politika-konfidencialnosti",
     "agv.html": "agv",
     "manipulator.html": "robot-manipulyator",
+    "svarochnyj-robot.html": "svarochnyj-robot",
     "contacts.html": "kontakty",
     "repair.html": "remont",
 }
@@ -46,6 +48,7 @@ PAGE_ORDER: list[str] = [
     "privacy.src.html",
     "agv.src.html",
     "manipulator.src.html",
+    "svarochnyj-robot.src.html",
     "manipulator-setup.src.html",
     "contacts.src.html",
     "repair.src.html",
@@ -57,6 +60,7 @@ SITEMAP_META: dict[str, tuple[str, str]] = {
     "photoseparator.src.html": ("0.9", "monthly"),
     "agv.src.html": ("0.9", "monthly"),
     "manipulator.src.html": ("0.9", "monthly"),
+    "svarochnyj-robot.src.html": ("0.9", "monthly"),
     "manipulator-setup.src.html": ("0.9", "monthly"),
     "repair.src.html": ("0.85", "monthly"),
     "contacts.src.html": ("0.8", "monthly"),
@@ -64,7 +68,7 @@ SITEMAP_META: dict[str, tuple[str, str]] = {
 }
 
 PRODUCT_SRC: frozenset[str] = frozenset(
-    {"photoseparator.src.html", "agv.src.html", "manipulator.src.html"}
+    {"photoseparator.src.html", "agv.src.html", "manipulator.src.html", "svarochnyj-robot.src.html"}
 )
 
 # SEO: заголовок, описание, относительный путь к og:image (от корня сайта)
@@ -105,13 +109,22 @@ SEO_PAGE: dict[str, dict[str, str]] = {
         "BREADCRUMB_NAME": "Автономная рохля (AGV)",
     },
     "manipulator.src.html": {
-        "SEO_TITLE": "Робот-манипулятор | ООО «Промышленные роботы»",
+        "SEO_TITLE": "Робот-манипулятор Прогресс-1 | ООО «Промышленные роботы»",
         "SEO_DESCRIPTION": (
-            "Промышленный робот-манипулятор: грузоподъёмность до 30 кг, интеграция с ПЛК и учётом, компьютерное зрение, "
-            "сервис в Гродно. Ориентир стоимости и комплектация — на странице."
+            "Промышленный робот-манипулятор Прогресс-1 белорусского производства: 150 кг, 6 осей, вылет 3100 мм, "
+            "компьютерное зрение, рассрочка до 12 мес. Интеграция под ключ. Гродно, РБ."
         ),
-        "OG_IMAGE": "assets/images/manipulator.webp",
-        "BREADCRUMB_NAME": "Робот-манипулятор",
+        "OG_IMAGE": "assets/images/progress-1-robot.png",
+        "BREADCRUMB_NAME": "Робот-манипулятор Прогресс-1",
+    },
+    "svarochnyj-robot.src.html": {
+        "SEO_TITLE": "Сварочный робот Прогресс-1 | ООО «Промышленные роботы»",
+        "SEO_DESCRIPTION": (
+            "Сварочный робот-манипулятор белорусского производства Прогресс-1: 6 осей, 150 кг, вылет 3100 мм, "
+            "MIG/MAG, TIG, лазерная сварка. Предзаказ открыт. Комплекс под ключ. Гродно, РБ."
+        ),
+        "OG_IMAGE": "assets/images/progress-1-welding.png",
+        "BREADCRUMB_NAME": "Сварочный робот Прогресс-1",
     },
     "manipulator-setup.src.html": {
         "SEO_TITLE": "Настройка роботов-манипуляторов — ООО «Промышленные роботы»",
@@ -376,6 +389,7 @@ def build_page_vars(src_name: str) -> dict[str, str]:
         "PHOTO_PRODUCT_HREF": po("fotoseparator"),
         "AGV_PRODUCT_HREF": po("agv"),
         "MANIPULATOR_PRODUCT_HREF": po("robot-manipulyator"),
+        "WELDING_ROBOT_HREF": po("svarochnyj-robot"),
         "MANIPULATOR_SETUP_HREF": po("nastrojka-manipulyatorov"),
         "REPAIR_SERVICE_HREF": po("remont"),
         "CONTACTS_PAGE_HREF": contacts_path,
@@ -459,6 +473,13 @@ def write_robots_and_sitemap(site_origin: str, base_path: str) -> None:
     robots = (
         "User-agent: *\n"
         "Allow: /\n\n"
+        "# Build sources and internal tools — not for indexing\n"
+        "Disallow: /pages-src/\n"
+        "Disallow: /partials/\n"
+        "Disallow: /scripts/\n"
+        "Disallow: /.cursor/\n"
+        "Disallow: /.agents/\n"
+        "Disallow: /audit-output/\n\n"
         f"Sitemap: {sitemap_loc}\n"
     )
     (ROOT / "robots.txt").write_text(robots, encoding="utf-8")
