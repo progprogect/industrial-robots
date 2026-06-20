@@ -326,7 +326,9 @@ def build_product_or_service_ld(site_origin: str, base_path: str, src_name: str,
         seo = SEO_PAGE[src_name]
         cid = canonical_url(site_origin, base_path, PAGE_SLUGS[src_name])
         home = canonical_url(site_origin, base_path, "")
-        return {
+        og_rel = seo.get("OG_IMAGE", "")
+        image_url = f"{site_origin.rstrip('/')}/{og_rel.lstrip('/')}" if og_rel else None
+        product: dict = {
             "@context": "https://schema.org",
             "@type": "Product",
             "name": seo.get("BREADCRUMB_NAME", seo["SEO_TITLE"].split("|")[0].strip()),
@@ -335,6 +337,9 @@ def build_product_or_service_ld(site_origin: str, base_path: str, src_name: str,
             "brand": {"@type": "Brand", "name": site_name},
             "manufacturer": {"@type": "Organization", "name": site_name, "url": home},
         }
+        if image_url:
+            product["image"] = image_url
+        return product
     return None
 
 
