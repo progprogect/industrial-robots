@@ -1,0 +1,21 @@
+# Cursor AI — secrets and local config
+.cursor/mcp.json
+.env
+.env.local
+.env*.local
+
+# Cursor AI — keep in git (project knowledge)
+# DO NOT ignore: .cursor/rules/, .cursor/skills/, .cursor/project-context.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Audit outputs (local only)
+audit-output/
+reports/
+*.audit.md

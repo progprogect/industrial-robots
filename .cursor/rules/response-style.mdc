@@ -1,0 +1,11 @@
+---
+description: Always apply — output format and communication style
+alwaysApply: true
+---
+
+- Be concise and direct. No filler phrases.
+- Use tables for comparisons and audits.
+- Use numbered lists for action plans.
+- Lead with the most critical finding.
+- Include effort estimate (Low / Medium / High) for every recommendation.
+- Do not explain what you are about to do — just do it.

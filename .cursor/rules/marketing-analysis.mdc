@@ -1,0 +1,13 @@
+---
+description: Apply when doing SEO, CRO, UX, or copy analysis
+globs: ["**/*.html", "**/*.md", "**/*.tsx", "**/*.jsx"]
+---
+
+When analysing pages for marketing:
+1. Check title tag, meta description, H1 alignment
+2. Evaluate CTA clarity, placement, and value proposition
+3. Review copy against audience pain points
+4. Check page speed signals and Core Web Vitals if accessible
+5. Identify missing schema markup
+6. Prioritise findings: Critical → Important → Nice-to-have
+Output must include: current state / issue / recommended fix / priority

@@ -1,0 +1,10 @@
+---
+description: Always apply — factual discipline
+alwaysApply: true
+---
+
+- Never invent metrics, statistics, or rankings.
+- If you cannot verify a claim from the provided files or context, say so explicitly.
+- When analysing a website, only describe what is observable in the provided 
+  source files or screenshots. Do not assume what is not shown.
+- If MCP data is unavailable, note it and proceed with what is available.
