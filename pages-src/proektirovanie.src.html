@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class="light" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<!-- @include partials/gtag.html -->
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<link rel="preload" as="image" href="{{SITE_ROOT_PREFIX}}/assets/images/concept.jpg" fetchpriority="high"/>
+<link rel="icon" href="{{SITE_ROOT_PREFIX}}/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="{{SITE_ROOT_PREFIX}}/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="{{SITE_ROOT_PREFIX}}/favicon-16x16.png"/>
+<link rel="apple-touch-icon" href="{{SITE_ROOT_PREFIX}}/apple-touch-icon.png"/>
+<!-- @include partials/seo-meta.html -->
+<!-- @include partials/json-ld-extra.html -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary-fixed": "#351000",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#2b364c",
+                        "on-surface": "#191c1d",
+                        "on-background": "#191c1d",
+                        "on-primary-fixed": "#001946",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#bbc6e2",
+                        "inverse-primary": "#b1c5ff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "primary-container": "#0047ab",
+                        "surface-tint": "#2559bd",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-primary-container": "#a5bdff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3c475d",
+                        "tertiary-fixed": "#d7e2ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fe6b00",
+                        "secondary-fixed-dim": "#ffb693",
+                        "surface": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed": "#dae2ff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#424d64",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#101b30",
+                        "surface-dim": "#d9dadb",
+                        "background": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface-variant": "#434653",
+                        "on-secondary-container": "#572000",
+                        "outline-variant": "#c3c6d5",
+                        "secondary": "#a04100",
+                        "on-tertiary-container": "#b3bed9",
+                        "on-primary-fixed-variant": "#00419e",
+                        "primary": "#00327d",
+                        "surface-container": "#edeeef",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "on-primary": "#ffffff",
+                        "outline": "#737784",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-fixed": "#ffdbcc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html { scroll-padding-top: 4.5rem; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .blueprint-grid { background-image: radial-gradient(rgba(195, 198, 213, 0.35) 0.5px, transparent 0.5px); background-size: 32px 32px; }
+        .machined-gradient { background: linear-gradient(135deg, #00327d 0%, #0047ab 100%); }
+        .hero-overlay-weld {
+            background:
+                linear-gradient(to top, rgb(15 23 42 / 0.94) 0%, rgb(15 23 42 / 0.58) 48%, rgb(15 23 42 / 0.28) 72%),
+                linear-gradient(90deg, rgb(15 23 42 / 0.9) 0%, rgb(15 23 42 / 0.5) 52%, rgb(15 23 42 / 0.18) 100%);
+        }
+        .cyber-border { position: relative; }
+        .cyber-border::after { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px; border: 1px solid rgba(0, 71, 171, 0.35); pointer-events: none; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-300 selection:bg-primary selection:text-white">
+<!-- @include partials/header.html -->
+<main>
+<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-20 sm:pt-24">
+<div class="absolute inset-0 z-0">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/concept.jpg" alt="Схема роботизированного узла паллетирования — инженерное проектирование" class="w-full h-full object-cover object-center" width="1200" height="800" fetchpriority="high" decoding="async"/>
+<div class="absolute inset-0 hero-overlay-weld"></div>
+<div class="absolute inset-0 blueprint-grid opacity-25"></div>
+</div>
+<div class="relative z-10 container mx-auto px-4 sm:px-6 max-w-6xl w-full">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-3">Инжиниринг · проектирование</p>
+<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.08] mb-5 break-words">Инженерное проектирование и разработка конструкторской документации</h1>
+<p class="text-base md:text-lg text-slate-100/95 max-w-3xl mb-6 border-l-2 border-secondary pl-5 md:pl-6 leading-relaxed">
+От эскиза до рабочих чертежей — с проверкой в железе на своём производстве. 3D&#x2011;проектирование, КД по ЕСКД, промышленное проектирование узлов и оборудования.
+</p>
+<div class="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-4 sm:items-center mb-6 min-w-0">
+<a class="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight hover:text-primary-fixed transition-colors break-words" href="tel:+375255092206">+375 25 509 22 06</a>
+<span class="hidden sm:inline text-slate-500">|</span>
+<span class="text-sm text-slate-400 uppercase tracking-widest">ответим в рабочее время</span>
+</div>
+<div class="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
+<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center w-full sm:w-auto" href="#contacts">Оставить заявку на проект</a>
+</div>
+</div>
+</section>
+
+<section class="py-8 md:py-10 bg-slate-900 border-y border-white/5">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4 text-center">Нам доверяют</p>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+<div class="flex h-[5.5rem] sm:h-[6.5rem] items-center justify-center border border-white/10 bg-slate-950/60 p-3 cyber-border">
+<img alt="McDonald's" class="max-h-full max-w-full w-auto object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-mcdonalds.webp" width="280" height="140" loading="lazy" decoding="async"/>
+</div>
+<div class="flex h-[5.5rem] sm:h-[6.5rem] items-center justify-center border border-white/10 bg-slate-950/60 p-3 cyber-border">
+<img alt="Huawei" class="max-h-full max-w-full w-auto object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-huawei.webp" width="280" height="140" loading="lazy" decoding="async"/>
+</div>
+<div class="flex h-[5.5rem] sm:h-[6.5rem] items-center justify-center border border-white/10 bg-slate-950/60 p-3 cyber-border">
+<span class="font-headline font-bold text-slate-200 text-center text-sm sm:text-base leading-snug tracking-tight">Yango Tech</span>
+</div>
+<div class="flex h-[5.5rem] sm:h-[6.5rem] items-center justify-center border border-white/10 bg-slate-950/60 p-3 cyber-border">
+<img alt="ООО «Элепарт»" class="max-h-full max-w-full w-auto object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-elepart.webp" width="280" height="140" loading="lazy" decoding="async"/>
+</div>
+<div class="flex h-[5.5rem] sm:h-[6.5rem] items-center justify-center border border-white/10 bg-slate-950/60 p-3 cyber-border">
+<img alt="Группа компаний Шведофф" class="max-h-full max-w-full w-auto object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-shvedoff.webp" width="231" height="160" loading="lazy" decoding="async"/>
+</div>
+<div class="flex h-[5.5rem] sm:h-[6.5rem] items-center justify-center border border-white/10 bg-slate-950/60 p-3 cyber-border">
+<img alt="СООО НПГ «Экологическая Альтернатива»" class="max-h-full max-w-full w-auto object-contain" src="{{SITE_ROOT_PREFIX}}/assets/logos-raster/logo-eco.webp" width="280" height="77" loading="lazy" decoding="async"/>
+</div>
+</div>
+<p class="mt-6 text-center text-xs text-slate-500 max-w-2xl mx-auto">Научное сопровождение: Институт машиностроения НАН Беларуси, лаборатория робототехники БрГУ.</p>
+</div>
+</section>
+
+<section class="py-10 md:py-14 bg-tertiary border-y border-primary/20">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-secondary-fixed mb-3">Аудитория</p>
+<h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-4">Кому подходит</h2>
+<p class="text-slate-400 leading-relaxed max-w-3xl text-sm md:text-base">Производствам, которым нужно спроектировать узел, оснастку или автоматизацию — но не обязательно сразу заказывать готовое оборудование. Если нужна разработка проектной документации, 3D&#x2011;модель или рабочие чертежи под ваш объект — обсудим объём и сроки. Подробнее о компании — в разделе <a class="text-primary-fixed underline underline-offset-2 hover:text-white" href="{{HOME_PATH}}#about">О нас</a>.</p>
+</div>
+</section>
+
+<section class="py-10 md:py-14 bg-slate-950 border-y border-white/5" id="scope">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-3">Состав услуги</p>
+<h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-5">Что входит в инжиниринговые услуги</h2>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-300 leading-snug">
+<li class="flex gap-2 border border-white/10 bg-slate-900/40 p-3"><span class="text-secondary shrink-0">—</span> 3D&#x2011;моделирование и CAD (SolidWorks и аналоги)</li>
+<li class="flex gap-2 border border-white/10 bg-slate-900/40 p-3"><span class="text-secondary shrink-0">—</span> Разработка конструкторской документации по ЕСКД</li>
+<li class="flex gap-2 border border-white/10 bg-slate-900/40 p-3"><span class="text-secondary shrink-0">—</span> Рабочие чертежи и спецификации</li>
+<li class="flex gap-2 border border-white/10 bg-slate-900/40 p-3"><span class="text-secondary shrink-0">—</span> Техническая и рабочая документация</li>
+<li class="flex gap-2 border border-white/10 bg-slate-900/40 p-3"><span class="text-secondary shrink-0">—</span> Технический аудит существующего оборудования</li>
+<li class="flex gap-2 border border-white/10 bg-slate-900/40 p-3 sm:col-span-2"><span class="text-secondary shrink-0">—</span> Проектирование механизмов, узлов и нестандартного оборудования</li>
+</ul>
+</div>
+</section>
+
+<section class="py-10 md:py-14 bg-tertiary border-y border-primary/15">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-secondary-fixed mb-4">Процесс</p>
+<h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-6">Как проходит работа</h2>
+<ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<li class="border border-white/10 bg-slate-950/40 p-5 cyber-border"><span class="text-[10px] font-black uppercase tracking-widest text-secondary-fixed">01</span><p class="mt-2 font-bold text-slate-100">Техническое задание</p><p class="mt-1 text-sm text-slate-400">Согласуем задачу, ограничения площадки и требования к результату.</p></li>
+<li class="border border-white/10 bg-slate-950/40 p-5 cyber-border"><span class="text-[10px] font-black uppercase tracking-widest text-secondary-fixed">02</span><p class="mt-2 font-bold text-slate-100">3D&#x2011;модель</p><p class="mt-1 text-sm text-slate-400">Проектирование изделий и узлов в CAD, проверка габаритов и кинематики.</p></li>
+<li class="border border-white/10 bg-slate-950/40 p-5 cyber-border"><span class="text-[10px] font-black uppercase tracking-widest text-secondary-fixed">03</span><p class="mt-2 font-bold text-slate-100">Конструкторская документация</p><p class="mt-1 text-sm text-slate-400">Разработка КД по ЕСКД, спецификации, ведомости материалов.</p></li>
+<li class="border border-white/10 bg-slate-950/40 p-5 cyber-border"><span class="text-[10px] font-black uppercase tracking-widest text-secondary-fixed">04</span><p class="mt-2 font-bold text-slate-100">Согласование</p><p class="mt-1 text-sm text-slate-400">Итерации по замечаниям заказчика до утверждения комплекта.</p></li>
+<li class="border border-white/10 bg-slate-950/40 p-5 cyber-border"><span class="text-[10px] font-black uppercase tracking-widest text-secondary-fixed">05</span><p class="mt-2 font-bold text-slate-100">Рабочие чертежи</p><p class="mt-1 text-sm text-slate-400">Комплект для изготовления и сборки на производстве.</p></li>
+<li class="border border-white/10 bg-slate-950/40 p-5 cyber-border"><span class="text-[10px] font-black uppercase tracking-widest text-secondary-fixed">06</span><p class="mt-2 font-bold text-slate-100">Сопровождение</p><p class="mt-1 text-sm text-slate-400">Поддержка на этапе изготовления, монтажа и внедрения — при необходимости.</p></li>
+</ol>
+</div>
+</section>
+
+<section class="py-10 md:py-14 bg-slate-900 border-y border-white/5">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">Факты</p>
+<h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-6">Почему мы</h2>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="border border-white/10 bg-slate-950/50 p-5 cyber-border text-center sm:text-left">
+<p class="text-3xl md:text-4xl font-bold text-white mb-1">15+</p>
+<p class="text-xs text-slate-400 uppercase tracking-widest">лет опыта инженеров в команде</p>
+</div>
+<div class="border border-white/10 bg-slate-950/50 p-5 cyber-border text-center sm:text-left">
+<p class="text-3xl md:text-4xl font-bold text-white mb-1">50+</p>
+<p class="text-xs text-slate-400 uppercase tracking-widest">реализованных проектов</p>
+</div>
+<div class="border border-white/10 bg-slate-950/50 p-5 cyber-border text-center sm:text-left">
+<p class="text-lg md:text-xl font-bold text-white mb-1 leading-snug">НАН + БрГУ</p>
+<p class="text-xs text-slate-400 uppercase tracking-widest">научное сопровождение</p>
+</div>
+<div class="border border-white/10 bg-slate-950/50 p-5 cyber-border text-center sm:text-left">
+<p class="text-lg md:text-xl font-bold text-white mb-1 leading-snug">Своё производство</p>
+<p class="text-xs text-slate-400 uppercase tracking-widest">проверка решений в железе</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-10 md:py-16 bg-tertiary border-y border-primary/20" id="cases">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-secondary-fixed mb-3">Примеры</p>
+<h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-8">Реализованные проекты</h2>
+<div class="space-y-8">
+
+<article class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start border border-white/10 bg-slate-950/40 p-6 md:p-8 cyber-border">
+<div class="space-y-4">
+<h3 class="text-xl font-bold text-slate-100">Фотосепаратор — от проектирования до прототипа</h3>
+<p class="text-sm text-slate-400 leading-relaxed">Задача: оптическая сортировка продукции на линии, снижение брака и автоматический отсев. Спроектировали ядро системы — камеру, алгоритмы компьютерного зрения и печатные платы управления; корпус и механику адаптировали под продукт заказчика.</p>
+<ul class="text-sm text-slate-300 space-y-2">
+<li><strong class="text-slate-100">Результат:</strong> производительность 1–20+ т/ч, точность распознавания 99,9%, снижение брака 40–70%</li>
+<li><strong class="text-slate-100">Срок проектирования:</strong> 1 месяц · <strong class="text-slate-100">изготовление:</strong> 2 месяца</li>
+<li><strong class="text-slate-100">Стоимость проекта и прототипа:</strong> 60&nbsp;000 BYN · <span class="text-slate-500">у конкурентов ≈125&nbsp;000 BYN</span></li>
+</ul>
+</div>
+<div class="space-y-3">
+<div class="overflow-hidden bg-black aspect-video cyber-border max-h-[50vw] sm:max-h-none">
+<img alt="Фотосепаратор — результат инженерного проектирования" class="w-full h-full object-cover" src="{{SITE_ROOT_PREFIX}}/assets/images/products/photoseparator/hero-apple-detection.webp" width="800" height="600" loading="lazy" decoding="async"/>
+</div>
+<div class="overflow-hidden bg-black aspect-video cyber-border max-h-[50vw] sm:max-h-none">
+<video class="w-full h-full object-cover" controls playsinline preload="none" poster="{{SITE_ROOT_PREFIX}}/assets/images/products/photoseparator/separator-poster.webp" width="1280" height="720" aria-label="Демонстрация работы фотосепаратора">
+<source src="{{SITE_ROOT_PREFIX}}/assets/images/products/photoseparator/separator-example.mp4" type="video/mp4"/>
+</video>
+</div>
+</div>
+</article>
+
+<article class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start border border-white/10 bg-slate-950/40 p-6 md:p-8 cyber-border">
+<div class="space-y-4">
+<h3 class="text-xl font-bold text-slate-100">Плата управления робота&#x2011;манипулятора</h3>
+<p class="text-sm text-slate-400 leading-relaxed">Проектирование платы ввода&#x2011;вывода и связи с оборудованием для промышленного робота: клеммные зоны, интерфейсы для ПЛК и полевой проводки. Изготовление серийного образца.</p>
+<ul class="text-sm text-slate-300 space-y-2">
+<li><strong class="text-slate-100">Срок:</strong> 1 месяц</li>
+<li><strong class="text-slate-100">Стоимость:</strong> 30&nbsp;000 BYN · <span class="text-slate-500">у конкурентов от 150&nbsp;000 BYN</span></li>
+</ul>
+</div>
+<div class="overflow-hidden bg-slate-100 aspect-[4/3] cyber-border flex items-center justify-center p-2 max-h-[60vw] sm:max-h-none">
+<img alt="Плата управления роботом: клеммники для сенсоров и связи с ПЛК" class="w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/manipulator-io-board.webp" width="730" height="400" loading="lazy" decoding="async"/>
+</div>
+</article>
+
+<article class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start border border-white/10 bg-slate-950/40 p-6 md:p-8 cyber-border">
+<div class="space-y-4">
+<h3 class="text-xl font-bold text-slate-100">Роботизированный узел паллетирования</h3>
+<p class="text-sm text-slate-400 leading-relaxed">Проектирование узла для скорости циклов не менее 10 в минуту. Подобрали компоненты на рынке, составили документацию и провели расчёты для имитации процесса — с оптимальным размещением оборудования и максимальным переиспользованием готовых узлов на производстве заказчика.</p>
+</div>
+<div class="overflow-hidden bg-white aspect-[4/3] sm:aspect-auto sm:min-h-[280px] cyber-border max-h-[70vw] sm:max-h-none">
+<img alt="Схема роботизированного комплекса паллетирования — планировка узла" class="w-full h-full object-contain p-2" src="{{SITE_ROOT_PREFIX}}/assets/images/concept.jpg" width="1200" height="800" loading="lazy" decoding="async"/>
+</div>
+</article>
+
+<article class="border border-white/10 bg-slate-950/40 p-6 md:p-8 cyber-border">
+<div class="space-y-4 mb-6 max-w-3xl">
+<h3 class="text-xl font-bold text-slate-100">Нестандартное оборудование — полная КД и 3D&#x2011;чертежи</h3>
+<p class="text-sm text-slate-400 leading-relaxed">Промышленное проектирование специализированных механизмов: 3D&#x2011;модели, сборочные чертежи, спецификации и комплект документации для изготовления на производстве.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="overflow-hidden bg-slate-100 aspect-[4/3] cyber-border max-h-[55vw] sm:max-h-none">
+<img alt="3D-модель нестандартного промышленного оборудования — вид 1" class="w-full h-full object-contain p-2" src="{{SITE_ROOT_PREFIX}}/assets/images/custom-equipment-1.jpeg" width="800" height="600" loading="lazy" decoding="async"/>
+</div>
+<div class="overflow-hidden bg-slate-100 aspect-[4/3] cyber-border max-h-[55vw] sm:max-h-none">
+<img alt="3D-модель нестандартного промышленного оборудования — вид 2" class="w-full h-full object-contain p-2" src="{{SITE_ROOT_PREFIX}}/assets/images/custom-equipment-2.jpeg" width="800" height="600" loading="lazy" decoding="async"/>
+</div>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="py-10 md:py-14 bg-slate-950 border-y border-white/5" id="pricing">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-3">Ценообразование</p>
+<h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-4">Как формируется цена</h2>
+<p class="text-slate-400 text-sm md:text-base max-w-3xl leading-relaxed mb-6">Стоимость разработки проектной документации зависит от нескольких факторов — итоговую сумму фиксируем после уточнения ТЗ:</p>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-300 max-w-3xl">
+<li class="flex gap-2 border border-white/10 bg-slate-900/40 p-3"><span class="text-secondary shrink-0">—</span> Сложность узла и количество деталей</li>
+<li class="flex gap-2 border border-white/10 bg-slate-900/40 p-3"><span class="text-secondary shrink-0">—</span> Объём конструкторской и технической документации</li>
+<li class="flex gap-2 border border-white/10 bg-slate-900/40 p-3"><span class="text-secondary shrink-0">—</span> Сроки выполнения работ</li>
+<li class="flex gap-2 border border-white/10 bg-slate-900/40 p-3"><span class="text-secondary shrink-0">—</span> Необходимость 3D&#x2011;прототипа или изготовления образца</li>
+</ul>
+<p class="mt-6 text-xs text-slate-500 italic max-w-2xl">Цифры в кейсах — ориентиры по завершённым проектам; не являются публичной офертой до согласования объёма.</p>
+</div>
+</section>
+
+<section class="py-10 md:py-14 bg-slate-900 border-y border-white/5" id="faq">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-6 text-center">Вопросы</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm text-slate-400 leading-relaxed">
+<div class="border-l-2 border-primary pl-4">
+<h3 class="font-bold text-slate-100 mb-1">Сколько стоит разработка КД?</h3>
+<p>Зависит от сложности узла и объёма документации. После краткого описания задачи подготовим ориентир — как в кейсах выше: от 30&nbsp;000 BYN за плату до 60&nbsp;000 BYN за комплексный проект с прототипом.</p>
+</div>
+<div class="border-l-2 border-primary pl-4">
+<h3 class="font-bold text-slate-100 mb-1">Можно заказать только проектирование, без изготовления?</h3>
+<p>Да. Передаём комплект чертежей и 3D&#x2011;моделей — изготовление можете выполнить на своей площадке или у другого подрядчика.</p>
+</div>
+<div class="border-l-2 border-primary pl-4">
+<h3 class="font-bold text-slate-100 mb-1">В каком формате передаёте чертежи?</h3>
+<p>PDF для согласования, исходники CAD (SolidWorks и др.) — по договорённости. Спецификации и ведомости — в форматах, принятых у заказчика.</p>
+</div>
+<div class="border-l-2 border-primary pl-4">
+<h3 class="font-bold text-slate-100 mb-1">Работаете по ГОСТ/ЕСКД?</h3>
+<p>Да. Разработка конструкторской документации ведётся по ЕСКД; при необходимости — с учётом отраслевых стандартов и требований вашего предприятия.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="pt-12 pb-28 md:pt-20 md:pb-32 lg:py-20 bg-slate-950 text-slate-200 relative overflow-hidden border-t border-primary/20" id="contacts">
+<div class="absolute inset-0 blueprint-grid opacity-[0.07]"></div>
+<div class="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
+<div>
+<h2 class="text-2xl md:text-3xl font-bold mb-3 text-white uppercase tracking-tighter">Заявка на проектирование</h2>
+<p class="text-slate-400 mb-6 max-w-lg text-sm leading-relaxed">Работаем с предприятиями Беларуси и России. Опишите задачу — или напишите на почту, в Viber, позвоните. Ответим в рабочее время.</p>
+<div class="space-y-5 text-sm mb-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">call</span>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="text-xl font-semibold text-white hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">mail</span>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="text-lg font-semibold text-slate-200 hover:text-primary-fixed transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a></div>
+</div>
+</div>
+<div>
+<h3 class="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-3">Мессенджеры</h3>
+<div class="flex flex-wrap gap-3">
+<a class="inline-flex items-center gap-2 border border-white/25 bg-white/5 px-4 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors min-h-[44px]" href="https://viber.me/+375255092206" target="_blank" rel="noopener noreferrer">Viber</a>
+<a class="inline-flex items-center gap-2 border border-white/25 bg-white/5 px-4 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors min-h-[44px]" href="https://t.me/+375255092206" target="_blank" rel="noopener noreferrer">Telegram</a>
+<a class="inline-flex items-center gap-2 border border-white/25 bg-white/5 px-4 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors min-h-[44px]" href="https://wa.me/375255092206" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+</div>
+</div>
+<p class="mt-6 text-xs text-slate-500">Выезд специалиста на объект — до 5 рабочих дней с согласования заявки. Удалённая консультация — до 2 рабочих дней.</p>
+</div>
+<div class="bg-tertiary border border-white/10 p-6 md:p-8 shadow-2xl cyber-border">
+<form class="space-y-5" action="https://formspree.io/f/xaqllkqo" method="POST" accept-charset="UTF-8">
+<input type="hidden" name="_subject" value="Заявка: инженерное проектирование"/>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true"/>
+<input type="hidden" name="product" value="Инженерное проектирование"/>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="eng-name">Имя</label>
+<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg text-slate-100 placeholder:text-slate-600 min-h-[44px] sm:min-h-0" id="eng-name" name="name" type="text" required autocomplete="name" placeholder="Иван Иванов"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="eng-phone">Телефон</label>
+<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg text-slate-100 placeholder:text-slate-600 min-h-[44px] sm:min-h-0" id="eng-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="eng-company">Компания</label>
+<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg text-slate-100 placeholder:text-slate-600 min-h-[44px] sm:min-h-0" id="eng-company" name="company" type="text" autocomplete="organization" placeholder="ООО …"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="eng-msg">Задача / объект</label>
+<textarea class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-2.5 sm:py-3 px-1 outline-none resize-none text-base sm:text-lg text-slate-100 placeholder:text-slate-600 placeholder:leading-relaxed" id="eng-msg" name="message" rows="3" placeholder="Что нужно спроектировать, сроки, формат КД…"></textarea>
+</div>
+<button class="w-full machined-gradient text-on-primary py-5 font-black uppercase tracking-[0.3em] text-xs hover:shadow-xl transition-all min-h-[44px]" type="submit">Отправить</button>
+<p class="text-[10px] text-center text-slate-500 uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary-fixed underline underline-offset-2 hover:text-white" href="{{PRIVACY_PAGE_HREF}}">политикой конфиденциальности</a></p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- @include partials/footer.html -->
+</body>
+</html>

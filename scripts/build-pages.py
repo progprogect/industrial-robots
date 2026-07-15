@@ -29,6 +29,7 @@ PAGE_SLUGS: dict[str, str] = {
     "manipulator-setup.src.html": "nastrojka-manipulyatorov",
     "contacts.src.html": "kontakty",
     "repair.src.html": "remont",
+    "proektirovanie.src.html": "proektirovanie",
 }
 
 # Старые плоские имена → слаг (редирект-заглушки в корне)
@@ -40,6 +41,7 @@ REDIRECT_STUBS: dict[str, str] = {
     "svarochnyj-robot.html": "svarochnyj-robot",
     "contacts.html": "kontakty",
     "repair.html": "remont",
+    "proektirovanie.html": "proektirovanie",
 }
 
 PAGE_ORDER: list[str] = [
@@ -52,6 +54,7 @@ PAGE_ORDER: list[str] = [
     "manipulator-setup.src.html",
     "contacts.src.html",
     "repair.src.html",
+    "proektirovanie.src.html",
 ]
 
 # priority, changefreq (sitemap)
@@ -63,6 +66,7 @@ SITEMAP_META: dict[str, tuple[str, str]] = {
     "svarochnyj-robot.src.html": ("0.9", "monthly"),
     "manipulator-setup.src.html": ("0.9", "monthly"),
     "repair.src.html": ("0.85", "monthly"),
+    "proektirovanie.src.html": ("0.85", "monthly"),
     "contacts.src.html": ("0.8", "monthly"),
     "privacy.src.html": ("0.3", "yearly"),
 }
@@ -152,6 +156,15 @@ SEO_PAGE: dict[str, dict[str, str]] = {
         ),
         "OG_IMAGE": "assets/images/repair/repair-welding.webp",
         "BREADCRUMB_NAME": "Ремонт оборудования",
+    },
+    "proektirovanie.src.html": {
+        "SEO_TITLE": "Инженерное проектирование и разработка КД — ООО «Промышленные роботы»",
+        "SEO_DESCRIPTION": (
+            "Инжиниринговые услуги: 3D проектирование, разработка проектной и конструкторской документации по ЕСКД. "
+            "Промышленное проектирование узлов и оборудования. Работаем по РБ и РФ."
+        ),
+        "OG_IMAGE": "assets/images/concept.jpg",
+        "BREADCRUMB_NAME": "Инженерное проектирование",
     },
 }
 
@@ -311,7 +324,7 @@ def build_webpage_ld(site_origin: str, base_path: str, src_name: str, site_name:
 
 
 def build_product_or_service_ld(site_origin: str, base_path: str, src_name: str, site_name: str) -> dict[str, Any] | None:
-    if src_name in ("repair.src.html", "manipulator-setup.src.html"):
+    if src_name in ("repair.src.html", "manipulator-setup.src.html", "proektirovanie.src.html"):
         seo = SEO_PAGE[src_name]
         cid = canonical_url(site_origin, base_path, PAGE_SLUGS[src_name])
         home = canonical_url(site_origin, base_path, "")
@@ -398,6 +411,7 @@ def build_page_vars(src_name: str) -> dict[str, str]:
         "WELDING_ROBOT_HREF": po("svarochnyj-robot"),
         "MANIPULATOR_SETUP_HREF": po("nastrojka-manipulyatorov"),
         "REPAIR_SERVICE_HREF": po("remont"),
+        "ENGINEERING_DESIGN_HREF": po("proektirovanie"),
         "CONTACTS_PAGE_HREF": contacts_path,
         "PRIVACY_PAGE_HREF": po("politika-konfidencialnosti"),
         "CTA_CONTACTS_HREF": cta_contacts,
