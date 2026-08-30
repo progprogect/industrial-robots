@@ -2,62 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://promroboty.by/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://promroboty.by/fotoseparator/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://promroboty.by/politika-konfidencialnosti/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://promroboty.by/agv/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://promroboty.by/robot-manipulyator/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://promroboty.by/svarochnyj-robot/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://promroboty.by/nastrojka-manipulyatorov/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://promroboty.by/kontakty/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://promroboty.by/remont/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://promroboty.by/proektirovanie/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://promroboty.by/keysy/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://promroboty.by/keysy/robotizirovannaya-svarka-ramnyh-konstrukciy/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://promroboty.by/keysy/palletirovanie-meshkov/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://promroboty.by/keysy/obsluzhivanie-stanka-chpu/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://promroboty.by/keysy/opticheskaya-sortirovka/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://promroboty.by/keysy/avtonomnaya-transportirovka-pallet/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://promroboty.by/keysy/razrabotka-fotoseparatora/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://promroboty.by/keysy/plata-upravleniya-robota/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <!-- @include partials/gtag.html -->
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<link rel="preload" as="image" href="{{SITE_ROOT_PREFIX}}/assets/images/agv-rohly.webp" fetchpriority="high"/>
+<link rel="preload" as="image" href="{{SITE_ROOT_PREFIX}}/assets/images/agv-real/agv-fleet-aisle.webp" fetchpriority="high"/>
 <link rel="icon" href="{{SITE_ROOT_PREFIX}}/favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="32x32" href="{{SITE_ROOT_PREFIX}}/favicon-32x32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="{{SITE_ROOT_PREFIX}}/favicon-16x16.png"/>
@@ -106,14 +106,14 @@
 <body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary blueprint-lines">
 <!-- @include partials/header.html -->
 <main>
-<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-20 sm:pt-24">
+<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-28 pb-12 sm:pt-32 sm:pb-16">
 <div class="absolute inset-0 z-0">
-<img alt="Автономная рохля на производственной площадке" class="w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/agv-rohly.webp" width="2400" height="1792" fetchpriority="high" decoding="async"/>
+<img alt="Колонна автономных транспортных тележек с грузом в проходе склада" class="w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/agv-real/agv-fleet-aisle.webp" width="2000" height="1148" fetchpriority="high" decoding="async"/>
 <div class="absolute inset-0 hero-overlay"></div>
 <div class="absolute inset-0 blueprint-grid opacity-30"></div>
 </div>
 <div class="relative z-10 container mx-auto px-4 sm:px-6 max-w-4xl">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">AGV (автоматическая рохля) · внутрискладская логистика</p>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-5">AGV (автоматическая рохля) · внутрискладская логистика</p>
 <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-6">Автономная рохля (AGV) для паллетных перевозок</h1>
 <p class="text-lg md:text-xl text-white/85 max-w-2xl mb-10 border-l-2 border-primary-fixed pl-6 font-light leading-relaxed">
 Самоходное решение для повторяющихся паллетных перевозок внутри склада, производства или РЦ — без постоянного оператора у руля.
@@ -137,7 +137,7 @@
 </div>
 </div>
 <div class="relative w-full min-h-[280px] aspect-[4/3] lg:min-h-[320px] lg:aspect-auto self-stretch overflow-hidden bg-slate-100 cyber-border">
-<img alt="Автоматическая рохля на складе: паллетные перевозки" class="absolute inset-0 w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/agv-rohly.webp" width="2400" height="1792" loading="lazy" decoding="async"/>
+<img alt="Парк автономных тележек в распределительном центре" class="absolute inset-0 w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/agv-real/agv-fleet-hall.webp" width="1600" height="1146" loading="lazy" decoding="async"/>
 <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/15 to-transparent pointer-events-none" aria-hidden="true"></div>
 </div>
 </div>
@@ -156,6 +156,28 @@
 </div>
 </section>
 
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Как это выглядит</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Форматы автономных тележек</h2>
+<p class="text-on-surface-variant max-w-3xl mb-10 leading-relaxed">Под словом AGV скрываются разные машины, и выбор зависит от того, что и куда возить. Тележка с подъёмными вилами берёт обычную паллету с пола и ставит её в стеллаж. Платформенная модель возит тяжёлые или нестандартные грузы, для которых паллета не подходит. Ниже — характерные исполнения, чтобы было понятно, о чём идёт речь при обсуждении вашей задачи.</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<figure class="border border-outline-variant/50 bg-white cyber-border overflow-hidden">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/agv-real/agv-forklift-cage-card.webp" width="800" height="1067" loading="lazy" decoding="async" class="w-full h-56 object-cover object-center" alt="Вилочная автономная тележка забирает контейнер на складе"/>
+<figcaption class="p-4 text-sm text-on-surface-variant leading-relaxed">Вилочное исполнение: забирает паллету с пола и ставит в стеллаж без участия оператора.</figcaption>
+</figure>
+<figure class="border border-outline-variant/50 bg-white cyber-border overflow-hidden">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/agv-real/agv-platform-carts-card.webp" width="800" height="450" loading="lazy" decoding="async" class="w-full h-56 object-cover object-center" alt="Низкопрофильная автономная тележка везёт цеховую тару"/>
+<figcaption class="p-4 text-sm text-on-surface-variant leading-relaxed">Компактная тележка для перевозок между участками внутри цеха по заданному маршруту.</figcaption>
+</figure>
+<figure class="border border-outline-variant/50 bg-white cyber-border overflow-hidden">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/agv-real/agv-platform-engine-card.webp" width="800" height="1138" loading="lazy" decoding="async" class="w-full h-56 object-cover object-center" alt="Платформенная автономная тележка перевозит тяжёлый агрегат"/>
+<figcaption class="p-4 text-sm text-on-surface-variant leading-relaxed">Платформенное исполнение под тяжёлый или нестандартный груз, который не ставится на паллету.</figcaption>
+</figure>
+</div>
+<p class="mt-6 text-xs text-on-surface-variant/70 leading-relaxed">Снимки показывают типовые исполнения техники на реальных объектах. Автор фотографий — ek robotics GmbH, лицензия CC&nbsp;BY-SA&nbsp;4.0.</p>
+</div>
+</section>
 <section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30">
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Спецификация</p>
@@ -256,7 +278,7 @@
 <h2 class="text-3xl md:text-4xl font-bold mb-8">Экономический эффект и окупаемость</h2>
 <p class="text-white/75 max-w-3xl mb-8 leading-relaxed">По материалам презентации продукта возможны следующие <strong class="text-white">ориентиры</strong> (не индивидуальный расчёт и не публичная оферта):</p>
 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 text-sm text-white/80">
-<li class="border border-white/15 p-4"><span class="text-primary-fixed font-bold block mb-1">Экономия на ФОТ</span> порядка 4&nbsp;000–5&nbsp;000 BYN в месяц на одного сотрудника в зоне замещаемых операций (оценочно).</li>
+<li class="border border-white/15 p-4"><span class="text-primary-fixed font-bold block mb-1">Экономия на ФОТ</span> порядка 110–140&nbsp;тыс.&nbsp;₽ (4&nbsp;000–5&nbsp;000 BYN) в месяц на одного сотрудника в зоне замещаемых операций (оценочно).</li>
 <li class="border border-white/15 p-4"><span class="text-primary-fixed font-bold block mb-1">Нагрузка 1,5–2 FTE</span> часть рутинной логистики может быть передана решению; точная доля зависит от интенсивности процесса.</li>
 </ul>
 <p class="text-sm text-white/70 max-w-3xl mb-6">Окупаемость оценивается через фактические затраты на ручной труд и реальную интенсивность перевозок; решение в первую очередь для компаний с устойчивым потоком повторяющихся рейсов.</p>
@@ -264,19 +286,41 @@
 </div>
 </section>
 
+<section class="border-y border-outline-variant/30 bg-surface-container-low py-12 md:py-16">
+<div class="container mx-auto max-w-6xl px-4 sm:px-6">
+<a class="group grid grid-cols-1 gap-6 border border-outline-variant/50 bg-white cyber-border p-6 transition-colors hover:border-primary md:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] md:items-center md:gap-8 md:p-8" href="{{CASE_4_HREF}}">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/agv-real/agv-fleet-hall-card.webp" width="800" height="573" loading="lazy" decoding="async" class="h-48 w-full object-cover md:h-40" alt="Автономные транспортные тележки в цехе"/>
+<div>
+<p class="mb-2 text-[10px] font-black uppercase tracking-[0.25em] text-primary">Кейс из практики</p>
+<h2 class="mb-3 text-xl font-bold leading-snug transition-colors group-hover:text-primary md:text-2xl">Автономная транспортировка паллет по складу</h2>
+<p class="text-sm leading-relaxed text-on-surface-variant md:text-base">Человек весь день возил паллеты по одному маршруту. Как мы посчитали рейсы, автоматизировали только повторяющуюся часть и честно сказали, где это не окупится.</p>
+<span class="mt-4 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</div>
+</a>
+</div>
+</section>
+
 <section class="py-16 md:py-24 bg-surface-container-high border-y border-outline-variant/40">
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <h2 class="text-3xl md:text-4xl font-bold mb-10">Стоимость и состав предложения</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+<p class="text-on-surface-variant max-w-3xl mb-8 leading-relaxed">Автономная тележка дороже обычной самоходной рохли примерно впятеро: управляемый электропаллетоперевозчик на 2&nbsp;т стоит порядка 550–600&nbsp;тыс.&nbsp;₽, а тот же грузооборот без оператора обходится в миллионы. Разница и есть цена смены, которая едет сама. Поэтому считать надо не «сколько стоит робот», а сколько стоит рейс.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
 <div class="bg-white border border-outline-variant/50 p-8 cyber-border">
-<p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Ориентир цены (презентация)</p>
-<p class="text-4xl font-bold text-primary">115&nbsp;000 <span class="text-xl font-headline">BYN</span></p>
-<p class="text-xs text-on-surface-variant mt-2">Готовое B2B-решение под конкретный объект и задачу; итоговая стоимость уточняется после обследования.</p>
+<p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Одна тележка</p>
+<p class="text-3xl font-bold text-primary">от 2,5&nbsp;млн <span class="text-lg font-headline">₽</span></p>
+<p class="text-sm text-on-surface-variant font-medium mt-1">≈ от 91&nbsp;000 BYN</p>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">Нижняя граница по рынку за единицу техники без обвязки. Дальше цена растёт от грузоподъёмности, типа навигации и требований к автономности.</p>
 </div>
 <div class="bg-white border border-outline-variant/50 p-8 cyber-border">
-<p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Гарантия</p>
-<p class="text-4xl font-bold text-on-surface">24 <span class="text-xl font-headline">месяца</span></p>
-<p class="text-xs text-on-surface-variant mt-2">Снижает риск входа для промышленного клиента при сопоставимых условиях поддержки.</p>
+<p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Проект под объект</p>
+<p class="text-3xl font-bold text-primary">≈ 3,2&nbsp;млн <span class="text-lg font-headline">₽</span></p>
+<p class="text-sm text-on-surface-variant font-medium mt-1">≈ 115&nbsp;000 BYN</p>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">Тележка плюс всё, без чего она не поедет: разметка маршрутов, зарядная станция, связь с учётной системой, испытания и обучение. Итог уточняется после обследования площадки.</p>
+</div>
+<div class="bg-white border border-outline-variant/50 p-8 cyber-border">
+<p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Окупаемость и гарантия</p>
+<p class="text-3xl font-bold text-on-surface">1,5–3 <span class="text-lg font-headline">года</span></p>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">Типичный срок возврата по отраслевым расчётам для автономных тележек — при условии, что маршрут действительно повторяющийся. Гарантия на оборудование — 24 месяца.</p>
 </div>
 </div>
 <h3 class="font-bold text-lg mb-4 uppercase tracking-wide text-primary">Что входит в логику предложения</h3>
@@ -284,7 +328,7 @@
 <li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0 text-xl">check_circle</span> настройка и запуск на объекте;</li>
 <li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0 text-xl">check_circle</span> испытание в реальных условиях до выхода на постоянный режим;</li>
 <li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0 text-xl">check_circle</span> обучение персонала;</li>
-<li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0 text-xl">check_circle</span> сервисное сопровождение (локальная поддержка для клиентов в регионе присутствия компании).</li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary shrink-0 text-xl">check_circle</span> сервисное сопровождение: по Беларуси выезжаем из Гродно, по России — бригадой из Москвы, а в остальных регионах подбираем партнёрский сервисный центр рядом с вами.</li>
 </ul>
 <p class="mt-8 text-sm text-on-surface-variant border-l-2 border-secondary pl-4 max-w-3xl">Интеграция с WMS/ERP и детали техники обсуждаются индивидуально и не подменяют собой обследование площадки.</p>
 </div>
@@ -307,11 +351,11 @@
 <div class="space-y-6 text-sm">
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-primary-fixed">call</span>
-<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="inline-flex min-h-11 items-center text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
 </div>
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-primary-fixed">mail</span>
-<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a></div>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="inline-flex min-h-11 items-center text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="{{EMAIL_MAILTO_HREF}}">{{EMAIL_ADDRESS}}</a></div>
 </div>
 </div>
 </div>
@@ -326,7 +370,7 @@
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="agv-phone">Телефон</label>
-<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="agv-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="agv-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Телефон с кодом страны"/>
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="agv-company">Компания</label>

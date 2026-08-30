@@ -104,20 +104,20 @@
 <body class="bg-slate-950 text-slate-300 selection:bg-primary selection:text-white">
 <!-- @include partials/header.html -->
 <main>
-<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-20 sm:pt-24">
+<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-28 pb-12 sm:pt-32 sm:pb-16">
 <div class="absolute inset-0 z-0">
 <img src="{{SITE_ROOT_PREFIX}}/assets/images/repair/repair-welding.webp" alt="Сварочные работы в промышленном цеху" class="w-full h-full object-cover object-center" width="730" height="548" fetchpriority="high" decoding="async"/>
 <div class="absolute inset-0 hero-overlay-weld"></div>
 <div class="absolute inset-0 blueprint-grid opacity-25"></div>
 </div>
 <div class="relative z-10 container mx-auto px-4 sm:px-6 max-w-6xl w-full">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-3">Сервис · ремонт</p>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-5">Сервис · ремонт</p>
 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.08] mb-5 break-words">Ремонт промышленного оборудования в Гродно и области</h1>
 <p class="text-base md:text-lg text-slate-100/95 max-w-5xl mb-6 border-l-2 border-secondary pl-5 md:pl-6 leading-relaxed">
 Станки, электроника, автоматика, <strong class="text-white">грузовой транспорт и сельхозтехника</strong> — выезжаем на объект, разбираемся и предлагаем решение. <strong class="text-white">Позвоните</strong> — коротко обсудим задачу и формат выезда.
 </p>
 <div class="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-4 sm:items-center mb-6 min-w-0">
-<a class="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight hover:text-primary-fixed transition-colors break-words" href="tel:+375255092206">+375 25 509 22 06</a>
+<a class="inline-flex min-h-11 items-center text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight hover:text-primary-fixed transition-colors break-words" href="tel:+375255092206">+375 25 509 22 06</a>
 <span class="hidden sm:inline text-slate-500">|</span>
 <span class="text-sm text-slate-400 uppercase tracking-widest">звонок по будням и выходным</span>
 </div>
@@ -146,8 +146,8 @@
 
 <section class="py-10 md:py-14 bg-slate-900 border-y border-white/5" id="team">
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-3">Команда</p>
-<h2 class="text-xl md:text-2xl font-bold text-slate-100 mb-3">Инженеры с опытом более 20 лет</h2>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-5">Команда</p>
+<h2 class="text-xl md:text-2xl font-bold text-slate-100 mb-3">Инженеры с опытом в механике, электронике и ПО</h2>
 <p class="text-slate-400 leading-relaxed max-w-3xl text-sm md:text-base">Практика на заводах ЖБУ, в логистике и на производственных линиях. Электроника, механика и софт — в одной связке.</p>
 </div>
 </section>
@@ -177,7 +177,7 @@
 
 <section class="py-10 md:py-14 bg-slate-950 border-y border-white/5">
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-3">Запчасти</p>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-5">Запчасти</p>
 <p class="text-slate-400 text-sm md:text-base max-w-3xl leading-relaxed">Ищем оригиналы и аналоги, при необходимости — изготовление под задачу. Сроки и возможность поставки согласуем отдельно.</p>
 </div>
 </section>
@@ -187,13 +187,14 @@
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-secondary-fixed mb-3">Стоимость</p>
 <h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-4">Выезд и диагностика</h2>
 <div class="max-w-2xl border border-secondary/30 bg-slate-950/50 p-6 md:p-8 cyber-border mb-4">
-<p class="text-4xl md:text-5xl font-bold text-white mb-2">90&nbsp;<span class="text-2xl md:text-3xl font-semibold text-secondary-fixed">BYN</span></p>
+<p class="text-4xl md:text-5xl font-bold text-white mb-1">≈ 2&nbsp;500&nbsp;<span class="text-2xl md:text-3xl font-semibold text-secondary-fixed">₽</span></p>
+<p class="text-sm text-slate-300 font-medium mb-3">90 BYN по ориентировочному курсу</p>
 <p class="text-slate-400 text-sm leading-relaxed">Включает выезд специалиста и диагностику на объекте. Ремонт, запчасти и последующие работы — <strong class="text-slate-200">по смете после осмотра</strong>, сумму обсуждаем до начала работ.</p>
 </div>
 <p class="text-xs text-slate-500 max-w-2xl mb-4">Срочный выезд в пределах области — по возможности в тот же день, время согласуем по телефону.</p>
 <p class="text-xs text-slate-500 italic max-w-2xl">Цифры не являются публичной офертой; итог — после согласования объёма.</p>
 <div class="mt-6 flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
-<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-flex items-center justify-center text-center w-full sm:w-auto" href="tel:+375255092206">Позвонить</a>
+<a class="min-h-11 machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-flex items-center justify-center text-center w-full sm:w-auto" href="tel:+375255092206">Позвонить</a>
 <a class="inline-flex items-center justify-center gap-2 border border-white/20 text-slate-200 px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/5 transition-colors w-full sm:w-auto" href="#contacts">Написать о задаче</a>
 </div>
 </div>
@@ -244,11 +245,11 @@
 <div class="space-y-5 text-sm">
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-secondary-fixed">call</span>
-<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="text-xl font-semibold text-white hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="inline-flex min-h-11 items-center text-xl font-semibold text-white hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
 </div>
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-secondary-fixed">mail</span>
-<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="text-lg font-semibold text-slate-200 hover:text-primary-fixed transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a></div>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="inline-flex min-h-11 items-center text-lg font-semibold text-slate-200 hover:text-primary-fixed transition-colors break-all" href="{{EMAIL_MAILTO_HREF}}">{{EMAIL_ADDRESS}}</a></div>
 </div>
 </div>
 </div>
@@ -263,7 +264,7 @@
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="rep-phone">Телефон</label>
-<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg text-slate-100 placeholder:text-slate-600 min-h-[44px] sm:min-h-0" id="rep-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
+<input class="w-full bg-slate-950/80 border-b-2 border-slate-600 focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg text-slate-100 placeholder:text-slate-600 min-h-[44px] sm:min-h-0" id="rep-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Телефон с кодом страны"/>
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-slate-500 mb-2 block" for="rep-company">Компания / объект</label>

@@ -105,34 +105,33 @@
 <!-- ═══════════════════════════════════════════════
      HERO
 ═══════════════════════════════════════════════ -->
-<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-20 sm:pt-24 hero-dark">
+<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-28 pb-12 sm:pt-32 sm:pb-16 hero-dark">
 <div class="absolute inset-0 blueprint-grid opacity-10"></div>
 <div class="relative z-10 container mx-auto px-4 sm:px-6 max-w-6xl w-full">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-12 lg:items-center">
 <div>
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">Сварочный робот · белорусское производство</p>
-<div class="flex items-center gap-3 mb-4">
-  <span class="text-[10px] font-black uppercase tracking-widest bg-secondary-container text-on-primary px-3 py-1">ПРОГРЕСС&#x2011;1</span>
-  <span class="text-[10px] font-black uppercase tracking-widest border border-white/20 text-white/60 px-3 py-1">Предзаказ открыт</span>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-5">Роботизация сварки · проект под ключ</p>
+<div class="flex flex-wrap items-center gap-3 mb-7">
+  <span class="text-[10px] font-black uppercase tracking-widest bg-primary-fixed text-on-primary-fixed px-3 py-1">Беларусь и Россия</span>
+  <span class="text-[10px] font-black uppercase tracking-widest border border-white/30 text-white/80 px-3 py-1">Расчёт бесплатно</span>
 </div>
-<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-6">Сварочный робот&#x2011;манипулятор собственного производства</h1>
-<p class="text-lg md:text-xl text-white/85 max-w-2xl mb-10 border-l-2 border-primary-fixed pl-6 font-light leading-relaxed">
-6 осей · 150&nbsp;кг · вылет 3 100&nbsp;мм · MIG/MAG, TIG, лазерная сварка. Поставки по РБ и РФ.
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-7">Роботизированная сварка под ключ</h1>
+<p class="text-lg md:text-xl text-white/85 max-w-2xl mb-8 border-l-2 border-primary-fixed pl-6 font-light leading-relaxed">
+Подбираем сварочного робота под ваше изделие, проектируем ячейку с позиционером и оснасткой, программируем траектории, запускаем на площадке и обучаем сварщиков работать с комплексом. Работаем по Беларуси и России.
 </p>
+<p class="text-base text-white/70 max-w-2xl mb-10 leading-relaxed">Пришлите чертёж детали с указанием материала и толщины — за пять рабочих дней вернём расчёт цикла, состав комплекса и срок окупаемости. Бесплатно и без обязательств.</p>
 <div class="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
-<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center w-full sm:w-auto" href="#contacts">Оставить заявку</a>
+<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center w-full sm:w-auto" href="#contacts">Рассчитать окупаемость</a>
 <a class="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors w-full sm:w-auto" href="{{MANIPULATOR_PRODUCT_HREF}}">Робот-манипулятор →</a>
 </div>
 </div>
 <div class="flex w-full justify-center lg:justify-end pt-4 lg:pt-0">
-<div class="w-full max-w-[min(26rem,100%)] bg-black overflow-hidden cyber-border flex items-center justify-center p-4">
-<img
-  alt="Сварочный робот-манипулятор Прогресс-1 — белорусское производство"
-  class="w-full h-auto max-h-[min(70vh,34rem)] object-contain"
-  src="{{SITE_ROOT_PREFIX}}/assets/images/progress-1-robot.png"
-  width="800" height="900"
-  fetchpriority="high" decoding="async"/>
+<figure class="w-full max-w-[min(30rem,100%)]">
+<div class="bg-black overflow-hidden cyber-border">
+<img alt="Коллаборативный робот DOKA на операции сварки" class="w-full h-auto object-cover" src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-welding-arc.webp" width="1600" height="1290" fetchpriority="high" decoding="async"/>
 </div>
+<figcaption class="mt-3 text-xs text-white/55 leading-relaxed">Коллаборативный робот DOKA на сварочной операции. Оборудование производства ООО «РобоПро», Россия — нашего партнёра по поставке.</figcaption>
+</figure>
 </div>
 </div>
 </div>
@@ -144,30 +143,44 @@
 <section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30">
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Спецификация</p>
-<h2 class="text-3xl md:text-4xl font-bold mb-6">Технические характеристики Прогресс-1</h2>
-<p class="text-on-surface-variant text-sm max-w-3xl mb-8 leading-relaxed">Ключевые параметры сварочного исполнения. Итоговые значения фиксируются в ТЗ и паспорте после обследования объекта.</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Технические характеристики роботов DOKA</h2>
+<p class="text-on-surface-variant text-base max-w-3xl mb-8 leading-relaxed">В линейке шесть моделей, они отличаются грузоподъёмностью и радиусом рабочей зоны. Модель подбирается под массу горелки с кабельным пакетом и под габарит вашего изделия, поэтому окончательный выбор мы делаем после того, как посмотрим чертёж детали и участок. Ниже — паспортные данные производителя.</p>
 <div class="overflow-x-auto border border-outline-variant/50 bg-white">
-<table class="w-full text-left text-sm border-collapse">
+<table class="w-full text-left text-sm border-collapse min-w-[38rem]">
 <thead>
 <tr class="border-b border-outline-variant/40 bg-surface-container font-label text-[10px] uppercase tracking-widest text-outline">
-<th class="p-4 font-semibold">Параметр</th>
-<th class="p-4 font-semibold">Значение</th>
+<th class="p-4 font-semibold">Модель</th>
+<th class="p-4 font-semibold">Грузоподъёмность, ном. / макс.</th>
+<th class="p-4 font-semibold">Радиус рабочей зоны</th>
+<th class="p-4 font-semibold">Повторяемость</th>
+<th class="p-4 font-semibold">Макс. скорость TCP</th>
 </tr>
 </thead>
 <tbody class="text-on-surface-variant divide-y divide-outline-variant/30">
-<tr><td class="p-4 font-medium text-on-surface">Модель</td><td class="p-4">Прогресс-1 (собственное производство, РБ)</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Количество осей</td><td class="p-4">6</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Грузоподъёмность</td><td class="p-4">150&nbsp;кг — с горелкой или захватом</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Максимальный вылет</td><td class="p-4">3 100&nbsp;мм</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Максимальная высота TCP</td><td class="p-4">2 760&nbsp;мм</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Виды сварки</td><td class="p-4">MIG/MAG (стандарт), TIG (высокоточные швы), лазерная — по установленному источнику</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Система управления</td><td class="p-4">Промышленный ПК на борту, локальная обработка данных компьютерного зрения</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Производительность</td><td class="p-4">10+ циклов в минуту и более в зависимости от задачи</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Гарантия</td><td class="p-4">12 месяцев</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">DOKA RC3</td><td class="p-4">3&nbsp;/&nbsp;4&nbsp;кг</td><td class="p-4">650&nbsp;мм</td><td class="p-4">±0,05&nbsp;мм</td><td class="p-4">2&nbsp;м/с</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">DOKA RC5</td><td class="p-4">5&nbsp;/&nbsp;6&nbsp;кг</td><td class="p-4">915&nbsp;мм</td><td class="p-4">±0,05&nbsp;мм</td><td class="p-4">2&nbsp;м/с</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">DOKA RC10</td><td class="p-4">10&nbsp;/&nbsp;12&nbsp;кг</td><td class="p-4">1&nbsp;300&nbsp;мм</td><td class="p-4">±0,05&nbsp;мм</td><td class="p-4">2&nbsp;м/с</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">DOKA RC16</td><td class="p-4">16&nbsp;/&nbsp;18&nbsp;кг</td><td class="p-4">950&nbsp;мм</td><td class="p-4">±0,05&nbsp;мм</td><td class="p-4">2&nbsp;м/с</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">DOKA RC20</td><td class="p-4">20&nbsp;/&nbsp;23&nbsp;кг</td><td class="p-4">1&nbsp;750&nbsp;мм</td><td class="p-4">±0,1&nbsp;мм</td><td class="p-4">3&nbsp;м/с</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">DOKA RC30</td><td class="p-4">30&nbsp;/&nbsp;33&nbsp;кг</td><td class="p-4">1&nbsp;300&nbsp;мм</td><td class="p-4">±0,05&nbsp;мм</td><td class="p-4">2&nbsp;м/с</td></tr>
 </tbody>
 </table>
 </div>
-<p class="mt-4 text-xs text-on-surface-variant/85 italic max-w-3xl">Цифры не являются публичной офертой до согласования в договорной документации.</p>
+<p class="mt-8 mb-4 text-sm font-bold uppercase tracking-widest text-outline">Общее для всей линейки</p>
+<div class="overflow-x-auto border border-outline-variant/50 bg-white">
+<table class="w-full text-left text-sm border-collapse">
+<tbody class="text-on-surface-variant divide-y divide-outline-variant/30">
+<tr><td class="p-4 font-medium text-on-surface w-1/3">Количество осей</td><td class="p-4">6</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Степень защиты робота</td><td class="p-4">IP54, шкаф управления — IP42</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Электропитание</td><td class="p-4">100–240&nbsp;В переменного тока, 47–55&nbsp;Гц — отдельная силовая линия не нужна</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Программное обеспечение</td><td class="p-4">«Пульс» — графический интерфейс производителя, внесён в реестр российского ПО Минцифры</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Виды сварки</td><td class="p-4">MIG/MAG, TIG, лазерная — определяется установленным источником, а не роботом</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Работа рядом с человеком</td><td class="p-4">Роботы коллаборативные, но при сварке ограждение и защита от излучения всё равно нужны — их мы закладываем в проект</td></tr>
+</tbody>
+</table>
+</div>
+<p class="mt-6 text-sm text-on-surface-variant leading-relaxed max-w-3xl">Если деталь тяжелее или участок больше, чем закрывает эта линейка, мы ставим промышленного робота другого производителя — логика подбора и состав ячейки при этом не меняются.</p>
+<p class="mt-4 text-xs text-on-surface-variant/85 italic max-w-3xl">Характеристики приведены по данным производителя и не являются публичной офертой до согласования в договорной документации.</p>
 </div>
 </section>
 
@@ -181,9 +194,9 @@
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Универсальность</p>
 <h2 class="text-3xl md:text-4xl font-bold mb-6">Один робот — сварка и перемещение</h2>
 <div class="space-y-4 text-on-surface-variant leading-relaxed text-base">
-<p>Прогресс-1 — это тот же робот-манипулятор в сварочном исполнении. Сварочная горелка устанавливается как насадка на фланец: при необходимости она снимается и заменяется захватом, после чего тот же робот переходит к перемещению деталей, паллетированию или сборке.</p>
-<p>Грузоподъёмность 150&nbsp;кг означает значительный запас прочности даже при сварочных задачах — робот без труда удерживает горелку, кабельный пакет и сварочный источник, а запас по нагрузке позволяет маневрировать с крупными заготовками.</p>
-<p>MIG/MAG — стандарт для конструкционной стали, нержавейки и алюминия. TIG — для высокоточных швов на тонком металле. Лазерная сварка доступна при использовании соответствующего источника.</p>
+<p>Сварочная ячейка — это тот же робот-манипулятор, только с горелкой на фланце. Горелка ставится как насадка: при необходимости она снимается и заменяется захватом, после чего тот же робот переходит к перемещению деталей, паллетированию или обслуживанию станка. Поэтому вложение не привязано к одной операции — если через год загрузка изменится, робот перенастраивается, а не списывается.</p>
+<p>Грузоподъёмность выбирается с запасом к массе горелки и кабельного пакета: этого хватает, чтобы вести шов без вибрации на длинных траекториях. Если по задаче нужно ещё и манипулировать тяжёлой заготовкой, деталь обычно отдают позиционеру, а не роботу — так дешевле и точнее.</p>
+<p>Какой процесс ставить — MIG/MAG, TIG или лазер — решает не робот, а ваше изделие: материал, толщина и требования к шву. Мы подбираем источник под это и говорим прямо, если для вашей детали роботизация даст выигрыш меньше, чем вы ожидаете.</p>
 </div>
 </div>
 <div class="space-y-4">
@@ -226,7 +239,13 @@
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Интеллект</p>
 <h2 class="text-3xl md:text-4xl font-bold mb-6">Компьютерное зрение для точной сварки</h2>
-<p class="text-on-surface-variant max-w-3xl mb-10 leading-relaxed">Прогресс-1 оснащён системой машинного зрения на борту. Промышленный ПК обрабатывает данные локально — без зависимости от внешних серверов и с минимальной задержкой.</p>
+<figure class="mb-10 max-w-3xl">
+<div class="overflow-hidden cyber-border border border-outline-variant/50 bg-black">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/stock-pd/welding-seam-tracking.webp" width="1600" height="1200" loading="lazy" decoding="async" class="w-full h-auto object-cover" alt="Лазерный датчик слежения за сварным швом на роботизированной горелке"/>
+</div>
+<figcaption class="mt-3 text-xs text-on-surface-variant/70 leading-relaxed">Лазерный датчик слежения за стыком: он измеряет реальное положение шва прямо перед горелкой, чтобы робот корректировал траекторию на ходу. Иллюстрация технологии.</figcaption>
+</figure>
+<p class="text-on-surface-variant max-w-3xl mb-10 leading-relaxed">Слежение за швом — это то, что мы добавляем к роботу сами: лазерный датчик перед горелкой, промышленный ПК в шкафу и наше программное обеспечение, которое пересчитывает траекторию на ходу. Данные обрабатываются локально, на площадке, без обращения к внешним серверам. Это опция: она нужна там, где заготовки приходят с разбросом по геометрии, и не нужна там, где деталь каждый раз одинаковая и жёстко фиксируется в оснастке. На этапе расчёта мы честно говорим, какой из двух случаев ваш.</p>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 <div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
 <span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">visibility</span>
@@ -245,8 +264,8 @@
 <div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
 <span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">speed</span>
 <div>
-<h3 class="font-bold text-on-surface mb-2">10+ циклов в минуту</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed">Высокая скорость за счёт синхронизации всех узлов и обратной связи от зрительной системы.</p>
+<h3 class="font-bold text-on-surface mb-2">Меньше брака и переварки</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Шов идёт по фактическому стыку, а не по записанной когда-то траектории. Это снимает основную причину дефектов при разбросе геометрии заготовок.</p>
 </div>
 </div>
 <div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
@@ -259,8 +278,8 @@
 <div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
 <span class="material-symbols-outlined text-primary text-3xl shrink-0" aria-hidden="true">people</span>
 <div>
-<h3 class="font-bold text-on-surface mb-2">Совместная работа с оператором</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed">Зрение позволяет роботу адаптироваться к смежным ручным операциям без жёстких центрирующих ограждений.</p>
+<h3 class="font-bold text-on-surface mb-2">Меньше оснастки под деталь</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Робот находит шов сам, поэтому не нужно делать дорогую центрирующую оснастку под каждое изделие. Ограждение и защита от излучения при сварке остаются в любом случае.</p>
 </div>
 </div>
 <div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
@@ -282,8 +301,8 @@
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 <div class="order-2 lg:order-1">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Комплектация</p>
-<h2 class="text-3xl md:text-4xl font-bold mb-6">Прогресс-1 в сварочном исполнении</h2>
-<p class="text-on-surface-variant leading-relaxed mb-4">Сварочная версия включает горелку (TIG / MIG / MAG), систему подачи сварочной проволоки, кабельный пакет и сварочный источник.</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Что стоит на роботе в сварочной версии</h2>
+<p class="text-on-surface-variant leading-relaxed mb-4">Сам робот — это только рука. Чтобы он варил, на него нужно поставить горелку, подачу проволоки, кабельный пакет и источник, а всё вместе связать в один управляемый цикл. Ниже — то, что мы комплектуем и настраиваем как единый комплекс, а не как набор отдельных покупок.</p>
 <ul class="space-y-2 text-sm text-on-surface-variant">
 <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Сварочная горелка TIG / MIG / MAG</li>
 <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Система подачи сварочной проволоки</li>
@@ -293,14 +312,12 @@
 <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Шкаф управления роботом</li>
 </ul>
 </div>
-<div class="order-1 lg:order-2 relative w-full overflow-hidden bg-slate-50 cyber-border flex items-center justify-center p-6">
-<img
-  alt="Прогресс-1 сварочный робот-манипулятор со сварочной горелкой и компонентами"
-  class="w-full h-auto max-h-[min(55vh,28rem)] object-contain"
-  src="{{SITE_ROOT_PREFIX}}/assets/images/progress-1-welding.png"
-  width="600" height="700"
-  loading="lazy" decoding="async"/>
+<figure class="order-1 lg:order-2">
+<div class="relative w-full overflow-hidden bg-black cyber-border flex items-center justify-center">
+<img alt="Шестиосевой коллаборативный робот DOKA серии RC" class="w-full h-auto max-h-[min(55vh,28rem)] object-contain" src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-arm.webp" width="630" height="630" loading="lazy" decoding="async"/>
 </div>
+<figcaption class="mt-3 text-xs text-on-surface-variant/70 leading-relaxed">Шестиосевой робот DOKA серии RC — база, на которую ставится сварочная оснастка. Фото предоставлено производителем, ООО «РобоПро».</figcaption>
+</figure>
 </div>
 </div>
 </section>
@@ -312,21 +329,25 @@
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Комплекс под ключ</p>
 <h2 class="text-3xl md:text-4xl font-bold mb-4">Роботизированный сварочный комплекс</h2>
-<p class="text-on-surface-variant max-w-3xl mb-4 leading-relaxed">Ниже — пример реализации роботизированного комплекса для конкретной задачи: сварка трубной доски с трубами. Это один из возможных вариантов компоновки.</p>
-<p class="text-on-surface-variant max-w-3xl mb-8 leading-relaxed">Такие комплексы проектируются под разные задачи: сварка рамных конструкций, сосудов, трубопроводной арматуры, листовых изделий. Состав оборудования, компоновка и позиционер подбираются под конкретный тип изделия и производительность.</p>
-<div class="border border-outline-variant/50 bg-white cyber-border overflow-hidden mb-8">
-<img
-  alt="Пример роботизированного сварочного комплекса Прогресс-1: общий вид, позиционер, компоновка, состав"
-  class="w-full h-auto"
-  src="{{SITE_ROOT_PREFIX}}/assets/images/progress-1-complex.png"
-  width="1200" height="800"
-  loading="lazy" decoding="async"/>
+<p class="text-on-surface-variant max-w-3xl mb-4 leading-relaxed">Ячейка — это не один робот, а связка из робота, оснастки, позиционера, источника и ограждения, которая работает как одно целое. Ниже показано, как это выглядит на практике и как мы прорабатываем компоновку под конкретное изделие.</p>
+<figure class="my-8">
+<div class="overflow-hidden cyber-border border border-outline-variant/50 bg-black max-w-4xl">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-welding-part.webp" width="1600" height="1290" loading="lazy" decoding="async" class="w-full h-auto max-h-[32rem] object-cover object-center" alt="Коллаборативный робот DOKA с горелкой над свариваемой деталью в оснастке"/>
 </div>
+<figcaption class="mt-3 text-xs text-on-surface-variant/70 leading-relaxed">Робот с горелкой и деталью в оснастке — типовая компоновка ячейки, из которой мы исходим при проектировании. Оборудование DOKA, ООО «РобоПро»; фото предоставлено производителем.</figcaption>
+</figure>
+<p class="text-on-surface-variant max-w-3xl mb-8 leading-relaxed">Компоновка каждый раз своя: сварка рамных конструкций, сосудов, трубопроводной арматуры и листовых изделий требует разных позиционеров и разного подхода к креплению заготовки. Ниже — наша проектная проработка для одной из таких задач: сварка трубной доски с трубами.</p>
+<figure class="mb-8">
+<div class="border border-outline-variant/50 bg-white cyber-border overflow-hidden">
+<img alt="Проектная проработка роботизированного комплекса для сварки трубной доски: общий вид, позиционер, компоновочная схема, состав комплекса" class="w-full h-auto" src="{{SITE_ROOT_PREFIX}}/assets/images/progress-1-complex.png" width="1200" height="800" loading="lazy" decoding="async"/>
+</div>
+<figcaption class="mt-3 text-sm text-on-surface-variant leading-relaxed max-w-3xl">Так выглядит наша проектная проработка ячейки: общий вид, позиционер под трубную доску, компоновочная схема с нумерацией оборудования и состав комплекса. На листе показан Прогресс-1 — наш собственный опытный образец, серийно он пока не поставляется. В коммерческой поставке в эту же компоновку встаёт DOKA или промышленный робот другого производителя: меняется робот, а логика ячейки и расчёт остаются теми же.</figcaption>
+</figure>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 <div>
 <h3 class="text-xl font-bold mb-4">Состав комплекса</h3>
 <ul class="space-y-2 text-sm text-on-surface-variant">
-<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Промышленный робот Прогресс-1</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Робот-манипулятор — коллаборативный DOKA либо промышленный, по задаче</li>
 <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Позиционер (вращатель) для изделия</li>
 <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Система крепления заготовки</li>
 <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Шкаф управления роботом</li>
@@ -350,29 +371,98 @@
 <section class="py-16 md:py-24 bg-slate-900 text-white relative overflow-hidden">
 <div class="absolute inset-0 blueprint-grid opacity-10"></div>
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">Предзаказ</p>
-<h2 class="text-3xl md:text-4xl font-bold mb-6">Сварочный робот для вашего производства</h2>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-5">Что мы поставляем</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Робот, источник и оснастка под вашу задачу</h2>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
 <div class="space-y-4 text-white/85 leading-relaxed">
-<p>Если вам нужен сварочный робот — мы готовы предложить два пути. Первый: <strong class="text-white">собственный Прогресс-1</strong> белорусского производства — разрабатывается в рамках госпрограммы технологической самодостаточности РБ, предзаказ открыт. Второй: <strong class="text-white">готовый сварочный робот от ведущих производителей</strong> — в частности, Inovance и Estone (Эстон), которые мы поставляем и интегрируем.</p>
-<p>С собственным Прогресс-1 вы получаете дополнительные преимущества: локальный сервис и замена деталей без ожидания, рассрочка до 12 месяцев, возможность государственного финансирования, адаптация конструкции под вашу задачу.</p>
-<div class="border border-white/15 p-4 mt-2">
-<p class="text-sm text-white/95"><strong class="text-primary-fixed">Государственная поддержка:</strong> при закупке отечественного оборудования возможно получение финансирования в рамках программ роботизации производства РБ. Мы помогаем оформить документацию и сориентироваться в доступных инструментах.</p>
-</div>
+<p>Основа комплекса — коллаборативные роботы <strong class="text-white">DOKA</strong> российского производителя «РобоПро», с которым мы работаем как партнёр. В линейке шесть моделей RC3–RC30 с грузоподъёмностью от 3 до 33 кг и рабочим радиусом до 1 750 мм, а сварка входит в перечень штатных применений наряду с обслуживанием станков, нанесением герметика, паллетированием и контролем качества.</p>
+<p>Ключевые компоненты этих роботов производятся в России — платы управления, тормозные модули, корпуса суставов, валы, энкодеры, роторы и статоры. Управляющее ПО с графическим интерфейсом «Пульс» внесено в реестр российского программного обеспечения Минцифры, что закрывает требования по отечественному ПО в закупках.</p>
+<p>Если задача требует другой конфигурации или бюджета, мы подберём и поставим китайские аналоги — ESTUN, JAKA, SIASUN, EFORT, INOVANCE — либо оборудование мировых брендов. Мы не привязаны к одному вендору и считаем, что дешевле именно для вашего цикла.</p>
+<p>Сварочные источники подбираем под требования закупки. Российские производители <strong class="text-white">КЕДР</strong> и <strong class="text-white">EVOSPARK</strong> закрывают вопрос отечественного происхождения оборудования, а для лазерной сварки работаем с WPG. EVOSPARK, например, собирается на заводе технологических источников в Санкт-Петербурге и входит в реестр отечественного оборудования Минпромторга.</p>
 </div>
 <div class="space-y-4">
 <div class="border border-white/15 bg-white/5 p-6 cyber-border">
-<p class="text-[10px] font-black uppercase tracking-widest text-white/45 mb-2">Ориентир стоимости</p>
-<p class="text-4xl font-bold text-white mb-1">от 160&nbsp;000 <span class="text-xl font-headline">BYN</span></p>
-<p class="text-xs text-white/60 mt-1">С захватом / горелкой под задачу. Итоговая стоимость — после уточнения конфигурации.</p>
+<p class="text-[10px] font-black uppercase tracking-widest text-white/45 mb-2">Робот — ориентир стоимости</p>
+<p class="text-4xl font-bold text-white mb-1">от 550&nbsp;000 <span class="text-xl font-headline">₽</span></p>
+<p class="text-sm text-white/70 mb-3">≈ от 20&nbsp;000 BYN по ориентировочному курсу</p>
+<p class="text-xs text-white/60 leading-relaxed">Это стоимость самого робота. Ячейка целиком стоит дороже: к роботу добавляются сварочный источник, позиционер, оснастка под изделие, ограждение и наша работа по проектированию, программированию и пусконаладке. Насколько дороже — зависит от детали, поэтому полную сумму мы называем после того, как посмотрим чертёж. Расчёт бесплатный.</p>
 </div>
 <div class="border border-white/15 bg-white/5 p-6 cyber-border">
-<p class="text-[10px] font-black uppercase tracking-widest text-white/45 mb-2">Рассрочка</p>
-<p class="text-2xl font-bold text-white mb-1">до 12 месяцев</p>
-<p class="text-xs text-white/60">На собственный робот Прогресс-1. Условия согласуются индивидуально.</p>
+<p class="text-[10px] font-black uppercase tracking-widest text-white/45 mb-2">Оплата</p>
+<p class="text-2xl font-bold text-white mb-1">по этапам</p>
+<p class="text-xs text-white/60">Каждый этап оплачивается после приёмки. Рассрочка и лизинг — по согласованию, схему подбираем под ваш бюджет.</p>
 </div>
 </div>
 </div>
+</div>
+</section>
+
+<section class="border-y border-outline-variant/30 bg-surface-container-low py-12 md:py-16">
+<div class="container mx-auto max-w-6xl px-4 sm:px-6">
+<a class="group grid grid-cols-1 gap-6 border border-outline-variant/50 bg-white cyber-border p-6 transition-colors hover:border-primary md:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] md:items-center md:gap-8 md:p-8" href="{{CASE_0_HREF}}">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-welding-part-card.webp" width="800" height="645" loading="lazy" decoding="async" class="h-48 w-full object-cover md:h-40" alt="Робот ведёт сварной шов по детали в оснастке"/>
+<div>
+<p class="mb-2 text-[10px] font-black uppercase tracking-[0.25em] text-primary">Кейс из практики</p>
+<h2 class="mb-3 text-xl font-bold leading-snug transition-colors group-hover:text-primary md:text-2xl">Роботизированная сварка рамных конструкций</h2>
+<p class="text-sm leading-relaxed text-on-surface-variant md:text-base">Однотипный шов в три смены и разброс качества между сварщиками. Как мы обследовали участок, спроектировали ячейку с позиционером и отработали цикл на реальных деталях.</p>
+<span class="mt-4 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</div>
+</a>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     СООТВЕТСТВИЕ ТРЕБОВАНИЯМ ЗАКУПОК
+═══════════════════════════════════════════════ -->
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30" id="zakupki">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Закупки и импортозамещение</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Соответствие требованиям закупок</h2>
+<p class="text-on-surface-variant max-w-3xl mb-10 leading-relaxed">В конкурсной процедуре требования по происхождению и по наличию в реестрах предъявляют к самому товару, а не к поставщику. Поэтому ниже по каждому пункту указан не только статус, но и кому принадлежит запись: часть — реестры производителей оборудования, которое мы поставляем, часть — наши собственные документы. Состав комплекса подбирается под условия конкретной закупки, поэтому окончательный перечень фиксируется после того, как вы пришлёте требования.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/30 border border-outline-variant/30 mb-8">
+<div class="bg-white p-6 md:p-8">
+<div class="inline-block text-[10px] font-black uppercase tracking-widest bg-primary text-white px-2 py-1 mb-3">Действует</div>
+<h3 class="text-lg font-bold mb-3">Реестр российского ПО, Минцифры</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-5">Управляющее программное обеспечение робота — графический интерфейс «Пульс» — внесено в реестр отечественного ПО. Правообладатель записи — производитель робота, ООО «РобоПро»; мы поставляем это оборудование, поэтому в вашей закупке требование к российскому ПО закрывается номером из реестра. Номер записи прикладываем к коммерческому предложению.</p>
+<figure>
+<img alt="Пульт управления роботом DOKA с интерфейсом «Пульс»" class="w-full max-w-[18rem] h-auto" src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-pendant.webp" width="1200" height="902" loading="lazy" decoding="async"/>
+<figcaption class="mt-2 text-xs text-on-surface-variant/70 leading-relaxed">Пульт оператора, через который работает «Пульс». Обучение траектории идёт с него, отдельного программиста для смены изделия не требуется.</figcaption>
+</figure>
+</div>
+<div class="bg-white p-6 md:p-8">
+<div class="inline-block text-[10px] font-black uppercase tracking-widest bg-secondary text-white px-2 py-1 mb-3">В процессе</div>
+<h3 class="text-lg font-bold mb-3">Постановление №719, Минпромторг</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Производитель проходит завершающую стадию включения робота в реестр промышленной продукции: документы переданы, предстоит проверка и выездной аудит его производства. По текущему графику соответствие ожидается к октябрю, в худшем случае к ноябрю 2026 года. Пока запись не внесена, мы её не обещаем: если ваша закупка требует 719-е постановление, скажите сразу — либо подберём конфигурацию, которая проходит уже сейчас, либо сверим ваш срок подачи с графиком включения.</p>
+</div>
+<div class="bg-white p-6 md:p-8">
+<div class="inline-block text-[10px] font-black uppercase tracking-widest bg-primary text-white px-2 py-1 mb-3">Действует</div>
+<h3 class="text-lg font-bold mb-3">Сварочное оборудование российского производства</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Когда требуется отечественный источник, ставим КЕДР или EVOSPARK, а для лазерной сварки — WPG. Это российские производители со своими записями в отраслевых реестрах, поэтому вопрос происхождения источника закрывается на этапе комплектации: мы подбираем позицию под формулировку вашей закупки и прикладываем подтверждающие документы производителя.</p>
+</div>
+<div class="bg-white p-6 md:p-8">
+<div class="inline-block text-[10px] font-black uppercase tracking-widest bg-primary text-white px-2 py-1 mb-3">Действует</div>
+<h3 class="text-lg font-bold mb-3">Поставка из ЕАЭС</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Мы белорусская компания, поэтому поставка идёт внутри ЕАЭС без импортных пошлин. Происхождение подтверждается сертификатом формы СТ-1, а по договору о ЕАЭС товар из Беларуси при подтверждённом происхождении получает в российских закупках статус наравне с российским.</p>
+</div>
+</div>
+<div class="border-l-4 border-primary bg-surface-container-low p-6 md:p-8">
+<h3 class="text-lg font-bold mb-3">Ячейка целиком — считаем под вашу процедуру</h3>
+<p class="text-sm md:text-base text-on-surface-variant leading-relaxed">Требование может распространяться не только на робота, но и на комплекс в сборе. В зависимости от условий закупки возможны два пути: внести в реестр ячейку целиком за счёт робота либо собрать её полностью из оборудования российского производства, включая сварочный источник. Какой вариант дешевле и быстрее именно для вас, мы считаем до подачи заявки — пришлите требования закупки вместе с чертежом детали.</p>
+</div>
+</div>
+</section>
+
+<section class="border-y border-outline-variant/30 bg-slate-900 py-14 text-white md:py-20">
+<div class="container mx-auto max-w-6xl px-4 sm:px-6">
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed">Сервис после запуска</p>
+<h2 class="mb-6 text-3xl font-bold md:text-4xl">Кто приедет, если ячейка встала</h2>
+<p class="mb-8 max-w-3xl leading-relaxed text-white/80">Это первый вопрос, который задаёт производство, когда подрядчик находится в другой стране. Отвечаем прямо: управляющая программа и логика написаны нами, поэтому бóльшую часть неисправностей мы находим и устраняем удалённо. Там, где нужен человек с инструментом, работает одна из трёх схем.</p>
+<div class="mb-8 grid grid-cols-1 gap-4 text-sm text-white/85 md:grid-cols-3">
+<div class="border border-white/15 p-5"><span class="mb-2 block font-bold text-primary-fixed">Беларусь — выезд из Гродно</span> Обслуживаем всю республику в рамках гарантийного и сервисного сопровождения.</div>
+<div class="border border-white/15 p-5"><span class="mb-2 block font-bold text-primary-fixed">Россия — бригада из Москвы</span> Для российских площадок работает выездной сервис из Москвы. Логистика и сроки закладываются в договор до начала проекта.</div>
+<div class="border border-white/15 p-5"><span class="mb-2 block font-bold text-primary-fixed">Ваш город — партнёрский центр</span> Через партнёрскую сеть подбираем сервисный центр рядом с вами, чтобы плановое обслуживание шло без ожидания бригады.</div>
+</div>
+<p class="max-w-3xl text-sm leading-relaxed text-white/75">Какой вариант быстрее именно для вашего адреса, мы выясняем до подписания договора и фиксируем срок реакции в нём. По ключевым узлам сварочной ячейки — горелка, подача проволоки, датчик слежения — согласуем комплект ЗИП на этапе проекта, чтобы при отказе не ждать поставку через границу.</p>
 </div>
 </section>
 
@@ -382,9 +472,9 @@
 <section class="py-12 md:py-16 bg-white border-y border-outline-variant/30">
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-center text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Альтернативные поставки</p>
-<p class="text-center text-sm md:text-base text-on-surface-variant mb-10 max-w-3xl mx-auto leading-relaxed">Если задача требует иной конфигурации — подберём и поставим сварочного робота мирового производителя. Наш приоритет — собственный Прогресс-1, но при необходимости работаем и с международными брендами.</p>
+<p class="text-center text-sm md:text-base text-on-surface-variant mb-10 max-w-3xl mx-auto leading-relaxed">Мы не привязаны к одному вендору. По умолчанию считаем ячейку на DOKA — это российское оборудование с понятным статусом в закупках. Но если по вашей задаче выгоднее другая конфигурация, ресурс или бюджет, подберём и поставим оборудование из списка ниже и объясним, чем один вариант отличается от другого.</p>
 <div class="mb-6">
-<p class="text-center text-[9px] font-black uppercase tracking-[0.3em] text-secondary mb-5">Китайские производители</p>
+<p class="text-center text-[10px] font-black uppercase tracking-[0.3em] text-secondary mb-5">Китайские производители</p>
 <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 md:gap-x-10 text-sm md:text-base font-bold uppercase tracking-widest text-on-surface">
 <span>ESTUN</span>
 <span>Siasun</span>
@@ -394,7 +484,7 @@
 </div>
 </div>
 <div class="border-t border-outline-variant/30 pt-6">
-<p class="text-center text-[9px] font-black uppercase tracking-[0.3em] text-outline mb-5">Мировые бренды</p>
+<p class="text-center text-[10px] font-black uppercase tracking-[0.3em] text-outline mb-5">Мировые бренды</p>
 <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 md:gap-x-10 text-xs md:text-sm font-bold uppercase tracking-widest text-on-surface/60">
 <span>FANUC</span>
 <span>KUKA</span>
@@ -417,30 +507,30 @@
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
 <div>
 <h2 class="text-3xl md:text-4xl font-bold mb-6 uppercase tracking-tighter">Оставить заявку</h2>
-<p class="text-white/75 mb-8 max-w-lg">Работаем по РБ и РФ. Опишите задачу, объём производства и требования к сварочному процессу — или напишите на почту, в Viber, позвоните. Подготовим ответ по конфигурации и срокам поставки для Прогресс&#x2011;1 или готового робота стороннего производителя.</p>
+<p class="text-white/75 mb-8 max-w-lg">Работаем по Беларуси и России. Опишите задачу: что варите, какой объём, какие требования к шву и к закупке. Если есть чертёж детали — приложите, с ним расчёт будет точнее. В ответ пришлём конфигурацию ячейки, ориентир по стоимости и по срокам поставки. Можно написать на почту или в Viber, а можно просто позвонить.</p>
 <div class="space-y-6 text-sm">
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-primary-fixed">call</span>
-<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="inline-flex min-h-11 items-center text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
 </div>
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-primary-fixed">mail</span>
-<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a></div>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="inline-flex min-h-11 items-center text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="{{EMAIL_MAILTO_HREF}}">{{EMAIL_ADDRESS}}</a></div>
 </div>
 </div>
 </div>
 <div class="bg-white text-on-surface p-8 md:p-10 shadow-2xl">
 <form class="space-y-6" action="https://formspree.io/f/xaqllkqo" method="POST" accept-charset="UTF-8">
-<input type="hidden" name="_subject" value="Заявка: сварочный робот Прогресс-1"/>
+<input type="hidden" name="_subject" value="Заявка: роботизированная сварка"/>
 <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true"/>
-<input type="hidden" name="product" value="Сварочный робот Прогресс-1"/>
+<input type="hidden" name="product" value="Роботизированная сварка под ключ"/>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="weld-name">Имя</label>
 <input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="weld-name" name="name" type="text" required autocomplete="name" placeholder="Иван Иванов"/>
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="weld-phone">Телефон</label>
-<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="weld-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="weld-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Телефон с кодом страны"/>
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="weld-company">Компания</label>

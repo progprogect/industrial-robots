@@ -105,7 +105,7 @@
 <body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary blueprint-lines">
 <!-- @include partials/header.html -->
 <main>
-<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-20 sm:pt-24">
+<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-28 pb-12 sm:pt-32 sm:pb-16">
 <div class="absolute inset-0 z-0">
 <img alt="Роботы-манипуляторы KUKA на производственной линии" class="w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/manipulator-setup-factory.webp" width="1920" height="1280" fetchpriority="high" decoding="async"/>
 <div class="absolute inset-0 hero-overlay"></div>
@@ -114,14 +114,14 @@
 <div class="relative z-10 container mx-auto px-4 sm:px-6 max-w-6xl w-full">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-12 lg:items-center">
 <div>
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">Настройка роботов&#x2011;манипуляторов</p>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-5">Настройка роботов&#x2011;манипуляторов</p>
 <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-6">Установим и настроим промышленного робота за 2–3&nbsp;дня</h1>
 <p class="text-lg md:text-xl text-white/85 max-w-2xl mb-10 border-l-2 border-primary-fixed pl-6 font-light leading-relaxed">
 Настраиваем роботов мировых брендов под вашу операцию — от выбора и заказа до запуска на площадке.
 </p>
 <div class="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
 <a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center w-full sm:w-auto" href="#contacts">Получить консультацию</a>
-<a class="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-6 py-4 text-sm font-bold tracking-wide hover:bg-white/10 transition-colors w-full sm:w-auto touch-manipulation" href="{{PHONE_TEL_HREF}}"><span class="material-symbols-outlined text-[20px] font-normal" aria-hidden="true">call</span>+375 25 509 22 06</a>
+<a class="min-h-11 inline-flex items-center justify-center gap-2 border border-white/30 text-white px-6 py-4 text-sm font-bold tracking-wide hover:bg-white/10 transition-colors w-full sm:w-auto touch-manipulation" href="{{PHONE_TEL_HREF}}"><span class="material-symbols-outlined text-[20px] font-normal" aria-hidden="true">call</span>+375 25 509 22 06</a>
 </div>
 </div>
 <div class="flex w-full justify-center lg:justify-end pt-4 lg:pt-0">
@@ -141,7 +141,7 @@
 <p class="text-center text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Производители</p>
 <p class="text-center text-sm md:text-base text-on-surface-variant mb-10 max-w-3xl mx-auto leading-relaxed">Работаем с оборудованием ведущих производителей — в приоритете китайские бренды как оптимальные по соотношению цена&nbsp;/&nbsp;качество для задач наших клиентов</p>
 <div class="mb-8">
-<p class="text-center text-[9px] font-black uppercase tracking-[0.3em] text-secondary mb-5">Китайские производители</p>
+<p class="text-center text-[10px] font-black uppercase tracking-[0.3em] text-secondary mb-5">Китайские производители</p>
 <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 md:gap-x-10 text-sm md:text-base font-bold uppercase tracking-widest text-on-surface">
 <span>ESTUN</span>
 <span>Siasun</span>
@@ -152,7 +152,7 @@
 </div>
 </div>
 <div class="border-t border-outline-variant/30 pt-7">
-<p class="text-center text-[9px] font-black uppercase tracking-[0.3em] text-outline mb-5">Мировые бренды</p>
+<p class="text-center text-[10px] font-black uppercase tracking-[0.3em] text-outline mb-5">Мировые бренды</p>
 <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 md:gap-x-10 text-xs md:text-sm font-bold uppercase tracking-widest text-on-surface/60">
 <span>FANUC</span>
 <span>Universal Robots</span>
@@ -202,7 +202,7 @@
 <div>
 <h3 class="font-bold text-on-surface mb-2">Сварка и пайка</h3>
 <p class="text-sm text-on-surface-variant leading-relaxed">Точные и стабильные сварные швы. MIG/MAG, TIG, лазерная.</p>
-<a class="mt-2 inline-block text-xs font-bold text-primary uppercase tracking-widest underline underline-offset-2 hover:text-primary-container transition-colors" href="{{WELDING_ROBOT_HREF}}">Сварочный робот Прогресс-1 →</a>
+<a class="mt-2 inline-block text-xs font-bold text-primary uppercase tracking-widest underline underline-offset-2 hover:text-primary-container transition-colors" href="{{WELDING_ROBOT_HREF}}">Роботизированная сварка →</a>
 </div>
 </div>
 <div class="border border-outline-variant/50 bg-white p-6 cyber-border flex gap-4">
@@ -251,10 +251,10 @@
 </tr>
 </thead>
 <tbody class="text-on-surface-variant divide-y divide-outline-variant/30">
-<tr class="bg-secondary/5"><td class="p-4 font-semibold text-on-surface">ESTUN ER7-900 <span class="text-[9px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td><td class="p-4 font-semibold text-on-surface">ESTUN ER100-2100 <span class="text-[9px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td></tr>
-<tr class="bg-secondary/5"><td class="p-4 font-medium text-on-surface">JAKA Zu 7 <span class="text-[9px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td><td class="p-4 font-medium text-on-surface">Siasun SR80A <span class="text-[9px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td></tr>
-<tr class="bg-secondary/5"><td class="p-4 font-medium text-on-surface">Dobot CR10 <span class="text-[9px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td><td class="p-4 font-medium text-on-surface">EFORT ER80 <span class="text-[9px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td></tr>
-<tr class="bg-secondary/5"><td class="p-4 font-medium text-on-surface">Inovance IR7 <span class="text-[9px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td><td class="p-4 font-medium text-on-surface">Inovance IR100 <span class="text-[9px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td></tr>
+<tr class="bg-secondary/5"><td class="p-4 font-semibold text-on-surface">ESTUN ER7-900 <span class="text-[10px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td><td class="p-4 font-semibold text-on-surface">ESTUN ER100-2100 <span class="text-[10px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td></tr>
+<tr class="bg-secondary/5"><td class="p-4 font-medium text-on-surface">JAKA Zu 7 <span class="text-[10px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td><td class="p-4 font-medium text-on-surface">Siasun SR80A <span class="text-[10px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td></tr>
+<tr class="bg-secondary/5"><td class="p-4 font-medium text-on-surface">Dobot CR10 <span class="text-[10px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td><td class="p-4 font-medium text-on-surface">EFORT ER80 <span class="text-[10px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td></tr>
+<tr class="bg-secondary/5"><td class="p-4 font-medium text-on-surface">Inovance IR7 <span class="text-[10px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td><td class="p-4 font-medium text-on-surface">Inovance IR100 <span class="text-[10px] font-black uppercase tracking-widest text-secondary ml-1">CN</span></td></tr>
 <tr class="bg-white"><td class="p-4 text-on-surface/70">FANUC LR Mate 200iD</td><td class="p-4 text-on-surface/70">FANUC R-2000iD</td></tr>
 <tr class="bg-white"><td class="p-4 text-on-surface/70">Universal Robots UR10e</td><td class="p-4 text-on-surface/70">KUKA KR 100 HA</td></tr>
 <tr class="bg-white"><td class="p-4 text-on-surface/70">KUKA KR 10 R1100</td><td class="p-4 text-on-surface/70">ABB IRB 6700</td></tr>
@@ -263,7 +263,7 @@
 </tbody>
 </table>
 </div>
-<p class="mt-6 text-sm text-on-surface-variant leading-relaxed max-w-3xl">Ориентир по цене самих роботов: <strong class="text-on-surface">от 8&nbsp;000–20&nbsp;000&nbsp;USD</strong> (китайские лёгкие модели) и <strong class="text-on-surface">от 20&nbsp;000–30&nbsp;000&nbsp;USD</strong> (европейские/японские) до <strong class="text-on-surface">150&nbsp;000–200&nbsp;000&nbsp;USD</strong> (тяжёлые промышленные). Итог зависит от комплектации, опций и поставщика.</p>
+<p class="mt-6 text-sm text-on-surface-variant leading-relaxed max-w-3xl">Ориентир по цене самих роботов: <strong class="text-on-surface">от 660&nbsp;тыс. до 1,6&nbsp;млн ₽</strong> (24&nbsp;000–60&nbsp;000 BYN) за китайские лёгкие модели, <strong class="text-on-surface">1,6–2,5&nbsp;млн ₽</strong> (60&nbsp;000–90&nbsp;000 BYN) за европейские и японские, и до <strong class="text-on-surface">12–16&nbsp;млн ₽</strong> (450&nbsp;000–600&nbsp;000 BYN) за тяжёлые промышленные комплектации. Итог зависит от комплектации, опций и поставщика.</p>
 <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 <div class="relative w-full aspect-[4/3] overflow-hidden bg-slate-100 cyber-border max-h-[min(52vh,28rem)] lg:max-h-none">
 <img alt="Промышленные роботы-манипуляторы KUKA на производственной линии" class="absolute inset-0 w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/manipulator-setup-arm.webp" width="1920" height="1280" loading="lazy" decoding="async"/>
@@ -291,7 +291,7 @@
 <li class="border border-outline-variant/50 bg-white p-6 cyber-border">
 <span class="text-[10px] font-black uppercase tracking-widest text-outline block mb-2">Шаг 3</span>
 <h3 class="font-bold text-on-surface mb-2">Заказ и доставка</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed">Помогаем с логистикой; из Китая чаще 3–6 недель, собственное производство — быстрее.</p>
+<p class="text-sm text-on-surface-variant leading-relaxed">Помогаем с логистикой: поставка из Китая обычно занимает 3–6 недель, наличие у российских и белорусских дистрибьюторов — заметно быстрее.</p>
 </li>
 <li class="border border-outline-variant/50 bg-white p-6 cyber-border">
 <span class="text-[10px] font-black uppercase tracking-widest text-outline block mb-2">Шаг 4</span>
@@ -315,16 +315,18 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
 <div class="bg-white border border-outline-variant/50 p-8 cyber-border">
 <p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Настройка и интеграция</p>
-<p class="text-3xl sm:text-4xl font-bold text-primary mb-2">от 5&nbsp;000&nbsp;<span class="text-xl font-headline">USD</span></p>
+<p class="text-3xl sm:text-4xl font-bold text-primary mb-1">от 410&nbsp;000&nbsp;<span class="text-xl font-headline">₽</span></p>
+<p class="text-sm text-on-surface-variant font-medium mb-2">≈ от 15&nbsp;000 BYN</p>
 <p class="text-xs text-on-surface-variant leading-relaxed">Зависит от сложности сценария, объёма интеграции и состава работ на площадке.</p>
 </div>
 <div class="bg-white border border-outline-variant/50 p-8 cyber-border">
 <p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Стоимость роботов</p>
-<p class="text-3xl sm:text-4xl font-bold text-on-surface mb-2">от 20&nbsp;000&nbsp;<span class="text-xl font-headline">USD</span></p>
-<p class="text-xs text-on-surface-variant leading-relaxed">До 150&nbsp;000–200&nbsp;000&nbsp;USD и выше для тяжёлых промышленных комплектаций — по проекту.</p>
+<p class="text-3xl sm:text-4xl font-bold text-on-surface mb-1">от 1,6&nbsp;млн&nbsp;<span class="text-xl font-headline">₽</span></p>
+<p class="text-sm text-on-surface-variant font-medium mb-2">≈ от 60&nbsp;000 BYN</p>
+<p class="text-xs text-on-surface-variant leading-relaxed">До 12–16&nbsp;млн ₽ (450&nbsp;000–600&nbsp;000 BYN) и выше для тяжёлых промышленных комплектаций — по проекту.</p>
 </div>
 </div>
-<p class="text-xs text-on-surface-variant/90 italic max-w-3xl">Все цифры — ориентировочные; точный расчёт — после консультации и уточнения объёма работ.</p>
+<p class="text-xs text-on-surface-variant/90 italic max-w-3xl">Все цифры — ориентировочные, пересчёт из валюты поставки по курсу на момент публикации; точный расчёт — после консультации и уточнения объёма работ.</p>
 </div>
 </section>
 
@@ -336,32 +338,33 @@
 <div class="space-y-5 text-white/85 text-sm md:text-base leading-relaxed min-w-0">
 <h2 class="text-3xl md:text-4xl font-bold text-white">Окупаемость услуги в контексте ФОТ</h2>
 <p>Один промышленный робот может закрыть объём, на который при ручном режиме обычно выделяют <strong class="text-white">до 6 сотрудников</strong> в режиме 3×2 (три смены по два человека на операцию — ориентир для обсуждения).</p>
-<p>При средней полной стоимости одного сотрудника с налогами порядка <strong class="text-white">~5&nbsp;000&nbsp;BYN/мес.</strong> экономия на ФОТ может достигать <strong class="text-white">до 30&nbsp;000&nbsp;BYN в месяц</strong> — в упрощённой модели при полной замене ставок.</p>
+<p>Модель считаем от белорусской ставки: при полной стоимости сотрудника с налогами порядка <strong class="text-white">140&nbsp;тыс.&nbsp;₽ (~5&nbsp;000 BYN)</strong> в месяц экономия на ФОТ доходит до <strong class="text-white">825&nbsp;тыс.&nbsp;₽ (30&nbsp;000 BYN)</strong> в месяц при полной замене шести ставок.</p>
+<p class="text-white/70 text-sm">Для российской площадки цифры будут другими — ставка, налоги и режим смен отличаются. Пришлите свои, и мы пересчитаем модель под ваш регион: это пять минут, а результат сильно меняет вывод об окупаемости.</p>
 <p class="border border-white/15 p-4 text-white/95"><strong class="text-primary-fixed">Вывод:</strong> услуга по настройке часто окупается уже за счёт экономии ФОТ в первый месяц — при подходящей загрузке и процессе.</p>
 </div>
 <div class="flex flex-col gap-3 w-full lg:max-w-sm lg:justify-self-end lg:self-start min-w-0" aria-label="Ключевые ориентиры по ФОТ">
   <div class="border border-white/15 bg-white/5 px-6 py-5 flex flex-col items-center text-center gap-2 w-full">
     <span class="text-4xl sm:text-5xl font-bold text-white leading-none tabular-nums">6</span>
     <div class="flex flex-col gap-0.5 items-center">
-      <span class="text-[9px] font-black uppercase tracking-widest text-white/45">человек</span>
-      <span class="text-[9px] uppercase tracking-widest text-white/45">на операцию</span>
-      <span class="text-[9px] text-white/30 normal-case tracking-normal">3 смены × 2</span>
+      <span class="text-[10px] font-black uppercase tracking-widest text-white/45">человек</span>
+      <span class="text-[10px] uppercase tracking-widest text-white/45">на операцию</span>
+      <span class="text-[10px] text-white/30 normal-case tracking-normal">3 смены × 2</span>
     </div>
   </div>
   <div class="border border-white/15 bg-white/5 px-6 py-5 flex flex-col items-center text-center gap-2 w-full">
-    <span class="text-4xl sm:text-5xl font-bold text-white leading-none tabular-nums">5&nbsp;000</span>
+    <span class="text-4xl sm:text-5xl font-bold text-white leading-none tabular-nums">140&nbsp;тыс.</span>
     <div class="flex flex-col gap-0.5 items-center">
-      <span class="text-[9px] font-black uppercase tracking-widest text-white/45">BYN / мес.</span>
-      <span class="text-[9px] uppercase tracking-widest text-white/45">за ставку</span>
-      <span class="text-[9px] text-white/30 normal-case tracking-normal">с налогами</span>
+      <span class="text-[10px] font-black uppercase tracking-widest text-white/45">₽ / мес. · 5 000 BYN</span>
+      <span class="text-[10px] uppercase tracking-widest text-white/45">за ставку</span>
+      <span class="text-[10px] text-white/30 normal-case tracking-normal">с налогами</span>
     </div>
   </div>
   <div class="border border-white/15 bg-white/5 px-6 py-5 flex flex-col items-center text-center gap-2 w-full">
-    <span class="text-4xl sm:text-5xl font-bold text-white leading-none tabular-nums">30&nbsp;000</span>
+    <span class="text-4xl sm:text-5xl font-bold text-white leading-none tabular-nums">825&nbsp;тыс.</span>
     <div class="flex flex-col gap-0.5 items-center">
-      <span class="text-[9px] font-black uppercase tracking-widest text-white/45">BYN / мес.</span>
-      <span class="text-[9px] uppercase tracking-widest text-white/45 leading-tight">экономии<br>на ФОТ</span>
-      <span class="text-[9px] text-white/30 normal-case tracking-normal">ориентировочно</span>
+      <span class="text-[10px] font-black uppercase tracking-widest text-white/45">₽ / мес. · 30 000 BYN</span>
+      <span class="text-[10px] uppercase tracking-widest text-white/45 leading-tight">экономии<br>на ФОТ</span>
+      <span class="text-[10px] text-white/30 normal-case tracking-normal">ориентировочно</span>
     </div>
   </div>
 </div>
@@ -414,11 +417,11 @@
 <div class="space-y-6 text-sm">
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-primary-fixed">call</span>
-<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="inline-flex min-h-11 items-center text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
 </div>
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-primary-fixed">mail</span>
-<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a></div>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="inline-flex min-h-11 items-center text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="{{EMAIL_MAILTO_HREF}}">{{EMAIL_ADDRESS}}</a></div>
 </div>
 </div>
 </div>
@@ -433,7 +436,7 @@
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="setup-phone">Телефон</label>
-<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="setup-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="setup-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Телефон с кодом страны"/>
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="setup-company">Компания</label>

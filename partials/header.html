@@ -1,10 +1,10 @@
 <!-- @include partials/fixed-bottom-fab.html -->
 <nav class="fixed left-0 right-0 top-0 z-50 w-full bg-surface pb-2.5 pt-[max(0.65rem,env(safe-area-inset-top))] sm:pb-3">
-<div class="mx-auto flex max-w-7xl flex-nowrap items-center justify-between gap-2 px-4 py-1.5 sm:gap-3 sm:px-6 sm:py-2.5 md:gap-4 md:px-8">
+<div class="mx-auto flex max-w-7xl flex-nowrap items-center justify-between gap-2 px-4 py-1.5 sm:gap-3 sm:px-6 sm:py-2.5 md:gap-4 md:px-8 2xl:max-w-[86rem]">
 {{HEADER_BRAND_HTML}}
-<div class="hidden flex-wrap items-center gap-6 lg:flex lg:flex-1 lg:justify-center xl:gap-8">
+<div class="hidden flex-nowrap items-center gap-3 xl:flex xl:min-w-0 xl:flex-1 xl:justify-center 2xl:gap-4">
 <div class="relative group">
-<a class="inline-flex items-center gap-0.5 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-colors hover:text-[#00327d]" href="{{HOME_PATH}}#services" aria-haspopup="true" id="nav-services-trigger" aria-controls="nav-services-submenu">Услуги<span class="material-symbols-outlined text-[16px] font-normal opacity-60" aria-hidden="true">expand_more</span></a>
+<a class="inline-flex whitespace-nowrap items-center gap-0.5 py-1 text-[10px] font-bold uppercase tracking-[0.05em] text-slate-600 transition-colors hover:text-[#00327d]" href="{{HOME_PATH}}#services" aria-haspopup="true" id="nav-services-trigger" aria-controls="nav-services-submenu">Услуги<span class="material-symbols-outlined text-[16px] font-normal opacity-60" aria-hidden="true">expand_more</span></a>
 <div class="absolute left-0 top-full z-[60] hidden w-max min-w-[16rem] max-w-[min(22rem,calc(100vw-2rem))] pt-1.5 group-hover:block group-focus-within:block" id="nav-services-submenu" role="navigation" aria-label="Услуги компании">
 <div class="border border-slate-200/80 bg-white/95 py-1.5 shadow-lg backdrop-blur-md">
 <a class="block px-4 py-2.5 text-[10px] font-bold uppercase tracking-widest text-slate-700 transition-colors hover:bg-slate-50 hover:text-[#00327d]" href="{{ENGINEERING_DESIGN_HREF}}">Инженерное проектирование и КД</a>
@@ -17,7 +17,7 @@
 </div>
 </div>
 <div class="relative group">
-<a class="inline-flex items-center gap-0.5 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-colors hover:text-[#00327d]" href="{{HOME_PATH}}#solutions" aria-haspopup="true" id="nav-products-trigger" aria-controls="nav-products-submenu">Продукты<span class="material-symbols-outlined text-[16px] font-normal opacity-60" aria-hidden="true">expand_more</span></a>
+<a class="inline-flex whitespace-nowrap items-center gap-0.5 py-1 text-[10px] font-bold uppercase tracking-[0.05em] text-slate-600 transition-colors hover:text-[#00327d]" href="{{HOME_PATH}}#solutions" aria-haspopup="true" id="nav-products-trigger" aria-controls="nav-products-submenu">Продукты<span class="material-symbols-outlined text-[16px] font-normal opacity-60" aria-hidden="true">expand_more</span></a>
 <div class="absolute left-0 top-full z-[60] hidden w-max min-w-[13rem] pt-1.5 group-hover:block group-focus-within:block" id="nav-products-submenu" role="navigation" aria-label="Подстраницы продуктов">
 <div class="border border-slate-200/80 bg-white/95 py-1.5 shadow-lg backdrop-blur-md">
 <a class="block px-4 py-2.5 text-[10px] font-bold uppercase tracking-widest text-slate-700 transition-colors hover:bg-slate-50 hover:text-[#00327d]" href="{{PHOTO_PRODUCT_HREF}}">Фотосепаратор</a>
@@ -27,20 +27,22 @@
 </div>
 </div>
 </div>
-<a class="text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-colors hover:text-[#00327d]" href="{{HOME_PATH}}#advantages">Преимущества</a>
-<a class="text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-colors hover:text-[#00327d]" href="{{HOME_PATH}}#about">О нас</a>
-<a class="text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-colors hover:text-[#00327d]" href="{{HOME_PATH}}#partners">Партнёры</a>
-<a class="text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-colors hover:text-[#00327d]" href="{{CONTACTS_PAGE_HREF}}#contacts">Контакты</a>
+<a class="whitespace-nowrap text-[10px] font-bold uppercase tracking-[0.05em] text-slate-600 transition-colors hover:text-[#00327d]" href="{{CASES_INDEX_HREF}}">Кейсы</a>
+<a class="whitespace-nowrap text-[10px] font-bold uppercase tracking-[0.05em] text-slate-600 transition-colors hover:text-[#00327d]" href="{{HOME_PATH}}#advantages">Преимущества</a>
+<a class="whitespace-nowrap text-[10px] font-bold uppercase tracking-[0.05em] text-slate-600 transition-colors hover:text-[#00327d]" href="{{HOME_PATH}}#about">О нас</a>
+<a class="whitespace-nowrap text-[10px] font-bold uppercase tracking-[0.05em] text-slate-600 transition-colors hover:text-[#00327d]" href="{{HOME_PATH}}#partners">Партнёры</a>
+<a class="whitespace-nowrap text-[10px] font-bold uppercase tracking-[0.05em] text-slate-600 transition-colors hover:text-[#00327d]" href="{{CONTACTS_PAGE_HREF}}#contacts">Контакты</a>
 </div>
 <div class="flex shrink-0 items-center gap-2 lg:gap-3">
-<a class="machined-gradient hidden h-11 items-center justify-center px-5 text-center text-[10px] font-black uppercase tracking-[0.2em] text-white shadow-lg transition-all hover:shadow-[#00327d]/20 md:px-8 touch-manipulation lg:inline-flex" href="{{CTA_CONTACTS_HREF}}">Оставить заявку</a>
-<button type="button" id="mobile-nav-open" class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded border border-slate-200 bg-white text-slate-800 transition-colors hover:bg-slate-50 lg:hidden touch-manipulation" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Открыть меню">
+<a class="min-h-11 hidden shrink-0 flex-col items-end justify-center leading-tight xl:flex" href="{{PHONE_TEL_HREF}}"><span class="whitespace-nowrap text-[13px] font-black tracking-tight text-slate-900 hover:text-[#00327d] transition-colors">+375&nbsp;25&nbsp;509&nbsp;22&nbsp;06</span><span class="hidden whitespace-nowrap text-[10px] font-bold uppercase tracking-widest text-slate-500 2xl:block">Звонок · Viber · Telegram</span></a>
+<a class="machined-gradient hidden h-11 shrink-0 items-center justify-center whitespace-nowrap px-4 text-center text-[10px] font-black uppercase tracking-[0.12em] text-white shadow-lg transition-all hover:shadow-[#00327d]/20 touch-manipulation xl:inline-flex 2xl:px-6 2xl:tracking-[0.2em]" href="{{CTA_CONTACTS_HREF}}">Рассчитать окупаемость</a>
+<button type="button" id="mobile-nav-open" class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded border border-slate-200 bg-white text-slate-800 transition-colors hover:bg-slate-50 xl:hidden touch-manipulation" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Открыть меню">
 <span class="material-symbols-outlined text-2xl" aria-hidden="true">menu</span>
 </button>
 </div>
 </div>
 </nav>
-<div id="mobile-nav-overlay" class="fixed inset-0 z-[100] hidden flex flex-col lg:hidden" aria-hidden="true">
+<div id="mobile-nav-overlay" class="fixed inset-0 z-[100] hidden flex flex-col xl:hidden" aria-hidden="true">
 <div class="absolute inset-0 bg-slate-900/50 backdrop-blur-sm" data-mobile-nav-backdrop></div>
 <div id="mobile-nav-panel" class="absolute inset-y-0 right-0 z-10 flex w-[min(22rem,calc(100vw-env(safe-area-inset-left)-env(safe-area-inset-right)))] max-w-full flex-col bg-white shadow-2xl outline-none" role="dialog" aria-modal="true" aria-labelledby="mobile-nav-heading" tabindex="-1">
 <div class="flex items-center justify-between gap-4 border-b border-slate-200 px-4 pb-3 pt-[max(0.25rem,env(safe-area-inset-top))]">
@@ -67,10 +69,13 @@
 <a class="block min-h-11 py-3 pl-2 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{WELDING_ROBOT_HREF}}">Сварочный робот</a>
 <a class="block min-h-11 py-3 pl-2 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{AGV_PRODUCT_HREF}}">Автоматическая рохля</a>
 <a class="block min-h-11 py-3 pl-2 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{HOME_PATH}}#solutions">Все продукты на главной</a>
+<a class="block min-h-11 py-3 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{CASES_INDEX_HREF}}">Кейсы</a>
 <a class="block min-h-11 py-3 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{HOME_PATH}}#advantages">Преимущества</a>
 <a class="block min-h-11 py-3 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{HOME_PATH}}#about">О нас</a>
 <a class="block min-h-11 py-3 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{HOME_PATH}}#partners">Партнёры</a>
 <a class="block min-h-11 py-3 text-[10px] font-bold uppercase tracking-widest text-slate-700 hover:text-[#00327d]" href="{{CONTACTS_PAGE_HREF}}#contacts">Контакты</a>
+<a class="inline-flex min-h-11 items-center mt-4 block rounded border border-slate-200 px-3 py-3 text-[13px] font-black tracking-tight text-slate-900" href="{{PHONE_TEL_HREF}}">+375&nbsp;25&nbsp;509&nbsp;22&nbsp;06</a>
+<a class="inline-flex min-h-11 items-center block break-all px-3 py-2 text-[11px] font-bold text-slate-600 hover:text-[#00327d]" href="{{EMAIL_MAILTO_HREF}}">{{EMAIL_ADDRESS}}</a>
 </nav>
 </div>
 </div>

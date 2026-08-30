@@ -30,6 +30,14 @@ PAGE_SLUGS: dict[str, str] = {
     "contacts.src.html": "kontakty",
     "repair.src.html": "remont",
     "proektirovanie.src.html": "proektirovanie",
+    "cases.src.html": "keysy",
+    "case-svarka.src.html": "keysy/robotizirovannaya-svarka-ramnyh-konstrukciy",
+    "case-palletirovanie.src.html": "keysy/palletirovanie-meshkov",
+    "case-stanok.src.html": "keysy/obsluzhivanie-stanka-chpu",
+    "case-sortirovka.src.html": "keysy/opticheskaya-sortirovka",
+    "case-logistika.src.html": "keysy/avtonomnaya-transportirovka-pallet",
+    "case-fotoseparator.src.html": "keysy/razrabotka-fotoseparatora",
+    "case-plata.src.html": "keysy/plata-upravleniya-robota",
 }
 
 # Старые плоские имена → слаг (редирект-заглушки в корне)
@@ -55,6 +63,14 @@ PAGE_ORDER: list[str] = [
     "contacts.src.html",
     "repair.src.html",
     "proektirovanie.src.html",
+    "cases.src.html",
+    "case-svarka.src.html",
+    "case-palletirovanie.src.html",
+    "case-stanok.src.html",
+    "case-sortirovka.src.html",
+    "case-logistika.src.html",
+    "case-fotoseparator.src.html",
+    "case-plata.src.html",
 ]
 
 # priority, changefreq (sitemap)
@@ -68,6 +84,14 @@ SITEMAP_META: dict[str, tuple[str, str]] = {
     "repair.src.html": ("0.85", "monthly"),
     "proektirovanie.src.html": ("0.85", "monthly"),
     "contacts.src.html": ("0.8", "monthly"),
+    "cases.src.html": ("0.8", "monthly"),
+    "case-svarka.src.html": ("0.7", "monthly"),
+    "case-palletirovanie.src.html": ("0.7", "monthly"),
+    "case-stanok.src.html": ("0.7", "monthly"),
+    "case-sortirovka.src.html": ("0.7", "monthly"),
+    "case-logistika.src.html": ("0.7", "monthly"),
+    "case-fotoseparator.src.html": ("0.7", "monthly"),
+    "case-plata.src.html": ("0.7", "monthly"),
     "privacy.src.html": ("0.3", "yearly"),
 }
 
@@ -78,16 +102,13 @@ PRODUCT_SRC: frozenset[str] = frozenset(
 # SEO: заголовок, описание, относительный путь к og:image (от корня сайта)
 SEO_PAGE: dict[str, dict[str, str]] = {
     "index.src.html": {
-        "SEO_TITLE": "ООО «Промышленные роботы» | Индустриальная автоматизация",
-        "SEO_DESCRIPTION": (
-            "Индустриальная автоматизация и робототехника в Беларуси и России. ООО «Промышленные роботы», Гродно: "
-            "фотосепараторы, роботы-манипуляторы, AGV, ремонт промышленного оборудования, компьютерное зрение."
-        ),
+        "SEO_TITLE": "Роботизация производства под ключ — проект, поставка, запуск",
+        "SEO_DESCRIPTION": "Роботизируем производственные участки под ключ: расчёт окупаемости, проект, поставка робота, монтаж и запуск. Работаем по Беларуси и России.",
         "OG_IMAGE": "assets/images/lab-hero.webp",
         "BREADCRUMB_NAME": "Главная",
     },
     "photoseparator.src.html": {
-        "SEO_TITLE": "ООО «Промышленные роботы» | Фотосепаратор и оптическая сортировка",
+        "SEO_TITLE": "Фотосепаратор — оптическая сортировка и отбраковка",
         "SEO_DESCRIPTION": (
             "Проектирование и производство оптических фотосепараторов, сортировка по компьютерному зрению. "
             "ООО «Промышленные роботы», Республика Беларусь."
@@ -97,32 +118,24 @@ SEO_PAGE: dict[str, dict[str, str]] = {
     },
     "privacy.src.html": {
         "SEO_TITLE": "Политика конфиденциальности — ООО «Промышленные роботы»",
-        "SEO_DESCRIPTION": (
-            "Порядок обработки персональных данных посетителей сайта ООО «Промышленные роботы». УНП 591043841, г. Гродно."
-        ),
+        "SEO_DESCRIPTION": "Порядок обработки персональных данных посетителей сайта ООО «Промышленные роботы», УНП 591043841, Гродно. Права субъекта и контакты.",
         "OG_IMAGE": "assets/images/lab-hero.webp",
         "BREADCRUMB_NAME": "Политика конфиденциальности",
     },
     "agv.src.html": {
-        "SEO_TITLE": "Автономная рохля (AGV) | ООО «Промышленные роботы»",
-        "SEO_DESCRIPTION": (
-            "Автономная рохля (AGV) для паллетных перевозок внутри склада и производства. Параметры подбираются под объект; "
-            "внедрение, гарантия и ориентир стоимости — на странице."
-        ),
+        "SEO_TITLE": "Автономная рохля AGV — перевозка паллет без оператора",
+        "SEO_DESCRIPTION": "Автономная рохля AGV для перевозки паллет на складе и производстве без оператора. Подбираем под объект, внедряем и обучаем персонал.",
         "OG_IMAGE": "assets/images/agv-rohly.webp",
         "BREADCRUMB_NAME": "Автономная рохля (AGV)",
     },
     "manipulator.src.html": {
-        "SEO_TITLE": "Роботы-манипуляторы | Поставки по РБ и РФ — ООО «Промышленные роботы»",
-        "SEO_DESCRIPTION": (
-            "Роботы-манипуляторы для производства и склада: собственное производство Прогресс-1 и китайские модели. "
-            "150 кг, 6 осей, компьютерное зрение, интеграция под ключ. Поставки по Беларуси и России."
-        ),
+        "SEO_TITLE": "Промышленный робот-манипулятор — подбор и внедрение",
+        "SEO_DESCRIPTION": "Подбор и внедрение промышленных роботов-манипуляторов под задачу: до 150 кг, 6 осей. Проект, поставка, монтаж и запуск под ключ.",
         "OG_IMAGE": "assets/images/progress-1-robot.png",
         "BREADCRUMB_NAME": "Роботы-манипуляторы",
     },
     "svarochnyj-robot.src.html": {
-        "SEO_TITLE": "Сварочный робот Прогресс-1 | ООО «Промышленные роботы»",
+        "SEO_TITLE": "Роботизированная сварка под ключ — сварочный комплекс",
         "SEO_DESCRIPTION": (
             "Сварочный робот-манипулятор Прогресс-1: 6 осей, 150 кг, вылет 3100 мм, "
             "MIG/MAG, TIG, лазерная сварка. Комплекс под ключ. Поставки по РБ и РФ."
@@ -131,16 +144,13 @@ SEO_PAGE: dict[str, dict[str, str]] = {
         "BREADCRUMB_NAME": "Сварочный робот Прогресс-1",
     },
     "manipulator-setup.src.html": {
-        "SEO_TITLE": "Настройка роботов-манипуляторов — ООО «Промышленные роботы»",
-        "SEO_DESCRIPTION": (
-            "Установка и настройка промышленных роботов-манипуляторов FANUC, KUKA, ABB, UR. Услуга от 5 000 USD, сроки 2–3 дня. "
-            "Подбор, доставка, интеграция в линию. Работаем по РБ и РФ."
-        ),
+        "SEO_TITLE": "Настройка и программирование промышленных роботов",
+        "SEO_DESCRIPTION": "Установка, настройка и программирование промышленных роботов FANUC, KUKA, ABB, UR. Выезд инженера, отладка цикла, обучение операторов.",
         "OG_IMAGE": "assets/images/manipulator-setup-welding.webp",
         "BREADCRUMB_NAME": "Настройка манипуляторов",
     },
     "contacts.src.html": {
-        "SEO_TITLE": "Контакты — ООО «Промышленные роботы»",
+        "SEO_TITLE": "Контакты и реквизиты — ООО «Промышленные роботы», Гродно",
         "SEO_DESCRIPTION": (
             "Контакты ООО «Промышленные роботы»: адрес в Гродно, реквизиты, телефон, email, мессенджеры и форма обратной связи. "
             "Работаем с предприятиями Беларуси и России."
@@ -149,22 +159,70 @@ SEO_PAGE: dict[str, dict[str, str]] = {
         "BREADCRUMB_NAME": "Контакты",
     },
     "repair.src.html": {
-        "SEO_TITLE": "Ремонт промышленного оборудования — Гродно | ООО «Промышленные роботы»",
+        "SEO_TITLE": "Ремонт и модернизация промышленного оборудования",
         "SEO_DESCRIPTION": (
-            "Ремонт станков, электроники, выезд по области. Выезд и диагностика — 90 BYN, остальное по смете после осмотра. "
-            "Звоните — обсудим."
+            "Ремонт станков, электроники, выезд по области. Выезд и диагностика — от 2 500 ₽ (90 BYN), остальное по смете "
+            "после осмотра. Звоните — обсудим."
         ),
         "OG_IMAGE": "assets/images/repair/repair-welding.webp",
         "BREADCRUMB_NAME": "Ремонт оборудования",
     },
     "proektirovanie.src.html": {
-        "SEO_TITLE": "Инженерное проектирование и КД — ООО «Промышленные роботы»",
+        "SEO_TITLE": "Инженерное проектирование и конструкторская документация",
         "SEO_DESCRIPTION": (
             "Инжиниринговые услуги: 3D проектирование, конструкторская документация по ЕСКД, рабочие чертежи. "
             "Промышленное проектирование узлов. Работаем по РБ и РФ."
         ),
         "OG_IMAGE": "assets/images/concept.jpg",
         "BREADCRUMB_NAME": "Инженерное проектирование",
+    },
+    "cases.src.html": {
+        "SEO_TITLE": "Кейсы роботизации — операции, которые мы автоматизировали",
+        "SEO_DESCRIPTION": "Пять операций с разных производств: сварка, паллетирование, обслуживание станка, сортировка и логистика. Что было на участке, что сделали, что вышло.",
+        "OG_IMAGE": "assets/images/stock-pd/robot-cell.webp",
+        "BREADCRUMB_NAME": "Кейсы",
+    },
+    "case-svarka.src.html": {
+        "SEO_TITLE": "Кейс: роботизированная сварка рамных конструкций",
+        "SEO_DESCRIPTION": "Как мы заменили ручную сварку рамной конструкции роботизированной ячейкой с позиционером: обследование участка, проект, программирование и запуск.",
+        "OG_IMAGE": "assets/images/doka/doka-welding-part.webp",
+        "BREADCRUMB_NAME": "Сварка рамных конструкций",
+    },
+    "case-palletirovanie.src.html": {
+        "SEO_TITLE": "Кейс: роботизированное паллетирование мешков на линии",
+        "SEO_DESCRIPTION": "Как мы заменили ручную укладку мешков роботом с клещевым захватом: разработка захвата под мягкий груз и параметрическая схема укладки под форматы.",
+        "OG_IMAGE": "assets/images/stock-pd/palletizing-line.webp",
+        "BREADCRUMB_NAME": "Паллетирование мешков",
+    },
+    "case-stanok.src.html": {
+        "SEO_TITLE": "Кейс: робот на загрузке и выгрузке станка с ЧПУ",
+        "SEO_DESCRIPTION": "Как мы убрали простой обрабатывающего центра между циклами: робот на загрузке-выгрузке, накопитель заготовок и стыковка с системой управления станка.",
+        "OG_IMAGE": "assets/images/doka/doka-machine-tending.webp",
+        "BREADCRUMB_NAME": "Обслуживание станка с ЧПУ",
+    },
+    "case-sortirovka.src.html": {
+        "SEO_TITLE": "Кейс: оптическая сортировка и отбраковка на линии",
+        "SEO_DESCRIPTION": "Как мы закрыли ручной выборочный контроль системой технического зрения: своя камера, алгоритмы распознавания и плата управления, отсев без остановки линии.",
+        "OG_IMAGE": "assets/images/products/photoseparator/sorting-line.webp",
+        "BREADCRUMB_NAME": "Оптическая сортировка",
+    },
+    "case-logistika.src.html": {
+        "SEO_TITLE": "Кейс: автономная транспортировка паллет по складу",
+        "SEO_DESCRIPTION": "Как мы автоматизировали повторяющийся маршрут перевозки паллет автономной тележкой, связали её с учётной системой и оставили ручной режим на нештатное.",
+        "OG_IMAGE": "assets/images/agv-real/agv-fleet-hall.webp",
+        "BREADCRUMB_NAME": "Транспортировка паллет",
+    },
+    "case-fotoseparator.src.html": {
+        "SEO_TITLE": "Кейс: разработка фотосепаратора от эскиза до прототипа",
+        "SEO_DESCRIPTION": "Как мы спроектировали фотосепаратор под продукцию заказчика: камера, алгоритмы компьютерного зрения, платы управления и прототип за три месяца.",
+        "OG_IMAGE": "assets/images/products/photoseparator/sorting-line.webp",
+        "BREADCRUMB_NAME": "Разработка фотосепаратора",
+    },
+    "case-plata.src.html": {
+        "SEO_TITLE": "Кейс: плата управления и связи промышленного робота",
+        "SEO_DESCRIPTION": "Как мы разработали плату ввода-вывода для промышленного робота: клеммные зоны, интерфейсы для ПЛК и полевой проводки, серийный образец за месяц.",
+        "OG_IMAGE": "assets/images/pcb-board.webp",
+        "BREADCRUMB_NAME": "Плата управления робота",
     },
 }
 
@@ -247,7 +305,7 @@ def json_ld_organization(site_origin: str, base_path: str) -> str:
         "url": home,
         "logo": absolute_asset_url(site_origin, base_path, "apple-touch-icon.png"),
         "telephone": "+375255092206",
-        "email": "progprogect@gmail.com",
+        "email": "info@promroboty.by",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "ул. Академическая, 17",
@@ -267,7 +325,7 @@ def json_ld_local_business(site_origin: str, base_path: str) -> str:
         "name": "ООО «Промышленные роботы»",
         "image": home_img,
         "telephone": "+375255092206",
-        "email": "progprogect@gmail.com",
+        "email": "info@promroboty.by",
         "url": contacts,
         "address": {
             "@type": "PostalAddress",
@@ -387,17 +445,19 @@ def build_page_vars(src_name: str) -> dict[str, str]:
 
     brand_cls_static = (
         "headline min-w-0 flex-1 pr-1 text-sm leading-snug break-words font-bold uppercase "
-        "tracking-tight text-slate-900 sm:text-xl sm:tracking-tighter lg:flex-none"
+        "tracking-tight text-slate-900 sm:text-xl sm:tracking-tighter "
+        "xl:flex-none xl:shrink-0 xl:whitespace-nowrap xl:text-base 2xl:text-lg"
     )
     brand_cls_link = brand_cls_static + " hover:text-[#00327d] transition-colors"
     if src_name == "index.src.html":
         header_brand_html = (
-            f'<span class="{brand_cls_static}">ООО «Промышленные роботы»</span>'
+            f'<span class="{brand_cls_static}">'
+            f'<span class="xl:hidden 2xl:inline">ООО </span>«Промышленные роботы»</span>'
         )
     else:
         header_brand_html = (
             f'<a class="{brand_cls_link}" href="{html.escape(home_path, quote=True)}">'
-            f"ООО «Промышленные роботы»</a>"
+            f'<span class="xl:hidden 2xl:inline">ООО </span>«Промышленные роботы»</a>'
         )
 
     return {
@@ -412,10 +472,20 @@ def build_page_vars(src_name: str) -> dict[str, str]:
         "MANIPULATOR_SETUP_HREF": po("nastrojka-manipulyatorov"),
         "REPAIR_SERVICE_HREF": po("remont"),
         "ENGINEERING_DESIGN_HREF": po("proektirovanie"),
+        "CASES_INDEX_HREF": po("keysy"),
+        "CASE_0_HREF": po("keysy/robotizirovannaya-svarka-ramnyh-konstrukciy"),
+        "CASE_1_HREF": po("keysy/palletirovanie-meshkov"),
+        "CASE_2_HREF": po("keysy/obsluzhivanie-stanka-chpu"),
+        "CASE_3_HREF": po("keysy/opticheskaya-sortirovka"),
+        "CASE_4_HREF": po("keysy/avtonomnaya-transportirovka-pallet"),
+        "CASE_5_HREF": po("keysy/razrabotka-fotoseparatora"),
+        "CASE_6_HREF": po("keysy/plata-upravleniya-robota"),
         "CONTACTS_PAGE_HREF": contacts_path,
         "PRIVACY_PAGE_HREF": po("politika-konfidencialnosti"),
         "CTA_CONTACTS_HREF": cta_contacts,
         "PHONE_TEL_HREF": "tel:+375255092206",
+        "EMAIL_ADDRESS": "info@promroboty.by",
+        "EMAIL_MAILTO_HREF": "mailto:info@promroboty.by",
     }
 
 

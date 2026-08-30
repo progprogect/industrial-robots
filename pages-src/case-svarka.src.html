@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="light" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<!-- @include partials/gtag.html -->
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<link rel="preload" as="image" href="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-welding-part.webp" fetchpriority="high"/>
+<link rel="icon" href="{{SITE_ROOT_PREFIX}}/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="{{SITE_ROOT_PREFIX}}/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="{{SITE_ROOT_PREFIX}}/favicon-16x16.png"/>
+<link rel="apple-touch-icon" href="{{SITE_ROOT_PREFIX}}/apple-touch-icon.png"/>
+<!-- @include partials/seo-meta.html -->
+<!-- @include partials/json-ld-extra.html -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary-fixed": "#351000",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#2b364c",
+                        "on-surface": "#191c1d",
+                        "on-background": "#191c1d",
+                        "on-primary-fixed": "#001946",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#bbc6e2",
+                        "inverse-primary": "#b1c5ff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "primary-container": "#0047ab",
+                        "surface-tint": "#2559bd",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-primary-container": "#a5bdff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3c475d",
+                        "tertiary-fixed": "#d7e2ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fe6b00",
+                        "secondary-fixed-dim": "#ffb693",
+                        "surface": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed": "#dae2ff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#424d64",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#101b30",
+                        "surface-dim": "#d9dadb",
+                        "background": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface-variant": "#434653",
+                        "on-secondary-container": "#572000",
+                        "outline-variant": "#c3c6d5",
+                        "secondary": "#a04100",
+                        "on-tertiary-container": "#b3bed9",
+                        "on-primary-fixed-variant": "#00419e",
+                        "primary": "#00327d",
+                        "surface-container": "#edeeef",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "on-primary": "#ffffff",
+                        "outline": "#737784",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-fixed": "#ffdbcc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html { scroll-padding-top: 4.5rem; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .blueprint-grid { background-image: radial-gradient(rgba(195, 198, 213, 0.35) 0.5px, transparent 0.5px); background-size: 32px 32px; }
+        .machined-gradient { background: linear-gradient(135deg, #00327d 0%, #0047ab 100%); }
+        .hero-overlay-weld {
+            background:
+                linear-gradient(to top, rgb(15 23 42 / 0.94) 0%, rgb(15 23 42 / 0.58) 48%, rgb(15 23 42 / 0.28) 72%),
+                linear-gradient(90deg, rgb(15 23 42 / 0.9) 0%, rgb(15 23 42 / 0.5) 52%, rgb(15 23 42 / 0.18) 100%);
+        }
+        .cyber-border { position: relative; }
+        .cyber-border::after { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px; border: 1px solid rgba(0, 71, 171, 0.35); pointer-events: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary blueprint-lines">
+<!-- @include partials/header.html -->
+<main>
+
+<section class="relative overflow-hidden bg-slate-950 pt-28 pb-14 md:pt-32 md:pb-20">
+<div class="absolute inset-0 z-0 opacity-30">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-welding-part.webp" width="1600" height="1290" fetchpriority="high" decoding="async" class="h-full w-full object-cover object-center" alt=""/>
+</div>
+<div class="absolute inset-0 z-0 bg-gradient-to-r from-slate-950 via-slate-950/92 to-slate-950/70"></div>
+<div class="relative z-10 container mx-auto max-w-5xl px-4 sm:px-6">
+<nav class="mb-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] font-bold uppercase tracking-widest text-white/45" aria-label="Хлебные крошки">
+<a class="inline-flex min-h-11 items-center hover:text-white sm:min-h-0" href="{{HOME_PATH}}">Главная</a> <span aria-hidden="true">·</span>
+<a class="inline-flex min-h-11 items-center hover:text-white sm:min-h-0" href="{{CASES_INDEX_HREF}}">Кейсы</a> <span aria-hidden="true">·</span>
+<span class="text-white/70">Сварка рамных конструкций</span>
+</nav>
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed">Машиностроение · рамные конструкции</p>
+<h1 class="mb-6 max-w-3xl text-3xl font-bold leading-[1.1] text-white sm:text-4xl md:text-5xl">Роботизированная сварка рамных конструкций</h1>
+<p class="max-w-2xl border-l-2 border-primary-fixed pl-5 text-base leading-relaxed text-white/85 md:pl-6 md:text-lg">Однотипный шов на рамной конструкции в три смены. Заменили ручную сварку роботизированной ячейкой с позиционером и оснасткой под изделие.</p>
+<p class="mt-8 max-w-2xl text-xs leading-relaxed text-white/50">Заказчик и точные показатели не раскрываются — работа выполнена под соглашением о неразглашении. Инженерная суть задачи и наш вклад описаны полностью.</p>
+</div>
+</section>
+
+<section class="border-b border-outline-variant/30 bg-white py-14 md:py-20">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6">
+<div class="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,26rem)] lg:gap-14">
+<div>
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Что было на участке</p>
+<h2 class="mb-6 text-2xl font-bold md:text-3xl">Задача</h2>
+<div class="space-y-4 text-base leading-relaxed text-on-surface-variant">
+<p>На участке варили однотипную рамную конструкцию в три смены. Скорость заказчика устраивала — не устраивал разброс: у разных сварщиков шов получался разным, часть изделий уходила на переварку, а замену уходящим людям находили всё труднее.</p>
+<p>К нам обратились не за роботом, а за ответом на вопрос, стоит ли вообще эту операцию автоматизировать. Первое, что мы сделали, — вышли на участок и посчитали.</p>
+</div>
+</div>
+<figure class="lg:self-start">
+<div class="overflow-hidden border border-outline-variant/50 bg-black cyber-border">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-welding-part.webp" width="1600" height="1290" loading="lazy" decoding="async" class="h-full w-full object-cover" alt="Робот ведёт сварной шов по детали, закреплённой в оснастке"/>
+</div>
+<figcaption class="mt-3 text-xs leading-relaxed text-on-surface-variant/70">Иллюстрация типовой операции. Съёмка на площадке заказчика закрыта тем же соглашением, поэтому показываем аналогичное оборудование.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section class="border-b border-outline-variant/30 bg-surface-container-low py-14 md:py-20">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6">
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Ход работы</p>
+<h2 class="mb-8 text-2xl font-bold md:text-3xl">Что мы сделали</h2>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
+<div class="border-l-2 border-primary pl-5 md:pl-6">
+<h3 class="text-lg md:text-xl font-bold mb-2">Обследование и расчёт</h3>
+<p class="text-on-surface-variant leading-relaxed">Замерили реальный такт по каждой операции и долю переварки — не по словам мастера, а по факту за смену. Это дало базу, от которой считалась окупаемость.</p>
+</div>
+<div class="border-l-2 border-primary pl-5 md:pl-6">
+<h3 class="text-lg md:text-xl font-bold mb-2">Проект ячейки</h3>
+<p class="text-on-surface-variant leading-relaxed">Спроектировали компоновку с позиционером и оснасткой под конкретное изделие: где стоит робот, как крепится заготовка, где проходит оператор, где ограждение и защита от излучения.</p>
+</div>
+<div class="border-l-2 border-primary pl-5 md:pl-6">
+<h3 class="text-lg md:text-xl font-bold mb-2">Программирование</h3>
+<p class="text-on-surface-variant leading-relaxed">Написали управляющую программу и отработали цикл на настоящих деталях заказчика, а не на образцах. Часть траекторий пришлось переделывать после первых проходов — это нормальная часть работы.</p>
+</div>
+<div class="border-l-2 border-primary pl-5 md:pl-6">
+<h3 class="text-lg md:text-xl font-bold mb-2">Встраивание в поток</h3>
+<p class="text-on-surface-variant leading-relaxed">Отдельно занимались тем, чтобы ячейка встала в существующий поток и не потребовала перестраивать соседние операции. Это чаще всего и определяет, поедет проект или встанет.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="border-b border-outline-variant/30 bg-white py-14 md:py-20">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6">
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Чем закончилось</p>
+<h2 class="mb-6 text-2xl font-bold md:text-3xl">Результат</h2>
+<div class="max-w-3xl space-y-4 text-base leading-relaxed text-on-surface-variant">
+<p>Шов перестал зависеть от того, кто сегодня в смене. Сварщики перешли на подготовку, прихватку и контроль — то есть на работу, где человек действительно нужен.</p>
+<p>Точные цифры по браку, такту и срокам возврата закрыты договором. На встрече мы можем показать методику расчёта на вашей детали — она та же самая.</p>
+</div>
+<div class="mt-12 border border-outline-variant/50 bg-surface-container-low p-6 md:p-8">
+<p class="mb-2 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Технико-экономическое обоснование</p>
+<h3 class="mb-4 text-xl font-bold md:text-2xl">Как считается выгода на такой задаче</h3>
+<p class="mb-6 max-w-3xl text-sm leading-relaxed text-on-surface-variant md:text-base">Цифры конкретного заказчика закрыты договором, но методика расчёта — нет. Мы считаем по одной и той же схеме и показываем её заказчику до продажи, а не после. Ниже — что входит в расчёт по этой операции.</p>
+<div class="grid grid-cols-1 gap-px border border-outline-variant/40 bg-outline-variant/40 md:grid-cols-3">
+<div class="bg-white p-5 md:p-6">
+<p class="mb-2 text-[10px] font-black uppercase tracking-widest text-outline">Что складываем в затраты</p>
+<ul class="space-y-1.5 text-sm leading-relaxed text-on-surface-variant"><li>— робот с горелкой, подачей проволоки и источником</li>
+<li>— позиционер и оснастка под изделие</li>
+<li>— ограждение, защита от излучения, вытяжка</li>
+<li>— проектирование, программирование, пусконаладка</li>
+<li>— обучение сварщиков и технологов</li></ul>
+</div>
+<div class="bg-white p-5 md:p-6">
+<p class="mb-2 text-[10px] font-black uppercase tracking-widest text-outline">Из чего складывается эффект</p>
+<ul class="space-y-1.5 text-sm leading-relaxed text-on-surface-variant"><li>— высвобожденные ставки сварщиков в две-три смены</li>
+<li>— сокращение переварки и брака по шву</li>
+<li>— стабильный такт вместо плавающего</li>
+<li>— снижение зависимости от найма редкой квалификации</li>
+<li>— экономия проволоки и газа за счёт повторяемости</li></ul>
+</div>
+<div class="bg-white p-5 md:p-6">
+<p class="mb-2 text-[10px] font-black uppercase tracking-widest text-outline">Типовой срок возврата</p>
+<p class="mb-2 text-3xl font-bold text-primary">1,5–3 года</p>
+<p class="text-sm leading-relaxed text-on-surface-variant">Быстрее — при трёхсменной работе и высокой доле переварки. Медленнее — если шов короткий, а партии мелкие и разнородные.</p>
+</div>
+</div>
+<p class="mt-5 max-w-3xl text-xs leading-relaxed text-on-surface-variant/80">Диапазон — ориентир по отрасли, а не обещание. Он сдвигается от загрузки, числа смен и того, сколько операций робот закроет помимо основной. Точный расчёт делаем по вашим цифрам бесплатно: нужны такт, число занятых людей, сменность и доля брака.</p>
+</div>
+
+<div class="mt-10 border-l-4 border-secondary bg-surface-container-low p-6 md:p-8">
+<h3 class="mb-2 text-lg font-bold">Когда это применимо к вам</h3>
+<p class="text-sm leading-relaxed text-on-surface-variant md:text-base">Похожая задача — если у вас длинный повторяющийся шов, разброс качества между сменами и сложности с набором сварщиков. Пришлите чертёж детали или опишите операцию — за пять рабочих дней вернём расчёт цикла, состав комплекса и срок окупаемости. Бесплатно и ни к чему вас не обязывает.</p>
+</div>
+</div>
+</section>
+
+<section class="border-b border-outline-variant/30 bg-surface-container-low py-12 md:py-16">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6">
+<p class="mb-5 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Куда дальше</p>
+<div class="flex flex-wrap gap-3">
+<a class="inline-flex items-center gap-2 border border-outline-variant/60 bg-white px-5 py-3 text-xs font-bold uppercase tracking-widest text-on-surface transition-colors hover:border-primary hover:text-primary" href="{{WELDING_ROBOT_HREF}}">Роботизированная сварка под ключ <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
+<a class="inline-flex items-center gap-2 border border-outline-variant/60 bg-white px-5 py-3 text-xs font-bold uppercase tracking-widest text-on-surface transition-colors hover:border-primary hover:text-primary" href="{{CASES_INDEX_HREF}}">Все кейсы <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
+</div>
+</div>
+</section>
+
+<section class="relative overflow-hidden bg-slate-950 py-14 text-slate-200 md:py-20" id="contacts">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6">
+<h2 class="mb-4 text-2xl font-bold uppercase tracking-tighter text-white md:text-3xl">Обсудить похожую задачу</h2>
+<p class="mb-8 max-w-2xl leading-relaxed text-white/75">Опишите операцию, объём и ограничения площадки — ответим в рабочее время. Если по цифрам роботизация не окупается, скажем об этом прямо.</p>
+<div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+<a class="machined-gradient inline-flex items-center justify-center px-8 py-4 text-center text-xs font-black uppercase tracking-[0.25em] text-on-primary shadow-xl transition-transform hover:scale-[1.02]" href="{{CTA_CONTACTS_HREF}}">Оставить заявку</a>
+<a class="inline-flex min-h-11 items-center text-xl font-bold tracking-tight text-white transition-colors hover:text-primary-fixed sm:text-2xl" href="{{PHONE_TEL_HREF}}">+375 25 509 22 06</a>
+<a class="inline-flex min-h-11 items-center text-sm font-medium text-white/70 underline underline-offset-4 transition-colors hover:text-white" href="{{EMAIL_MAILTO_HREF}}">{{EMAIL_ADDRESS}}</a>
+</div>
+</div>
+</section>
+
+</main>
+<!-- @include partials/footer.html -->
+</body>
+</html>

@@ -105,19 +105,19 @@
 <body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary blueprint-lines">
 <!-- @include partials/header.html -->
 <main>
-<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-20 sm:pt-24">
+<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-28 pb-12 sm:pt-32 sm:pb-16">
 <div class="absolute inset-0 z-0">
-<img alt="Промышленный робот-манипулятор на производстве" class="w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/manipulator.webp" width="1920" height="1080" fetchpriority="high" decoding="async"/>
+<img alt="Роботизированная линия паллетирования на производстве" class="w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/stock-pd/palletizing-line.webp" width="1400" height="1050" fetchpriority="high" decoding="async"/>
 <div class="absolute inset-0 hero-overlay"></div>
 <div class="absolute inset-0 blueprint-grid opacity-30"></div>
 </div>
 <div class="relative z-10 container mx-auto px-4 sm:px-6 max-w-6xl w-full">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-12 lg:items-center">
 <div>
-<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">Робот&#x2011;манипулятор · поставки по РБ и РФ</p>
-<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-6">Роботы&#x2011;манипуляторы для производственных и складских операций</h1>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-5">Робот-манипулятор · подбор и внедрение</p>
+<h1 class="max-w-3xl text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-6">Роботы&#x2011;манипуляторы для производства и склада</h1>
 <p class="text-lg md:text-xl text-white/85 max-w-2xl mb-10 border-l-2 border-primary-fixed pl-6 font-light leading-relaxed">
-Поставляем по всей Беларуси и России — собственного производства (Прогресс&#x2011;1) и китайские модели. Интеграция под ключ.
+Подбираем робота под вашу операцию, проектируем ячейку, программируем и запускаем её на площадке. Работаем по Беларуси и России с оборудованием российских и китайских производителей — берём на себя весь цикл, от расчёта окупаемости до обучения ваших людей.
 </p>
 <div class="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
 <a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center w-full sm:w-auto" href="#contacts">Оставить заявку</a>
@@ -144,47 +144,161 @@
 <div class="space-y-4 text-on-surface-variant leading-relaxed text-base">
 <p>Робот-манипулятор берёт на себя операции с деталями, упаковкой и поддонами: стабильный цикл, предсказуемая нагрузка на персонал, меньше ошибок на ручных этапах.</p>
 <p>Конфигурацию подбираем под задачу: тип захвата, сценарий движения, связь с вашими системами и требованиями безопасности на площадке.</p>
-<p class="mt-6 text-sm"><span class="text-on-surface-variant">Помимо наших роботов, мы </span><a class="font-semibold text-primary underline underline-offset-2 hover:text-primary-container" href="{{MANIPULATOR_SETUP_HREF}}">работаем с роботами сторонних производителей</a><span class="text-on-surface-variant"> — подробнее об услуге настройки и интеграции.</span></p>
+<p class="mt-6 text-sm"><span class="text-on-surface-variant">Если робот у вас уже стоит и его нужно перенастроить под новое изделие или запустить после простоя — это отдельная услуга: </span><a class="font-semibold text-primary underline underline-offset-2 hover:text-primary-container" href="{{MANIPULATOR_SETUP_HREF}}">настройка и интеграция роботов сторонних производителей</a><span class="text-on-surface-variant">.</span></p>
 </div>
 </div>
-<div class="relative w-full min-h-[280px] aspect-[4/3] lg:min-h-[320px] lg:aspect-auto self-stretch overflow-hidden bg-black cyber-border flex items-center justify-center p-4">
-<img alt="Промышленный робот-манипулятор Прогресс-1" class="w-full h-auto max-h-full object-contain" src="{{SITE_ROOT_PREFIX}}/assets/images/progress-1-robot.png" width="800" height="900" loading="lazy" decoding="async"/>
+<figure class="self-stretch">
+<div class="relative w-full min-h-[280px] aspect-[4/3] lg:min-h-[320px] overflow-hidden bg-black cyber-border">
+<img alt="Промышленный робот-манипулятор в огорождённой производственной ячейке" class="absolute inset-0 w-full h-full object-cover" src="{{SITE_ROOT_PREFIX}}/assets/images/stock-pd/robot-cell.webp" width="1400" height="932" loading="lazy" decoding="async"/>
 </div>
+<figcaption class="mt-3 text-xs text-on-surface-variant/70 leading-relaxed">Роботизированная ячейка на производстве: робот, оснастка под деталь и ограждение — минимальный комплект, с которого начинается любой участок.</figcaption>
+</figure>
 </div>
 </div>
 </section>
 
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Применения</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Что робот делает на участке</h2>
+<p class="text-on-surface-variant max-w-3xl mb-10 leading-relaxed">Один и тот же манипулятор закрывает разные операции — задача решается сменой оснастки и управляющей программы, а не покупкой второго робота. Ниже три типовых сценария, с которых чаще всего начинают.</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<figure class="border border-outline-variant/50 bg-white cyber-border overflow-hidden">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-palletizing-card.webp" width="800" height="645" loading="lazy" decoding="async" class="w-full h-56 object-cover" alt="Робот укладывает коробки на паллету на складе"/>
+<figcaption class="p-4 text-sm text-on-surface-variant leading-relaxed">Паллетирование: робот снимает продукцию с конвейера и укладывает по схеме, освобождая людей от однотипной физической работы.</figcaption>
+</figure>
+<figure class="border border-outline-variant/50 bg-white cyber-border overflow-hidden">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-machine-tending-card.webp" width="800" height="645" loading="lazy" decoding="async" class="w-full h-56 object-cover" alt="Робот перемещает деталь при обслуживании станка"/>
+<figcaption class="p-4 text-sm text-on-surface-variant leading-relaxed">Обслуживание станка: загрузка заготовки и съём готовой детали, чтобы оборудование не простаивало между циклами.</figcaption>
+</figure>
+<figure class="border border-outline-variant/50 bg-white cyber-border overflow-hidden">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-welding-sparks-card.webp" width="800" height="890" loading="lazy" decoding="async" class="w-full h-56 object-cover" alt="Робот выполняет сварку с горелкой"/>
+<figcaption class="p-4 text-sm text-on-surface-variant leading-relaxed">Сварка: стабильный шов в третью смену и там, где найти сварщика нужной квалификации стало трудно.</figcaption>
+</figure>
+</div>
+<p class="mt-6 text-xs text-on-surface-variant/70">Фотографии оборудования DOKA предоставлены производителем — ООО «РобоПро» — и публикуются с его разрешения.</p>
+</div>
+</section>
 <section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30">
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
 <p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Спецификация</p>
 <h2 class="text-3xl md:text-4xl font-bold mb-6">Технические параметры</h2>
-<p class="text-on-surface-variant text-sm max-w-3xl mb-4 leading-relaxed">Ключевые ориентиры по комплектации. Итоговые значения фиксируются в ТЗ и паспорте после обследования объекта.</p>
-<p class="text-on-surface-variant text-sm max-w-3xl mb-8 leading-relaxed">Ниже — характеристики нашего собственного робота Прогресс&#x2011;1. Также работаем с китайскими моделями (ESTUN, EFORT, Siasun, Inovance) — подберём вариант под задачу и бюджет.</p>
+<p class="text-on-surface-variant text-base max-w-3xl mb-8 leading-relaxed">Единой «нашей модели» здесь нет намеренно: робот подбирается под массу изделия, вылет и такт, а не наоборот. По умолчанию мы считаем проект на коллаборативных роботах DOKA российского производства — их шесть, они отличаются грузоподъёмностью и радиусом. Если задача выходит за эти рамки, ставим промышленного робота другого производителя.</p>
 <div class="overflow-x-auto border border-outline-variant/50 bg-white">
-<table class="w-full text-left text-sm border-collapse">
+<table class="w-full text-left text-sm border-collapse min-w-[38rem]">
 <thead>
 <tr class="border-b border-outline-variant/40 bg-surface-container font-label text-[10px] uppercase tracking-widest text-outline">
-<th class="p-4 font-semibold">Параметр</th>
-<th class="p-4 font-semibold">Значение</th>
+<th class="p-4 font-semibold">Модель</th>
+<th class="p-4 font-semibold">Грузоподъёмность, ном. / макс.</th>
+<th class="p-4 font-semibold">Радиус рабочей зоны</th>
+<th class="p-4 font-semibold">Повторяемость</th>
+<th class="p-4 font-semibold">Макс. скорость TCP</th>
 </tr>
 </thead>
 <tbody class="text-on-surface-variant divide-y divide-outline-variant/30">
-<tr><td class="p-4 font-medium text-on-surface">Модель</td><td class="p-4">Прогресс-1 (собственное производство, РБ)</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Количество осей</td><td class="p-4">6</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Грузоподъёмность</td><td class="p-4">150&nbsp;кг — с захватом</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Максимальный вылет</td><td class="p-4">3 100&nbsp;мм</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Максимальная высота TCP</td><td class="p-4">2 760&nbsp;мм</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Производительность</td><td class="p-4">10+ циклов в минуту (в зависимости от задачи)</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Система управления</td><td class="p-4">Промышленный ПК, локальная обработка данных компьютерного зрения</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">ПО (интерфейс)</td><td class="p-4">Русский язык</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Захваты</td><td class="p-4">Изготавливаются индивидуально под задачу; клещевые захваты для мешков — в партнёрстве с компанией Абуко (Россия). Возможны серийные и заказные варианты.</td></tr>
-<tr><td class="p-4 font-medium text-on-surface">Гарантия</td><td class="p-4">12 месяцев</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">DOKA RC3</td><td class="p-4">3&nbsp;/&nbsp;4&nbsp;кг</td><td class="p-4">650&nbsp;мм</td><td class="p-4">±0,05&nbsp;мм</td><td class="p-4">2&nbsp;м/с</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">DOKA RC5</td><td class="p-4">5&nbsp;/&nbsp;6&nbsp;кг</td><td class="p-4">915&nbsp;мм</td><td class="p-4">±0,05&nbsp;мм</td><td class="p-4">2&nbsp;м/с</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">DOKA RC10</td><td class="p-4">10&nbsp;/&nbsp;12&nbsp;кг</td><td class="p-4">1&nbsp;300&nbsp;мм</td><td class="p-4">±0,05&nbsp;мм</td><td class="p-4">2&nbsp;м/с</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">DOKA RC16</td><td class="p-4">16&nbsp;/&nbsp;18&nbsp;кг</td><td class="p-4">950&nbsp;мм</td><td class="p-4">±0,05&nbsp;мм</td><td class="p-4">2&nbsp;м/с</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">DOKA RC20</td><td class="p-4">20&nbsp;/&nbsp;23&nbsp;кг</td><td class="p-4">1&nbsp;750&nbsp;мм</td><td class="p-4">±0,1&nbsp;мм</td><td class="p-4">3&nbsp;м/с</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">DOKA RC30</td><td class="p-4">30&nbsp;/&nbsp;33&nbsp;кг</td><td class="p-4">1&nbsp;300&nbsp;мм</td><td class="p-4">±0,05&nbsp;мм</td><td class="p-4">2&nbsp;м/с</td></tr>
 </tbody>
 </table>
 </div>
-<p class="mt-4 text-xs text-on-surface-variant/85 italic max-w-3xl">Цифры не являются публичной офертой до согласования в договорной документации.</p>
+<p class="mt-8 mb-4 text-sm font-bold uppercase tracking-widest text-outline">Общее для всей линейки</p>
+<div class="overflow-x-auto border border-outline-variant/50 bg-white">
+<table class="w-full text-left text-sm border-collapse">
+<tbody class="text-on-surface-variant divide-y divide-outline-variant/30">
+<tr><td class="p-4 font-medium text-on-surface w-1/3">Количество осей</td><td class="p-4">6</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Степень защиты</td><td class="p-4">робот — IP54, шкаф управления — IP42</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Электропитание</td><td class="p-4">100–240&nbsp;В переменного тока, 47–55&nbsp;Гц — отдельная силовая линия не нужна</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Интерфейс оператора</td><td class="p-4">ПО «Пульс» на русском языке, внесено в реестр российского ПО Минцифры</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Захваты</td><td class="p-4">Изготавливаются под изделие. Клещевые захваты для мешков делаем совместно с компанией «Абуко» (Россия), остальное — серийное или заказное, по задаче</td></tr>
+<tr><td class="p-4 font-medium text-on-surface">Гарантия</td><td class="p-4">12 месяцев на поставленное оборудование; сервис и регламент обслуживания фиксируются в договоре</td></tr>
+</tbody>
+</table>
+</div>
+<div class="mt-10 border-l-4 border-secondary bg-white p-6 md:p-8">
+<div class="inline-block text-[10px] font-black uppercase tracking-widest bg-secondary text-white px-2 py-1 mb-3">Наша разработка</div>
+<h3 class="text-xl font-bold mb-3">Прогресс&#x2011;1 — собственный робот, пока в статусе опытного образца</h3>
+<div class="grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_11rem] gap-6 items-start">
+<p class="text-sm md:text-base text-on-surface-variant leading-relaxed">Параллельно с проектами заказчиков мы разрабатываем свой шестиосевой манипулятор Прогресс&#x2011;1 грузоподъёмностью до 150&nbsp;кг с вылетом 3&nbsp;100&nbsp;мм — под задачи, где нужны тяжёлые заготовки и большая зона. Сейчас это опытный образец: серийные поставки ещё не начаты, и мы не предлагаем его как товар со склада. Разработка ведётся в рамках программы технологической самодостаточности Республики Беларусь. Если вам интересен именно он — расскажем текущий статус и сроки без приукрашивания.</p>
+<img alt="Робот-манипулятор Прогресс-1 — опытный образец собственной разработки" class="w-full h-auto object-contain bg-surface-container-low p-3" src="{{SITE_ROOT_PREFIX}}/assets/images/progress-1-robot.png" width="800" height="900" loading="lazy" decoding="async"/>
+</div>
+</div>
+<p class="mt-6 text-xs text-on-surface-variant/85 italic max-w-3xl">Характеристики роботов DOKA приведены по данным производителя. Цифры не являются публичной офертой до согласования в договорной документации.</p>
 </div>
 </section>
+
+<section class="border-y border-outline-variant/30 bg-surface-container-low py-14 md:py-20">
+<div class="container mx-auto max-w-6xl px-4 sm:px-6">
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Кейсы из практики</p>
+<h2 class="mb-8 text-2xl font-bold md:text-3xl">Где такой робот уже стоял</h2>
+<div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_1_HREF}}">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/stock-pd/palletizing-line-card.webp" width="800" height="600" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Роботизированная линия паллетирования"/>
+<div class="flex flex-1 flex-col p-6">
+<p class="mb-2 text-[10px] font-black uppercase tracking-widest text-primary">Пищевое производство</p>
+<h3 class="mb-2 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Паллетирование мешков на выходе линии</h3>
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Клещевой захват под мягкий груз и параметрическая схема укладки под смену формата.</p>
+<span class="mt-4 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</div>
+</a>
+<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_2_HREF}}">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-machine-tending-card.webp" width="800" height="645" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Робот загружает заготовку в станок"/>
+<div class="flex flex-1 flex-col p-6">
+<p class="mb-2 text-[10px] font-black uppercase tracking-widest text-primary">Металлообработка</p>
+<h3 class="mb-2 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Загрузка и выгрузка станка с ЧПУ</h3>
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Робот забирает деталь по сигналу от ЧПУ, накопитель держит смену без человека.</p>
+<span class="mt-4 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</div>
+</a>
+</div>
+<p class="mt-6 text-sm text-on-surface-variant"><a class="font-medium text-primary underline underline-offset-2" href="{{CASES_INDEX_HREF}}">Все кейсы →</a></p>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Второй основной партнёр</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Линейка Inovance — когда происхождение не принципиально</h2>
+<p class="text-on-surface-variant max-w-3xl mb-4 leading-relaxed">Российских роботов пока немного, и они закрывают не каждую операцию. Поэтому вторым постоянным партнёром мы держим Inovance — одного из крупнейших мировых производителей промышленной автоматизации. Линейка у них заметно шире: есть SCARA для быстрых укладок, шестиосевые с вылетом до двух метров и паллетировочные на 180&nbsp;кг, чего в российском ассортименте сегодня просто нет.</p>
+<p class="text-on-surface-variant max-w-3xl mb-10 leading-relaxed">Берём их там, где заказчику важнее цена, срок поставки и наличие подходящей модели, а требований по происхождению оборудования нет. Поставка идёт через официального дистрибьютора Inovance в Минске, поэтому гарантия и сервис работают внутри страны, а не через переписку с заводом.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<figure class="border border-outline-variant/50 bg-surface-container-low cyber-border overflow-hidden flex flex-col">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/inovance/6axis-r10.webp" width="530" height="817" loading="lazy" decoding="async" class="h-44 w-full object-contain p-3" alt="Шестиосевой промышленный робот Inovance IR-R10"/>
+<figcaption class="border-t border-outline-variant/40 bg-white p-4 flex-1">
+<h3 class="font-bold mb-2">Шестиосевые IR-R</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">От 4 до 25&nbsp;кг, вылет от 546 до 2&nbsp;107&nbsp;мм, повторяемость от ±0,01&nbsp;мм. Старшие модели идут в исполнении IP65 с запястьем IP67 — для участков с пылью и брызгами.</p>
+</figcaption>
+</figure>
+<figure class="border border-outline-variant/50 bg-surface-container-low cyber-border overflow-hidden flex flex-col">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/inovance/cobot-u4.webp" width="514" height="816" loading="lazy" decoding="async" class="h-44 w-full object-contain p-3" alt="Коллаборативный робот Inovance IR-U4"/>
+<figcaption class="border-t border-outline-variant/40 bg-white p-4 flex-1">
+<h3 class="font-bold mb-2">Коллаборативные IR-U</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Четыре модели: 4, 8, 13 и 18&nbsp;кг, вылет от 625 до 1&nbsp;301&nbsp;мм, IP54. Ставятся под любым углом — на стол, на стену, вверх ногами, — что выручает на тесных участках.</p>
+</figcaption>
+</figure>
+<figure class="border border-outline-variant/50 bg-surface-container-low cyber-border overflow-hidden flex flex-col">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/inovance/scara.webp" width="732" height="817" loading="lazy" decoding="async" class="h-44 w-full object-contain p-3" alt="Робот SCARA Inovance серии IR-S"/>
+<figcaption class="border-t border-outline-variant/40 bg-white p-4 flex-1">
+<h3 class="font-bold mb-2">SCARA IR-S</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">От 4 до 35&nbsp;кг, радиус от 400 до 1&nbsp;200&nbsp;мм, цикл от 0,31&nbsp;с, повторяемость до ±0,01&nbsp;мм. Это про скорость: укладка, сборка, перекладка мелких деталей на конвейере.</p>
+</figcaption>
+</figure>
+<figure class="border border-outline-variant/50 bg-surface-container-low cyber-border overflow-hidden flex flex-col">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/inovance/palletizing.webp" width="900" height="817" loading="lazy" decoding="async" class="h-44 w-full object-contain p-3" alt="Паллетировочный робот Inovance IR-PL"/>
+<figcaption class="border-t border-outline-variant/40 bg-white p-4 flex-1">
+<h3 class="font-bold mb-2">Паллетировочные IR-PL</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">130 и 180&nbsp;кг с вылетом 3&nbsp;200&nbsp;мм, IP54. Для мешков, коробов и бочек, где нужно накрывать всю паллету целиком и работать в три смены.</p>
+</figcaption>
+</figure>
+</div>
+<p class="mt-6 text-sm text-on-surface-variant leading-relaxed max-w-3xl">Какой из двух партнёров выгоднее именно вам, зависит от того, участвуете ли вы в закупке с требованиями к происхождению. Мы считаем оба варианта и показываем разницу в деньгах и сроках до подписания договора.</p>
+<p class="mt-4 text-xs text-on-surface-variant/70 leading-relaxed max-w-3xl">Изображения роботов — из каталога официального дистрибьютора Inovance в Республике Беларусь. Характеристики приведены по данным поставщика.</p>
+</div>
+</section>
+
 
 <section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
@@ -258,19 +372,19 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
 <div class="bg-white border border-outline-variant/50 p-8 cyber-border">
 <p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Ориентир стоимости</p>
-<p class="text-4xl font-bold text-primary">от 120&nbsp;000 <span class="text-xl font-headline">BYN</span></p>
-<p class="text-sm text-on-surface-variant font-medium mt-1">≈ от 3,3&nbsp;млн&nbsp;₽ <span class="text-xs text-on-surface-variant/70">(курс ориентировочный)</span></p>
-<p class="text-xs text-on-surface-variant mt-2">С захватом под вашу задачу. Итоговая стоимость — после уточнения конфигурации и ТЗ.</p>
+<p class="text-4xl font-bold text-primary">от 550&nbsp;000 <span class="text-xl font-headline">₽</span></p>
+<p class="text-sm text-on-surface-variant font-medium mt-1">≈ от 20&nbsp;000 BYN <span class="text-xs text-on-surface-variant/70">(курс ориентировочный)</span></p>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">Это сам робот. Захват под вашу деталь, оснастка и интеграция считаются отдельно — итоговую сумму называем после уточнения конфигурации и ТЗ.</p>
 </div>
 <div class="bg-white border border-outline-variant/50 p-8 cyber-border">
 <p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Рассрочка</p>
 <p class="text-3xl font-bold text-on-surface mb-2">до 12 мес.</p>
-<p class="text-xs text-on-surface-variant">На собственный робот Прогресс-1. Условия согласуются индивидуально с каждым заказчиком.</p>
+<p class="text-xs text-on-surface-variant">Условия рассрочки и лизинга согласуются индивидуально — схему подбираем под ваш бюджет и график платежей.</p>
 </div>
 <div class="bg-white border border-outline-variant/50 p-8 cyber-border">
 <p class="text-[10px] font-black uppercase tracking-widest text-outline mb-2">Государственная программа</p>
 <p class="text-lg font-bold text-on-surface mb-2">Господдержка + финансирование</p>
-<p class="text-xs text-on-surface-variant">Прогресс-1 — в рамках программы технологической самодостаточности РБ. Помогаем оформить документы для получения государственного финансирования на приобретение оборудования.</p>
+<p class="text-xs text-on-surface-variant">Роботизация попадает под программы поддержки модернизации производства. Помогаем собрать и оформить документы для получения государственного финансирования на приобретение оборудования.</p>
 </div>
 </div>
 <p class="text-sm text-on-surface-variant border-l-2 border-secondary pl-4 max-w-3xl">Налоговые детали и курсовые нюансы уточняйте при запросе КП; публикация на сайте не заменяет индивидуальный расчёт.</p>
@@ -306,13 +420,14 @@
 <div class="absolute inset-0 blueprint-grid opacity-10"></div>
 <div class="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
 <h2 class="text-3xl md:text-4xl font-bold mb-8">Сервис и поддержка</h2>
-<p class="text-white/80 max-w-3xl mb-8 leading-relaxed">Сервис для клиентов ведётся из <strong class="text-white">Гродно</strong>. Ориентиры по реакции (не договор SLA, уточняются при заключении договора):</p>
-<ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-sm text-white/85">
-<li class="border border-white/15 p-4"><span class="text-primary-fixed font-bold block mb-1">Выезд по Гродно</span> в течение <strong class="text-white">5 рабочих дней</strong> при типовом запросе.</li>
-<li class="border border-white/15 p-4"><span class="text-primary-fixed font-bold block mb-1">Онлайн-поддержка</span> ориентир ответа до <strong class="text-white">2 рабочих дней</strong>.</li>
+<p class="text-white/80 max-w-3xl mb-8 leading-relaxed">Расстояние до сервиса — первый вопрос, который задаёт производство, и правильный. Отвечаем прямо: у нас две базы выезда и партнёрская сеть на местах.</p>
+<ul class="grid grid-cols-1 gap-4 mb-8 text-sm text-white/85 md:grid-cols-3">
+<li class="border border-white/15 p-5"><span class="text-primary-fixed font-bold block mb-2">Беларусь — выезд из Гродно</span> Обслуживаем всю республику в рамках гарантийного и сервисного сопровождения. По Гродно и области ориентир выезда — <strong class="text-white">до 5 рабочих дней</strong> при типовом запросе.</li>
+<li class="border border-white/15 p-5"><span class="text-primary-fixed font-bold block mb-2">Россия — выездная бригада из Москвы</span> Для российских площадок работает выездной сервис из Москвы. Логистика и сроки закладываются в договор до начала проекта, а не обсуждаются постфактум.</li>
+<li class="border border-white/15 p-5"><span class="text-primary-fixed font-bold block mb-2">Другие регионы — партнёр в вашем городе</span> Через партнёрскую сеть подбираем сервисный центр рядом с вами, чтобы плановое обслуживание и мелкий ремонт шли без ожидания бригады. Какой вариант быстрее для вашего адреса, выясняем до подписания договора.</li>
 </ul>
-<p class="text-sm text-white/75 max-w-3xl mb-4">Возможен <strong class="text-white">выезд для ремонта и обслуживания по Республике Беларусь</strong> в рамках гарантийного и сервисного сопровождения — по согласованию графика и условий.</p>
-<p class="text-xs text-white/50 italic">Точные сроки и контакты фиксируются в договоре и регламенте поддержки.</p>
+<p class="text-sm text-white/75 max-w-3xl mb-4">Управляющая программа и логика написаны нами, поэтому <strong class="text-white">бóльшую часть неисправностей мы находим и устраняем удалённо</strong>, не дожидаясь выезда: ориентир ответа по онлайн-поддержке — до 2 рабочих дней. Выезд нужен там, где вопрос механический.</p>
+<p class="text-xs text-white/50 italic">Приведённые сроки — ориентиры, а не договор SLA. Точные сроки, состав работ и контакты фиксируются в договоре и регламенте поддержки.</p>
 </div>
 </section>
 
@@ -358,11 +473,11 @@
 <div class="space-y-6 text-sm">
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-primary-fixed">call</span>
-<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон</div><a class="inline-flex min-h-11 items-center text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
 </div>
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-primary-fixed">mail</span>
-<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="mailto:progprogect@gmail.com">progprogect@gmail.com</a></div>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="inline-flex min-h-11 items-center text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="{{EMAIL_MAILTO_HREF}}">{{EMAIL_ADDRESS}}</a></div>
 </div>
 </div>
 </div>
@@ -377,7 +492,7 @@
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="man-phone">Телефон</label>
-<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="man-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375 …"/>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="man-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Телефон с кодом страны"/>
 </div>
 <div>
 <label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="man-company">Компания</label>
