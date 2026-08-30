@@ -26,6 +26,8 @@ PAGE_SLUGS: dict[str, str] = {
     "agv.src.html": "agv",
     "manipulator.src.html": "robot-manipulyator",
     "svarochnyj-robot.src.html": "svarochnyj-robot",
+    "svarochnyj-pozicioner.src.html": "svarochnyj-pozicioner",
+    "svarochnaya-osnastka.src.html": "svarochnaya-osnastka",
     "manipulator-setup.src.html": "nastrojka-manipulyatorov",
     "contacts.src.html": "kontakty",
     "repair.src.html": "remont",
@@ -59,6 +61,8 @@ PAGE_ORDER: list[str] = [
     "agv.src.html",
     "manipulator.src.html",
     "svarochnyj-robot.src.html",
+    "svarochnyj-pozicioner.src.html",
+    "svarochnaya-osnastka.src.html",
     "manipulator-setup.src.html",
     "contacts.src.html",
     "repair.src.html",
@@ -80,6 +84,8 @@ SITEMAP_META: dict[str, tuple[str, str]] = {
     "agv.src.html": ("0.9", "monthly"),
     "manipulator.src.html": ("0.9", "monthly"),
     "svarochnyj-robot.src.html": ("0.9", "monthly"),
+    "svarochnyj-pozicioner.src.html": ("0.9", "monthly"),
+    "svarochnaya-osnastka.src.html": ("0.9", "monthly"),
     "manipulator-setup.src.html": ("0.9", "monthly"),
     "repair.src.html": ("0.85", "monthly"),
     "proektirovanie.src.html": ("0.85", "monthly"),
@@ -96,7 +102,14 @@ SITEMAP_META: dict[str, tuple[str, str]] = {
 }
 
 PRODUCT_SRC: frozenset[str] = frozenset(
-    {"photoseparator.src.html", "agv.src.html", "manipulator.src.html", "svarochnyj-robot.src.html"}
+    {
+        "photoseparator.src.html",
+        "agv.src.html",
+        "manipulator.src.html",
+        "svarochnyj-robot.src.html",
+        "svarochnyj-pozicioner.src.html",
+        "svarochnaya-osnastka.src.html",
+    }
 )
 
 # SEO: заголовок, описание, относительный путь к og:image (от корня сайта)
@@ -142,6 +155,24 @@ SEO_PAGE: dict[str, dict[str, str]] = {
         ),
         "OG_IMAGE": "assets/images/progress-1-welding.png",
         "BREADCRUMB_NAME": "Сварочный робот Прогресс-1",
+    },
+    "svarochnyj-pozicioner.src.html": {
+        "SEO_TITLE": "Сварочный позиционер и вращатель — расчёт и изготовление под изделие",
+        "SEO_DESCRIPTION": (
+            "Сварочные позиционеры, вращатели, роликоопоры и кантователи под ваше изделие: "
+            "расчёт момента, проект, изготовление и стыковка с роботом. Поставки по РБ и РФ."
+        ),
+        "OG_IMAGE": "assets/images/osnastka/yacheyka-robot-pozicioner.webp",
+        "BREADCRUMB_NAME": "Сварочные позиционеры",
+    },
+    "svarochnaya-osnastka.src.html": {
+        "SEO_TITLE": "Сварочная оснастка и кондукторы — проект и изготовление",
+        "SEO_DESCRIPTION": (
+            "Сборочно-сварочные кондукторы, стенды, столы и приспособления под ваш узел: "
+            "схема базирования, конструкторская документация, изготовление. РБ и РФ."
+        ),
+        "OG_IMAGE": "assets/images/osnastka/konduktor-s-prizhimami.webp",
+        "BREADCRUMB_NAME": "Сварочная оснастка",
     },
     "manipulator-setup.src.html": {
         "SEO_TITLE": "Настройка и программирование промышленных роботов",
@@ -469,6 +500,8 @@ def build_page_vars(src_name: str) -> dict[str, str]:
         "AGV_PRODUCT_HREF": po("agv"),
         "MANIPULATOR_PRODUCT_HREF": po("robot-manipulyator"),
         "WELDING_ROBOT_HREF": po("svarochnyj-robot"),
+        "WELDING_POSITIONER_HREF": po("svarochnyj-pozicioner"),
+        "WELDING_TOOLING_HREF": po("svarochnaya-osnastka"),
         "MANIPULATOR_SETUP_HREF": po("nastrojka-manipulyatorov"),
         "REPAIR_SERVICE_HREF": po("remont"),
         "ENGINEERING_DESIGN_HREF": po("proektirovanie"),
