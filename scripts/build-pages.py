@@ -33,6 +33,7 @@ PAGE_SLUGS: dict[str, str] = {
     "repair.src.html": "remont",
     "proektirovanie.src.html": "proektirovanie",
     "cases.src.html": "keysy",
+    "komanda.src.html": "komanda",
     "case-svarka.src.html": "keysy/robotizirovannaya-svarka-ramnyh-konstrukciy",
     "case-palletirovanie.src.html": "keysy/palletirovanie-meshkov",
     "case-stanok.src.html": "keysy/obsluzhivanie-stanka-chpu",
@@ -68,6 +69,7 @@ PAGE_ORDER: list[str] = [
     "repair.src.html",
     "proektirovanie.src.html",
     "cases.src.html",
+    "komanda.src.html",
     "case-svarka.src.html",
     "case-palletirovanie.src.html",
     "case-stanok.src.html",
@@ -91,6 +93,7 @@ SITEMAP_META: dict[str, tuple[str, str]] = {
     "proektirovanie.src.html": ("0.85", "monthly"),
     "contacts.src.html": ("0.8", "monthly"),
     "cases.src.html": ("0.8", "monthly"),
+    "komanda.src.html": ("0.8", "monthly"),
     "case-svarka.src.html": ("0.7", "monthly"),
     "case-palletirovanie.src.html": ("0.7", "monthly"),
     "case-stanok.src.html": ("0.7", "monthly"),
@@ -212,6 +215,15 @@ SEO_PAGE: dict[str, dict[str, str]] = {
         "SEO_DESCRIPTION": "Семь задач с разных производств: сварка, паллетирование, станок с ЧПУ, сортировка, логистика и разработка оборудования. С расчётом выгоды по каждой.",
         "OG_IMAGE": "assets/images/stock-pd/robot-cell.webp",
         "BREADCRUMB_NAME": "Кейсы",
+    },
+    "komanda.src.html": {
+        "SEO_TITLE": "Команда инженеров — резюме специалистов по роботизации",
+        "SEO_DESCRIPTION": (
+            "Примеры резюме инженеров ООО «Промышленные роботы»: сварочные РТК, пусконаладка, "
+            "АСУ ТП, машинное зрение и разработка. Оцените уровень команды до старта проекта."
+        ),
+        "OG_IMAGE": "assets/images/lab-hero.webp",
+        "BREADCRUMB_NAME": "Команда",
     },
     "case-svarka.src.html": {
         "SEO_TITLE": "Кейс: роботизированная сварка рамных конструкций",
@@ -506,6 +518,7 @@ def build_page_vars(src_name: str) -> dict[str, str]:
         "REPAIR_SERVICE_HREF": po("remont"),
         "ENGINEERING_DESIGN_HREF": po("proektirovanie"),
         "CASES_INDEX_HREF": po("keysy"),
+        "TEAM_PAGE_HREF": po("komanda"),
         "CASE_0_HREF": po("keysy/robotizirovannaya-svarka-ramnyh-konstrukciy"),
         "CASE_1_HREF": po("keysy/palletirovanie-meshkov"),
         "CASE_2_HREF": po("keysy/obsluzhivanie-stanka-chpu"),
@@ -600,6 +613,7 @@ def write_robots_and_sitemap(site_origin: str, base_path: str) -> None:
         "Disallow: /pages-src/\n"
         "Disallow: /partials/\n"
         "Disallow: /scripts/\n"
+        "Disallow: /team-src/\n"
         "Disallow: /.cursor/\n"
         "Disallow: /.agents/\n"
         "Disallow: /audit-output/\n\n"

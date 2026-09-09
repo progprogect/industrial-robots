@@ -5,6 +5,7 @@ Allow: /
 Disallow: /pages-src/
 Disallow: /partials/
 Disallow: /scripts/
+Disallow: /team-src/
 Disallow: /.cursor/
 Disallow: /.agents/
 Disallow: /audit-output/
