@@ -309,7 +309,7 @@ SEO_PAGE: dict[str, dict[str, str]] = {
             "Система централизованного мониторинга удалённых установок: телеметрия с ПЛК по Modbus, VPN-доступ, "
             "отчёты и разграничение прав. Python/FastAPI, React, SQL."
         ),
-        "OG_IMAGE": "assets/images/cases/asu/card-monitoring.webp",
+        "OG_IMAGE": "assets/images/stock-pd/scada-operator-card.webp",
         "BREADCRUMB_NAME": "Удалённый мониторинг оборудования",
     },
     "case-izmereniya.src.html": {
@@ -318,7 +318,7 @@ SEO_PAGE: dict[str, dict[str, str]] = {
             "ПО ПЛК для измерительных установок: обработка сигналов датчиков, калибровочные зависимости, "
             "расчёт технологических параметров, пусконаладка на объекте."
         ),
-        "OG_IMAGE": "assets/images/cases/asu/card-izmereniya.webp",
+        "OG_IMAGE": "assets/images/stock-pd/gauge-calibration-card.webp",
         "BREADCRUMB_NAME": "Автоматизация измерений",
     },
     "case-integraciya.src.html": {
@@ -327,7 +327,7 @@ SEO_PAGE: dict[str, dict[str, str]] = {
             "Подключение датчиков, расходомеров и частотных преобразователей к системам автоматизации: "
             "настройка интерфейсов, диагностика RS-485/Modbus, алгоритмы защиты."
         ),
-        "OG_IMAGE": "assets/images/cases/asu/card-integraciya.webp",
+        "OG_IMAGE": "assets/images/stock-pd/field-gauges-card.webp",
         "BREADCRUMB_NAME": "Интеграция оборудования",
     },
     "case-elektrika.src.html": {
