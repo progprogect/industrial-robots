@@ -43,7 +43,9 @@
 </div>
 </div>
 <style>
-#svc-map { background:#0f172a; }
+/* изоляция стековых контекстов: слои Leaflet (z-index до 1000) не должны всплывать над фиксированной шапкой сайта */
+#svc-map { background:#0f172a; position:relative; z-index:0; isolation:isolate; }
+#service-map { isolation:isolate; }
 .svc-marker { width:14px; height:14px; border-radius:9999px; background:#0047ab; border:2.5px solid #fff; box-shadow:0 0 0 3px rgba(0,71,171,.35); }
 .svc-marker--hq { background:#fe6b00; box-shadow:0 0 0 3px rgba(254,107,0,.35); }
 .leaflet-popup-content { font-family:'Inter',sans-serif; font-size:13px; line-height:1.45; margin:10px 14px; }
