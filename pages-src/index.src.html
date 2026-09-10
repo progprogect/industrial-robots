@@ -329,82 +329,99 @@
 </div>
 </div>
 </section>
-<!-- Блок 4 — Наши продукты -->
-<section class="py-14 md:py-24 lg:py-32 bg-white" id="solutions">
+<!-- Блок 8б — Кейсы -->
+<section class="py-14 md:py-24 lg:py-28 bg-surface-container-low border-y border-outline-variant/30 scroll-mt-28" id="cases">
+<span id="solutions" class="block scroll-mt-28" aria-hidden="true"></span>
 <div class="container mx-auto px-4 sm:px-6">
-<div class="text-center mb-16 md:mb-20 max-w-3xl mx-auto">
-<div class="text-[10px] uppercase tracking-[0.5em] font-black text-primary mb-6">Продукты и решения</div>
-<h2 class="text-3xl md:text-5xl font-bold mb-6">Что мы поставляем и что разрабатываем</h2>
-<p class="text-on-surface-variant text-base md:text-lg leading-relaxed">Часть из перечисленного ниже — комплексы, которые мы собираем на оборудовании производителей и запускаем у заказчика уже сегодня. Часть — наши собственные разработки, и некоторые из них пока находятся в статусе опытного образца. У каждой позиции этот статус подписан прямо на карточке, чтобы вы сразу понимали, что можно заказать сейчас, а что появится позже.</p>
+<div class="max-w-3xl mb-10 md:mb-14">
+<div class="text-[10px] uppercase tracking-[0.4em] font-black text-primary mb-6">Опыт команды</div>
+<h2 class="text-3xl md:text-5xl font-bold mb-6 tracking-tighter">Операции, которые мы роботизировали</h2>
+<p class="text-on-surface-variant text-base md:text-lg leading-relaxed mb-4">Большая часть работ, на которых выросла наша команда, закрыта соглашениями о неразглашении: мы не можем назвать предприятие, показать его цех или привести точные цифры экономики. Придумывать вместо этого красивые логотипы мы не будем.</p>
+<p class="text-on-surface-variant text-base md:text-lg leading-relaxed">Поэтому рассказываем через сами операции. По каждой — отдельный разбор: что было на участке, что мы сделали, к чему это привело и как считается выгода от такой задачи.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-7xl mx-auto">
-<div id="product-photoseparator" class="group relative min-h-[280px] sm:min-h-[320px] scroll-mt-28 overflow-hidden cyber-border bg-slate-100">
-<img alt="Схема фотосепаратора" class="absolute inset-0 w-full h-full object-contain object-center p-4 transition-transform duration-1000 group-hover:scale-[1.02]" src="{{SITE_ROOT_PREFIX}}/assets/images/photoseparator-diagram.webp" width="600" height="344" loading="lazy" decoding="async"/>
-<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent p-8 md:p-10 flex flex-col justify-end pointer-events-none">
-<h3 class="text-2xl font-bold text-white mb-2 drop-shadow-sm">Фотосепараторы</h3>
-<p class="text-white/80 text-sm drop-shadow-sm leading-relaxed">Оптическая сортировка сыпучей продукции: система отделяет брак и посторонние включения от основного потока.</p>
-<a class="pointer-events-auto mt-3 inline-flex min-h-11 items-center gap-2 text-[11px] font-black uppercase tracking-[0.25em] text-white/90 hover:text-primary-fixed transition-colors" href="{{PHOTO_PRODUCT_HREF}}">Подробнее <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 md:gap-8">
+<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_VAGON_HREF}}">
+<div class="relative">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/cases/vagon/card.webp" width="800" height="640" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Сварочная ячейка с роботами FANUC на линии сварки стенки вагона"/>
+<span class="absolute left-0 top-3 inline-flex items-center gap-1.5 bg-slate-950/85 px-3 py-1.5 text-[10px] font-black uppercase tracking-widest text-white"><span class="material-symbols-outlined text-sm" aria-hidden="true">play_circle</span>Видео с площадки</span>
 </div>
+<div class="flex flex-1 flex-col p-6">
+<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Вагоностроение · крупные узлы</p>
+<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Линия сварки стенки вагона: 4 ячейки, 8 роботов</h3>
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Линия сама распознаёт деталь на рольганге и распределяет по свободным ячейкам. Роботы FANUC, наклонно-поворотные столы, реальное видео работы.</p>
+<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
 </div>
-<div id="product-agv" class="group relative min-h-[280px] sm:min-h-[320px] scroll-mt-28 overflow-hidden cyber-border">
-<img alt="Автоматическая рохля на складе" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="{{SITE_ROOT_PREFIX}}/assets/images/agv-rohly.webp" width="2400" height="1792" loading="lazy" decoding="async"/>
-<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent p-8 md:p-10 flex flex-col justify-end pointer-events-none">
-<h3 class="text-2xl font-bold text-white mb-2">Роботизированные рохли (AGV)</h3>
-<p class="text-white/75 text-sm">Перемещение паллет · работа без оператора</p>
-<a class="pointer-events-auto mt-3 inline-flex min-h-11 items-center gap-2 text-[11px] font-black uppercase tracking-[0.25em] text-white/90 hover:text-primary-fixed transition-colors" href="{{AGV_PRODUCT_HREF}}">Подробнее <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
-</div>
-</div>
-<div id="product-manipulator" class="group relative min-h-[280px] sm:min-h-[320px] scroll-mt-28 overflow-hidden cyber-border bg-black">
-<img alt="Промышленный робот-манипулятор Прогресс-1" class="absolute inset-0 w-full h-full object-contain p-4 transition-transform duration-1000 group-hover:scale-[1.03]" src="{{SITE_ROOT_PREFIX}}/assets/images/progress-1-robot.png" width="800" height="900" loading="lazy" decoding="async"/>
-<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent p-8 md:p-10 flex flex-col justify-end pointer-events-none">
-<span class="inline-block text-[10px] font-black uppercase tracking-widest bg-secondary text-white px-2 py-0.5 mb-2 self-start">ПРОГРЕСС-1 · опытный образец</span>
-<h3 class="text-2xl font-bold text-white mb-2">Робот-манипулятор собственной разработки</h3>
-<p class="text-white/80 text-sm leading-relaxed">Шесть осей, грузоподъёмность 150 кг, вылет 3 100 мм. Разрабатывается в рамках программы технологической самодостаточности — сейчас открыт предзаказ, серийные поставки ещё не начаты.</p>
-<a class="pointer-events-auto mt-3 inline-flex min-h-11 items-center gap-2 text-[11px] font-black uppercase tracking-[0.25em] text-white/90 hover:text-primary-fixed transition-colors" href="{{MANIPULATOR_PRODUCT_HREF}}">Подробнее <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
-</div>
-</div>
-<div id="product-svarochnyj-robot" class="group relative min-h-[280px] sm:min-h-[320px] scroll-mt-28 overflow-hidden cyber-border bg-black">
-<img alt="Коллаборативный робот DOKA на сварочной операции" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.03]" src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-welding-arc.webp" width="1600" height="1290" loading="lazy" decoding="async"/>
-<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent p-8 md:p-10 flex flex-col justify-end pointer-events-none">
-<span class="inline-block text-[10px] font-black uppercase tracking-widest bg-primary-fixed text-on-primary-fixed px-2 py-0.5 mb-2 self-start">Поставляем сейчас</span>
-<h3 class="text-2xl font-bold text-white mb-2">Сварочные комплексы под ключ</h3>
-<p class="text-white/80 text-sm leading-relaxed">Собираем комплекс на роботе подходящего производителя: горелка, позиционер, оснастка и ограждения подбираются под ваше изделие. Проектируем, программируем, запускаем и обучаем операторов.</p>
-<a class="pointer-events-auto mt-3 inline-flex min-h-11 items-center gap-2 text-[11px] font-black uppercase tracking-[0.25em] text-white/90 hover:text-primary-fixed transition-colors" href="{{WELDING_ROBOT_HREF}}">Подробнее <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
-</div>
-</div>
-<div class="relative min-h-[280px] sm:min-h-[320px] overflow-hidden cyber-border bg-tertiary p-8 md:p-10 flex flex-col justify-between">
-<img alt="Модуль камеры машинного зрения (OpenMV)" class="absolute inset-0 w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/products/photoseparator/sorting-line.webp" width="1400" height="781" loading="lazy" decoding="async"/>
-<div class="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/50 to-slate-900/30 z-[1] pointer-events-none"></div>
-<div class="relative z-10">
-<div class="inline-flex items-center gap-2 bg-secondary text-white px-3 py-1 text-[10px] font-black uppercase tracking-widest mb-6">
-<span class="w-1.5 h-1.5 bg-white rounded-full animate-ping"></span>В разработке
-</div>
-<h3 class="text-2xl font-bold text-white mb-2">Камера технического зрения</h3>
-<p class="text-sm text-white/80 leading-relaxed">Программно-аппаратный модуль для контроля качества и сортировки. Находится в разработке, в проекты заказчиков пока не поставляется.</p>
-</div>
-<span class="material-symbols-outlined relative z-10 text-5xl text-white/25">memory</span>
-</div>
-</div>
-<div class="mx-auto mt-10 max-w-7xl border-t border-outline-variant/40 pt-10 md:mt-14 md:pt-12">
-<div class="text-[10px] uppercase tracking-[0.4em] font-black text-primary mb-4">Оборудование вокруг сварочного поста</div>
-<p class="mb-8 max-w-3xl text-sm md:text-base leading-relaxed text-on-surface-variant">Позиционеры и оснастку мы делаем и без робота — под ручную или полуавтоматическую сварку. Это самый короткий путь к повторяемости, если до роботизации участок ещё не дозрел.</p>
-<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-<a class="group grid grid-cols-[minmax(0,9rem)_minmax(0,1fr)] items-center gap-5 border border-outline-variant/50 bg-white p-5 transition-colors hover:border-primary" href="{{WELDING_POSITIONER_HREF}}">
-<img alt="Двухопорный сварочный позиционер с трубной доской" class="h-full w-full object-contain" src="{{SITE_ROOT_PREFIX}}/assets/images/osnastka/pozicioner-trubnoy-doski.webp" width="269" height="177" loading="lazy" decoding="async"/>
-<span>
-<span class="block text-lg font-bold transition-colors group-hover:text-primary">Сварочные позиционеры и вращатели</span>
-<span class="mt-1 block text-sm leading-relaxed text-on-surface-variant">Поворотные столы, двухосевые и двухопорные позиционеры, роликоопоры, колонны. Считаем момент и подбираем типоразмер под изделие.</span>
-</span>
 </a>
-<a class="group grid grid-cols-[minmax(0,9rem)_minmax(0,1fr)] items-center gap-5 border border-outline-variant/50 bg-white p-5 transition-colors hover:border-primary" href="{{WELDING_TOOLING_HREF}}">
-<img alt="Сварочный кондуктор с прижимами" class="h-full w-full object-cover" src="{{SITE_ROOT_PREFIX}}/assets/images/osnastka/konduktor-s-prizhimami-card.webp" width="800" height="521" loading="lazy" decoding="async"/>
-<span>
-<span class="block text-lg font-bold transition-colors group-hover:text-primary">Сварочная оснастка и кондукторы</span>
-<span class="mt-1 block text-sm leading-relaxed text-on-surface-variant">Сборочно-сварочные кондукторы, стенды, столы и приспособления. Проект, конструкторская документация и изготовление.</span>
-</span>
+<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_0_HREF}}">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-welding-part-card.webp" width="800" height="645" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Робот ведёт сварной шов по детали в оснастке"/>
+<div class="flex flex-1 flex-col p-6">
+<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Машиностроение · рамные конструкции</p>
+<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Роботизированная сварка рамных конструкций</h3>
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Однотипный шов в три смены и разброс качества между сварщиками. Заменили ручную сварку ячейкой с позиционером и оснасткой под изделие.</p>
+<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</div>
 </a>
+<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_1_HREF}}">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/stock-pd/palletizing-line-card.webp" width="800" height="600" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Роботизированная линия паллетирования"/>
+<div class="flex flex-1 flex-col p-6">
+<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Пищевое производство · мешки</p>
+<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Паллетирование мешков на выходе линии</h3>
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Двое рабочих укладывали мешки вручную. Клещевой захват под мягкий груз и параметрическая схема укладки под смену формата.</p>
+<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</div>
+</a>
+<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_2_HREF}}">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-machine-tending-card.webp" width="800" height="645" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Робот загружает заготовку в станок"/>
+<div class="flex flex-1 flex-col p-6">
+<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Металлообработка · станок с ЧПУ</p>
+<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Загрузка и выгрузка станка с ЧПУ</h3>
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Обрабатывающий центр простаивал между циклами. Робот забирает деталь по сигналу от ЧПУ, накопитель держит смену без человека.</p>
+<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</div>
+</a>
+<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_3_HREF}}">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/cases/sortirovka-card.webp" width="800" height="447" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Установка оптической сортировки яблок: отбраковка на конвейере"/>
+<div class="flex flex-1 flex-col p-6">
+<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Переработка · сыпучая продукция</p>
+<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Оптическая сортировка и отбраковка</h3>
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Брак находили уже на упаковке. Своя камера, алгоритмы распознавания и плата управления — отсев из потока без остановки линии.</p>
+<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</div>
+</a>
+<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_4_HREF}}">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/agv-real/agv-fleet-hall-card.webp" width="800" height="573" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Автономные транспортные тележки в цехе"/>
+<div class="flex flex-1 flex-col p-6">
+<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Склад · транспортировка паллет</p>
+<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Автономная транспортировка паллет</h3>
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Человек весь день возил паллеты по одному маршруту. Автоматизировали повторяющуюся часть и честно сказали, где это не окупится.</p>
+<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</div>
+</a>
+<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_5_HREF}}">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/cases/fotoseparator-card.webp" width="800" height="549" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Распознавание продукции системой машинного зрения фотосепаратора"/>
+<div class="flex flex-1 flex-col p-6">
+<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Инжиниринг · оптическая сортировка</p>
+<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Фотосепаратор: от эскиза до прототипа</h3>
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Готовые машины не подходили под продукцию. Спроектировали и собрали прототип за три месяца — вдвое дешевле профильных КБ.</p>
+<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</div>
+</a>
+<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_6_HREF}}">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/pcb-board-card.webp" width="600" height="800" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Печатная плата промышленного контроллера"/>
+<div class="flex flex-1 flex-col p-6">
+<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Инжиниринг · электроника</p>
+<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Плата управления промышленного робота</h3>
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Серийные модули не подходили по интерфейсам и цене. Своя плата ввода-вывода за месяц от ТЗ до образца.</p>
+<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</div>
+</a>
+<div class="flex flex-col justify-center border border-dashed border-outline-variant/70 bg-white/60 p-6 md:p-8">
+<h3 class="mb-3 text-lg font-bold">Ваша задача другая?</h3>
+<p class="mb-6 text-sm leading-relaxed text-on-surface-variant">Опишите операцию или пришлите чертёж детали — за пять рабочих дней вернём расчёт цикла, состав комплекса и срок окупаемости. Бесплатно и ни к чему вас не обязывает.</p>
+<a class="machined-gradient inline-flex items-center justify-center px-6 py-3 text-center text-[10px] font-black uppercase tracking-[0.2em] text-on-primary" href="{{CTA_CONTACTS_HREF}}">Рассчитать окупаемость</a>
 </div>
 </div>
+<p class="mt-8 text-sm text-on-surface-variant"><a class="font-medium text-primary underline underline-offset-2" href="{{CASES_INDEX_HREF}}">Все кейсы на отдельной странице →</a></p>
 </div>
 </section>
 <!-- Блок: реальные съёмки работы -->
@@ -558,100 +575,6 @@
 <span class="text-sm md:text-base font-medium">Оплата по этапам с приёмкой каждого — вы не платите вперёд за весь проект</span>
 </li>
 </ul>
-</div>
-</section>
-<!-- Блок 8б — Кейсы -->
-<section class="py-14 md:py-24 lg:py-28 bg-surface-container-low border-y border-outline-variant/30 scroll-mt-28" id="cases">
-<div class="container mx-auto px-4 sm:px-6">
-<div class="max-w-3xl mb-10 md:mb-14">
-<div class="text-[10px] uppercase tracking-[0.4em] font-black text-primary mb-6">Опыт команды</div>
-<h2 class="text-3xl md:text-5xl font-bold mb-6 tracking-tighter">Операции, которые мы роботизировали</h2>
-<p class="text-on-surface-variant text-base md:text-lg leading-relaxed mb-4">Большая часть работ, на которых выросла наша команда, закрыта соглашениями о неразглашении: мы не можем назвать предприятие, показать его цех или привести точные цифры экономики. Придумывать вместо этого красивые логотипы мы не будем.</p>
-<p class="text-on-surface-variant text-base md:text-lg leading-relaxed">Поэтому рассказываем через сами операции. По каждой — отдельный разбор: что было на участке, что мы сделали, к чему это привело и как считается выгода от такой задачи.</p>
-</div>
-<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 md:gap-8">
-<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_VAGON_HREF}}">
-<div class="relative">
-<img src="{{SITE_ROOT_PREFIX}}/assets/images/cases/vagon/card.webp" width="800" height="640" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Сварочная ячейка с роботами FANUC на линии сварки стенки вагона"/>
-<span class="absolute left-0 top-3 inline-flex items-center gap-1.5 bg-slate-950/85 px-3 py-1.5 text-[10px] font-black uppercase tracking-widest text-white"><span class="material-symbols-outlined text-sm" aria-hidden="true">play_circle</span>Видео с площадки</span>
-</div>
-<div class="flex flex-1 flex-col p-6">
-<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Вагоностроение · крупные узлы</p>
-<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Линия сварки стенки вагона: 4 ячейки, 8 роботов</h3>
-<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Линия сама распознаёт деталь на рольганге и распределяет по свободным ячейкам. Роботы FANUC, наклонно-поворотные столы, реальное видео работы.</p>
-<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
-</div>
-</a>
-<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_0_HREF}}">
-<img src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-welding-part-card.webp" width="800" height="645" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Робот ведёт сварной шов по детали в оснастке"/>
-<div class="flex flex-1 flex-col p-6">
-<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Машиностроение · рамные конструкции</p>
-<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Роботизированная сварка рамных конструкций</h3>
-<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Однотипный шов в три смены и разброс качества между сварщиками. Заменили ручную сварку ячейкой с позиционером и оснасткой под изделие.</p>
-<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
-</div>
-</a>
-<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_1_HREF}}">
-<img src="{{SITE_ROOT_PREFIX}}/assets/images/stock-pd/palletizing-line-card.webp" width="800" height="600" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Роботизированная линия паллетирования"/>
-<div class="flex flex-1 flex-col p-6">
-<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Пищевое производство · мешки</p>
-<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Паллетирование мешков на выходе линии</h3>
-<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Двое рабочих укладывали мешки вручную. Клещевой захват под мягкий груз и параметрическая схема укладки под смену формата.</p>
-<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
-</div>
-</a>
-<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_2_HREF}}">
-<img src="{{SITE_ROOT_PREFIX}}/assets/images/doka/doka-machine-tending-card.webp" width="800" height="645" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Робот загружает заготовку в станок"/>
-<div class="flex flex-1 flex-col p-6">
-<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Металлообработка · станок с ЧПУ</p>
-<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Загрузка и выгрузка станка с ЧПУ</h3>
-<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Обрабатывающий центр простаивал между циклами. Робот забирает деталь по сигналу от ЧПУ, накопитель держит смену без человека.</p>
-<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
-</div>
-</a>
-<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_3_HREF}}">
-<img src="{{SITE_ROOT_PREFIX}}/assets/images/cases/sortirovka-card.webp" width="800" height="447" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Установка оптической сортировки яблок: отбраковка на конвейере"/>
-<div class="flex flex-1 flex-col p-6">
-<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Переработка · сыпучая продукция</p>
-<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Оптическая сортировка и отбраковка</h3>
-<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Брак находили уже на упаковке. Своя камера, алгоритмы распознавания и плата управления — отсев из потока без остановки линии.</p>
-<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
-</div>
-</a>
-<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_4_HREF}}">
-<img src="{{SITE_ROOT_PREFIX}}/assets/images/agv-real/agv-fleet-hall-card.webp" width="800" height="573" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Автономные транспортные тележки в цехе"/>
-<div class="flex flex-1 flex-col p-6">
-<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Склад · транспортировка паллет</p>
-<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Автономная транспортировка паллет</h3>
-<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Человек весь день возил паллеты по одному маршруту. Автоматизировали повторяющуюся часть и честно сказали, где это не окупится.</p>
-<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
-</div>
-</a>
-<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_5_HREF}}">
-<img src="{{SITE_ROOT_PREFIX}}/assets/images/cases/fotoseparator-card.webp" width="800" height="549" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Распознавание продукции системой машинного зрения фотосепаратора"/>
-<div class="flex flex-1 flex-col p-6">
-<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Инжиниринг · оптическая сортировка</p>
-<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Фотосепаратор: от эскиза до прототипа</h3>
-<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Готовые машины не подходили под продукцию. Спроектировали и собрали прототип за три месяца — вдвое дешевле профильных КБ.</p>
-<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
-</div>
-</a>
-<a class="group flex flex-col overflow-hidden border border-outline-variant/50 bg-white cyber-border transition-colors hover:border-primary" href="{{CASE_6_HREF}}">
-<img src="{{SITE_ROOT_PREFIX}}/assets/images/pcb-board-card.webp" width="600" height="800" loading="lazy" decoding="async" class="h-44 w-full object-cover" alt="Печатная плата промышленного контроллера"/>
-<div class="flex flex-1 flex-col p-6">
-<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-primary">Инжиниринг · электроника</p>
-<h3 class="mb-3 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Плата управления промышленного робота</h3>
-<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Серийные модули не подходили по интерфейсам и цене. Своя плата ввода-вывода за месяц от ТЗ до образца.</p>
-<span class="mt-5 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
-</div>
-</a>
-<div class="flex flex-col justify-center border border-dashed border-outline-variant/70 bg-white/60 p-6 md:p-8">
-<h3 class="mb-3 text-lg font-bold">Ваша задача другая?</h3>
-<p class="mb-6 text-sm leading-relaxed text-on-surface-variant">Опишите операцию или пришлите чертёж детали — за пять рабочих дней вернём расчёт цикла, состав комплекса и срок окупаемости. Бесплатно и ни к чему вас не обязывает.</p>
-<a class="machined-gradient inline-flex items-center justify-center px-6 py-3 text-center text-[10px] font-black uppercase tracking-[0.2em] text-on-primary" href="{{CTA_CONTACTS_HREF}}">Рассчитать окупаемость</a>
-</div>
-</div>
-<p class="mt-8 text-sm text-on-surface-variant"><a class="font-medium text-primary underline underline-offset-2" href="{{CASES_INDEX_HREF}}">Все кейсы на отдельной странице →</a></p>
 </div>
 </section>
 <!-- Блок 9 — Поддержка и сотрудничество -->
