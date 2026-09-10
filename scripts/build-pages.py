@@ -34,6 +34,7 @@ PAGE_SLUGS: dict[str, str] = {
     "proektirovanie.src.html": "proektirovanie",
     "cases.src.html": "keysy",
     "komanda.src.html": "komanda",
+    "case-vagon.src.html": "keysy/robotizirovannaya-svarka-stenki-vagona",
     "case-svarka.src.html": "keysy/robotizirovannaya-svarka-ramnyh-konstrukciy",
     "case-palletirovanie.src.html": "keysy/palletirovanie-meshkov",
     "case-stanok.src.html": "keysy/obsluzhivanie-stanka-chpu",
@@ -41,6 +42,11 @@ PAGE_SLUGS: dict[str, str] = {
     "case-logistika.src.html": "keysy/avtonomnaya-transportirovka-pallet",
     "case-fotoseparator.src.html": "keysy/razrabotka-fotoseparatora",
     "case-plata.src.html": "keysy/plata-upravleniya-robota",
+    "case-trayb.src.html": "keysy/trayb-apparat-uchet-provoloki",
+    "case-monitoring.src.html": "keysy/udalennyj-monitoring-oborudovaniya",
+    "case-izmereniya.src.html": "keysy/avtomatizaciya-izmeritelnogo-oborudovaniya",
+    "case-integraciya.src.html": "keysy/integraciya-promyshlennogo-oborudovaniya",
+    "case-elektrika.src.html": "keysy/elektroshemy-i-shkafy-avtomatizacii",
 }
 
 # Старые плоские имена → слаг (редирект-заглушки в корне)
@@ -70,6 +76,7 @@ PAGE_ORDER: list[str] = [
     "proektirovanie.src.html",
     "cases.src.html",
     "komanda.src.html",
+    "case-vagon.src.html",
     "case-svarka.src.html",
     "case-palletirovanie.src.html",
     "case-stanok.src.html",
@@ -77,6 +84,11 @@ PAGE_ORDER: list[str] = [
     "case-logistika.src.html",
     "case-fotoseparator.src.html",
     "case-plata.src.html",
+    "case-trayb.src.html",
+    "case-monitoring.src.html",
+    "case-izmereniya.src.html",
+    "case-integraciya.src.html",
+    "case-elektrika.src.html",
 ]
 
 # priority, changefreq (sitemap)
@@ -94,6 +106,7 @@ SITEMAP_META: dict[str, tuple[str, str]] = {
     "contacts.src.html": ("0.8", "monthly"),
     "cases.src.html": ("0.8", "monthly"),
     "komanda.src.html": ("0.8", "monthly"),
+    "case-vagon.src.html": ("0.75", "monthly"),
     "case-svarka.src.html": ("0.7", "monthly"),
     "case-palletirovanie.src.html": ("0.7", "monthly"),
     "case-stanok.src.html": ("0.7", "monthly"),
@@ -101,6 +114,11 @@ SITEMAP_META: dict[str, tuple[str, str]] = {
     "case-logistika.src.html": ("0.7", "monthly"),
     "case-fotoseparator.src.html": ("0.7", "monthly"),
     "case-plata.src.html": ("0.7", "monthly"),
+    "case-trayb.src.html": ("0.7", "monthly"),
+    "case-monitoring.src.html": ("0.7", "monthly"),
+    "case-izmereniya.src.html": ("0.7", "monthly"),
+    "case-integraciya.src.html": ("0.7", "monthly"),
+    "case-elektrika.src.html": ("0.7", "monthly"),
     "privacy.src.html": ("0.3", "yearly"),
 }
 
@@ -212,9 +230,18 @@ SEO_PAGE: dict[str, dict[str, str]] = {
     },
     "cases.src.html": {
         "SEO_TITLE": "Кейсы роботизации — операции, которые мы автоматизировали",
-        "SEO_DESCRIPTION": "Семь задач с разных производств: сварка, паллетирование, станок с ЧПУ, сортировка, логистика и разработка оборудования. С расчётом выгоды по каждой.",
-        "OG_IMAGE": "assets/images/stock-pd/robot-cell.webp",
+        "SEO_DESCRIPTION": "Кейсы с производств: линия сварки стенки вагона, рамные конструкции, паллетирование, станок с ЧПУ, сортировка, логистика, разработка оборудования.",
+        "OG_IMAGE": "assets/images/cases/vagon/card.webp",
         "BREADCRUMB_NAME": "Кейсы",
+    },
+    "case-vagon.src.html": {
+        "SEO_TITLE": "Кейс: линия сварки стенки вагона — 4 ячейки, 8 роботов",
+        "SEO_DESCRIPTION": (
+            "Автоматическая линия сварки стенки вагона: рольганг, распознавание детали, перекладчик, "
+            "4 ячейки с роботами FANUC и поворотными столами. Видео с площадки."
+        ),
+        "OG_IMAGE": "assets/images/cases/vagon/card.webp",
+        "BREADCRUMB_NAME": "Сварка стенки вагона",
     },
     "komanda.src.html": {
         "SEO_TITLE": "Команда инженеров — резюме специалистов по роботизации",
@@ -246,7 +273,7 @@ SEO_PAGE: dict[str, dict[str, str]] = {
     "case-sortirovka.src.html": {
         "SEO_TITLE": "Кейс: оптическая сортировка и отбраковка на линии",
         "SEO_DESCRIPTION": "Как мы закрыли ручной выборочный контроль системой технического зрения: своя камера, алгоритмы распознавания и плата управления, отсев без остановки линии.",
-        "OG_IMAGE": "assets/images/products/photoseparator/sorting-line.webp",
+        "OG_IMAGE": "assets/images/cases/sortirovka-card.webp",
         "BREADCRUMB_NAME": "Оптическая сортировка",
     },
     "case-logistika.src.html": {
@@ -258,7 +285,7 @@ SEO_PAGE: dict[str, dict[str, str]] = {
     "case-fotoseparator.src.html": {
         "SEO_TITLE": "Кейс: разработка фотосепаратора от эскиза до прототипа",
         "SEO_DESCRIPTION": "Как мы спроектировали фотосепаратор под продукцию заказчика: камера, алгоритмы компьютерного зрения, платы управления и прототип за три месяца.",
-        "OG_IMAGE": "assets/images/products/photoseparator/sorting-line.webp",
+        "OG_IMAGE": "assets/images/cases/fotoseparator-card.webp",
         "BREADCRUMB_NAME": "Разработка фотосепаратора",
     },
     "case-plata.src.html": {
@@ -266,6 +293,51 @@ SEO_PAGE: dict[str, dict[str, str]] = {
         "SEO_DESCRIPTION": "Как мы разработали плату ввода-вывода для промышленного робота: клеммные зоны, интерфейсы для ПЛК и полевой проводки, серийный образец за месяц.",
         "OG_IMAGE": "assets/images/pcb-board.webp",
         "BREADCRUMB_NAME": "Плата управления робота",
+    },
+    "case-trayb.src.html": {
+        "SEO_TITLE": "Кейс: трайб-аппарат — учёт проволоки со стана",
+        "SEO_DESCRIPTION": (
+            "Разработали и поставили трайб-аппарат для учёта проволоки со стана: конструкторская документация, "
+            "мерный узел с пневмоприжимом, контроллер. С видео."
+        ),
+        "OG_IMAGE": "assets/images/cases/trayb/trayb-card.webp",
+        "BREADCRUMB_NAME": "Трайб-аппарат: учёт проволоки",
+    },
+    "case-monitoring.src.html": {
+        "SEO_TITLE": "Кейс: удалённый мониторинг промышленного оборудования",
+        "SEO_DESCRIPTION": (
+            "Система централизованного мониторинга удалённых установок: телеметрия с ПЛК по Modbus, VPN-доступ, "
+            "отчёты и разграничение прав. Python/FastAPI, React, SQL."
+        ),
+        "OG_IMAGE": "assets/images/cases/asu/card-monitoring.webp",
+        "BREADCRUMB_NAME": "Удалённый мониторинг оборудования",
+    },
+    "case-izmereniya.src.html": {
+        "SEO_TITLE": "Кейс: автоматизация измерительного оборудования",
+        "SEO_DESCRIPTION": (
+            "ПО ПЛК для измерительных установок: обработка сигналов датчиков, калибровочные зависимости, "
+            "расчёт технологических параметров, пусконаладка на объекте."
+        ),
+        "OG_IMAGE": "assets/images/cases/asu/card-izmereniya.webp",
+        "BREADCRUMB_NAME": "Автоматизация измерений",
+    },
+    "case-integraciya.src.html": {
+        "SEO_TITLE": "Кейс: интеграция промышленного оборудования в АСУ",
+        "SEO_DESCRIPTION": (
+            "Подключение датчиков, расходомеров и частотных преобразователей к системам автоматизации: "
+            "настройка интерфейсов, диагностика RS-485/Modbus, алгоритмы защиты."
+        ),
+        "OG_IMAGE": "assets/images/cases/asu/card-integraciya.webp",
+        "BREADCRUMB_NAME": "Интеграция оборудования",
+    },
+    "case-elektrika.src.html": {
+        "SEO_TITLE": "Кейс: электросхемы и шкафы автоматизации в EPLAN",
+        "SEO_DESCRIPTION": (
+            "Электротехническая часть проектов автоматизации: принципиальные схемы и схемы подключения в EPLAN, "
+            "шкафы автоматизации, сопровождение сборки и ПНР."
+        ),
+        "OG_IMAGE": "assets/images/cases/asu/card-elektrika.webp",
+        "BREADCRUMB_NAME": "Схемы и шкафы автоматизации",
     },
 }
 
@@ -519,6 +591,7 @@ def build_page_vars(src_name: str) -> dict[str, str]:
         "ENGINEERING_DESIGN_HREF": po("proektirovanie"),
         "CASES_INDEX_HREF": po("keysy"),
         "TEAM_PAGE_HREF": po("komanda"),
+        "CASE_VAGON_HREF": po("keysy/robotizirovannaya-svarka-stenki-vagona"),
         "CASE_0_HREF": po("keysy/robotizirovannaya-svarka-ramnyh-konstrukciy"),
         "CASE_1_HREF": po("keysy/palletirovanie-meshkov"),
         "CASE_2_HREF": po("keysy/obsluzhivanie-stanka-chpu"),
@@ -526,6 +599,11 @@ def build_page_vars(src_name: str) -> dict[str, str]:
         "CASE_4_HREF": po("keysy/avtonomnaya-transportirovka-pallet"),
         "CASE_5_HREF": po("keysy/razrabotka-fotoseparatora"),
         "CASE_6_HREF": po("keysy/plata-upravleniya-robota"),
+        "CASE_TRAYB_HREF": po("keysy/trayb-apparat-uchet-provoloki"),
+        "CASE_MON_HREF": po("keysy/udalennyj-monitoring-oborudovaniya"),
+        "CASE_IZM_HREF": po("keysy/avtomatizaciya-izmeritelnogo-oborudovaniya"),
+        "CASE_INT_HREF": po("keysy/integraciya-promyshlennogo-oborudovaniya"),
+        "CASE_ELEK_HREF": po("keysy/elektroshemy-i-shkafy-avtomatizacii"),
         "CONTACTS_PAGE_HREF": contacts_path,
         "PRIVACY_PAGE_HREF": po("politika-konfidencialnosti"),
         "CTA_CONTACTS_HREF": cta_contacts,
