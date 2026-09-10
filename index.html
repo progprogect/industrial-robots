@@ -849,6 +849,140 @@
 </div>
 </section>
 <!-- Директор: заголовок сверху; фото без обрезки (масштаб по ширине); на md+ обтекание текстом -->
+<!-- Полоса «Испытания, документы, гарантия, сервис» — подключается на страницах продуктов и услуг -->
+<section class="border-y border-outline-variant/30 bg-white py-14 md:py-20" id="warranty">
+<div class="container mx-auto max-w-6xl px-4 sm:px-6">
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">После запуска</p>
+<h2 class="mb-4 text-2xl font-bold md:text-3xl">Испытания, документы и гарантия</h2>
+<p class="mb-10 max-w-3xl text-base leading-relaxed text-on-surface-variant">Комплекс собираем на нашей площадке или прямо на вашем объекте — и не сдаём его «под честное слово»: каждый этап подтверждается испытаниями и документами, которые лягут в вашу папку для любой проверки.</p>
+<div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-7">
+<div class="flex flex-col border border-outline-variant/50 bg-surface-container-low p-6 cyber-border md:p-7">
+<span class="material-symbols-outlined mb-3 text-3xl text-primary" aria-hidden="true">fact_check</span>
+<h3 class="mb-2 text-lg font-bold leading-snug">Испытания и декларация</h3>
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Два этапа испытаний: электрика, работоспособность и функции безопасности — до отгрузки, контрольные замеры на смонтированном комплексе — при пусконаладке. По итогам вы получаете протоколы испытаний и декларацию о соответствии требованиям ТР&nbsp;ТС&nbsp;010/2011 — она действует и в Беларуси, и в России; для продукции из перечня обязательной сертификации оформляется сертификат соответствия.</p>
+</div>
+<div class="flex flex-col border border-outline-variant/50 bg-surface-container-low p-6 cyber-border md:p-7">
+<span class="material-symbols-outlined mb-3 text-3xl text-primary" aria-hidden="true">verified_user</span>
+<h3 class="mb-2 text-lg font-bold leading-snug">Гарантия от 2 лет</h3>
+<!-- источник: приложение к договору «Гарантия и техническая поддержка» (папка проекта), сроки фиксируются договором -->
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">На наши работы и оборудование нашего изготовления — 24&nbsp;месяца с даты акта пусконаладки, по договору расширяем до 5&nbsp;лет. На покупные компоненты действуют гарантии заводов-изготовителей — перечень позиций и сроков передаём вам вместе с документацией комплекса.</p>
+</div>
+<div class="flex flex-col border border-outline-variant/50 bg-surface-container-low p-6 cyber-border md:p-7">
+<span class="material-symbols-outlined mb-3 text-3xl text-primary" aria-hidden="true">support_agent</span>
+<h3 class="mb-2 text-lg font-bold leading-snug">Сервис — на весь срок службы</h3>
+<p class="flex-1 text-sm leading-relaxed text-on-surface-variant">Сервисное сопровождение не заканчивается с гарантией — обслуживаем комплекс, пока он работает. Инженеры сервисной сети участвуют в пусконаладке вашего объекта, поэтому знают его не по документации; сервисные точки — по Беларуси и России, выезд в течение рабочего дня.</p>
+<a class="mt-4 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary transition-colors hover:text-primary-container" href="/#service-map">Сервисная сеть на карте <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Сервисная сеть: партнёрство с ОАО «Белэнергоремналадка» + карта точек (Leaflet/OSM, ленивая загрузка) -->
+<section class="relative overflow-hidden border-y border-white/10 bg-slate-950 py-14 text-white md:py-20 scroll-mt-28" id="service-map">
+<div class="container mx-auto max-w-6xl px-4 sm:px-6">
+<div class="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] lg:gap-12">
+<div>
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed">Сервисная сеть</p>
+<h2 class="mb-5 text-2xl font-bold md:text-3xl">Сервис — рядом с вашим производством</h2>
+<p class="mb-4 text-sm leading-relaxed text-white/80 md:text-base">ОАО «Белэнергоремналадка» — компания, с которой мы будем осуществлять сервисное обслуживание. Это крупнейшее специализированное предприятие по ремонту и наладке энергетического оборудования Беларуси: <!-- источник: данные ОАО «Белэнергоремналадка», партнёрская договорённость 09.2026 -->более 1&nbsp;600 специалистов и филиалы в десяти городах страны.</p>
+<p class="mb-6 text-sm leading-relaxed text-white/80 md:text-base">Инженеры, отвечающие за сервис, участвуют и в пусконаладке — они знают детали именно вашего объекта, а не «оборудование вообще». Сервисная точка находится в вашем регионе, поэтому при необходимости специалист приезжает в течение рабочего дня.</p>
+<div class="mb-6 grid grid-cols-2 gap-px border border-white/15 bg-white/15">
+<div class="bg-slate-950 p-4"><p class="text-2xl font-bold text-white md:text-3xl">1&nbsp;600+</p><p class="text-[10px] font-black uppercase tracking-widest text-white/50">специалистов сервисного партнёра</p></div>
+<div class="bg-slate-950 p-4"><p class="text-2xl font-bold text-white md:text-3xl">14</p><p class="text-[10px] font-black uppercase tracking-widest text-white/50">городов сервисной сети</p></div>
+<div class="bg-slate-950 p-4"><p class="text-2xl font-bold text-white md:text-3xl">1 день</p><p class="text-[10px] font-black uppercase tracking-widest text-white/50">выезд из вашего региона</p></div>
+<div class="bg-slate-950 p-4"><p class="text-2xl font-bold text-white md:text-3xl">ПНР</p><p class="text-[10px] font-black uppercase tracking-widest text-white/50">сервисные инженеры участвуют в пусконаладке</p></div>
+</div>
+<div class="border border-white/15 bg-slate-900 p-5">
+<p class="mb-3 text-[10px] font-black uppercase tracking-widest text-white/50">Партнёр по сервисному обслуживанию</p>
+<img src="/assets/logos/logo-bern.svg" width="429" height="52" loading="lazy" decoding="async" class="h-9 w-auto max-w-full md:h-10" alt="ОАО «Белэнергоремналадка»"/>
+</div>
+</div>
+<div class="min-w-0">
+<div class="overflow-hidden border border-white/15 bg-slate-900">
+<div id="svc-map" class="h-[320px] w-full sm:h-[420px] lg:h-[480px]" aria-label="Карта сервисной сети: Беларусь и Россия" role="img"></div>
+</div>
+<div class="mt-4 flex flex-wrap gap-1.5" id="svc-cities">
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Минск</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Москва</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Санкт-Петербург</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Гродно</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Брест</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Витебск</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Гомель</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Могилёв</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Бобруйск</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Новополоцк</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Новолукомль</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Светлогорск</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Белоозёрск</span>
+<span class="border border-white/20 bg-white/5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white/80">Островец</span>
+</div>
+<p class="mt-3 text-xs leading-relaxed text-white/45">Точки на карте — города, где работают наши инженеры и филиалы сервисного партнёра. Конкретные сроки выезда фиксируются в договоре обслуживания.</p>
+</div>
+</div>
+</div>
+<style>
+#svc-map { background:#0f172a; }
+.svc-marker { width:14px; height:14px; border-radius:9999px; background:#0047ab; border:2.5px solid #fff; box-shadow:0 0 0 3px rgba(0,71,171,.35); }
+.svc-marker--hq { background:#fe6b00; box-shadow:0 0 0 3px rgba(254,107,0,.35); }
+.leaflet-popup-content { font-family:'Inter',sans-serif; font-size:13px; line-height:1.45; margin:10px 14px; }
+.leaflet-popup-content b { color:#00327d; }
+</style>
+<script>
+(function () {
+    var mapEl = document.getElementById('svc-map');
+    if (!mapEl) return;
+    var CITIES = [
+        ['Гродно', 53.6694, 23.8131, 'hq', 'ООО «Промышленные роботы» — инженерный центр · филиал ОАО «Белэнергоремналадка»'],
+        ['Минск', 53.9023, 27.5619, 'bern', 'Филиалы ОАО «Белэнергоремналадка»'],
+        ['Брест', 52.0976, 23.7341, 'city', 'Сервисная точка сети'],
+        ['Витебск', 55.1848, 30.2016, 'city', 'Сервисная точка сети'],
+        ['Гомель', 52.4345, 30.9754, 'bern', 'Филиал ОАО «Белэнергоремналадка»'],
+        ['Могилёв', 53.9007, 30.3313, 'bern', 'Филиал ОАО «Белэнергоремналадка»'],
+        ['Бобруйск', 53.1446, 29.2214, 'bern', 'Филиал ОАО «Белэнергоремналадка»'],
+        ['Белоозёрск', 52.4711, 25.1774, 'bern', 'Филиал ОАО «Белэнергоремналадка»'],
+        ['Новолукомль', 54.6608, 29.1544, 'bern', 'Филиал ОАО «Белэнергоремналадка»'],
+        ['Новополоцк', 55.5318, 28.5987, 'bern', 'Филиал ОАО «Белэнергоремналадка»'],
+        ['Светлогорск', 52.6329, 29.7389, 'bern', 'Филиал ОАО «Белэнергоремналадка»'],
+        ['Островец', 54.6135, 25.9553, 'bern', 'Филиал ОАО «Белэнергоремналадка»'],
+        ['Москва', 55.7558, 37.6173, 'city', 'Сервисная точка сети'],
+        ['Санкт-Петербург', 59.9391, 30.3159, 'city', 'Сервисная точка сети']
+    ];
+    var started = false;
+    function initMap() {
+        if (started) return; started = true;
+        var css = document.createElement('link');
+        css.rel = 'stylesheet';
+        css.href = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css';
+        document.head.appendChild(css);
+        var js = document.createElement('script');
+        js.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js';
+        js.onload = function () {
+            var map = L.map(mapEl, { scrollWheelZoom: false, attributionControl: true });
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 12,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            var bounds = [];
+            CITIES.forEach(function (c) {
+                var icon = L.divIcon({ className: '', html: '<div class="svc-marker' + (c[3] === 'hq' ? ' svc-marker--hq' : '') + '"></div>', iconSize: [14, 14], iconAnchor: [7, 7] });
+                L.marker([c[1], c[2]], { icon: icon, title: c[0] }).addTo(map)
+                    .bindPopup('<b>' + c[0] + '</b><br>' + c[4]);
+                bounds.push([c[1], c[2]]);
+            });
+            map.fitBounds(bounds, { padding: [28, 28] });
+        };
+        document.head.appendChild(js);
+    }
+    if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries, obs) {
+            if (entries.some(function (e) { return e.isIntersecting; })) { obs.disconnect(); initMap(); }
+        }, { rootMargin: '400px' }).observe(mapEl);
+    } else { initMap(); }
+})();
+</script>
+</section>
+
 <section class="py-14 md:py-24 lg:py-32 bg-white overflow-hidden" id="director">
 <div class="container mx-auto px-4 sm:px-6">
 <div class="mb-8 md:mb-10">
