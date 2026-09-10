@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="light" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<!-- @include partials/gtag.html -->
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<link rel="preload" as="image" href="{{SITE_ROOT_PREFIX}}/assets/images/custom-equipment-1.jpeg" fetchpriority="high"/>
+<link rel="icon" href="{{SITE_ROOT_PREFIX}}/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="{{SITE_ROOT_PREFIX}}/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="{{SITE_ROOT_PREFIX}}/favicon-16x16.png"/>
+<link rel="apple-touch-icon" href="{{SITE_ROOT_PREFIX}}/apple-touch-icon.png"/>
+<!-- @include partials/seo-meta.html -->
+<!-- @include partials/json-ld-extra.html -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary-fixed": "#351000",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#2b364c",
+                        "on-surface": "#191c1d",
+                        "on-background": "#191c1d",
+                        "on-primary-fixed": "#001946",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#bbc6e2",
+                        "inverse-primary": "#b1c5ff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "primary-container": "#0047ab",
+                        "surface-tint": "#2559bd",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-primary-container": "#a5bdff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3c475d",
+                        "tertiary-fixed": "#d7e2ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fe6b00",
+                        "secondary-fixed-dim": "#ffb693",
+                        "surface": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed": "#dae2ff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#424d64",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#101b30",
+                        "surface-dim": "#d9dadb",
+                        "background": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface-variant": "#434653",
+                        "on-secondary-container": "#572000",
+                        "outline-variant": "#c3c6d5",
+                        "secondary": "#a04100",
+                        "on-tertiary-container": "#b3bed9",
+                        "on-primary-fixed-variant": "#00419e",
+                        "primary": "#00327d",
+                        "surface-container": "#edeeef",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "on-primary": "#ffffff",
+                        "outline": "#737784",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-fixed": "#ffdbcc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html { scroll-padding-top: 4.5rem; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .blueprint-grid { background-image: radial-gradient(rgba(195, 198, 213, 0.35) 0.5px, transparent 0.5px); background-size: 32px 32px; }
+        .machined-gradient { background: linear-gradient(135deg, #00327d 0%, #0047ab 100%); }
+        .cyber-border { position: relative; }
+        .cyber-border::after { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px; border: 1px solid rgba(0, 71, 171, 0.35); pointer-events: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary blueprint-lines">
+<!-- @include partials/header.html -->
+<main>
+
+<section class="relative overflow-hidden bg-slate-950 pt-28 pb-14 md:pt-32 md:pb-20">
+<div class="absolute inset-0 z-0 opacity-20">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/custom-equipment-1.jpeg" width="800" height="600" fetchpriority="high" decoding="async" class="h-full w-full object-cover object-center" alt=""/>
+</div>
+<div class="absolute inset-0 z-0 bg-gradient-to-r from-slate-950 via-slate-950/92 to-slate-950/70"></div>
+<div class="relative z-10 container mx-auto max-w-5xl px-4 sm:px-6">
+<nav class="mb-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] font-bold uppercase tracking-widest text-white/45" aria-label="Хлебные крошки">
+<a class="inline-flex min-h-11 items-center hover:text-white sm:min-h-0" href="{{HOME_PATH}}">Главная</a> <span aria-hidden="true">·</span>
+<a class="inline-flex min-h-11 items-center hover:text-white sm:min-h-0" href="{{CASES_INDEX_HREF}}">Кейсы</a> <span aria-hidden="true">·</span>
+<span class="text-white/70">КД нестандартного оборудования</span>
+</nav>
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed">Инжиниринг · конструкторская документация</p>
+<h1 class="mb-6 max-w-3xl text-3xl font-bold leading-[1.1] text-white sm:text-4xl md:text-5xl">Нестандартное оборудование: 3D-модели и конструкторская документация</h1>
+<p class="max-w-2xl border-l-2 border-primary-fixed pl-5 text-base leading-relaxed text-white/85 md:pl-6 md:text-lg">Специализированные механизмы, которых нет в каталогах: 3D-модель, сборочные чертежи, спецификации и полный комплект документации, по которому изделие изготавливают на производстве. На странице — рендеры из САПР по реальным проектам.</p>
+<p class="mt-8 max-w-2xl text-xs leading-relaxed text-white/50">Заказчики не раскрываются — работы выполнены под соглашениями о неразглашении. Изображения — 3D-модели из наших проектов, назначение узлов обезличено.</p>
+</div>
+</section>
+
+<section class="border-b border-outline-variant/30 bg-white py-14 md:py-20">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6">
+<div class="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,26rem)] lg:gap-14">
+<div>
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Контекст</p>
+<h2 class="mb-6 text-2xl font-bold md:text-3xl">Задача</h2>
+<div class="space-y-4 text-base leading-relaxed text-on-surface-variant">
+<p>Серийное оборудование закрывает типовые операции — но у производств регулярно возникают задачи, под которые готового механизма просто не существует: сборочная ячейка под конкретный узел, оснастка с прижимами под свою деталь, специализированный станок под операцию.</p>
+<p>Заказчику при этом нужна не презентация с картинкой, а комплект конструкторской документации, по которому изделие изготовит его цех или любой подрядчик: 3D-модель, сборочные чертежи, деталировка, спецификации и покупные позиции.</p>
+</div>
+</div>
+<figure class="lg:self-start">
+<div class="overflow-hidden border border-outline-variant/50 bg-slate-100 cyber-border">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/custom-equipment-1.jpeg" width="800" height="600" loading="lazy" decoding="async" class="h-full w-full object-contain p-2" alt="3D-модель нестандартной сборочной ячейки — рендер из САПР"/>
+</div>
+<figcaption class="mt-3 text-xs leading-relaxed text-on-surface-variant/70">3D-модель сборочной ячейки из реального проекта — рендер из САПР.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section class="border-b border-outline-variant/30 bg-surface-container-low py-14 md:py-20">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6">
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Ход работы</p>
+<h2 class="mb-8 text-2xl font-bold md:text-3xl">Что входит в такой проект</h2>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
+<div class="border-l-2 border-primary pl-5 md:pl-6">
+<h3 class="text-lg md:text-xl font-bold mb-2">Компоновка и 3D-модель</h3>
+<p class="text-on-surface-variant leading-relaxed">Проработка механизма под операцию и деталь заказчика: кинематика, рабочие ходы, проверка коллизий и доступа для обслуживания — ещё в модели, до металла.</p>
+</div>
+<div class="border-l-2 border-primary pl-5 md:pl-6">
+<h3 class="text-lg md:text-xl font-bold mb-2">Сборочные чертежи и деталировка</h3>
+<p class="text-on-surface-variant leading-relaxed">Полный комплект чертежей: сборки, узлы, детали с допусками и посадками — так, чтобы вопросы у изготовителя не возникали в середине работы.</p>
+</div>
+<div class="border-l-2 border-primary pl-5 md:pl-6">
+<h3 class="text-lg md:text-xl font-bold mb-2">Спецификации и покупные позиции</h3>
+<p class="text-on-surface-variant leading-relaxed">Спецификации по сборкам, перечень стандартных и покупных изделий с артикулами — пневматика, направляющие, крепёж — под реальный рынок, а не «аналог подобрать».</p>
+</div>
+<div class="border-l-2 border-primary pl-5 md:pl-6">
+<h3 class="text-lg md:text-xl font-bold mb-2">Сопровождение изготовления</h3>
+<p class="text-on-surface-variant leading-relaxed">Ответы изготовителю по документации, согласование замен и упрощений, участие в сборке и проверке первого образца.</p>
+</div>
+</div>
+<div class="mt-10">
+<p class="mb-3 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Технологии и решения</p>
+<div class="flex flex-wrap gap-2"><span class="border border-outline-variant/60 bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">3D-САПР</span><span class="border border-outline-variant/60 bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Сборочные чертежи</span><span class="border border-outline-variant/60 bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Деталировка и допуски</span><span class="border border-outline-variant/60 bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Спецификации</span><span class="border border-outline-variant/60 bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Авторский надзор</span></div>
+</div>
+</div>
+</section>
+
+<section class="border-b border-outline-variant/30 bg-white py-14 md:py-20">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6">
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Из проектов</p>
+<h2 class="mb-8 text-2xl font-bold md:text-3xl">3D-модели спроектированных механизмов</h2>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+<figure>
+<div class="overflow-hidden border border-outline-variant/50 bg-slate-100 cyber-border aspect-[4/3]">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/custom-equipment-1.jpeg" width="800" height="600" loading="lazy" decoding="async" class="h-full w-full object-contain p-2" alt="3D-модель сборочной ячейки с оснасткой и прижимами — вид 1"/>
+</div>
+<figcaption class="mt-3 text-xs leading-relaxed text-on-surface-variant/70">Сборочная ячейка с оснасткой и прижимами под узел заказчика.</figcaption>
+</figure>
+<figure>
+<div class="overflow-hidden border border-outline-variant/50 bg-slate-100 cyber-border aspect-[4/3]">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/custom-equipment-2.jpeg" width="800" height="600" loading="lazy" decoding="async" class="h-full w-full object-contain p-2" alt="3D-модель нестандартного оборудования в защитном каркасе — вид 2"/>
+</div>
+<figcaption class="mt-3 text-xs leading-relaxed text-on-surface-variant/70">Механизм в защитном каркасе: компоновка проверена в модели до изготовления.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section class="border-b border-outline-variant/30 bg-surface-container-low py-14 md:py-20">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6">
+<p class="mb-4 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Чем закончилось</p>
+<h2 class="mb-6 text-2xl font-bold md:text-3xl">Результат</h2>
+<div class="max-w-3xl space-y-4 text-base leading-relaxed text-on-surface-variant">
+<p>Заказчик получает комплект, с которым он не привязан к нам: изделие можно изготовить в своём цеху или у любого подрядчика, а через год — доработать по той же документации. Именно поэтому мы отдаём полную КД, а не «модель для ознакомления».</p>
+</div>
+<div class="mt-10 border-l-4 border-secondary bg-white p-6 md:p-8">
+<h3 class="mb-2 text-lg font-bold">Когда это применимо к вам</h3>
+<p class="text-sm leading-relaxed text-on-surface-variant md:text-base">Похожая задача — если под вашу операцию нет серийного оборудования или готовые решения не встают по габаритам, такту или цене. Опишите операцию и деталь — предложим концепт, сроки и стоимость проектирования.</p>
+</div>
+<div class="mt-8 border-l-4 border-primary bg-white p-5 md:p-6">
+<p class="text-sm leading-relaxed text-on-surface-variant md:text-base">Проекты ведут инженеры-конструкторы нашей команды — подробнее об услуге на странице <a class="font-semibold text-primary underline underline-offset-4 hover:text-primary-container" href="{{ENGINEERING_DESIGN_HREF}}">«Инженерное проектирование и КД»</a>, о людях — в разделе <a class="font-semibold text-primary underline underline-offset-4 hover:text-primary-container" href="{{TEAM_PAGE_HREF}}">«Команда»</a>.</p>
+</div>
+</div>
+</section>
+
+<section class="border-b border-outline-variant/30 bg-surface-container-low py-12 md:py-16">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6">
+<p class="mb-5 text-[10px] font-black uppercase tracking-[0.35em] text-primary">Куда дальше</p>
+<div class="flex flex-wrap gap-3">
+<a class="inline-flex items-center gap-2 border border-outline-variant/60 bg-white px-5 py-3 text-xs font-bold uppercase tracking-widest text-on-surface transition-colors hover:border-primary hover:text-primary" href="{{ENGINEERING_DESIGN_HREF}}">Инженерное проектирование и КД <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
+<a class="inline-flex items-center gap-2 border border-outline-variant/60 bg-white px-5 py-3 text-xs font-bold uppercase tracking-widest text-on-surface transition-colors hover:border-primary hover:text-primary" href="{{TEAM_PAGE_HREF}}">Команда проекта <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
+<a class="inline-flex items-center gap-2 border border-outline-variant/60 bg-white px-5 py-3 text-xs font-bold uppercase tracking-widest text-on-surface transition-colors hover:border-primary hover:text-primary" href="{{CASES_INDEX_HREF}}">Все кейсы <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></a>
+</div>
+</div>
+</section>
+
+<section class="relative overflow-hidden bg-slate-950 py-14 text-slate-200 md:py-20" id="contacts">
+<div class="container mx-auto max-w-5xl px-4 sm:px-6">
+<h2 class="mb-4 text-2xl font-bold uppercase tracking-tighter text-white md:text-3xl">Обсудить похожую задачу</h2>
+<p class="mb-8 max-w-2xl leading-relaxed text-white/75">Опишите операцию и деталь — на разбор выйдет инженер-конструктор. Если задача решается серийным оборудованием дешевле, скажем об этом прямо.</p>
+<div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+<a class="machined-gradient inline-flex items-center justify-center px-8 py-4 text-center text-xs font-black uppercase tracking-[0.25em] text-on-primary shadow-xl transition-transform hover:scale-[1.02]" href="{{CTA_CONTACTS_HREF}}">Оставить заявку</a>
+<a class="inline-flex min-h-11 items-center text-xl font-bold tracking-tight text-white transition-colors hover:text-primary-fixed sm:text-2xl" href="{{PHONE_TEL_HREF}}">+375 25 509 22 06</a>
+<a class="inline-flex min-h-11 items-center text-sm font-medium text-white/70 underline underline-offset-4 transition-colors hover:text-white" href="{{EMAIL_MAILTO_HREF}}">{{EMAIL_ADDRESS}}</a>
+</div>
+</div>
+</section>
+
+</main>
+<!-- @include partials/footer.html -->
+</body>
+</html>

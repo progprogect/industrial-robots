@@ -42,6 +42,7 @@ PAGE_SLUGS: dict[str, str] = {
     "case-logistika.src.html": "keysy/avtonomnaya-transportirovka-pallet",
     "case-fotoseparator.src.html": "keysy/razrabotka-fotoseparatora",
     "case-plata.src.html": "keysy/plata-upravleniya-robota",
+    "case-kd.src.html": "keysy/kd-nestandartnogo-oborudovaniya",
     "case-trayb.src.html": "keysy/trayb-apparat-uchet-provoloki",
     "case-monitoring.src.html": "keysy/udalennyj-monitoring-oborudovaniya",
     "case-izmereniya.src.html": "keysy/avtomatizaciya-izmeritelnogo-oborudovaniya",
@@ -84,6 +85,7 @@ PAGE_ORDER: list[str] = [
     "case-logistika.src.html",
     "case-fotoseparator.src.html",
     "case-plata.src.html",
+    "case-kd.src.html",
     "case-trayb.src.html",
     "case-monitoring.src.html",
     "case-izmereniya.src.html",
@@ -114,6 +116,7 @@ SITEMAP_META: dict[str, tuple[str, str]] = {
     "case-logistika.src.html": ("0.7", "monthly"),
     "case-fotoseparator.src.html": ("0.7", "monthly"),
     "case-plata.src.html": ("0.7", "monthly"),
+    "case-kd.src.html": ("0.7", "monthly"),
     "case-trayb.src.html": ("0.7", "monthly"),
     "case-monitoring.src.html": ("0.7", "monthly"),
     "case-izmereniya.src.html": ("0.7", "monthly"),
@@ -293,6 +296,15 @@ SEO_PAGE: dict[str, dict[str, str]] = {
         "SEO_DESCRIPTION": "Как мы разработали плату ввода-вывода для промышленного робота: клеммные зоны, интерфейсы для ПЛК и полевой проводки, серийный образец за месяц.",
         "OG_IMAGE": "assets/images/pcb-board.webp",
         "BREADCRUMB_NAME": "Плата управления робота",
+    },
+    "case-kd.src.html": {
+        "SEO_TITLE": "Кейс: КД и 3D-модели нестандартного оборудования",
+        "SEO_DESCRIPTION": (
+            "Проектирование специализированных механизмов: 3D-модели, сборочные чертежи, "
+            "спецификации и полный комплект конструкторской документации для изготовления."
+        ),
+        "OG_IMAGE": "assets/images/custom-equipment-1.jpeg",
+        "BREADCRUMB_NAME": "КД нестандартного оборудования",
     },
     "case-trayb.src.html": {
         "SEO_TITLE": "Кейс: трайб-аппарат — учёт проволоки со стана",
@@ -599,6 +611,7 @@ def build_page_vars(src_name: str) -> dict[str, str]:
         "CASE_4_HREF": po("keysy/avtonomnaya-transportirovka-pallet"),
         "CASE_5_HREF": po("keysy/razrabotka-fotoseparatora"),
         "CASE_6_HREF": po("keysy/plata-upravleniya-robota"),
+        "CASE_KD_HREF": po("keysy/kd-nestandartnogo-oborudovaniya"),
         "CASE_TRAYB_HREF": po("keysy/trayb-apparat-uchet-provoloki"),
         "CASE_MON_HREF": po("keysy/udalennyj-monitoring-oborudovaniya"),
         "CASE_IZM_HREF": po("keysy/avtomatizaciya-izmeritelnogo-oborudovaniya"),
