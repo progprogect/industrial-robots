@@ -435,7 +435,7 @@ def json_ld_organization(site_origin: str, base_path: str) -> str:
         "email": "info@promroboty.by",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "ул. Академическая, 17",
+            "streetAddress": "ул. Коммунальная, 32А",
             "addressLocality": "Гродно",
             "addressCountry": "BY",
         },
@@ -456,7 +456,7 @@ def json_ld_local_business(site_origin: str, base_path: str) -> str:
         "url": contacts,
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "ул. Академическая, 17",
+            "streetAddress": "ул. Коммунальная, 32А",
             "addressLocality": "Гродно",
             "addressCountry": "BY",
         },
