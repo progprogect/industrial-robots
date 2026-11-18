@@ -28,6 +28,7 @@ PAGE_SLUGS: dict[str, str] = {
     "svarochnyj-robot.src.html": "svarochnyj-robot",
     "svarochnyj-pozicioner.src.html": "svarochnyj-pozicioner",
     "svarochnaya-osnastka.src.html": "svarochnaya-osnastka",
+    "mashinnoe-zrenie.src.html": "mashinnoe-zrenie",
     "manipulator-setup.src.html": "nastrojka-manipulyatorov",
     "contacts.src.html": "kontakty",
     "repair.src.html": "remont",
@@ -71,6 +72,7 @@ PAGE_ORDER: list[str] = [
     "svarochnyj-robot.src.html",
     "svarochnyj-pozicioner.src.html",
     "svarochnaya-osnastka.src.html",
+    "mashinnoe-zrenie.src.html",
     "manipulator-setup.src.html",
     "contacts.src.html",
     "repair.src.html",
@@ -102,6 +104,7 @@ SITEMAP_META: dict[str, tuple[str, str]] = {
     "svarochnyj-robot.src.html": ("0.9", "monthly"),
     "svarochnyj-pozicioner.src.html": ("0.9", "monthly"),
     "svarochnaya-osnastka.src.html": ("0.9", "monthly"),
+    "mashinnoe-zrenie.src.html": ("0.9", "weekly"),
     "manipulator-setup.src.html": ("0.9", "monthly"),
     "repair.src.html": ("0.85", "monthly"),
     "proektirovanie.src.html": ("0.85", "monthly"),
@@ -164,6 +167,15 @@ SEO_PAGE: dict[str, dict[str, str]] = {
         "SEO_DESCRIPTION": "Автономная рохля AGV для перевозки паллет на складе и производстве без оператора. Подбираем под объект, внедряем и обучаем персонал.",
         "OG_IMAGE": "assets/images/agv-rohly.webp",
         "BREADCRUMB_NAME": "Автономная рохля (AGV)",
+    },
+    "mashinnoe-zrenie.src.html": {
+        "SEO_TITLE": "Машинное зрение для производства — система под ключ по цене камеры",
+        "SEO_DESCRIPTION": (
+            "Система машинного зрения под ключ: до 15 000 BYN для Беларуси, до 420 000 ₽ для России. "
+            "Контроль дефектов, считывание кодов, зрение для робота. Прототип на вашей линии, оплата после приёмки."
+        ),
+        "OG_IMAGE": "assets/images/vision/mcd-dashboard.webp",
+        "BREADCRUMB_NAME": "Машинное зрение",
     },
     "manipulator.src.html": {
         "SEO_TITLE": "Промышленный робот-манипулятор — подбор и внедрение",
@@ -594,6 +606,7 @@ def build_page_vars(src_name: str) -> dict[str, str]:
         "HEADER_BRAND_HTML": header_brand_html,
         "PHOTO_PRODUCT_HREF": po("fotoseparator"),
         "AGV_PRODUCT_HREF": po("agv"),
+        "VISION_PRODUCT_HREF": po("mashinnoe-zrenie"),
         "MANIPULATOR_PRODUCT_HREF": po("robot-manipulyator"),
         "WELDING_ROBOT_HREF": po("svarochnyj-robot"),
         "WELDING_POSITIONER_HREF": po("svarochnyj-pozicioner"),

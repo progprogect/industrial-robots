@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html class="light" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<!-- @include partials/gtag.html -->
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<link rel="preload" as="image" href="{{SITE_ROOT_PREFIX}}/assets/images/products/photoseparator/hero-apple-detection.webp" fetchpriority="high"/>
+<link rel="icon" href="{{SITE_ROOT_PREFIX}}/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="{{SITE_ROOT_PREFIX}}/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="{{SITE_ROOT_PREFIX}}/favicon-16x16.png"/>
+<link rel="apple-touch-icon" href="{{SITE_ROOT_PREFIX}}/apple-touch-icon.png"/>
+<!-- @include partials/seo-meta.html -->
+<!-- @include partials/json-ld-extra.html -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary-fixed": "#351000",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#2b364c",
+                        "on-surface": "#191c1d",
+                        "on-background": "#191c1d",
+                        "on-primary-fixed": "#001946",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#bbc6e2",
+                        "inverse-primary": "#b1c5ff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "primary-container": "#0047ab",
+                        "surface-tint": "#2559bd",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-primary-container": "#a5bdff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3c475d",
+                        "tertiary-fixed": "#d7e2ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fe6b00",
+                        "secondary-fixed-dim": "#ffb693",
+                        "surface": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed": "#dae2ff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#424d64",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#101b30",
+                        "surface-dim": "#d9dadb",
+                        "background": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface-variant": "#434653",
+                        "on-secondary-container": "#572000",
+                        "outline-variant": "#c3c6d5",
+                        "secondary": "#a04100",
+                        "on-tertiary-container": "#b3bed9",
+                        "on-primary-fixed-variant": "#00419e",
+                        "primary": "#00327d",
+                        "surface-container": "#edeeef",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "on-primary": "#ffffff",
+                        "outline": "#737784",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-fixed": "#ffdbcc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html { scroll-padding-top: 4.5rem; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .blueprint-grid { background-image: radial-gradient(rgba(195, 198, 213, 0.4) 0.5px, transparent 0.5px); background-size: 32px 32px; }
+        .blueprint-lines { background-image: linear-gradient(rgba(195, 198, 213, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(195, 198, 213, 0.1) 1px, transparent 1px); background-size: 100px 100px; }
+        .machined-gradient { background: linear-gradient(135deg, #00327d 0%, #0047ab 100%); }
+        .hero-overlay {
+            background:
+                linear-gradient(to top, rgb(15 23 42 / 0.92) 0%, rgb(15 23 42 / 0.5) 42%, rgb(15 23 42 / 0.15) 72%),
+                linear-gradient(90deg, rgb(15 23 42 / 0.9) 0%, rgb(15 23 42 / 0.45) 48%, rgb(15 23 42 / 0.15) 100%);
+        }
+        .cyber-border { position: relative; }
+        .cyber-border::after { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px; border: 1px solid rgba(0, 50, 125, 0.2); pointer-events: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-primary blueprint-lines">
+<!-- @include partials/header.html -->
+<main>
+
+<section class="relative min-h-[88vh] flex flex-col justify-center overflow-hidden pt-28 pb-12 sm:pt-32 sm:pb-16">
+<div class="absolute inset-0 z-0">
+<img alt="Распознавание продукции системой машинного зрения: детекции на конвейере" class="w-full h-full object-cover object-center" src="{{SITE_ROOT_PREFIX}}/assets/images/products/photoseparator/hero-apple-detection.webp" width="2000" height="1125" fetchpriority="high" decoding="async"/>
+<div class="absolute inset-0 hero-overlay"></div>
+<div class="absolute inset-0 blueprint-grid opacity-30"></div>
+</div>
+<div class="relative z-10 container mx-auto px-4 sm:px-6 max-w-4xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-5">Машинное зрение · контроль качества и учёт на линии</p>
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-6">Система машинного зрения под&nbsp;ключ — по&nbsp;цене одной камеры</h1>
+<p class="text-lg md:text-xl text-white/85 max-w-2xl mb-8 border-l-2 border-primary-fixed pl-6 font-light leading-relaxed">
+До&nbsp;15&nbsp;000&nbsp;BYN для&nbsp;Беларуси и&nbsp;до&nbsp;420&nbsp;000&nbsp;₽ для&nbsp;России — за&nbsp;установку под&nbsp;ключ: камеры, подсветка, вычислитель, ПО, монтаж и&nbsp;настройка. Прототип собираем на&nbsp;вашей линии за&nbsp;свой счёт — <strong class="text-white font-semibold">платите только по&nbsp;факту приёмки</strong>.
+</p>
+<div class="flex flex-wrap gap-x-8 gap-y-3 mb-10 text-white/90 text-sm">
+<div><span class="block text-2xl font-headline font-bold text-white">0 BYN</span><span class="text-[11px] uppercase tracking-widest text-white/60">до подписания акта приёмки</span></div>
+<div><span class="block text-2xl font-headline font-bold text-white">до 15 000 BYN</span><span class="text-[11px] uppercase tracking-widest text-white/60">под ключ · Беларусь</span></div>
+<div><span class="block text-2xl font-headline font-bold text-white">до 420 000 ₽</span><span class="text-[11px] uppercase tracking-widest text-white/60">под ключ · Россия</span></div>
+<div><span class="block text-2xl font-headline font-bold text-white">до 10.12.2026</span><span class="text-[11px] uppercase tracking-widest text-white/60">приём заявок на условиях акции</span></div>
+</div>
+<div class="flex flex-col sm:flex-row flex-wrap gap-4 items-stretch sm:items-center">
+<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-xl hover:scale-[1.02] transition-transform inline-block text-center w-full sm:w-auto" href="#contacts">Получить оценку за 2 дня</a>
+<a class="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-6 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors w-full sm:w-auto" href="#how">Как это работает</a>
+</div>
+<p class="mt-8 text-sm text-white/70 max-w-2xl leading-relaxed">Системы с участием нашей команды работают более чем в 1&nbsp;400 ресторанах McDonald's; сейчас делаем контроль дефектов для группы «Гродно Азот».</p>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Задачи</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Что система делает на линии</h2>
+<p class="text-on-surface-variant max-w-3xl mb-10 leading-relaxed">Камера ставится над действующей линией и смотрит на каждую единицу продукции одинаково внимательно всю смену — на скорости, на которой человек уже не успевает.</p>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-5">
+<figure class="relative md:col-span-4 cyber-border overflow-hidden bg-slate-900">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/vision/defects-caps.webp" width="1600" height="1056" loading="lazy" decoding="async" class="w-full h-64 md:h-80 object-cover object-center" alt="Автоматическое выявление дефектов укупорки: система помечает брак на конвейере"/>
+<figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/95 via-slate-900/60 to-transparent p-5 pt-16 text-white">
+<strong class="block text-base mb-1">Дефекты и брак</strong>
+<span class="block text-sm text-white/85 leading-snug">Царапины, сколы, недоливы, дефекты укупорки и сборки. Каждое событие — с фото в базе и на экране мастера.</span>
+</figcaption>
+</figure>
+<figure class="relative md:col-span-2 cyber-border overflow-hidden bg-slate-900">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/vision/barcode-check.webp" width="1600" height="900" loading="lazy" decoding="async" class="w-full h-64 md:h-80 object-cover object-center" alt="Проверка читаемости штрих-кода на упаковке: код считан или не читается"/>
+<figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/95 via-slate-900/60 to-transparent p-5 pt-16 text-white">
+<strong class="block text-base mb-1">Коды и маркировка</strong>
+<span class="block text-sm text-white/85 leading-snug">Верификация штрих-кодов и DataMatrix на скорости линии: нечитаемый код не уедет заказчику.</span>
+</figcaption>
+</figure>
+<figure class="relative md:col-span-2 cyber-border overflow-hidden bg-slate-900">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/vision/mold.webp" width="1600" height="1129" loading="lazy" decoding="async" class="w-full h-60 md:h-64 object-cover object-center" alt="Контроль качества пищевой продукции машинным зрением: детекция посторонних включений"/>
+<figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/95 via-slate-900/60 to-transparent p-5 pt-16 text-white">
+<strong class="block text-base mb-1">Качество пищевой продукции</strong>
+<span class="block text-sm text-white/85 leading-snug">Посторонние включения, плесень, нарушенная упаковка — до того, как партия ушла на склад.</span>
+</figcaption>
+</figure>
+<figure class="relative md:col-span-4 cyber-border overflow-hidden bg-slate-900">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/vision/packages.webp" width="1600" height="900" loading="lazy" decoding="async" class="w-full h-60 md:h-64 object-cover object-center" alt="Подсчёт коробок на рольгангах системой машинного зрения"/>
+<figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/95 via-slate-900/60 to-transparent p-5 pt-16 text-white">
+<strong class="block text-base mb-1">Счёт и комплектность</strong>
+<span class="block text-sm text-white/85 leading-snug">Подсчёт коробок на рольгангах и палетах, контроль комплектности отгрузки без ручного пересчёта.</span>
+</figcaption>
+</figure>
+<figure class="relative md:col-span-3 cyber-border overflow-hidden bg-slate-900">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/vision/conveyor-cans.webp" width="1600" height="900" loading="lazy" decoding="async" class="w-full h-60 md:h-64 object-cover object-center" alt="Подсчёт и трекинг продукции на конвейере системой машинного зрения"/>
+<figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/95 via-slate-900/60 to-transparent p-5 pt-16 text-white">
+<strong class="block text-base mb-1">Учёт и зрение для робота</strong>
+<span class="block text-sm text-white/85 leading-snug">Подсчёт штук в потоке и координаты детали для робота: сварка, укладка, сортировка.</span>
+</figcaption>
+</figure>
+<figure class="relative md:col-span-3 cyber-border overflow-hidden bg-slate-900">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/vision/fabric.webp" width="1600" height="1059" loading="lazy" decoding="async" class="w-full h-60 md:h-64 object-cover object-center" alt="Контроль ткани на ткацкой машине системой машинного зрения"/>
+<figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/95 via-slate-900/60 to-transparent p-5 pt-16 text-white">
+<strong class="block text-base mb-1">Непрерывные материалы</strong>
+<span class="block text-sm text-white/85 leading-snug">Контроль ткани, плёнки и проката по всей ширине полотна с привязкой дефекта к метражу.</span>
+</figcaption>
+</figure>
+</div>
+<p class="mt-6 text-xs text-on-surface-variant/70 leading-relaxed">Примеры распознавания — иллюстрации Ultralytics (ultralytics.com).</p>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30" id="how">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Устройство</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Как устроена система</h2>
+<p class="text-on-surface-variant max-w-3xl mb-8 leading-relaxed">Архитектура стандартная и ставится без переделки линии: камеры с подсветкой над потоком, вычислитель с нейросетью и три выхода — на экран мастера, на оборудование и в учётные системы.</p>
+<div class="bg-[#0B1220] border border-slate-800 p-2 sm:p-4">
+<div class="overflow-x-auto">
+<div class="min-w-[760px]">
+<svg id="arch-svg" viewBox="0 0 1200 640" role="img" aria-label="Схема системы машинного зрения: камера с подсветкой над конвейером передаёт изображение в вычислитель с нейросетью; результат идёт на экран мастера, сигналом на линию и в учётные системы" class="w-full h-auto block">
+<style>
+#arch-svg text{font-family:'Space Grotesk','Inter',sans-serif}
+#arch-svg .flow{stroke:#38bdf8;stroke-width:2;fill:none;stroke-dasharray:5 9;animation:a-flow 1.6s linear infinite;opacity:.7}
+@keyframes a-flow{to{stroke-dashoffset:-56px}}
+#arch-svg .belt-top{stroke:#475569;stroke-width:3;stroke-dasharray:16 12;animation:a-belt 1.1s linear infinite}
+@keyframes a-belt{to{stroke-dashoffset:-84px}}
+#arch-svg .boxes{animation:a-run 3s linear infinite}
+@keyframes a-run{from{transform:translateX(0)}to{transform:translateX(130px)}}
+#arch-svg .cone{animation:a-cone 3s ease-in-out infinite}
+@keyframes a-cone{0%,100%{opacity:.16}50%{opacity:.34}}
+#arch-svg .det{animation:a-det 9s linear infinite}
+@keyframes a-det{0%,62%{stroke:#34d399}66%,95%{stroke:#f87171}100%{stroke:#34d399}}
+#arch-svg .chip-ok{animation:a-ok 9s linear infinite}
+@keyframes a-ok{0%,62%{opacity:1}66%,95%{opacity:0}100%{opacity:1}}
+#arch-svg .chip-ng{animation:a-ng 9s linear infinite}
+@keyframes a-ng{0%,62%{opacity:0}66%,95%{opacity:1}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){#arch-svg *{animation:none!important}}
+</style>
+<defs>
+<linearGradient id="g-cone" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#38bdf8" stop-opacity=".85"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="belt-clip"><rect x="70" y="420" width="470" height="92"/></clipPath>
+<pattern id="g-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="1"/>
+</pattern>
+</defs>
+<rect width="1200" height="640" fill="#0B1220"/>
+<rect width="1200" height="640" fill="url(#g-grid)" opacity=".5"/>
+
+<!-- конвейер -->
+<rect x="70" y="492" width="470" height="16" fill="#1e293b" stroke="#334155"/>
+<line x1="70" y1="492" x2="540" y2="492" class="belt-top"/>
+<rect x="120" y="508" width="10" height="42" fill="#1e293b"/>
+<rect x="460" y="508" width="10" height="42" fill="#1e293b"/>
+<line x1="60" y1="552" x2="552" y2="552" stroke="#1e293b" stroke-width="2"/>
+<g clip-path="url(#belt-clip)">
+<g class="boxes">
+<g fill="#475569" stroke="#94a3b8" stroke-width="1.5">
+<rect x="-60" y="457" width="46" height="34"/>
+<rect x="70" y="457" width="46" height="34"/>
+<rect x="200" y="457" width="46" height="34"/>
+<rect x="330" y="457" width="46" height="34"/>
+<rect x="460" y="457" width="46" height="34"/>
+</g>
+</g>
+</g>
+<text x="305" y="585" text-anchor="middle" font-size="13" fill="#64748b">продукция на вашей линии — без её переделки</text>
+
+<!-- камера и подсветка -->
+<text x="305" y="160" text-anchor="middle" font-size="17" font-weight="600" fill="#e2e8f0">Камера + подсветка</text>
+<rect x="272" y="186" width="66" height="46" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+<rect x="296" y="232" width="18" height="12" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+<circle cx="305" cy="252" r="8" fill="#0ea5e9" stroke="#7dd3fc" stroke-width="1.5"/>
+<polygon points="305,256 248,452 362,452" fill="url(#g-cone)" class="cone"/>
+<rect x="228" y="440" width="22" height="7" fill="#7dd3fc" class="cone"/>
+<rect x="360" y="440" width="22" height="7" fill="#7dd3fc" class="cone"/>
+
+<!-- рамка детекции и вердикт -->
+<rect x="276" y="449" width="58" height="48" fill="none" stroke-width="2.5" class="det"/>
+<g class="chip-ok">
+<rect x="344" y="430" width="52" height="24" fill="#064e3b" stroke="#34d399"/>
+<text x="370" y="447" text-anchor="middle" font-size="13" font-weight="700" fill="#6ee7b7">OK</text>
+</g>
+<g class="chip-ng">
+<rect x="344" y="430" width="62" height="24" fill="#450a0a" stroke="#f87171"/>
+<text x="375" y="447" text-anchor="middle" font-size="13" font-weight="700" fill="#fca5a5">БРАК</text>
+</g>
+
+<!-- вычислитель -->
+<path d="M338,208 C440,208 480,330 556,330" class="flow"/>
+<circle r="4" fill="#7dd3fc"><animateMotion dur="2s" repeatCount="indefinite" path="M338,208 C440,208 480,330 556,330"/></circle>
+<rect x="560" y="276" width="190" height="128" fill="#101d35" stroke="#27415f"/>
+<rect x="560" y="276" width="190" height="3" fill="#38bdf8"/>
+<rect x="637" y="296" width="36" height="36" fill="none" stroke="#7dd3fc" stroke-width="2"/>
+<rect x="647" y="306" width="16" height="16" fill="#7dd3fc" opacity=".3" stroke="#7dd3fc"/>
+<g stroke="#7dd3fc" stroke-width="2">
+<line x1="645" y1="296" x2="645" y2="289"/><line x1="655" y1="296" x2="655" y2="289"/><line x1="665" y1="296" x2="665" y2="289"/>
+<line x1="645" y1="332" x2="645" y2="339"/><line x1="655" y1="332" x2="655" y2="339"/><line x1="665" y1="332" x2="665" y2="339"/>
+<line x1="637" y1="304" x2="630" y2="304"/><line x1="637" y1="314" x2="630" y2="314"/><line x1="637" y1="324" x2="630" y2="324"/>
+<line x1="673" y1="304" x2="680" y2="304"/><line x1="673" y1="314" x2="680" y2="314"/><line x1="673" y1="324" x2="680" y2="324"/>
+</g>
+<text x="655" y="362" text-anchor="middle" font-size="18" font-weight="600" fill="#f1f5f9">Вычислитель</text>
+<text x="655" y="382" text-anchor="middle" font-size="12.5" fill="#94a3b8">нейросеть, обученная</text>
+<text x="655" y="396" text-anchor="middle" font-size="12.5" fill="#94a3b8">на вашей продукции</text>
+
+<!-- выходы -->
+<path d="M750,310 C818,310 818,140 896,140" class="flow"/>
+<path d="M750,340 C800,340 830,324 896,324" class="flow"/>
+<path d="M750,370 C818,370 818,508 896,508" class="flow"/>
+<circle r="4" fill="#7dd3fc"><animateMotion dur="2.4s" repeatCount="indefinite" path="M750,310 C818,310 818,140 896,140"/></circle>
+<circle r="4" fill="#7dd3fc"><animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite" path="M750,340 C800,340 830,324 896,324"/></circle>
+<circle r="4" fill="#7dd3fc"><animateMotion dur="2.4s" begin="1.6s" repeatCount="indefinite" path="M750,370 C818,370 818,508 896,508"/></circle>
+
+<rect x="900" y="94" width="250" height="92" fill="#101d35" stroke="#27415f"/>
+<rect x="900" y="94" width="3" height="92" fill="#38bdf8"/>
+<rect x="916" y="118" width="44" height="30" fill="none" stroke="#7dd3fc" stroke-width="2"/>
+<line x1="938" y1="148" x2="938" y2="156" stroke="#7dd3fc" stroke-width="2"/>
+<line x1="926" y1="157" x2="950" y2="157" stroke="#7dd3fc" stroke-width="2"/>
+<text x="976" y="132" font-size="16.5" font-weight="600" fill="#f1f5f9">Экран мастера</text>
+<text x="976" y="152" font-size="12.5" fill="#94a3b8">статистика смены и фото</text>
+<text x="976" y="168" font-size="12.5" fill="#94a3b8">каждого события</text>
+
+<rect x="900" y="278" width="250" height="92" fill="#101d35" stroke="#27415f"/>
+<rect x="900" y="278" width="3" height="92" fill="#fbbf24"/>
+<circle cx="938" cy="322" r="12" fill="#fbbf24" opacity=".2" stroke="#fbbf24" stroke-width="2"/>
+<g stroke="#fbbf24" stroke-width="2">
+<line x1="938" y1="302" x2="938" y2="296"/><line x1="938" y1="342" x2="938" y2="348"/>
+<line x1="918" y1="322" x2="912" y2="322"/><line x1="958" y1="322" x2="964" y2="322"/>
+<line x1="924" y1="308" x2="920" y2="304"/><line x1="952" y1="308" x2="956" y2="304"/>
+<line x1="924" y1="336" x2="920" y2="340"/><line x1="952" y1="336" x2="956" y2="340"/>
+</g>
+<text x="976" y="316" font-size="16.5" font-weight="600" fill="#f1f5f9">Сигнал на линию</text>
+<text x="976" y="336" font-size="12.5" fill="#94a3b8">лампа, стоп конвейера,</text>
+<text x="976" y="352" font-size="12.5" fill="#94a3b8">команда отбраковщику</text>
+
+<rect x="900" y="462" width="250" height="92" fill="#101d35" stroke="#27415f"/>
+<rect x="900" y="462" width="3" height="92" fill="#34d399"/>
+<g fill="none" stroke="#34d399" stroke-width="2">
+<ellipse cx="938" cy="494" rx="18" ry="7"/>
+<path d="M920,494 V518 C920,522 928,525 938,525 C948,525 956,522 956,518 V494"/>
+<path d="M920,506 C920,510 928,513 938,513 C948,513 956,510 956,506"/>
+</g>
+<text x="976" y="500" font-size="16.5" font-weight="600" fill="#f1f5f9">Учёт и отчёты</text>
+<text x="976" y="520" font-size="12.5" fill="#94a3b8">выгрузка в 1С / MES,</text>
+<text x="976" y="536" font-size="12.5" fill="#94a3b8">история по партиям</text>
+</svg>
+</div>
+</div>
+<p class="sm:hidden px-3 pb-2 text-[11px] text-slate-500">Схему можно листать вбок →</p>
+</div>
+<p class="mt-5 text-sm text-on-surface-variant max-w-3xl leading-relaxed">Запускаем обычно в режиме наблюдения; автоматическую остановку и отбраковку включают после того, как точность подтверждена на вашей продукции.</p>
+<div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="flex gap-4 bg-white border border-outline-variant/40 p-5">
+<span class="material-symbols-outlined text-primary shrink-0">photo_camera</span>
+<p class="text-sm text-on-surface-variant leading-relaxed"><strong class="text-on-surface block mb-1">Камеры — Hikrobot и аналоги</strong>Подбираем под задачу: разрешение, скорость, тип затвора, подсветка. Аналог с теми же характеристиками заметно дешевле «фирмы» — разница видна в цене системы.</p>
+</div>
+<div class="flex gap-4 bg-white border border-outline-variant/40 p-5">
+<span class="material-symbols-outlined text-primary shrink-0">neurology</span>
+<p class="text-sm text-on-surface-variant leading-relaxed"><strong class="text-on-surface block mb-1">Модели — свои или готовые</strong>Обучаем нейросети на вашей продукции и дефектах либо используем проверенные готовые — что надёжнее для конкретной задачи.</p>
+</div>
+<div class="flex gap-4 bg-white border border-outline-variant/40 p-5">
+<span class="material-symbols-outlined text-primary shrink-0">lock_open</span>
+<p class="text-sm text-on-surface-variant leading-relaxed"><strong class="text-on-surface block mb-1">Система остаётся вашей</strong>Без обязательных подписок и привязки к облаку поставщика; исходные данные и статистика — на вашей стороне.</p>
+</div>
+<div class="flex gap-4 bg-white border border-outline-variant/40 p-5">
+<span class="material-symbols-outlined text-primary shrink-0">hub</span>
+<p class="text-sm text-on-surface-variant leading-relaxed"><strong class="text-on-surface block mb-1">Интеграция с вашими системами</strong>Сигналы в ПЛК линии, выгрузка в 1С и MES, протоколы TCP/IP и Modbus TCP — согласуем с вашими службами.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Живые системы</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Как это выглядит у заказчика</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+<figure class="border border-outline-variant/50 bg-white cyber-border overflow-hidden">
+<img src="{{SITE_ROOT_PREFIX}}/assets/images/vision/mcd-dashboard.webp" width="1280" height="900" loading="lazy" decoding="async" class="w-full object-cover object-top" alt="Экран системы учёта автомобилей и времени обслуживания на линии МакДрайв: счётчики машин по зонам, тайминги, рейтинг ресторанов и живое видео с камер"/>
+<figcaption class="p-4 text-sm text-on-surface-variant leading-relaxed"><strong class="text-on-surface">Ресторанная сеть McDonald's.</strong> Экран контроля очереди МакДрайв: зрение считает машины по зонам и замеряет время обслуживания. Проект с участием нашей команды — системы работают более чем в 1&nbsp;400 ресторанах.</figcaption>
+</figure>
+<figure class="border border-outline-variant/50 bg-white cyber-border overflow-hidden">
+<video class="w-full object-cover" controls preload="none" poster="{{SITE_ROOT_PREFIX}}/assets/images/products/photoseparator/separator-poster.webp" width="1280" height="720">
+<source src="{{SITE_ROOT_PREFIX}}/assets/images/products/photoseparator/separator-example.mp4" type="video/mp4"/>
+</video>
+<figcaption class="p-4 text-sm text-on-surface-variant leading-relaxed"><strong class="text-on-surface">Наш фотосепаратор в работе.</strong> Собственный продукт на машинном зрении: распознаёт каждый объект в потоке и отбраковывает несоответствующие — видео с действующей установки.</figcaption>
+</figure>
+</div>
+<div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="border border-outline-variant/40 bg-surface-container-low p-6">
+<p class="text-[10px] font-black uppercase tracking-widest text-primary mb-2">Сейчас в работе</p>
+<p class="text-sm text-on-surface-variant leading-relaxed"><strong class="text-on-surface">Группа «Гродно Азот»:</strong> делаем систему контроля дефектов продукции — прототип собран и работает на производстве заказчика.</p>
+</div>
+<div class="border border-outline-variant/40 bg-surface-container-low p-6">
+<p class="text-[10px] font-black uppercase tracking-widest text-primary mb-2">R&amp;D-опыт</p>
+<p class="text-sm text-on-surface-variant leading-relaxed"><strong class="text-on-surface">Huawei:</strong> участвовали в проекте стабилизации видео на основе ИИ для флагманских смартфонов в составе R&amp;D-команды.</p>
+</div>
+<div class="border border-outline-variant/40 bg-surface-container-low p-6">
+<p class="text-[10px] font-black uppercase tracking-widest text-primary mb-2">Собственный продукт</p>
+<p class="text-sm text-on-surface-variant leading-relaxed"><strong class="text-on-surface">Фотосепаратор:</strong> проектируем и производим машины оптической сортировки на своём зрении — <a class="text-primary underline underline-offset-2" href="{{SITE_ROOT_PREFIX}}/fotoseparator/">страница продукта</a>.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-surface-container-low border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+<div>
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Почему «по цене камеры»</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Считали камеры у поставщиков? Мы знаем эти цифры</h2>
+<p class="text-on-surface-variant leading-relaxed mb-6">Фирменная смарт-камера (Cognex, Keyence, Hikrobot) в предложениях поставщиков стоит порядка 9–15&nbsp;тыс.&nbsp;BYN (250–420&nbsp;тыс.&nbsp;₽) — без объектива, подсветки и внедрения. Мы собираем систему на камерах-аналогах с теми же характеристиками, а программную часть делаем сами — поэтому за те же деньги вы получаете работающий на линии контроль, а не коробку с камерой.</p>
+<p class="text-xs text-on-surface-variant/85 italic">Точная стоимость — после обследования задачи; цифры на странице — рамка предложения, а не публичная оферта. Оплата по договору в BYN или RUB.</p>
+<div class="mt-8 flex flex-col sm:flex-row sm:items-center gap-4">
+<a class="machined-gradient text-on-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] shadow-lg inline-block text-center" href="#contacts">Получить оценку за 2 дня</a>
+<span class="text-sm text-on-surface-variant">Бесплатно и ни к чему не обязывает.</span>
+</div>
+</div>
+<div class="bg-white border border-outline-variant/50 cyber-border p-6 sm:p-8">
+<div class="space-y-7">
+<div>
+<div class="flex justify-between items-baseline gap-4 mb-2"><span class="text-[10px] font-black uppercase tracking-widest text-outline">Смарт-камера у поставщика</span><span class="text-xl font-headline font-bold text-on-surface whitespace-nowrap">9–15 тыс. BYN</span></div>
+<div class="h-3 bg-surface-container-highest"><div class="h-full w-[88%] bg-outline/50"></div></div>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">Только камера — без объектива, подсветки, монтажа и внедрения. Для России — 250–420 тыс. ₽.</p>
+</div>
+<div>
+<div class="flex justify-between items-baseline gap-4 mb-2"><span class="text-[10px] font-black uppercase tracking-widest text-primary">Система под ключ у нас</span><span class="text-xl font-headline font-bold text-primary whitespace-nowrap">до 15 000 BYN</span></div>
+<div class="h-3 bg-surface-container-highest"><div class="h-full w-full machined-gradient"></div></div>
+<p class="text-xs text-on-surface-variant mt-2 leading-relaxed">Камеры, подсветка, вычислитель, ПО, монтаж и настройка на вашей продукции. Для России — до 420 000 ₽.</p>
+</div>
+<div class="border-t border-outline-variant/60 pt-5 flex items-baseline gap-3 flex-wrap">
+<span class="text-3xl font-headline font-bold text-primary">0 BYN</span>
+<span class="text-sm text-on-surface-variant">до подписания акта приёмки · средние проекты в Беларуси — от 4 500 BYN</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Экономика</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Что это меняет в деньгах</h2>
+<p class="text-on-surface-variant max-w-3xl mb-10 leading-relaxed">Три примера из наших проектов — без имён заказчиков и с указанием, откуда цифра.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="border border-outline-variant/50 bg-surface-container-low cyber-border p-7">
+<p class="text-4xl font-headline font-bold text-primary mb-3">−41 %</p>
+<p class="text-sm text-on-surface-variant leading-relaxed"><strong class="text-on-surface">к бюджету установки контроля.</strong> Контроль диаметра на потоке (химпром): одна ось брендового лазерного датчика — 10,6–12,9 тыс. BYN — оказалась дороже всей нашей установки с камерой.</p>
+<p class="mt-3 text-[11px] uppercase tracking-widest text-outline">По КП двух поставщиков</p>
+</div>
+<div class="border border-outline-variant/50 bg-surface-container-low cyber-border p-7">
+<p class="text-4xl font-headline font-bold text-primary mb-3">в 2–12 раз</p>
+<p class="text-sm text-on-surface-variant leading-relaxed"><strong class="text-on-surface">дешевле брендовой смарт-камеры</strong> выходит связка «промышленная камера + вычислитель + наша обработка» при тех же задачах распознавания.</p>
+<p class="mt-3 text-[11px] uppercase tracking-widest text-outline">По КП поставщиков камер</p>
+</div>
+<div class="border border-outline-variant/50 bg-surface-container-low cyber-border p-7">
+<p class="text-4xl font-headline font-bold text-primary mb-3">90–95 %</p>
+<p class="text-sm text-on-surface-variant leading-relaxed"><strong class="text-on-surface">дочитывания кодов</strong> против 85 % у решения «в лоб» — и стоимость владения за 5 лет ниже на 21–25 % (пищевое производство, 4 линии).</p>
+<p class="mt-3 text-[11px] uppercase tracking-widest text-outline">Наш расчёт</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-surface-container-low">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary mb-4">Порядок работы</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-12">Четыре шага до работающей системы</h2>
+<div class="relative">
+<div class="hidden md:block absolute top-5 left-5 right-5 h-px bg-outline-variant"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
+<div class="relative">
+<div class="w-10 h-10 bg-primary text-on-primary flex items-center justify-center font-headline font-bold text-sm mb-4 relative z-10">1</div>
+<h3 class="font-bold text-sm uppercase tracking-wide mb-2">Фото и описание задачи</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Присылаете фото продукции или участка линии и пару слов: что контролировать и на какой скорости.</p>
+</div>
+<div class="relative">
+<div class="w-10 h-10 bg-primary text-on-primary flex items-center justify-center font-headline font-bold text-sm mb-4 relative z-10">2</div>
+<h3 class="font-bold text-sm uppercase tracking-wide mb-2">Оценка за&nbsp;2&nbsp;дня</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Отвечаем, решается ли задача зрением, какой состав системы нужен и сколько это будет стоить. Оценка бесплатная.</p>
+</div>
+<div class="relative">
+<div class="w-10 h-10 bg-primary text-on-primary flex items-center justify-center font-headline font-bold text-sm mb-4 relative z-10">3</div>
+<h3 class="font-bold text-sm uppercase tracking-wide mb-2">Критерии приёмки — письменно</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">До старта фиксируем в договоре, что и с какой точностью система обязана распознавать на вашей номенклатуре.</p>
+</div>
+<div class="relative">
+<div class="w-10 h-10 bg-secondary-container text-white flex items-center justify-center font-headline font-bold text-sm mb-4 relative z-10">4</div>
+<h3 class="font-bold text-sm uppercase tracking-wide mb-2">Прототип → акт → оплата</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Собираем прототип на вашем производстве за свой счёт. Показатели подтверждены — подписываем акт, и только тогда вы платите.</p>
+</div>
+</div>
+</div>
+<p class="mt-10 text-sm text-on-surface-variant max-w-3xl leading-relaxed">От заявки до прототипа на вашей линии счёт обычно идёт на недели, а не месяцы: точный срок зависит от задачи и фиксируется в договоре вместе с критериями приёмки.</p>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-slate-900 text-white relative overflow-hidden">
+<div class="absolute inset-0 blueprint-grid opacity-10"></div>
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
+<p class="text-[10px] font-black uppercase tracking-[0.35em] text-primary-fixed mb-4">Акция · заявки до 10 декабря 2026</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-10">Суть акции — оплата по факту приёмки</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+<div>
+<p class="text-6xl md:text-7xl font-headline font-bold text-white mb-3">0 BYN<span class="block text-base font-body font-normal text-white/60 mt-3 tracking-normal">до подписания акта приёмки</span></p>
+<p class="text-white/80 leading-relaxed max-w-xl">Мы уверены в результате, поэтому берём риск на себя: прототип собираем и запускаем на вашем производстве за свой счёт. Оплата — один раз, после того как система подтвердила согласованные показатели и подписан акт.</p>
+</div>
+<ul class="space-y-4 text-sm text-white/80">
+<li class="border border-white/15 p-5"><span class="text-primary-fixed font-bold block mb-1">До 15 000 BYN · до 420 000 ₽</span>установка под ключ для Беларуси и России; средние проекты в Беларуси — от 4 500 BYN. Точная цена — после обследования.</li>
+<li class="border border-white/15 p-5"><span class="text-primary-fixed font-bold block mb-1">Критерии приёмки — в договоре</span>измеримые показатели распознавания на вашей номенклатуре фиксируем письменно до старта.</li>
+<li class="border border-white/15 p-5"><span class="text-primary-fixed font-bold block mb-1">До 10 декабря 2026</span>приём заявок на условиях акции — в поддержку государственной программы роботизации.</li>
+</ul>
+</div>
+<div class="mt-10">
+<a class="bg-white text-primary px-8 py-4 font-black text-xs uppercase tracking-[0.25em] inline-block text-center w-full sm:w-auto hover:bg-primary-fixed transition-colors" href="#contacts">Оставить заявку на условиях акции</a>
+</div>
+<p class="mt-8 text-xs text-white/50 italic">Коммерческие условия фиксируются в переписке и договоре; сведения на странице не являются публичной офертой. Оплата в BYN или RUB по договору.</p>
+</div>
+</section>
+
+<section class="py-16 md:py-24 bg-white border-y border-outline-variant/30">
+<div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div>
+<h2 class="text-2xl md:text-3xl font-bold mb-6">Что мы честно не берём</h2>
+<ul class="space-y-3 text-sm text-on-surface-variant leading-relaxed">
+<li class="border-l-2 border-secondary pl-4">Дефекты, которые физически не видны камере — внутренние полости, скрытые расслоения: это задача неразрушающего контроля, а не зрения.</li>
+<li class="border-l-2 border-secondary pl-4">Задачи без стабильного места установки камеры и подсветки — сначала помогаем организовать участок, потом ставим зрение.</li>
+<li class="border-l-2 border-secondary pl-4">Обещания «100 % распознавания навсегда»: показатель фиксируется на согласованной номенклатуре, подтверждается приёмкой и дальше поддерживается сервисом.</li>
+</ul>
+<p class="mt-6 text-sm text-on-surface-variant leading-relaxed">Если задача не решается зрением — скажем об этом на этапе оценки, бесплатно, и подскажем, чем она решается.</p>
+</div>
+<div>
+<h2 class="text-2xl md:text-3xl font-bold mb-6">Частые вопросы</h2>
+<div class="space-y-3 text-sm leading-relaxed">
+<div class="border border-outline-variant/40 bg-surface-container-low p-4"><p class="font-bold text-on-surface mb-1">Линию придётся останавливать?</p><p class="text-on-surface-variant">Нет: система ставится над действующей линией, монтаж согласуем с графиком производства.</p></div>
+<div class="border border-outline-variant/40 bg-surface-container-low p-4"><p class="font-bold text-on-surface mb-1">У нас блики, пар, пыль — сработает?</p><p class="text-on-surface-variant">Это решается подбором подсветки, оптики и места установки. Поэтому первый шаг — фото участка, а приёмка — на вашей реальной продукции.</p></div>
+<div class="border border-outline-variant/40 bg-surface-container-low p-4"><p class="font-bold text-on-surface mb-1">Кто обслуживает систему?</p><p class="text-on-surface-variant">Мы, выездным сервисом по Беларуси и России; персонал заказчика обучаем работе с экраном и отчётами.</p></div>
+<div class="border border-outline-variant/40 bg-surface-container-low p-4"><p class="font-bold text-on-surface mb-1">Сколько занимает запуск?</p><p class="text-on-surface-variant">Оценка — 2 рабочих дня. Дальше счёт идёт на недели: срок прототипа зависит от задачи и фиксируется в договоре.</p></div>
+<div class="border border-outline-variant/40 bg-surface-container-low p-4"><p class="font-bold text-on-surface mb-1">Что нужно от нас?</p><p class="text-on-surface-variant">Фото продукции и участка, образцы годного и брака, точка установки камеры и доступ для монтажа. Остальное — наша работа.</p></div>
+<div class="border border-outline-variant/40 bg-surface-container-low p-4"><p class="font-bold text-on-surface mb-1">Что будет после 10.12.2026?</p><p class="text-on-surface-variant">Условия следующей волны могут отличаться — заявки, поданные до этой даты, обслуживаются на текущих условиях.</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="border-y border-outline-variant/30 bg-surface-container-low py-12 md:py-16">
+<div class="container mx-auto max-w-6xl px-4 sm:px-6">
+<p class="mb-6 text-[10px] font-black uppercase tracking-[0.25em] text-primary">Кейсы по теме</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<a class="group border border-outline-variant/50 bg-white cyber-border p-6 transition-colors hover:border-primary" href="{{SITE_ROOT_PREFIX}}/keysy/opticheskaya-sortirovka/">
+<h3 class="mb-2 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Оптическая сортировка продукции</h3>
+<p class="text-sm leading-relaxed text-on-surface-variant">Как зрение отличает годное от брака в сплошном потоке и что для этого нужно от производства.</p>
+<span class="mt-3 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</a>
+<a class="group border border-outline-variant/50 bg-white cyber-border p-6 transition-colors hover:border-primary" href="{{SITE_ROOT_PREFIX}}/keysy/razrabotka-fotoseparatora/">
+<h3 class="mb-2 text-lg font-bold leading-snug transition-colors group-hover:text-primary">Разработка фотосепаратора</h3>
+<p class="text-sm leading-relaxed text-on-surface-variant">Собственная машина оптической сортировки: от камеры и пневматики до серийного изделия.</p>
+<span class="mt-3 inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-primary">Разобрать кейс <span aria-hidden="true" class="material-symbols-outlined text-base">arrow_forward</span></span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- @include partials/warranty-strip.html -->
+<section class="pt-16 pb-28 md:pt-24 md:pb-32 lg:py-28 bg-slate-900 text-white relative overflow-hidden" id="contacts">
+<div class="absolute inset-0 blueprint-grid opacity-5"></div>
+<div class="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold mb-6 uppercase tracking-tighter">Получить оценку за 2 дня</h2>
+<p class="text-white/75 mb-8 max-w-lg">Опишите, что контролировать, — а фото продукции или участка пришлёте ответом на наше письмо. За два рабочих дня скажем, решается ли задача зрением и сколько это стоит.</p>
+<div class="space-y-6 text-sm">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-fixed">call</span>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Телефон · Viber · Telegram</div><a class="inline-flex min-h-11 items-center text-lg font-semibold hover:text-primary-fixed transition-colors" href="tel:+375255092206">+375 25 509 22 06</a></div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-fixed">mail</span>
+<div><div class="text-[10px] uppercase tracking-widest text-primary-fixed mb-1">Email</div><a class="inline-flex min-h-11 items-center text-lg font-semibold hover:text-primary-fixed transition-colors break-all" href="{{EMAIL_MAILTO_HREF}}">{{EMAIL_ADDRESS}}</a></div>
+</div>
+</div>
+</div>
+<div class="bg-white text-on-surface p-8 md:p-10 shadow-2xl">
+<form class="space-y-6" action="https://formspree.io/f/xaqllkqo" method="POST" accept-charset="UTF-8">
+<input type="hidden" name="_subject" value="Заявка: Машинное зрение"/>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true"/>
+<input type="hidden" name="product" value="Машинное зрение (система под ключ)"/>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="vision-name">Имя</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="vision-name" name="name" type="text" required autocomplete="name" placeholder="Иван Иванов"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="vision-phone">Телефон</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="vision-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Телефон с кодом страны"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="vision-company">Компания</label>
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none text-base sm:text-lg min-h-[44px] sm:min-h-0 placeholder:text-outline-variant" id="vision-company" name="company" type="text" autocomplete="organization" placeholder="ООО …"/>
+</div>
+<div>
+<label class="text-[10px] uppercase tracking-widest font-black text-outline mb-2 block" for="vision-msg">Что контролируем</label>
+<textarea class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary py-2.5 sm:py-3 px-1 outline-none resize-none text-base sm:text-lg placeholder:text-outline-variant placeholder:leading-relaxed" id="vision-msg" name="message" rows="4" placeholder="Продукция, какой дефект или код, примерная скорость линии…"></textarea>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Оценка бесплатная и ни к чему не обязывает — ответим в течение двух рабочих дней.</p>
+<button class="w-full machined-gradient text-on-primary py-5 font-black uppercase tracking-[0.3em] text-xs hover:shadow-xl transition-all" type="submit">Получить оценку</button>
+<p class="text-[10px] text-center text-outline uppercase tracking-wider">Нажимая кнопку, вы соглашаетесь с обработкой данных в соответствии с <a class="text-primary underline underline-offset-2 hover:text-primary-container" href="{{PRIVACY_PAGE_HREF}}">политикой конфиденциальности</a></p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- @include partials/footer.html -->
+</body>
+</html>
